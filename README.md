@@ -1,6 +1,8 @@
 # Emulador de MIPS 32 bits
 Emulador do processador MIPS de 32 bits para a disciplina GCC117 - Arquitetura de Computadores.
 
+!https://travis-ci.org/mathnogueira/mips.svg?branch=master!:https://travis-ci.org/mathnogueira/mips
+
 ## Estrutura do projeto
 * emulador
     * build ---> Pasta onde tudo é compilado
