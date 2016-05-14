@@ -29,7 +29,7 @@ $ cmake .. && make
 $ ./mips
 ```
 
-### Compilar e executar testes unitários
+### Compilando e executando testes unitários
 ```shell
 $ cmake -Dtest=ON .. && make
 $ ./mips_test
