@@ -6,11 +6,6 @@ compiler:
   - gcc
 # Build steps
 script:
-  - mkdir build
-  - mkdir libs
-  - git clone https://github.com/google/googletest.git google
-  - mv google/googletest libs/gtest
-  - cp google/googletest/include/gtest include/
-  - cd build
+  - mkdir build && cd build
   - cmake -Dtest=ON .. && make
   - ./mips_test
