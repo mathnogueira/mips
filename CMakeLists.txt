@@ -35,11 +35,10 @@ if (test)
     include_directories(${GTEST_DIR}/include ${GTEST_DIR})
     add_executable(${PROJECT_NAME}_test ${TESTS})
     TARGET_LINK_LIBRARIES (${PROJECT_NAME}_test gtest gtest_main mips_lib)
-else()
-    add_executable (${PROJECT_NAME} src/main.cpp)
-    # Add libraries to be linked
-    TARGET_LINK_LIBRARIES (${PROJECT_NAME} ${PROJECT_EXTERNAL_LIBS} mips_lib)
 endif()
+add_executable (${PROJECT_NAME} src/main.cpp)
+# Add libraries to be linked
+TARGET_LINK_LIBRARIES (${PROJECT_NAME} ${PROJECT_EXTERNAL_LIBS} mips_lib)
 
 #### Variables defining
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
