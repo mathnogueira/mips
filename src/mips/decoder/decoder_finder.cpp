@@ -1,5 +1,6 @@
 #include <mips/decoder/decoder_finder.hpp>
-#include <cstdlib>
+#include <mips/instructions/map.hpp>
+#include <mips/decoder/register_decoder.hpp>
 
 using namespace MIPS;
 
@@ -7,12 +8,20 @@ DecoderFinder::DecoderFinder() {}
 
 DecoderFinder::~DecoderFinder() {}
 
+Instruction* DecoderFinder::decode(instruction32_t instruction) {
+    InstructionDecoder* decoder = find(instruction);
+    return NULL;
+}
+
 InstructionDecoder* DecoderFinder::find(instruction32_t instruction) {
     bit8_t opcode = getOPCode(instruction);
-    if (opcode == 43) {
-        DEBUG("ADD");
+    InstructionDecoder* decoder = NULL;
+    if (Instruction_isR(opcode)) {
+        decoder = new RegisterInstructionDecoder;
+    } else if (Instruction_isI(opcode)){
+        decoder = NULL;
     } else {
-        DEBUG("SUB");
+        decoder = NULL;
     }
-    return NULL;
+    return decoder;
 }

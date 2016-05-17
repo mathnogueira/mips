@@ -6,6 +6,8 @@
  */
 #pragma once
 
+#include <mips/core.hpp>
+
 namespace MIPS {
 
 /**
@@ -15,6 +17,16 @@ namespace MIPS {
  * \author Matheus Nogueira
  */
 class RegisterBank {
+
+public:
+
+    /**
+     * Retorna um ponteiro para o registrador identificado pelo código especificado.
+     *
+     * \param id código do registrador.
+     * \return ponteiro para o registrador.
+     */
+    Register *getRegister(bit8_t id);
 
 private:
 

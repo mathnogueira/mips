@@ -2,6 +2,8 @@ cmake_minimum_required (VERSION 2.6)
 
 #### Options available ####
 option(test "Building unit tests." OFF) # Unit testing option
+# C++11
+set (CMAKE_CXX_STANDARD 11)
 
 # Name of the project (same as executable name)
 set (PROJECT_NAME mips)

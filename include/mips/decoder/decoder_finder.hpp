@@ -33,13 +33,23 @@ public:
     ~DecoderFinder();
 
     /**
+     * Decodifica uma instrução qualquer.
+     *
+     * \param instruction instrução a ser decodificada.
+     * \return instrução decodificada.
+     */
+    Instruction *decode(instruction32_t instruction);
+
+protected:
+
+    /**
      * Retorna o decodificador adequado para a decodificação de uma instrução
      * 32 bits para a arquitetura do MIPS.
      *
      * \param instruction instrução que deve ser decodificada.
      * \return decodificador adequado para a instrução.
      */
-    InstructionDecoder *find(instruction32_t instruction);
+    static InstructionDecoder *find(instruction32_t instruction);
 
 private:
 
@@ -49,7 +59,7 @@ private:
      * \param instruction instrução 32 bits
      * \return opcode da instrução.
      */
-    bit8_t getOPCode(instruction32_t instruction) {
+    static bit8_t getOPCode(instruction32_t instruction) {
         return instruction >>= 26;
     }
 

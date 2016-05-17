@@ -13,7 +13,7 @@ Emulador do processador MIPS de 32 bits para a disciplina GCC117 - Arquitetura d
     * CMakeLists.txt ---> Regras de build do projeto
 
 ## Ferramentas necessárias
-* g++ (compatível com o c++98)
+* g++ (compatível com o c++11)
 * cmake 2.6+
 * make
 
