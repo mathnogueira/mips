@@ -7,6 +7,7 @@
 #pragma once
 
 #include <mips/core.hpp>
+#include <mips/memory/register.hpp>
 
 namespace MIPS {
 
@@ -20,20 +21,30 @@ class RegisterBank {
 
 public:
 
+	/**
+	 * Cria uma instância do banco de registradores.
+	 */
+	RegisterBank();
+
+	/**
+	 * Destroi a instância do banco de registradores.
+	 */
+	~RegisterBank();
+
     /**
      * Retorna um ponteiro para o registrador identificado pelo código especificado.
      *
      * \param id código do registrador.
      * \return ponteiro para o registrador.
      */
-    Register *getRegister(bit8_t id);
+    Register* getRegister(bit8_t id);
 
 private:
 
     /**
      * Registradores para números inteiros.
      */
-    Register *iRegisters[32];
+    Register *iRegister[32];
 
 };
 

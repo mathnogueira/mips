@@ -6,7 +6,6 @@
 #pragma once
 
 #include <mips/core.hpp>
-#include <string>
 
 namespace MIPS {
 
@@ -20,37 +19,62 @@ class Register {
 public:
 
     /**
-     * Cria um novo registrador com um alias.
-     *
-     * \param alias nome do registrador.
-     */
-    Register(const char* alias) { Register(alias, false); }
+     * Cria um novo registrador.
+	 *
+	 * \param name nome do registrador.
+	 */
+    Register(const char* name);
 
-    /**
-     * Cria um novo registrador com um alias.
-     *
-     * \param alias nome do registrador.
-     * \param protected indica que o indicador não pode ser atualizado.
-     */
-    Register(const char* alias, bool protected);
+	/**
+	 * Cria um novo registrador.
+	 *
+	 * \param name nome do registrador.
+	 * \param protected indica se o registrador é protegido para escrita.
+	 */
+	Register(const char* name, bool protect);
+
+	/**
+	 * Destroi o registrador.
+	 */
+	~Register();
+
+	/**
+	 * Define um valor que o registrador irá guardar.
+	 *
+	 * \param value valor 32 bits que será armazenado no registrador.
+	 */
+	void put(bit32_t value);
+
+	/**
+	 * Pega o valor 32 bits armazenado no registrador.
+	 *
+	 * \return valor armazenado no registrador.
+	 */
+	bit32_t get();
+
+	/**
+	 * Retorna o nome do registrador.
+	 *
+	 * \return nome do registrador.
+	 */
+	const char* getName();
 
 private:
 
-    /**
-     * Alias do registrador.
-     */
-    std::string alias;
-
-    /**
-     * Flag que indica que o registrador é protegido, portanto, ele não pode
-     * ser sobre-escrito.
-     */
-    bool protected;
+	/**
+	 * Nome do registrador.
+	 */
+	const char* name;
 
     /**
      * Conteúdo do registrador.
      */
     bit32_t content;
+
+	/**
+	 * Indica se o registrador é protegido contra escrita.
+	 */
+	bool isProtected;
 
 };
 

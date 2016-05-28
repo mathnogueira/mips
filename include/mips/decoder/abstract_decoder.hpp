@@ -9,6 +9,7 @@
 
 #include <mips/core.hpp>
 #include <mips/instructions/instruction.hpp>
+#include <mips/memory/register_bank.hpp>
 
 namespace MIPS {
 
@@ -41,6 +42,11 @@ public:
     virtual Instruction *decode(instruction32_t instruction);
 
 protected:
+
+	/**
+	 * Banco de registradores do decodificador.
+	 */
+	RegisterBank *registerBank;
 
     /**
      * Método responsável por recuperar o código de operação (opcode) de
