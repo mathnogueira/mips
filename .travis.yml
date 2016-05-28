@@ -4,10 +4,6 @@ language: cpp
 compiler:
   - g++
 
-# Dependencies
-install:
-   - sudo apt-get install libgtest-dev
-
 # Build steps
 script:
   - mkdir build && cd build
