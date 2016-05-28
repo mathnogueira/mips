@@ -23,7 +23,7 @@ public:
 	 *
 	 * \param name nome do registrador.
 	 */
-    Register(const char* name);
+    // Register(const char* name);
 
 	/**
 	 * Cria um novo registrador.
@@ -31,7 +31,7 @@ public:
 	 * \param name nome do registrador.
 	 * \param protected indica se o registrador é protegido para escrita.
 	 */
-	Register(const char* name, bool protect);
+	Register(const char* name, bool protect = false);
 
 	/**
 	 * Destroi o registrador.

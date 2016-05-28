@@ -2,8 +2,6 @@
 
 using namespace MIPS;
 
-Register::Register(const char *name) : Register(name, false) {}
-
 Register::Register(const char* name, bool protect) {
 	this->name = name;
 	this->content = 0;

@@ -7,6 +7,5 @@ int main(int argc, char **argv) {
     instruction32_t instruction = 0xac000000;
     DecoderFinder finder;
     finder.decode(instruction);
-    printf("teste");
     return 0;
 }
