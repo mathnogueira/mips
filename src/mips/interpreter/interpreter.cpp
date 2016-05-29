@@ -1,5 +1,8 @@
 #include <mips/interpreter/interpreter.hpp>
+#include <mips/interpreter/encoder/encoder_factory.hpp>
+#include <mips/interpreter/encoder/encoder.hpp>
 #include <mips/util/filter/space_filter.hpp>
+#include <mips/core.hpp>
 #include <string>
 #include <cstring>
 #include <iostream>
@@ -64,5 +67,11 @@ void Interpreter::updateLabels() {
 }
 
 void Interpreter::convertToInstructions() {
-	
+	EncoderFactory factory(labels);
+	unsigned long size = lines.size();
+	for (unsigned long i = 0; i < size; ++i) {
+		char *operation = lines.at(i).at(0);
+		Encoder* encoder = factory.produce(operation);
+		instruction32_t instruction = encoder->encode(lines.at(i));
+	}
 }

@@ -6,6 +6,7 @@
 #pragma once
 
 #include <mips/core.hpp>
+#include <mips/interpreter/label.hpp>
 #include <mips/util/file_reader.hpp>
 
 namespace MIPS {
@@ -38,14 +39,6 @@ public:
 	void process();
 
 private:
-
-	/**
-	 * Estrutura que armazena o nome do label e a linha que ele se encontra.
-	 */
-	struct Label {
-		char label[64];
-		unsigned long line;
-	};
 
 	/**
 	 * Leitor de arquivos utilizado pelo interpretador.
