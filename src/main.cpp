@@ -1,11 +1,21 @@
-#include <mips/core.hpp>
-#include <mips/decoder/decoder_finder.hpp>
+#include <mips/interpreter/interpreter.hpp>
+#include <mips/interpreter/exception/interpreter_exception.hpp>
 
 using namespace MIPS;
 
 int main(int argc, char **argv) {
-    instruction32_t instruction = 0xac000000;
-    DecoderFinder finder;
-    finder.decode(instruction);
+    if (argc < 2) {
+		// Erro, deve indicar o arquivo que será executado.
+		return -1;
+	}
+	Interpreter interpreter(argv[1]);
+	try {
+		interpreter.process();
+	} catch (InterpreterException& exception) {
+		// TODO: Criar um handler de erros.
+	}
+	if (interpreter.ok()) {
+		// Continua o processo de emulação
+	}
     return 0;
 }

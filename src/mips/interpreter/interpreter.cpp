@@ -1,4 +1,5 @@
 #include <mips/interpreter/interpreter.hpp>
+#include <mips/interpreter/exception/interpreter_exception.hpp>
 #include <mips/interpreter/encoder/encoder_factory.hpp>
 #include <mips/interpreter/encoder/encoder.hpp>
 #include <mips/util/filter/space_filter.hpp>
@@ -11,6 +12,7 @@ using namespace MIPS;
 Interpreter::Interpreter(const char* file) {
 	SpaceFilter spaceFilter;
 	fileReader = new FileReader(file, spaceFilter);
+	errors = 0;
 }
 
 Interpreter::~Interpreter() {
@@ -34,8 +36,13 @@ void Interpreter::process() {
 	}
 	// Substitui os labels pelo numero da linha
 	this->updateLabels();
-	// Processa as linhas de assembly pra transformar em codigo de máquina.
-	this->convertToInstructions();
+	try {
+		// Processa as linhas de assembly pra transformar em codigo de máquina.
+		this->convertToInstructions();
+	} catch (InterpreterException& e) {
+		++errors;
+		throw e;
+	}
 }
 
 void Interpreter::updateLabels() {

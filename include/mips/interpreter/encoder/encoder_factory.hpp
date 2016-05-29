@@ -68,7 +68,8 @@ private:
 	enum InstructionType {
 		R,		///< Instrução do tipo R
 		I,		///< Instrução do tipo I
-		J,		///< Instrução do tipo J	
+		J,		///< Instrução do tipo J
+		NONE,	///< Instrução desconhecida
 	};
 
 	/**

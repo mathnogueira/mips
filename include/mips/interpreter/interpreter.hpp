@@ -38,6 +38,16 @@ public:
 	 */
 	void process();
 
+	/**
+	 * Checa se o interpretador encontrou algum erro durante a sua execução. Se sim,
+	 * retorna false.
+	 *
+	 * \return true se o interpretador realizou sem papel sem erros.
+	 */
+	bool ok() {
+		return (bool) (errors == 0);
+	}
+
 private:
 
 	/**
@@ -54,6 +64,11 @@ private:
 	 * Labels encontrados no codigo.
 	 */
 	std::vector<Label> labels;
+
+	/**
+	 * Numero de erros que ocorreram durante o processo de interpretação.
+	 */
+	bit32_t errors;
 
 	/**
 	 * Atualiza os labels para que eles virem o numero da linha

@@ -1,6 +1,8 @@
+#include <mips/interpreter/exception/interpreter_exception.hpp>
 #include <mips/interpreter/encoder/encoder_factory.hpp>
 #include <mips/interpreter/encoder/encoder.hpp>
 #include <cstring>
+#include <cstdio>
 
 using namespace MIPS;
 
@@ -25,7 +27,7 @@ Encoder* EncoderFactory::produce(const char *operation) {
 		case J:
 			return jEncoder;
 		default:
-			return NULL;
+			throw InterpreterException(operation, 0);
 	}
 }
 
@@ -34,7 +36,9 @@ EncoderFactory::InstructionType EncoderFactory::getInstructionType(const char *i
 		return I;
 	if (isTypeJ(instruction))
 		return J;
-	return R;
+	if (isTypeR(instruction))
+		return R;
+	return NONE;
 }
 
 static const char* rInstructions[] = {
