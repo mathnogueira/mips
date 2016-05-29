@@ -6,6 +6,7 @@
 #pragma once
 
 #include <mips/core.hpp>
+#include <mips/util/file_reader.hpp>
 
 namespace MIPS {
 
@@ -41,22 +42,9 @@ public:
 private:
 
 	/**
-	 * Nome do arquivo que será interpretado.
+	 * Leitor de arquivos utilizado pelo interpretador.
 	 */
-	const char* file;
-
-	/**
-	 * Buffer interno para armazenamento do arquivo a ser interpretado.
-	 */
-	char *buffer;
-
-	/**
-	 * Abre o arquivo para modo de leitura e salva seu conteúdo no buffer
-	 * interno do interpretador.
-	 *
-	 * \return status da operação (true = sucesso)
-	 */
-	bool loadFile();
+	FileReader *fileReader;
 
 };
 

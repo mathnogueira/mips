@@ -4,6 +4,10 @@ language: cpp
 compiler:
   - g++
 
+os:
+    - linux
+    - osx
+
 # Build steps
 script:
   - mkdir build && cd build
