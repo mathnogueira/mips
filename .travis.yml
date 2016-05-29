@@ -7,7 +7,6 @@ compiler:
 os:
     - linux
     - osx
-    - windows
 
 # Build steps
 script:
