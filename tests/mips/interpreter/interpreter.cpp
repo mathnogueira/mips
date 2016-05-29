@@ -4,6 +4,12 @@
 using namespace MIPS;
 
 TEST(Interpreter, constructor) {
-	Interpreter i("../tests/input/test.asm");
+	Interpreter i("../tests/input/test1.asm");
+	SUCCEED();
+}
+
+TEST(Interpreter, process) {
+	Interpreter i("../tests/input/test_label.asm");
+	i.process();
 	SUCCEED();
 }

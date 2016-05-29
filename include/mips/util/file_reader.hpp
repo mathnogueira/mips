@@ -54,6 +54,13 @@ public:
 	 */
 	void rewind();
 
+	/**
+	 * Checa se o arquivo ainda tem conteúdo para ser lido.
+	 *
+	 * \return booleano que se true, indica que ainda existe linhas a ser lidas.
+	 */
+	bool hasNext();
+
 private:
 
 	/**

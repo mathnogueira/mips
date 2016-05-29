@@ -34,17 +34,45 @@ public:
 
 	/**
 	 * Inicia o processo de interpretação do arquivo.
-	 *
-	 * \return status da interpretação, retorna verdadeiro se tudo ocorreu corretamente.
 	 */
-	bool process();
+	void process();
 
 private:
+
+	/**
+	 * Estrutura que armazena o nome do label e a linha que ele se encontra.
+	 */
+	struct Label {
+		char label[64];
+		unsigned long line;
+	};
 
 	/**
 	 * Leitor de arquivos utilizado pelo interpretador.
 	 */
 	FileReader *fileReader;
+
+	/**
+	 * Buffer de tokens extraídos do arquivo fonte.
+	 */
+	std::vector<std::vector<char*> > lines;
+
+	/**
+	 * Labels encontrados no codigo.
+	 */
+	std::vector<Label> labels;
+
+	/**
+	 * Atualiza os labels para que eles virem o numero da linha
+	 * do inicio do bloco do label.
+	 */
+	void updateLabels();
+
+	/**
+	 * Processa todas as linhas de assembly e as transforma em instruções
+	 * 32 bits.
+	 */
+	void convertToInstructions();
 
 };
 

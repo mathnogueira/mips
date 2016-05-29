@@ -31,6 +31,10 @@ void FileReader::rewind() {
 	this->currentLine = 0;
 }
 
+bool FileReader::hasNext() {
+	return (currentLine < buffer.size());
+}
+
 void FileReader::readFile(const char *filename) {
 	file.open(filename);
 	std::string line;
@@ -41,6 +45,7 @@ void FileReader::readFile(const char *filename) {
 			continue;
 		char *lBuffer = new char[line.size()];
 		line.copy(lBuffer, line.size(), 0);
+		lBuffer[line.size()] = '\0';
 		this->buffer.push_back(lBuffer);
 	}
 	this->currentLine = 0;
