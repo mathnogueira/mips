@@ -7,6 +7,7 @@
 
 #include <mips/core.hpp>
 #include <mips/interpreter/label.hpp>
+#include <map>
 #include <vector>
 
 namespace MIPS {
@@ -61,6 +62,42 @@ protected:
 	 */
 	const char* mType;
 
+	/**
+	 * Estrutura que armazena o opcode da instrução e o seu código de função.
+	 */
+	struct InstructionInfo {
+		const char *name;	///< Nome da instrução
+		bit8_t opcode;		///< Opcode da instrução
+		bit8_t funct;		///< Código da função
+	};
+
+	/**
+	 * Retorna o número do registrador utilizando seu nome como identificador.
+	 *
+	 * \param name nome do registrador.
+	 * \return número do registrador.
+	 */
+	bit8_t getRegisterNumber(char *name);
+
+	/**
+	 * Retorna o opcode da instrução e o código de função, se aplicável.
+	 *
+	 * \param name nome da instrução.
+	 * \param info objeto onde o resultado será gravado.
+	 */
+	struct InstructionInfo getInstructionInfo(char *name);
+
+private:
+
+	/**
+	 * Mapa que mapeia todos as instruções do mips.
+	 */
+	std::vector<struct InstructionInfo> map;
+
+	/**
+	 * Popula o mapa com os dados de todas as instruções.
+	 */
+	void initMap();
 };
 
 }; // namespace

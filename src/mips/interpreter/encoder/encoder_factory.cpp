@@ -30,12 +30,11 @@ Encoder* EncoderFactory::produce(const char *operation) {
 }
 
 EncoderFactory::InstructionType EncoderFactory::getInstructionType(const char *instruction) {
-	if (isTypeR(instruction))
-		return R;
 	if (isTypeI(instruction))
 		return I;
 	if (isTypeJ(instruction))
 		return J;
+	return R;
 }
 
 static const char* rInstructions[] = {
