@@ -1,5 +1,8 @@
 cmake_minimum_required (VERSION 2.6)
 
+# Uncomment to enable Clang++ as compiler
+#SET (CMAKE_CXX_COMPILER             "/usr/bin/clang++")
+
 #### Options available ####
 option(test "Building unit tests." OFF) # Unit testing option
 # C++11
