@@ -1,6 +1,5 @@
 #include <mips/util/file_reader.hpp>
 #include <string>
-#include <iostream>
 
 using namespace MIPS;
 

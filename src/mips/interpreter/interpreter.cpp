@@ -5,7 +5,6 @@
 #include <mips/core.hpp>
 #include <string>
 #include <cstring>
-#include <iostream>
 
 using namespace MIPS;
 
