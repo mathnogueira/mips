@@ -3,6 +3,7 @@ language: cpp
 # Compiler selection
 compiler:
   - g++
+  - clang
 
 os:
     - linux
@@ -12,4 +13,9 @@ os:
 script:
   - mkdir build && cd build
   - cmake -Dtest=ON .. && make
+  - gdb mips_test
+  - run
+  - bt
+  - q
+  - y
   - ./mips_test
