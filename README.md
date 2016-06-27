@@ -9,7 +9,7 @@ Emulador do processador MIPS de 32 bits para a disciplina GCC117 - Arquitetura d
     * include ---> headers do emulador
     * libs ---> Dependencias externas do emulador
     * src  ---> Código fonte do emulador
-    * tests ---> Testes unitários do emulador
+    * tests ---> Testes unitários do emulador ([Olhe o projeto gtest](https://github.com/google/googletest), e esse [tutorial](http://www.ibm.com/developerworks/aix/library/au-googletestingframework.html))
     * CMakeLists.txt ---> Regras de build do projeto
 
 ## Ferramentas necessárias

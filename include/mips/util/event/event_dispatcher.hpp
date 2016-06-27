@@ -35,7 +35,7 @@ public:
 	/**
 	 * Destroi o despachante de eventos.
 	 */
-	~EventDispatcher();
+	virtual ~EventDispatcher();
 
 	/**
 	 * Despacha um evento para todos os seus ouvintes. Caso o evento esteja
