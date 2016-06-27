@@ -24,3 +24,15 @@ TEST(Queue, add_and_get) {
 		ints.pop();
 	}
 }
+
+TEST(Queue, add_pointer) {
+	int a = 3, b = 5;
+	int *pa = &a, *pb = &b;
+	Queue<int*> ints;
+	ints.push(pa);
+	ints.push(pb);
+	*(ints.get(0)) = 10;
+	*(ints.get(1)) = *(ints.get(0)) + 3;
+	ASSERT_EQ(a, 10);
+	ASSERT_EQ(b, 13);
+}

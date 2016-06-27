@@ -60,6 +60,7 @@ public:
 		node->next = NULL;
 		if (head_ == NULL) {
 			head_ = node;
+			size_ = 1;
 			return;
 		}
 		struct Node* aux = head_;

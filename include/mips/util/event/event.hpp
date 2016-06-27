@@ -16,6 +16,7 @@ namespace MIPS {
  */
 enum EventType {
 	REGISTER_UPDATE, 	///< Indica que um registrador foi alterado.
+	TEST,
 };
 
 /**

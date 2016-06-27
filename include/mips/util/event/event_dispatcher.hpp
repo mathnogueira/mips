@@ -11,7 +11,9 @@
 #pragma once
 
 #include <mips/util/structure/queue.hpp>
+#include <mips/util/event/event_listener.hpp>
 #include <mips/util/event/event.hpp>
+#include <vector>
 
 namespace MIPS {
 
@@ -44,15 +46,39 @@ public:
 	 */
 	void dispatch(Event &event);
 
+	/**
+	 * Adiciona um ouvinte de eventos nesse despachante.
+	 *
+	 * \param listener ouvinte de eventos
+	 * \param event tipo de evento que o ouvinte irá escutar.
+	 */
+	void addEventListener(EventListener *listener, EventType event);
+
+protected:
+
+	/**
+	 * Classe responsável por representar um tipo de evento ligado a uma
+	 * fila de ouvintes que devem ser notificados.
+	 */
+	struct ListenerMap {
+		EventType type;						///< Tipo de evento
+		Queue<EventListener*> *listeners; 	///< Fila de ouvintes
+	};
+
 private:
 
 	/**
-	 * Busca a fila de ouvintes para um determinado tipo de evento.
-	 *
-	 * \param type tipo de evento a ser procurado.
-	 * \return fila de ouvintes para o determinado evento.
+	 * Lista de ouvintes de eventos.
 	 */
-	Queue<int>* getListeners(EventType type);
+	std::vector<ListenerMap> listeners;
+
+	/**
+	 * Retorna a fila que está armazenando os ouvintes de um determinado tipo de evento.
+	 *
+	 * \param event tipo de evento
+	 * \return ponteiro para a fila de ouvintes
+	 */
+	Queue<EventListener*>* getListeners(EventType event);
 
 };
 
