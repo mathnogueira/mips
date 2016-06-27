@@ -4,13 +4,15 @@ Emulador do processador MIPS de 32 bits para a disciplina GCC117 - Arquitetura d
 [![Build Status](https://travis-ci.org/mathnogueira/mips.svg?branch=master)](https://travis-ci.org/mathnogueira/mips)
 
 ## Estrutura do projeto
-* emulador
-    * build ---> Pasta onde tudo é compilado
-    * include ---> headers do emulador
-    * libs ---> Dependencias externas do emulador
-    * src  ---> Código fonte do emulador
-    * tests ---> Testes unitários do emulador ([Olhe o projeto gtest](https://github.com/google/googletest), e esse [tutorial](http://www.ibm.com/developerworks/aix/library/au-googletestingframework.html))
-    * CMakeLists.txt ---> Regras de build do projeto
+
+| Diretório		| Função																| Links		|
+| ------------- |:---------------------------------------------------------------------:| ---------:|
+| build			| Pasta que organiza todos os arquivos gerados pelo sistema de build    |           |
+| include 		| Pasta que contém todos os cabeçalhos de classes e funções				|			|
+| libs			| Pasta que contém todas as bibliotecas externas usadas no projeto		|			|
+| src			| Pasta que contém todas as implementações do projeto					|			|
+| tests			| Pasta contendo todos os arquivos de teste automatizado				| [projeto gtest](https://github.com/google/googletest),  [tutorial](http://www.ibm.com/developerworks/aix/library/au-googletestingframework.html) |
+| CMakeLists.txt| Arquivo de configuração do cmake para automatizar a construção do projeto|        |
 
 ## Ferramentas necessárias
 * g++ (compatível com o c++98)
