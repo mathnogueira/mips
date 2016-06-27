@@ -6,7 +6,7 @@ Emulador do processador MIPS de 32 bits para a disciplina GCC117 - Arquitetura d
 ## Estrutura do projeto
 
 | Diretório		| Função																| Links		|
-| :-----------: |:---------------------------------------------------------------------:| :--------:|
+| :-----------  |:--------------------------------------------------------------------- | :-------- |
 | build			| Pasta que organiza todos os arquivos gerados pelo sistema de build    |           |
 | include 		| Pasta que contém todos os cabeçalhos de classes e funções				|			|
 | libs			| Pasta que contém todas as bibliotecas externas usadas no projeto		|			|
