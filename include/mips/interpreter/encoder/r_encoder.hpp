@@ -6,6 +6,7 @@
 #pragma once
 
 #include <mips/interpreter/encoder/encoder.hpp>
+#include <mips/core.hpp>
 
 namespace MIPS {
 
@@ -31,7 +32,39 @@ public:
 	 * \param params paramêtros da instrução assembly.
 	 * \return instrução 32 bits.
 	 */
-	instruction32_t encode(std::vector<char*>& params);
+	instruction32_t encode();
+
+protected:
+
+	/**
+	 * Opcode da instrução.
+	 */
+	bit8_t opcode;
+
+	/**
+	 * Registrador source.
+	 */
+	bit8_t rs;
+
+	/**
+	 * Registrador target
+	 */
+	bit8_t rt;
+
+	/**
+	 * Registrador destination
+	 */
+	bit8_t rd;
+
+	/**
+	 * Quantidade de shift (shift amount)
+	 */
+	bit8_t shamt;
+
+	/**
+	 * Código de função da instrução.
+	 */
+	bit8_t funct;
 
 };
 

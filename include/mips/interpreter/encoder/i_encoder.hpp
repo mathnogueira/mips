@@ -30,10 +30,32 @@ public:
 	/**
 	 * Codifica uma instrução assembly para uma instrução de 32 bits.
 	 *
-	 * \param params paramêtros da instrução assembly.
 	 * \return instrução 32 bits.
 	 */
-	instruction32_t encode(std::vector<char*>& params);
+	instruction32_t encode();
+
+
+protected:
+
+	/**
+	 * Opcode da instrução.
+	 */
+	bit8_t opcode;
+
+	/**
+	 * Registrador source.
+	 */
+	bit8_t rs;
+
+	/**
+	 * Registrador destination.
+	 */
+	bit8_t rd;
+
+	/**
+	 * Campo imediato da instrução.
+	 */
+	bit16_t imm;
 
 };
 

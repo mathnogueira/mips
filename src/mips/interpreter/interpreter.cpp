@@ -1,8 +1,8 @@
 #include <mips/interpreter/interpreter.hpp>
 #include <mips/interpreter/exception/interpreter_exception.hpp>
-#include <mips/interpreter/encoder/encoder_factory.hpp>
 #include <mips/interpreter/encoder/encoder.hpp>
-#include <mips/util/filter/space_filter.hpp>
+#include <mips/interpreter/parser/tokenizer.hpp>
+// #include <mips/util/filter/space_filter.hpp>
 #include <mips/core.hpp>
 #include <string>
 #include <cstring>
@@ -10,8 +10,8 @@
 using namespace MIPS;
 
 Interpreter::Interpreter(const char* file) {
-	SpaceFilter spaceFilter;
-	fileReader = new FileReader(file, spaceFilter);
+	// SpaceFilter spaceFilter;
+	fileReader = new FileReader(file);
 	errors = 0;
 }
 
@@ -19,33 +19,32 @@ Interpreter::~Interpreter() {
 	delete fileReader;
 }
 
-void Interpreter::process() {
+void Interpreter::processInput() {
 	char *line = NULL;
-	char *token = NULL;
+	Tokenizer tokenizer;
 	while (fileReader->hasNext()) {
 		std::vector<char*> tokens;
 		line = fileReader->next();
-		token = strtok(line, " ,");
-		while (token != NULL) {
-			if (strlen(token) > 0) {
-				tokens.push_back(token);
-			}
-			token = strtok(NULL, " ,");
-		}
+		tokenizer.tokenize(line, tokens);
 		lines.push_back(tokens);
 	}
-	// Substitui os labels pelo numero da linha
+	// Extraí todos os labels do código para que eles possam ser substituídos
+	// futuramente.
+	this->extractLabels();
+	// Troca todos os labels pelo número da linha utilizando uma unidade relativa
+	// Digamos:
+	// i  :	LOOP:
+	// i+1: 	addi $t0, $t0, 1
+	// i+2: 	j LOOP
+	// sendo i uma linha
+	// isso se tornaria
+	// i  : addi $t0, $t0, 1
+	// i+1: j -1
 	this->updateLabels();
-	try {
-		// Processa as linhas de assembly pra transformar em codigo de máquina.
-		this->convertToInstructions();
-	} catch (InterpreterException& e) {
-		++errors;
-		throw e;
-	}
+
 }
 
-void Interpreter::updateLabels() {
+void Interpreter::extractLabels() {
 	char* buffer, *endBuffer;
 	char labelBuffer[64];
 	unsigned long i = 0;
@@ -72,12 +71,24 @@ void Interpreter::updateLabels() {
 	}
 }
 
-void Interpreter::convertToInstructions() {
-	EncoderFactory factory(labels);
-	unsigned long size = lines.size();
-	for (unsigned long i = 0; i < size; ++i) {
-		char *operation = lines.at(i).at(0);
-		Encoder* encoder = factory.produce(operation);
-		instruction32_t instruction = encoder->encode(lines.at(i));
+void Interpreter::updateLabels() {
+	unsigned long i = 0;
+	char *param = NULL;
+	while (i < lines.size()) {
+		// Todas as instruções de assembly só têm labels no último parâmetro
+		// da instrução, então só devemos olhar o último parâmetro.
+		size_t numParams = lines.at(i).size();
+		param = lines.at(i).at(numParams - 1);
+		// Verifica se existe algum label
+		for (unsigned int j = 0; j < labels.size(); ++j) {
+			if (strcmp(param, labels.at(j).label) == 0) {
+				int position = labels.at(j).line - i;
+				char str[10];
+				sprintf(str, "%d", position);
+				lines.at(i).pop_back();
+				lines.at(i).push_back(str);
+			}
+		}
+		++i;
 	}
 }

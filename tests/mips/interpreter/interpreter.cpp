@@ -11,17 +11,12 @@ TEST(Interpreter, constructor) {
 
 TEST(Interpreter, process) {
 	Interpreter i("../tests/input/test_label.asm");
-	i.process();
+	i.processInput();
 	SUCCEED();
 }
 
-TEST(Interpreter, invalidInstruction) {
+TEST(Interpreter, input_errors) {
 	Interpreter i("../tests/input/teste_invalid.asm");
-	try {
-		i.process();
-	} catch (InterpreterException& e) {
-		ASSERT_STREQ("subi", e.what());
-	}
-	ASSERT_TRUE(i.ok() == false);
+	i.processInput();
 	SUCCEED();
 }

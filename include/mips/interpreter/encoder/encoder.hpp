@@ -36,12 +36,19 @@ public:
 	virtual ~Encoder() {}
 
 	/**
-	 * Codifica uma instrução escrita em ASCII para uma instrução de 32 bits.
+	 * Codifica a ultima instrução que foi analisada pelo parser do codificador.
 	 *
-	 * \param params parametros da instrução.s
 	 * \return instrução 32 bits.
 	 */
-	virtual instruction32_t encode(std::vector<char*>& params) = 0;
+	virtual instruction32_t encode() = 0;
+
+	/**
+	 * Percorre a instrução em assembly e extraí os dados dela para poder
+	 * montar uma instrução binária.
+	 *
+	 * \param params parametros da instrução.
+	 */
+	virtual void parse(std::vector<char*> &params) = 0;
 
 	/**
 	 * Retorna o tipo de codificador.

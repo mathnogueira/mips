@@ -2,6 +2,9 @@
 
 using namespace MIPS;
 
-instruction32_t JEncoder::encode(std::vector<char*>& params) {
-	return 0;
+instruction32_t JEncoder::encode() {
+	instruction32_t instruction = opcode;
+	instruction = instruction << 26;
+	instruction += address;
+	return instruction;
 }

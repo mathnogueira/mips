@@ -8,6 +8,7 @@
 #include <mips/core.hpp>
 #include <mips/interpreter/label.hpp>
 #include <mips/util/file_reader.hpp>
+#include <iostream>
 
 namespace MIPS {
 
@@ -34,9 +35,9 @@ public:
 	~Interpreter();
 
 	/**
-	 * Inicia o processo de interpretação do arquivo.
+	 * Processa o arquivo de entrada para que ele possa ser interpretado.
 	 */
-	void process();
+	void processInput();
 
 	/**
 	 * Checa se o interpretador encontrou algum erro durante a sua execução. Se sim,
@@ -71,16 +72,15 @@ private:
 	bit32_t errors;
 
 	/**
-	 * Atualiza os labels para que eles virem o numero da linha
-	 * do inicio do bloco do label.
+	 * Identifica todos os labels presentes no código e os marcam para ser utilizados
+	 * futuramente.
 	 */
-	void updateLabels();
+	void extractLabels();
 
 	/**
-	 * Processa todas as linhas de assembly e as transforma em instruções
-	 * 32 bits.
+	 * Remove todos os labels do código e os troca pela posição relativa do label.
 	 */
-	void convertToInstructions();
+	void updateLabels();
 
 };
 
