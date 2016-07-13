@@ -1,57 +1,122 @@
 cmake_minimum_required (VERSION 2.6)
 
-# Uncomment to enable Clang++ as compiler
-#SET (CMAKE_CXX_COMPILER             "/usr/bin/clang++")
+# Modulos utilizados por esse sistema de build
+# Os modulos se encontram na pasta cmake na raiz do projeto.
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
-#### Options available ####
-option(test "Building unit tests." OFF) # Unit testing option
-# C++11
-# set (CMAKE_CXX_STANDARD 11)
+#### Opções que podem ser ativadas pelo usuário em tempo de compilação ####
+# Para ativar os testes de unidade
+# -Dtest=ON
+# Padrão: Desativado
+option(test "Building unit tests." OFF)
 
-# Name of the project (same as executable name)
+# Para definir modo de debug
+# -Ddebug=ON
+# Padrão: Desativado
+option(debug "Buiding in debug mode" OFF)
+
+# Define se o GNU G++ será utilizado para compilar o código
+# -Dgnucompiler=ON
+# Padrão: Ativado
+option(gnucompiler "Building using GNU G++" ON)
+
+#### Configurações básicas do projeto ####
+# Nome do projeto
 set (PROJECT_NAME mips)
 
-# By default, the client will be built in debug mode
-# change Debug to Release if you want to build in release mode
-set (PROJECT_BUILD_TYPE Debug)
+# Tipo de build que será realizada
+# Por padrão, o programa é compilado para modo release, porém, caso -Ddebug=ON é especificado,
+# o modo de construção do programa é alterado para Debug
+set(PROJECT_BUILD_TYPE Release)
 
-# Libraries that are being used by the project.
-set (PROJECT_EXTERNAL_LIBS )
+# Desativa a cobertura de testes por padrao
+set (COVERAGE_TEST OFF)
 
-project (${PROJECT_NAME})
-set(CMAKE_BUILD_TYPE ${PROJECT_BUILD_TYPE})
-if (${PROJECT_BUILD_TYPE} EQUAL Debug)
-	SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pg")
-	SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pg")
-	SET(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -pg")
+# Bibliotecas que o programa utiliza como dependência
+# set (PROJECT_EXTERNAL_LIBS )
+
+#### Condições de configuração ####
+# Área que usa as opções do usuário para construir o programa corretamente.
+# Compilador que será utilizado
+if (gnucompiler)
+	SET (CMAKE_CXX_COMPILER				"/usr/bin/g++")
+	SET (CMAKE_COMPILER_IS_GNUCXX ON)
+else()
+	SET (CMAKE_CXX_COMPILER             "/usr/bin/clang++")
+	MESSAGE(WARNING "TEST COVERAGE NOT SUPPORTED BY CLANG, DESABLING IT")
 endif()
 
-# Configuration for the project
-# Set include directory
-include_directories(include)
+# Ativa o modo de debug para a construção do programa
+if (debug)
+	MESSAGE (WARNING "DEBUG MODE ENABLED.")
+	# Muda o tipo de build do programa
+	set (PROJECT_BUILD_TYPE Debug)
+	# Ativa a cobertura de testes
+	# Ainda será incorporado ao build system
+	# TODO: Consertar falha com CMP0037 no target do cmake
+	# set (COVERAGE_TEST ON)
+	# Define as flags de debug do compilador
+	set (CMAKE_CXX_FLAGS "-g -O0 -Wall -pg -fprofile-arcs -ftest-coverage")
+endif()
 
-# Get all the source files from the src directory, excluding the main
-file (GLOB_RECURSE SOURCES src/mips/*.cpp)
-# Create library using the source code
-add_library(mips_lib ${SOURCES})
-
-### GTEST UNIT TESTING ###
+# Ativa a construção dos testes de unidade do programa
 if (test)
+	# define a pasta do gtest
     set (GTEST_DIR libs/gtest)
+	# Procura todos os arquivos de teste do programa
     file (GLOB_RECURSE TESTS tests/*.cpp)
-    # add_executable (${PROJECT_NAME} ${TESTS})
+	# Faz a mágica:
+	# Pega todos os testes de unidade, compila todos os arquivos e os linka
+	# com a biblioteca que será criada com o código fonte do programa.
     ADD_SUBDIRECTORY(${GTEST_DIR})
     enable_testing()
     include_directories(${GTEST_DIR}/include ${GTEST_DIR})
     add_executable(${PROJECT_NAME}_test ${TESTS})
     TARGET_LINK_LIBRARIES (${PROJECT_NAME}_test gtest gtest_main mips_lib)
 endif()
+
+
+# Configuração do projeto em si
+# Nessa área, o cmake irá utilizar todas as configurações utilizadas previamente para
+# montar o makefile
+#
+# ============================ VOCÊ NÃO PRECISA ALTERAR DAQUI PARA BAIXO ==========================
+#
+
+# Define o nome do projeto
+project (${PROJECT_NAME})
+
+# Define o tipo de build
+set(CMAKE_BUILD_TYPE ${PROJECT_BUILD_TYPE})
+
+# Inclui a pasta "include" como local para se procurar arquivos de cabeçalho
+# do programa.
+include_directories(include)
+
+# Procura todos os arquivos com extensão cpp para ser compilados e gerar
+# os arquivos objeto.
+file (GLOB_RECURSE SOURCES src/mips/*.cpp)
+
+# Cria uma biblioteca para ser linkada ao programa real, dessa forma, fica mais
+# simples de executar os testes de unidade, se eles existirem.
+add_library(mips_lib ${SOURCES})
+
+# Cria um executável para o projeto
+# Esse executável só será o arquivo main, pois o restante do programa já foi
+# compilado previamente, e foi gerado uma biblioteca com suas funções.
 add_executable (${PROJECT_NAME} src/main.cpp)
-# Add libraries to be linked
+
+# Linka o programa main com a biblioteca previamente gerada com o restante dos
+# arquivos fonte.
 TARGET_LINK_LIBRARIES (${PROJECT_NAME} ${PROJECT_EXTERNAL_LIBS} mips_lib)
 
-#### Variables defining
+if (COVERAGE_TEST)
+	# Ativa a cobertura de testes
+	INCLUDE(CodeCoverage)
+	SETUP_TARGET_FOR_COVERAGE(coverage, mips_test, coverage)
+endif()
+
+##### DEFINIÇÂO DAS VARIAVEIS DO CMAKE #####
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-####
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
