@@ -1,3 +1,8 @@
+# MIPS 32 bits Emulator - 2016
+# Matheus Nogueira	<mnogueir@lakeheadu.ca>
+#
+#
+
 cmake_minimum_required (VERSION 2.6)
 
 # Modulos utilizados por esse sistema de build

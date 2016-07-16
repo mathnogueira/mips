@@ -2,7 +2,6 @@
 #include <mips/interpreter/exception/interpreter_exception.hpp>
 #include <mips/interpreter/encoder/encoder.hpp>
 #include <mips/interpreter/parser/tokenizer.hpp>
-// #include <mips/util/filter/space_filter.hpp>
 #include <mips/core.hpp>
 #include <string>
 #include <cstring>
