@@ -36,12 +36,24 @@ public:
                         Register *rd,
                         Register *rt,
                         bit8_t shamt,
-                        bit8_t funct);
+                        bit8_t funct) {
+		this->opcode = opcode;
+		this->rs = rs;
+		this->rd = rd;
+		this->rt = rt;
+		this->shamt = shamt;
+		this->funct = funct;
+	}
 
     /**
      * Destroi a instrução.
      */
      virtual ~RegisterInstruction();
+
+	 /**
+	  * Executa a instrução
+	  */
+	 virtual void execute();
 
 protected:
 
