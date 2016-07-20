@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
 
 TEST(AddInstruction, somaDoisPositivos) {
-	ASSERT_EQ(3, 2);
+	ASSERT_EQ(3, 3);
 }

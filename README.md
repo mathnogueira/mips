@@ -38,3 +38,20 @@ $ ./mips
 $ cmake -Dtest=ON .. && make
 $ ./mips_test
 ```
+
+## Usando o git
+
+Para começar a colaborar com o projeto, crie sua branch no projeto. Para isso, abra o terminal
+e digite:
+
+```shell
+$ git checkout -b branch-SEUNOME
+```
+
+Para subir alterações do seu código no github, digite na pasta raíz do projeto:
+
+```shell
+$ git add .
+$ git commit -m "Uma mensagem do que você fez"
+$ git push origin branch-SEUNOME
+```
