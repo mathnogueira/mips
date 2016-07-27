@@ -20,6 +20,11 @@ class FullAdder {
 public:
 
 	/**
+	 * Cria um novo somador.
+	 */
+	FullAdder();
+
+	/**
 	 * Soma dois números de 16 bits.
 	 *
 	 * @param a primeiro parametro da soma

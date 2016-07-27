@@ -3,6 +3,10 @@
 
 using namespace MIPS;
 
+FullAdder::FullAdder() {
+	this->flagOverflow = false;
+}
+
 /**
  * Soma dois números de 16 bits.
  *
@@ -25,7 +29,8 @@ bit16_t FullAdder::add(bit16_t a, bit16_t b, bit8_t c) {
 		carry = (aBit & bBit) | ((aBit ^ bBit) & carry);
 		result += sum << bit;
 	}
-
+	if ((a >= 0 && b >= 0 && result < 0) || (a < 0 && b < 0 && result >= 0))
+		flagOverflow = true;
 	return result;
 }
 

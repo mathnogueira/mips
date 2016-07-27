@@ -25,11 +25,11 @@ TEST(FullAdder, sumPositiveNegative) {
 
 TEST(FullAdder, sumPositiveOverflow) {
 	FullAdder adder;
-	bit16_t a = 65535;
+	bit16_t a = 32767;
 	bit16_t b = 1;
 
 	bit16_t result = adder.add(a, b);
-	ASSERT_EQ(result, 0);
+	ASSERT_EQ(result, -32768);
 	ASSERT_TRUE(adder.overflow());
 }
 
