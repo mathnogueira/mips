@@ -2,6 +2,7 @@
  * \file full_adder.hpp
  *
  * Somador de 16 bits.
+ * Referencia: http://isweb.redwoods.edu/instruct/calderwoodd/diglogic/full.htm
  */
 #pragma once
 
