@@ -30,7 +30,7 @@ const bit8_t iInstructions[] = {
  * Mapa das instruções do tipo J.
  */
 const bit8_t jInstructions[] = {
-    200
+    120
 };
 
 inline bool Instruction_isR(bit8_t instruction) {
