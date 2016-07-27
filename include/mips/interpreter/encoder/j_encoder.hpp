@@ -44,7 +44,7 @@ protected:
 	/**
 	 * Pseudo-endereço para onde o contador de programa deve ser transferido.
 	 */
-	bit32_t address;
+	bit16_t address;
 
 };
 

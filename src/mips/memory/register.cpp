@@ -10,12 +10,12 @@ Register::Register(const char* name, bool protect) {
 
 Register::~Register() {}
 
-void Register::put(bit32_t value) {
+void Register::put(bit16_t value) {
 	if (this->isProtected == false)
 		this->content = value;
 }
 
-bit32_t Register::get() {
+bit16_t Register::get() {
 	return this->content;
 }
 
