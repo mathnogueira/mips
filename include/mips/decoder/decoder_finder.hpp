@@ -38,7 +38,7 @@ public:
      * \param instruction instrução a ser decodificada.
      * \return instrução decodificada.
      */
-    Instruction *decode(instruction32_t instruction);
+    Instruction *decode(instruction_t instruction);
 
 protected:
 
@@ -49,7 +49,7 @@ protected:
      * \param instruction instrução que deve ser decodificada.
      * \return decodificador adequado para a instrução.
      */
-    static InstructionDecoder *find(instruction32_t instruction);
+    static InstructionDecoder *find(instruction_t instruction);
 
 private:
 
@@ -59,7 +59,7 @@ private:
      * \param instruction instrução 32 bits
      * \return opcode da instrução.
      */
-    static bit8_t getOPCode(instruction32_t instruction) {
+    static bit8_t getOPCode(instruction_t instruction) {
         return instruction >>= 26;
     }
 

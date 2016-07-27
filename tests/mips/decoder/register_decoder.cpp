@@ -7,7 +7,7 @@
 using namespace MIPS;
 
 TEST(register_decoder, getOpCode) {
-    instruction32_t instruction = 0xac000000;
+    instruction_t instruction = 0xac000000;
     RegisterInstructionDecoder decoder;
     RegisterInstruction *emu_instruction = (RegisterInstruction*) decoder.decode(instruction);
 }

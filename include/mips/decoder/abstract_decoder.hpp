@@ -39,7 +39,7 @@ public:
      * \param instruction instrução 32 bits em binário.
      * \return ponteiro para a instrução criada pelo emulador.
      */
-    virtual Instruction *decode(instruction32_t instruction);
+    virtual Instruction *decode(instruction_t instruction);
 
 protected:
 
@@ -55,7 +55,7 @@ protected:
      * \param instruction instrução de onde o opcode deve ser extraído.
      * \return opcode da instrução.
      */
-    bit8_t getOPCode(instruction32_t instruction);
+    bit8_t getOPCode(instruction_t instruction);
 
 };
 

@@ -8,12 +8,12 @@ DecoderFinder::DecoderFinder() {}
 
 DecoderFinder::~DecoderFinder() {}
 
-Instruction* DecoderFinder::decode(instruction32_t instruction) {
+Instruction* DecoderFinder::decode(instruction_t instruction) {
     InstructionDecoder* decoder = find(instruction);
     return NULL;
 }
 
-InstructionDecoder* DecoderFinder::find(instruction32_t instruction) {
+InstructionDecoder* DecoderFinder::find(instruction_t instruction) {
     bit8_t opcode = getOPCode(instruction);
     InstructionDecoder* decoder = NULL;
     if (Instruction_isR(opcode)) {
