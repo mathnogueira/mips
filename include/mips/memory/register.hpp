@@ -43,14 +43,14 @@ public:
 	 *
 	 * \param value valor 32 bits que será armazenado no registrador.
 	 */
-	void put(bit32_t value);
+	void put(bit16_t value);
 
 	/**
 	 * Pega o valor 32 bits armazenado no registrador.
 	 *
 	 * \return valor armazenado no registrador.
 	 */
-	bit32_t get();
+	bit16_t get();
 
 	/**
 	 * Retorna o nome do registrador.
@@ -69,7 +69,7 @@ private:
     /**
      * Conteúdo do registrador.
      */
-    bit32_t content;
+    bit16_t content;
 
 	/**
 	 * Indica se o registrador é protegido contra escrita.

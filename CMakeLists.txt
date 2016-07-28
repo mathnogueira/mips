@@ -18,7 +18,7 @@ option(test "Building unit tests." OFF)
 # Para definir modo de debug
 # -Ddebug=ON
 # Padrão: Desativado
-option(debug "Buiding in debug mode" OFF)
+option(debug "Buiding in debug mode" ON)
 
 # Define se o GNU G++ será utilizado para compilar o código
 # -Dgnucompiler=ON

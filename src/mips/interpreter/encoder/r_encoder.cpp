@@ -2,6 +2,6 @@
 
 using namespace MIPS;
 
-instruction32_t REncoder::encode() {
+instruction_t REncoder::encode() {
 	return 0;
 }

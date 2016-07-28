@@ -40,7 +40,7 @@ public:
 	 *
 	 * \return instrução 32 bits.
 	 */
-	virtual instruction32_t encode() = 0;
+	virtual instruction_t encode() = 0;
 
 	/**
 	 * Percorre a instrução em assembly e extraí os dados dela para poder

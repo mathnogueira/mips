@@ -37,7 +37,7 @@ public:
      * \param instruction instrução a ser decodificada.
      * \return instrução equivalente do emulador.
      */
-    Instruction *decode(instruction32_t instruction);
+    Instruction *decode(instruction_t instruction);
 
 protected:
 
@@ -48,7 +48,7 @@ protected:
      * \param instruction instrução binária de 32 bits.
      * \return endereço do registrador source.
      */
-    bit8_t getRs(instruction32_t instruction);
+    bit8_t getRs(instruction_t instruction);
 
     /**
      * Função que recupera o endereço do registrador target (Rt)
@@ -57,7 +57,7 @@ protected:
      * \param instruction instrução binária de 32 bits.
      * \return endereço do registrador target.
      */
-    bit8_t getRt(instruction32_t instruction);
+    bit8_t getRt(instruction_t instruction);
 
     /**
      * Função que recupera o endereço do registrador destination (Rd)
@@ -66,7 +66,7 @@ protected:
      * \param instruction instrução binária de 32 bits.
      * \return endereço do registrador destination.
      */
-    bit8_t getRd(instruction32_t instruction);
+    bit8_t getRd(instruction_t instruction);
 
     /**
      * Função que recupera o valor do shamt (shift amount) da instrução.
@@ -74,7 +74,7 @@ protected:
      * \param instruction instrução binária de 32 bits.
      * \return quantidade de shift da instrução.
      */
-    bit8_t getShamt(instruction32_t instruction);
+    bit8_t getShamt(instruction_t instruction);
 
     /**
      * Função que recupera o valor do funct da instrução.
@@ -82,7 +82,7 @@ protected:
      * \param instruction instrução binária de 32 bits.
      * \return valor do funct
      */
-    bit8_t getFunct(instruction32_t instruction);
+    bit8_t getFunct(instruction_t instruction);
 
 };
 

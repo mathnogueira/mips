@@ -2,6 +2,6 @@
 
 using namespace MIPS;
 
-instruction32_t IEncoder::encode() {
+instruction_t IEncoder::encode() {
 	return 0;
 }

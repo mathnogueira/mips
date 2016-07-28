@@ -32,7 +32,7 @@ public:
 	 * \param params paramêtros da instrução assembly.
 	 * \return instrução 32 bits.
 	 */
-	instruction32_t encode();
+	instruction_t encode();
 
 protected:
 

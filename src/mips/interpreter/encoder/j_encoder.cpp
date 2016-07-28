@@ -2,8 +2,8 @@
 
 using namespace MIPS;
 
-instruction32_t JEncoder::encode() {
-	instruction32_t instruction = opcode;
+instruction_t JEncoder::encode() {
+	instruction_t instruction = opcode;
 	instruction = instruction << 26;
 	instruction += address;
 	return instruction;

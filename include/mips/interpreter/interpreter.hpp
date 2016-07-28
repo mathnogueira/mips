@@ -69,7 +69,7 @@ private:
 	/**
 	 * Numero de erros que ocorreram durante o processo de interpretação.
 	 */
-	bit32_t errors;
+	bit16_t errors;
 
 	/**
 	 * Identifica todos os labels presentes no código e os marcam para ser utilizados

@@ -27,6 +27,6 @@ typedef int bit32_t;
 /**
  * Tipo que representa uma instrução de 32 bits.
  */
-typedef bit32_t instruction32_t;
+typedef bit16_t instruction_t;
 
 }
