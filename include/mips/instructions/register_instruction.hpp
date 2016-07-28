@@ -32,8 +32,8 @@ public:
      */
     RegisterInstruction(bit8_t opcode,
                         Register *rs,
-                        Register *rd,
                         Register *rt,
+						Register *rd,
                         bit8_t shamt,
                         bit8_t funct) {
 		this->opcode = opcode;
