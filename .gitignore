@@ -1,4 +1,5 @@
 build/
+docs/
 
 # Compiled Object files
 *.slo

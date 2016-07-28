@@ -27,10 +27,10 @@ public:
  	REncoder(std::vector<Label>& labels) : Encoder(labels, "R") {}
 
 	/**
-	 * Codifica uma instrução assembly para uma instrução de 32 bits.
+	 * Codifica uma instrução assembly para uma instrução de 16 bits.
 	 *
 	 * \param params paramêtros da instrução assembly.
-	 * \return instrução 32 bits.
+	 * \return instrução 16 bits.
 	 */
 	instruction_t encode();
 

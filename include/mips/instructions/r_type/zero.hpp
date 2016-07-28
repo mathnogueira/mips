@@ -1,7 +1,7 @@
 /**
- * \file nand.hpp
+ * \file zero.hpp
  *
- * Declaração da instrução de NAND.
+ * Declaração da instrução de ZERO.
  */
 #pragma once
 
@@ -10,18 +10,18 @@
 namespace MIPS {
 
 /**
- * Classe que faz a operação de NAND no processador.
+ * Classe que faz a operação de ZERO no processador.
  *
- * \author Matheus Nogueira
+ * \author Felipe Dias
  */
-class NandInstruction : public RegisterInstruction {
+class ZeroInstruction : public RegisterInstruction {
 
 public:
 
 	/**
 	 * Constroi uma nova instrução.
 	 */
-	 NandInstruction(bit8_t opcode,
+	 ZeroInstruction(bit8_t opcode,
                          Register *rs,
                          Register *rt,
 						 Register *rd,

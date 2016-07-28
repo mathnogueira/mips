@@ -2,7 +2,7 @@
  * \file decoder_finder.hpp
  *
  * Arquivo que contém uma classe responsável por encontrar o decodificador
- * adequado para uma instrução do MIPS 32 bits.
+ * adequado para uma instrução do MIPS 16 bits.
  *
  */
 #pragma once
@@ -14,7 +14,7 @@ namespace MIPS {
 
 /**
  * Classe responsável por encontrar os decodificadores responsáveis por
- * decodificar uma determinada instrução 32 bits.
+ * decodificar uma determinada instrução 16 bits.
  *
  * \author Matheus Nogueira
  */
@@ -44,7 +44,7 @@ protected:
 
     /**
      * Retorna o decodificador adequado para a decodificação de uma instrução
-     * 32 bits para a arquitetura do MIPS.
+     * 16 bits para a arquitetura do MIPS.
      *
      * \param instruction instrução que deve ser decodificada.
      * \return decodificador adequado para a instrução.
@@ -56,7 +56,7 @@ private:
     /**
      * Recupera o opcode da instrução.
      *
-     * \param instruction instrução 32 bits
+     * \param instruction instrução 16 bits
      * \return opcode da instrução.
      */
     static bit8_t getOPCode(instruction_t instruction) {

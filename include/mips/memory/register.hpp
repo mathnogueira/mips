@@ -10,7 +10,7 @@
 namespace MIPS {
 
 /**
- * Classe que representa um registrador de 32 bits.
+ * Classe que representa um registrador de 16 bits.
  *
  * \author Matheus Nogueira
  */
@@ -41,12 +41,12 @@ public:
 	/**
 	 * Define um valor que o registrador irá guardar.
 	 *
-	 * \param value valor 32 bits que será armazenado no registrador.
+	 * \param value valor 16 bits que será armazenado no registrador.
 	 */
 	void put(bit16_t value);
 
 	/**
-	 * Pega o valor 32 bits armazenado no registrador.
+	 * Pega o valor 16 bits armazenado no registrador.
 	 *
 	 * \return valor armazenado no registrador.
 	 */

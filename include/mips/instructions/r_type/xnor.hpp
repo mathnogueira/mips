@@ -1,7 +1,7 @@
 /**
- * \file nand.hpp
+ * \file xnor.hpp
  *
- * Declaração da instrução de NAND.
+ * Declaração da instrução de XNOR.
  */
 #pragma once
 
@@ -10,18 +10,18 @@
 namespace MIPS {
 
 /**
- * Classe que faz a operação de NAND no processador.
+ * Classe que faz a operação de XNOR no processador.
  *
  * \author Matheus Nogueira
  */
-class NandInstruction : public RegisterInstruction {
+class XnorInstruction : public RegisterInstruction {
 
 public:
 
 	/**
 	 * Constroi uma nova instrução.
 	 */
-	 NandInstruction(bit8_t opcode,
+	 XnorInstruction(bit8_t opcode,
                          Register *rs,
                          Register *rt,
 						 Register *rd,

@@ -2,7 +2,7 @@
  * \file decoder.hpp
  *
  * Arquivo contendo um decodificador de instruções para a arquitetura MIPS de
- * 32 bits.
+ * 16 bits.
  *
  */
 #pragma once
@@ -36,7 +36,7 @@ public:
      * Decodifica uma instrução em binário e cria uma instrução do emulador
      * que realize a operação equivalente.
      *
-     * \param instruction instrução 32 bits em binário.
+     * \param instruction instrução 16 bits em binário.
      * \return ponteiro para a instrução criada pelo emulador.
      */
     virtual Instruction *decode(instruction_t instruction);
