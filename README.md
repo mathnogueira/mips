@@ -115,5 +115,5 @@ $ git push origin branch-SEUNOME
 ### Tipo 7
 | Instrução | Funct | Rd | OP    | Rs | Rt |
 |-----------|-------|----|-------|----|----|
-| load      | 01    | RD | 10100 | Rs | Rt |
-| save      | 01    | RD | 10110 | Rs | Rt |
+| load      | 01    | RD | 10100 | RS | RT |
+| save      | 01    | RD | 10110 | RS | RT |
