@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <mips/instructions/r_type/zero.hpp>
+#include <mips/instructions/format_I/zero.hpp>
 #include <mips/memory/register.hpp>
 
 using namespace MIPS;

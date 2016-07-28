@@ -5,7 +5,7 @@
  */
 #pragma once
 
-#include <mips/instructions/register_instruction.hpp>
+#include <mips/instructions/instruction_I.hpp>
 
 namespace MIPS {
 
@@ -14,7 +14,7 @@ namespace MIPS {
  *
  * \author Debora Rossini
  */
-class AddInstruction : public RegisterInstruction {
+class AddInstruction : public InstructionI {
 
 public:
 	/**

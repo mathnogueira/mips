@@ -17,19 +17,19 @@ namespace MIPS {
  *
  * \author Matheus Nogueira
  */
-class RegisterInstructionDecoder : public InstructionDecoder {
+class InstructionIDecoder : public InstructionDecoder {
 
 public:
 
     /**
      * Cria um novo decodificador de instruções register.
      */
-    RegisterInstructionDecoder();
+    InstructionIDecoder();
 
     /**
      * Destroi o decodificador.
      */
-    ~RegisterInstructionDecoder();
+    ~InstructionIDecoder();
 
     /**
      * Decodifica uma instrução de 16 bits no formato de uma instrução do tipo R.

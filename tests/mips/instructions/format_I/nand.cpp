@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <mips/instructions/r_type/nand.hpp>
+#include <mips/instructions/format_I/nand.hpp>
 
 using namespace MIPS;
 

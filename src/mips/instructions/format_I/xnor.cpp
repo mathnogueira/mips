@@ -1,4 +1,4 @@
-#include <mips/instructions/r_type/xnor.hpp>
+#include <mips/instructions/format_I/xnor.hpp>
 
 using namespace MIPS;
 

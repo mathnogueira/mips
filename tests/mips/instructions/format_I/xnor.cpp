@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <mips/instructions/r_type/xnor.hpp>
+#include <mips/instructions/format_I/xnor.hpp>
 #include <mips/memory/register.hpp>
 
 using namespace MIPS;
