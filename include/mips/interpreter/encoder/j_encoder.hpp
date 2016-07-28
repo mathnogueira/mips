@@ -27,9 +27,9 @@ public:
  	JEncoder(std::vector<Label>& labels) : Encoder(labels, "J") {}
 
 	/**
-	 * Codifica uma instrução assembly para uma instrução de 32 bits.
+	 * Codifica uma instrução assembly para uma instrução de 16 bits.
 	 *
-	 * \return instrução 32 bits.
+	 * \return instrução 16 bits.
 	 */
 	instruction_t encode();
 

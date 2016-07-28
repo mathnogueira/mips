@@ -16,7 +16,7 @@ Instruction* RegisterInstructionDecoder::decode(instruction_t instruction) {
  * Função que recupera o endereço do registrador source (Rs)
  * da instrução.
  *
- * \param instruction instrução binária de 32 bits.
+ * \param instruction instrução binária de 16 bits.
  * \return endereço do registrador source.
  */
 bit8_t RegisterInstructionDecoder::getRs(instruction_t instruction) {
@@ -28,7 +28,7 @@ bit8_t RegisterInstructionDecoder::getRs(instruction_t instruction) {
  * Função que recupera o endereço do registrador target (Rt)
  * da instrução.
  *
- * \param instruction instrução binária de 32 bits.
+ * \param instruction instrução binária de 16 bits.
  * \return endereço do registrador target.
  */
 bit8_t RegisterInstructionDecoder::getRt(instruction_t instruction) {
@@ -39,7 +39,7 @@ bit8_t RegisterInstructionDecoder::getRt(instruction_t instruction) {
  * Função que recupera o endereço do registrador destination (Rd)
  * da instrução.
  *
- * \param instruction instrução binária de 32 bits.
+ * \param instruction instrução binária de 16 bits.
  * \return endereço do registrador destination.
  */
 bit8_t RegisterInstructionDecoder::getRd(instruction_t instruction) {
@@ -49,7 +49,7 @@ bit8_t RegisterInstructionDecoder::getRd(instruction_t instruction) {
 /**
  * Função que recupera o valor do shamt (shift amount) da instrução.
  *
- * \param instruction instrução binária de 32 bits.
+ * \param instruction instrução binária de 16 bits.
  * \return quantidade de shift da instrução.
  */
 bit8_t RegisterInstructionDecoder::getShamt(instruction_t instruction) {
@@ -59,7 +59,7 @@ bit8_t RegisterInstructionDecoder::getShamt(instruction_t instruction) {
 /**
  * Função que recupera o valor do funct da instrução.
  *
- * \param instruction instrução binária de 32 bits.
+ * \param instruction instrução binária de 16 bits.
  * \return valor do funct
  */
 bit8_t RegisterInstructionDecoder::getFunct(instruction_t instruction) {

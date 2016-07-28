@@ -413,7 +413,7 @@ TEST(FormatTimeInMillisAsSecondsTest, FormatsNegativeNumber) {
 class FormatEpochTimeInMillisAsIso8601Test : public Test {
  public:
   // On Cygwin, GCC doesn't allow unqualified integer literals to exceed
-  // 32 bits, even when 64-bit integer types are available.  We have to
+  // 16 bits, even when 64-bit integer types are available.  We have to
   // force the constants to have a 64-bit type here.
   static const TimeInMillis kMillisPerSec = 1000;
 

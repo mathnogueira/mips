@@ -20,12 +20,12 @@ typedef char bit8_t;
 typedef short bit16_t;
 
 /**
- * Tipo que representa um inteiro de 32 bits.
+ * Tipo que representa um inteiro de 16 bits.
  */
 typedef int bit32_t;
 
 /**
- * Tipo que representa uma instrução de 32 bits.
+ * Tipo que representa uma instrução de 16 bits.
  */
 typedef bit16_t instruction_t;
 

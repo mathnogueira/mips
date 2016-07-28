@@ -1,4 +1,4 @@
-# MIPS 32 bits Emulator - 2016
+# MIPS 16 bits Emulator - 2016
 # Matheus Nogueira	<mnogueir@lakeheadu.ca>
 #
 #

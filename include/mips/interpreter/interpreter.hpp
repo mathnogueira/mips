@@ -13,7 +13,7 @@
 namespace MIPS {
 
 /**
- * Classe responsável por receber um texto e criar instruções 32 bits correspondentes
+ * Classe responsável por receber um texto e criar instruções 16 bits correspondentes
  * para a arquitetura MIPS 32.
  *
  * \author Matheus Nogueira

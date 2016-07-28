@@ -1,7 +1,7 @@
 /**
  * \file encoder.hpp
  *
- * Arquivo contendo um codificador genérico para instruções MIPS 32 bits.
+ * Arquivo contendo um codificador genérico para instruções MIPS 16 bits.
  */
 #pragma once
 
@@ -38,7 +38,7 @@ public:
 	/**
 	 * Codifica a ultima instrução que foi analisada pelo parser do codificador.
 	 *
-	 * \return instrução 32 bits.
+	 * \return instrução 16 bits.
 	 */
 	virtual instruction_t encode() = 0;
 

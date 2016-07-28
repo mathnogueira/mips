@@ -2,7 +2,7 @@
  * \file instruction.hpp
  *
  * Arquivo contendo a estrutura abstrata que representa uma instrução qualquer
- * em uma arquitetura de 32 bits.
+ * em uma arquitetura de 16 bits.
  *
  */
 #pragma once
@@ -13,7 +13,7 @@ namespace MIPS {
 
 /**
  * Classe abstrata responsável por representar qualquer instrução em uma
- * arquitetura de 32 bits.
+ * arquitetura de 16 bits.
  *
  * \author Matheus Nogueira
  */
