@@ -1,7 +1,7 @@
 /**
- * \file nand.hpp
+ * \file passa.hpp
  *
- * Declaração da instrução de NAND.
+ * Declaração da instrução de PASSA.
  */
 #pragma once
 
@@ -10,21 +10,21 @@
 namespace MIPS {
 
 /**
- * Classe que faz a operação de NAND no processador.
+ * Classe que faz a operação de PASSA no processador.
  *
  * \author Matheus Nogueira
  */
-class NandInstruction : public RegisterInstruction {
+class PassaInstruction : public RegisterInstruction {
 
 public:
 
 	/**
 	 * Constroi uma nova instrução.
 	 */
-	 NandInstruction(bit8_t opcode,
+	 PassaInstruction(bit8_t opcode,
                          Register *rs,
-                         Register *rd,
                          Register *rt,
+						 Register *rd,
                          bit8_t shamt,
                          bit8_t funct)
 	: RegisterInstruction(opcode, rs, rt, rd, shamt, funct) {}

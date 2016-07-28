@@ -7,6 +7,8 @@
  */
 #pragma once
 
+#include <mips/core.hpp>
+
 namespace MIPS {
 
 /**
