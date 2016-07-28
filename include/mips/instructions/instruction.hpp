@@ -22,7 +22,7 @@ public:
     /**
      * Destroi a instrução.
      */
-    virtual ~Instruction();
+    ~Instruction() {}
 
     /**
      * Método abstrato que deverá ser invocado para que uma instrução seja

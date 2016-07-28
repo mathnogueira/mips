@@ -7,8 +7,7 @@
 
 #include <mips/core.hpp>
 #include <mips/instructions/instruction.hpp>
-
-class Register;
+#include <mips/memory/register.hpp>
 
 namespace MIPS {
 
@@ -48,12 +47,12 @@ public:
     /**
      * Destroi a instrução.
      */
-     virtual ~RegisterInstruction();
+     virtual ~RegisterInstruction() {}
 
 	 /**
 	  * Executa a instrução
 	  */
-	 virtual void execute();
+	 virtual void execute() = 0;
 
 protected:
 
