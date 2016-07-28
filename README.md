@@ -93,7 +93,7 @@ $ git push origin branch-SEUNOME
 
 ### Tipo 3
 | Instrução | Funct | Rd | R   | Offset8  | Status |
-| ---------:|:-----:|:--:|:---:|:--------:|:------:|
+|:---------:|:-----:|:--:|:---:|:--------:|:------:|
 | lcl       | 11    | RD | bit | 00000000 |        |
 
 ### Tipo 4
