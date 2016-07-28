@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
-#include <mips/instructions/r_type/andnota.hpp>
+#include <mips/instructions/format_I/andnota.hpp>
+#include <mips/memory/register.hpp>
 
 using namespace MIPS;
 

@@ -1,4 +1,4 @@
-#include <mips/instructions/r_type/andnota.hpp>
+#include <mips/instructions/format_I/andnota.hpp>
 
 using namespace MIPS;
 

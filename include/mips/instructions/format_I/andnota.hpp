@@ -5,7 +5,7 @@
  */
 #pragma once
 
-#include <mips/instructions/register_instruction.hpp>
+#include <mips/instructions/instruction_I.hpp>
 
 namespace MIPS {
 
@@ -14,7 +14,7 @@ namespace MIPS {
  *
  * \author Lucas Pereira
  */
-class AndnotaInstruction : public RegisterInstruction {
+class AndnotaInstruction : public InstructionI {
 
 public:
 
@@ -27,7 +27,7 @@ public:
 						 Register *rd,
                          bit8_t shamt,
                          bit8_t funct)
-	: RegisterInstruction(opcode, rs, rt, rd, shamt, funct) {}
+	: InstructionI(opcode, rs, rt, rd, shamt, funct) {}
 
 	/**
 	 * Função que executa a operação de AndnotaInstruction.
