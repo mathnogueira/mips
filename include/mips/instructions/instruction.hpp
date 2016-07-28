@@ -38,6 +38,26 @@ protected:
      * Código da operação (opcode) da instrução.
      */
     bit8_t opcode;
+
+	/**
+	 * Flag de zero.
+	 */
+	bit8_t zero;
+
+	/**
+	 * Flag de negativo
+	 */
+	bit8_t neg;
+
+	/**
+	 * Flag de carry.
+	 */
+	bit8_t carry;
+
+	/**
+	 * flag de overflow
+	 */
+	bit8_t overflow;
 };
 
 }; // namespace

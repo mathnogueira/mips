@@ -46,7 +46,7 @@ public:
 	void put(bit16_t value);
 
 	/**
-	 * Pega o valor 32 bits armazenado no registrador.
+	 * Pega o valor 16 bits armazenado no registrador.
 	 *
 	 * \return valor armazenado no registrador.
 	 */

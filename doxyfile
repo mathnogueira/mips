@@ -1,0 +1,4 @@
+PROJECT_NAME = MIPS 16 bits
+OUTPUT_DIRECTORY = docs
+INPUT = include/mips
+RECURSIVE = yes
