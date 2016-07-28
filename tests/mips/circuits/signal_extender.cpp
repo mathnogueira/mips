@@ -12,5 +12,5 @@ TEST(SignalExtender, positiveNumber) {
 TEST(SignalExtender, negativeNumber) {
 	bit8_t n = -120;
 	bit16_t extended = SignalExtender::extend(n);
-	ASSERT_EQ(extended, -376);
+	ASSERT_EQ(extended, -120);
 }

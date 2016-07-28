@@ -12,17 +12,17 @@ namespace MIPS {
 /**
  * Tipo que representa um inteiro de 8 bits.
  */
-typedef char bit8_t;
+typedef signed char bit8_t;
 
 /**
  * Tipo que representa um inteiro de 16 bits.
  */
-typedef short bit16_t;
+typedef signed short bit16_t;
 
 /**
  * Tipo que representa um inteiro de 16 bits.
  */
-typedef int bit32_t;
+typedef signed int bit32_t;
 
 /**
  * Tipo que representa uma instrução de 16 bits.
