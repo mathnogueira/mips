@@ -97,11 +97,13 @@ $ git push origin branch-SEUNOME
 
 ### Tipo 4
 | Instrução | Funct | OP | Cond   | Offset8  |
+|-----------|-------|----|--------|----------|
 | jf.cond   | 00    | 00 | 0000   | 00000000 |
 | jt.cond   | 01    | 00 | 0000   | 00000000 |
 
 ### Tipo 5
 | Instrução | Funct | OP | Offset12      |
+|-----------|-------|----|---------------|
 | j         | 00    | 00 | 000000000000  |
 
 ### Tipo 6
