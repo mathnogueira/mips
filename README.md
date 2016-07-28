@@ -86,22 +86,32 @@ $ git push origin branch-SEUNOME
 | xor       | 01    | rd | 00110  | rs | rt |
 
 ### Tipo 2
-- loadlit
+| Instrução | Rd | Offset11     |
+|-----------|----|--------------|
+| loadlit   | rd | 00000000000  |
 
 ### Tipo 3
-- lcl
+| Instrução | Funct | Rd | R   | Offset8  |
+| ----------|-------|----|-----|----------|
+| lcl       | 11    | rd | bit | 00000000 |
 
 ### Tipo 4
-- jf.cond
-- jt.cond
+| Instrução | Funct | OP | Cond   | Offset8  |
+| jf.cond   | 00    | 00 | 0000   | 00000000 |
+| jt.cond   | 01    | 00 | 0000   | 00000000 |
 
 ### Tipo 5
-- j
+| Instrução | Funct | OP | Offset12      |
+| j         | 00    | 00 | 000000000000  |
 
 ### Tipo 6
-- jal
-- jr
+| Instrução | Funct | OP | R | X | Rt |
+|-----------|-------|----|---|---|----|
+| jal       | 00    | 11 | 0 | - | rt |
+| jr        | 00    | 11 | 1 | - | rt |
 
 ### Tipo 7
-- load
-- store
+| Instrução | Funct | Rd | OP    | Rs | Rt |
+|-----------|-------|----|-------|----|----|
+| load      | 01    | rd | 10100 | Rs | Rt |
+| save      | 01    | rd | 10110 | Rs | Rt |
