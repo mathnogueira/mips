@@ -59,27 +59,31 @@ $ git push origin branch-SEUNOME
 ## Tipos de instruções
 
 ### Tipo 1
-- add
-- addinc
-- and
-- andnota
-- asl
-- asr
-- deca
-- inca
-- lsl
-- lsr
-- nand
-- nor
-- ones
-- or
-- ornotb
-- passa
-- passanota
-- sub
-- subdec
-- xnor
-- xor
+| Instrução | Funct | Rd | OPCode | Rs | Rt |
+| ----------|-------|----|--------|----|----|
+| add       | 01    | rd | 11000  | rs | rt |
+| addinc    | 01    | rd | 11010  | rs | rt |
+| and       | 01    | rd | 00010  | rs | rt |
+| andnota   | 01    | rd | 01010  | rs | rt |
+| asl       | 01    | rd | 10001  | rs | rt |
+| asr       | 01    | rd | 10011  | rs | rt |
+| deca      | 01    | rd | 11101  | rs | rt |
+| inca      | 01    | rd | 11100  | rs | rt |
+| addinc    | 01    | rd | 11010  | rs | rt |
+| lsl       | 01    | rd | 10000  | rs | rt |
+| lsr       | 01    | rd | 10010  | rs | rt |
+| nand      | 01    | rd | 00011  | rs | rt |
+| nor       | 01    | rd | 00101  | rs | rt |
+| ones      | 01    | rd | 00001  | rs | rt |
+| or        | 01    | rd | 00100  | rs | rt |
+| ornotb    | 01    | rd | 01011  | rs | rt |
+| passa     | 01    | rd | 01001  | rs | rt |
+| passnota  | 01    | rd | 01000  | rs | rt |
+| addinc    | 01    | rd | 11010  | rs | rt |
+| sub       | 01    | rd | 11001  | rs | rt |
+| subdec    | 01    | rd | 11011  | rs | rt |
+| xnor      | 01    | rd | 00111  | rs | rt |
+| xor       | 01    | rd | 00110  | rs | rt |
 
 ### Tipo 2
 - loadlit
