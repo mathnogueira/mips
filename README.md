@@ -55,3 +55,49 @@ $ git add .
 $ git commit -m "Uma mensagem do que você fez"
 $ git push origin branch-SEUNOME
 ```
+
+## Tipos de instruções
+
+### Tipo 1
+- add
+- addinc
+- and
+- andnota
+- asl
+- asr
+- deca
+- inca
+- lsl
+- lsr
+- nand
+- nor
+- ones
+- or
+- ornotb
+- passa
+- passanota
+- sub
+- subdec
+- xnor
+- xor
+
+### Tipo 2
+- loadlit
+
+### Tipo 3
+- lcl
+
+### Tipo 4
+- jf.cond
+- jt.cond
+
+### Tipo 5
+- j
+
+### Tipo 6
+- jal
+- jr
+
+### Tipo 7
+- load
+- store
