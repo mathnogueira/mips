@@ -60,7 +60,7 @@ $ git push origin branch-SEUNOME
 
 ### Tipo 1
 | Instrução | Funct | Rd | OPCode | Rs | Rt | Status |
-| ----------|-------|----|--------|----|----|--------|
+| ----------|-------|----|--------|----|----|:------:|
 | add       | 01    | RD | 11000  | RS | RT |        |
 | addinc    | 01    | RD | 11010  | RS | RT |        |
 | and       | 01    | RD | 00010  | RS | RT |        |
@@ -104,7 +104,7 @@ $ git push origin branch-SEUNOME
 
 ### Tipo 5
 | Instrução | Funct | OP | Offset12      | Status |
-|-----------|-------|----|---------------|        |
+|-----------|-------|----|---------------|--------|
 | j         | 00    | 00 | 000000000000  |        |
 
 ### Tipo 6
