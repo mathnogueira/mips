@@ -61,39 +61,39 @@ $ git push origin branch-SEUNOME
 ### Tipo 1
 | Instrução | Funct | Rd | OPCode | Rs | Rt |
 | ----------|-------|----|--------|----|----|
-| add       | 01    | rd | 11000  | rs | rt |
-| addinc    | 01    | rd | 11010  | rs | rt |
-| and       | 01    | rd | 00010  | rs | rt |
-| andnota   | 01    | rd | 01010  | rs | rt |
-| asl       | 01    | rd | 10001  | rs | rt |
-| asr       | 01    | rd | 10011  | rs | rt |
-| deca      | 01    | rd | 11101  | rs | rt |
-| inca      | 01    | rd | 11100  | rs | rt |
-| addinc    | 01    | rd | 11010  | rs | rt |
-| lsl       | 01    | rd | 10000  | rs | rt |
-| lsr       | 01    | rd | 10010  | rs | rt |
-| nand      | 01    | rd | 00011  | rs | rt |
-| nor       | 01    | rd | 00101  | rs | rt |
-| ones      | 01    | rd | 00001  | rs | rt |
-| or        | 01    | rd | 00100  | rs | rt |
-| ornotb    | 01    | rd | 01011  | rs | rt |
-| passa     | 01    | rd | 01001  | rs | rt |
-| passnota  | 01    | rd | 01000  | rs | rt |
-| addinc    | 01    | rd | 11010  | rs | rt |
-| sub       | 01    | rd | 11001  | rs | rt |
-| subdec    | 01    | rd | 11011  | rs | rt |
-| xnor      | 01    | rd | 00111  | rs | rt |
-| xor       | 01    | rd | 00110  | rs | rt |
+| add       | 01    | RD | 11000  | RS | RT |
+| addinc    | 01    | RD | 11010  | RS | RT |
+| and       | 01    | RD | 00010  | RS | RT |
+| andnota   | 01    | RD | 01010  | RS | RT |
+| asl       | 01    | RD | 10001  | RS | RT |
+| asr       | 01    | RD | 10011  | RS | RT |
+| deca      | 01    | RD | 11101  | RS | RT |
+| inca      | 01    | RD | 11100  | RS | RT |
+| addinc    | 01    | RD | 11010  | RS | RT |
+| lsl       | 01    | RD | 10000  | RS | RT |
+| lsr       | 01    | RD | 10010  | RS | RT |
+| nand      | 01    | RD | 00011  | RS | RT |
+| nor       | 01    | RD | 00101  | RS | RT |
+| ones      | 01    | RD | 00001  | RS | RT |
+| or        | 01    | RD | 00100  | RS | RT |
+| ornotb    | 01    | RD | 01011  | RS | RT |
+| passa     | 01    | RD | 01001  | RS | RT |
+| passnota  | 01    | RD | 01000  | RS | RT |
+| addinc    | 01    | RD | 11010  | RS | RT |
+| sub       | 01    | RD | 11001  | RS | RT |
+| subdec    | 01    | RD | 11011  | RS | RT |
+| xnor      | 01    | RD | 00111  | RS | RT |
+| xor       | 01    | RD | 00110  | RS | RT |
 
 ### Tipo 2
 | Instrução | Rd | Offset11     |
 |-----------|----|--------------|
-| loadlit   | rd | 00000000000  |
+| loadlit   | RD | 00000000000  |
 
 ### Tipo 3
 | Instrução | Funct | Rd | R   | Offset8  |
 | ----------|-------|----|-----|----------|
-| lcl       | 11    | rd | bit | 00000000 |
+| lcl       | 11    | RD | bit | 00000000 |
 
 ### Tipo 4
 | Instrução | Funct | OP | Cond   | Offset8  |
@@ -109,11 +109,11 @@ $ git push origin branch-SEUNOME
 ### Tipo 6
 | Instrução | Funct | OP | R | X | Rt |
 |-----------|-------|----|---|---|----|
-| jal       | 00    | 11 | 0 | - | rt |
-| jr        | 00    | 11 | 1 | - | rt |
+| jal       | 00    | 11 | 0 | - | RT |
+| jr        | 00    | 11 | 1 | - | RT |
 
 ### Tipo 7
 | Instrução | Funct | Rd | OP    | Rs | Rt |
 |-----------|-------|----|-------|----|----|
-| load      | 01    | rd | 10100 | Rs | Rt |
-| save      | 01    | rd | 10110 | Rs | Rt |
+| load      | 01    | RD | 10100 | Rs | Rt |
+| save      | 01    | RD | 10110 | Rs | Rt |
