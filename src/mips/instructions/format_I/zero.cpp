@@ -4,6 +4,7 @@ using namespace MIPS;
 
 void ZeroInstruction::execute() {
 	this->rd->put(0);
+	// Flags
 	this->neg = 0;
 	this->zero = 1;
 	this->carry = 0;

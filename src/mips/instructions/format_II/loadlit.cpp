@@ -6,4 +6,5 @@ using namespace MIPS;
 void LoadlitInstruction::execute() {
 	bit16_t extended = SignalExtender::extend(this->offset, 11);
 	this->rd->put(extended);
+	// Nao altera nenhuma flag
 }
