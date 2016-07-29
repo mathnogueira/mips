@@ -6,7 +6,7 @@ using namespace MIPS;
 
 TEST(ZeroInstruction, zero) {
 	Register rd("t0");
-	ZeroInstruction zero(0, NULL, NULL, &rd, 0, 0);
+	ZeroInstruction zero(0, NULL, NULL, 0, 0);
 	rd.put(22);
 	bit16_t result = zero.execute();
 	ASSERT_EQ(result, 0);

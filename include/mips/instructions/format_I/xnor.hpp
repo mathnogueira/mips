@@ -24,10 +24,9 @@ public:
 	 XnorInstruction(bit8_t opcode,
                          Register *rs,
                          Register *rt,
-						 Register *rd,
                          bit8_t shamt,
                          bit8_t funct)
-	: InstructionI(opcode, rs, rt, rd, shamt, funct) {}
+	: InstructionI(opcode, rs, rt, shamt, funct) {}
 
 	/**
 	 * Função que executa a operação de soma.

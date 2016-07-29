@@ -8,7 +8,7 @@ TEST(AndnotaInstruction, differentNumbers) {
 	Register rs("s1");
 	Register rt("s2");
 	Register rd("s0");
-	AndnotaInstruction andnota(0, &rs, &rt, &rd, 0, 0);
+	AndnotaInstruction andnota(0, &rs, &rt, 0, 0);
 	rs.put(12);
 	rt.put(15);
 	bit16_t result = andnota.execute();
@@ -19,7 +19,7 @@ TEST(AndnotaInstruction, equalNumbers) {
 	Register rs("s1");
 	Register rt("s2");
 	Register rd("s0");
-	AndnotaInstruction andnota(0, &rs, &rt, &rd, 0, 0);
+	AndnotaInstruction andnota(0, &rs, &rt, 0, 0);
 	rs.put(12);
 	rt.put(12);
 	bit16_t result = andnota.execute();

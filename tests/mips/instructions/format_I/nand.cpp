@@ -7,7 +7,7 @@ TEST(NandInstruction, differentNumbers) {
 	Register rs("s0");
 	Register rt("s1");
 	Register rd("s2");
-	NandInstruction nand(0, &rs, &rt, &rd, 0, 0);
+	NandInstruction nand(0, &rs, &rt, 0, 0);
 	rs.put(2);
 	rt.put(0);
 	bit16_t result = nand.execute();
@@ -18,7 +18,7 @@ TEST(NandInstruction, EqualNumbers) {
 	Register rs("s0");
 	Register rt("s1");
 	Register rd("s2");
-	NandInstruction nand(0, &rs, &rt, &rd, 0, 0);
+	NandInstruction nand(0, &rs, &rt, 0, 0);
 	rs.put(2);
 	rt.put(2);
 	bit16_t result = nand.execute();

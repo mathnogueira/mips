@@ -8,7 +8,7 @@ TEST(XnorInstruction, differentNumbers) {
 	Register rs("s1");
 	Register rt("s2");
 	Register rd("s0");
-	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
+	XnorInstruction xnor(0, &rs, &rt, 0, 0);
 	rs.put(12);
 	rt.put(15);
 	bit16_t result = xnor.execute();
@@ -19,7 +19,7 @@ TEST(XnorInstruction, equalNumbers) {
 	Register rs("s1");
 	Register rt("s2");
 	Register rd("s0");
-	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
+	XnorInstruction xnor(0, &rs, &rt, 0, 0);
 	rs.put(12);
 	rt.put(12);
 	bit16_t result = xnor.execute();
@@ -30,7 +30,7 @@ TEST(XnorInstruction, positiveNegative) {
 	Register rs("s1");
 	Register rt("s2");
 	Register rd("s0");
-	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
+	XnorInstruction xnor(0, &rs, &rt, 0, 0);
 	rs.put(-12);
 	rt.put(15);
 	bit16_t result = xnor.execute();
@@ -41,7 +41,7 @@ TEST(XnorInstruction, negativeNumbers) {
 	Register rs("s1");
 	Register rt("s2");
 	Register rd("s0");
-	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
+	XnorInstruction xnor(0, &rs, &rt, 0, 0);
 	rs.put(-12);
 	rt.put(-15);
 	bit16_t result = xnor.execute();
@@ -52,7 +52,7 @@ TEST(XnorInstruction, sameNegativeNumbers) {
 	Register rs("s1");
 	Register rt("s2");
 	Register rd("s0");
-	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
+	XnorInstruction xnor(0, &rs, &rt, 0, 0);
 	rs.put(-122);
 	rt.put(-122);
 	bit16_t result = xnor.execute();

@@ -6,7 +6,7 @@ using namespace MIPS;
 
 TEST(OnesInstruction, isOne) {
         Register rd("rc");
-	OnesInstruction ones(0, NULL, NULL, &rd, 0, 0);
+	OnesInstruction ones(0, NULL, NULL, 0, 0);
 	rd.put(33);
 	bit16_t result = ones.execute();
 	ASSERT_EQ(result, 1);

@@ -33,12 +33,10 @@ public:
     InstructionI(bit8_t opcode,
                         Register *rs,
                         Register *rt,
-						Register *rd,
                         bit8_t shamt,
                         bit8_t funct) {
 		this->opcode = opcode;
 		this->rs = rs;
-		this->rd = rd;
 		this->rt = rt;
 		this->shamt = shamt;
 		this->funct = funct;
@@ -67,11 +65,6 @@ protected:
      * Registrador target (Rt) da instrução.
      */
     Register *rt;
-
-    /**
-     * Registrador destination (Rd) da instrução.
-     */
-    Register *rd;
 
     /**
      * Valor do shamt (shift amount) da instrução.

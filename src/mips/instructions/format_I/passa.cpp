@@ -3,7 +3,7 @@
 using namespace MIPS;
 
 bit16_t PassaInstruction::execute() {
-	bit16_t ra = this->rd->get();
+	bit16_t ra = this->rt->get();
 	// this->rs->put(ra);
 	// Flags
 	this->neg = 0;
