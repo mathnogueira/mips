@@ -64,7 +64,7 @@ $ git push origin branch-SEUNOME
 | add       | 01    | RD | 11000  | RS | RT |        |
 | addinc    | 01    | RD | 11010  | RS | RT |        |
 | and       | 01    | RD | 00010  | RS | RT |        |
-| andnota   | 01    | RD | 01010  | RS | RT |        |
+| andnota   | 01    | RD | 01010  | RS | RT |   OK   |
 | asl       | 01    | RD | 10001  | RS | RT |        |
 | asr       | 01    | RD | 10011  | RS | RT |        |
 | deca      | 01    | RD | 11101  | RS | RT |        |
