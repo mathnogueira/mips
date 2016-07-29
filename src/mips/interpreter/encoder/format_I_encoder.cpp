@@ -71,22 +71,10 @@ void FormatIEncoder::parse(std::vector<char*> &params) {
 
 instruction_t FormatIEncoder::encode() {
 	instruction_t instruction = 0;
-	printf("Passo 0: %04x ==> ", instruction);
-	PRINT_BIN(instruction);
 	instruction |= (opcode << 14);
-	printf("Passo 1: %04x ==> ", instruction);
-	PRINT_BIN(instruction);
 	instruction |= (rd << 11);
-	printf("Passo 2: %04x ==> ", instruction);
-	PRINT_BIN(instruction);
 	instruction |= (funct << 6);
-	printf("Passo 3: %04x ==> ", instruction);
-	PRINT_BIN(instruction);
 	instruction |= (rs << 3);
-	printf("Passo 4: %04x ==> ", instruction);
-	PRINT_BIN(instruction);
 	instruction |= (rt << 0);
-	printf("Passo 5: %04x ==> ", instruction);
-	PRINT_BIN(instruction);
 	return instruction;
 }

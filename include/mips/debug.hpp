@@ -8,6 +8,7 @@
 #pragma once
 
 #include <iostream>
+#include <cstdio>
 #include <mips/core.hpp>
 
 namespace MIPS {
