@@ -63,7 +63,7 @@ $ git push origin branch-SEUNOME
 |:---------:|:-----:|:--:|:------:|:--:|:--:|:------:|
 | add       | 01    | RD | 11000  | RS | RT |        |
 | addinc    | 01    | RD | 11010  | RS | RT |        |
-| and       | 01    | RD | 00010  | RS | RT |        |
+| and       | 01    | RD | 00010  | RS | RT |   OK   |
 | andnota   | 01    | RD | 01010  | RS | RT |        |
 | asl       | 01    | RD | 10001  | RS | RT |        |
 | asr       | 01    | RD | 10011  | RS | RT |        |
@@ -75,7 +75,7 @@ $ git push origin branch-SEUNOME
 | nand      | 01    | RD | 00011  | RS | RT |   OK   |
 | nor       | 01    | RD | 00101  | RS | RT |        |
 | ones      | 01    | RD | 00001  | RS | RT |        |
-| or        | 01    | RD | 00100  | RS | RT |        |
+| or        | 01    | RD | 00100  | RS | RT |   OK   |
 | ornotb    | 01    | RD | 01011  | RS | RT |        |
 | passa     | 01    | RD | 01001  | RS | RT |   OK   |
 | passnota  | 01    | RD | 01000  | RS | RT |        |
