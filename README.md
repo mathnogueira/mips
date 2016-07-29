@@ -106,30 +106,30 @@ $ git push origin branch-SEUNOME
 | loadlit   | RD | 00000000000  |   OK   | loadlit rd, 11bits  |
 
 ### Tipo 3
-| Instrução | Funct | Rd | R   | Offset8  | Status | Formato        |
+| Instrução | Opcode | Rd | R   | Offset8  | Status | Formato       |
 |:---------:|:-----:|:--:|:---:|:--------:|:------:|:--------------:|
 | lcl       | 11    | RD | 0   | 00000000 |   OK   | lcl rd, 8bits  |
 | lch       | 11    | RD | 1   | 00000000 |   OK   | lch rd, 8bits  |
 
 ### Tipo 4
-| Instrução | Funct | OP | Cond   | Offset8  | Status | Formato       |
+| Instrução | Opcode | OP | Cond   | Offset8  | Status | Formato      |
 |:---------:|:-----:|:--:|:------:|:--------:|:------:|:-------------:|
 | jf.cond   | 00    | 00 | 0000   | 00000000 |        | jf.cond 8bits |
 | jt.cond   | 01    | 00 | 0000   | 00000000 |        | jt.conf 8bits |
 
 ### Tipo 5
-| Instrução | Funct | OP | Offset12      | Status | Formato      |
+| Instrução | Opcode | OP | Offset12      | Status | Formato     |
 |:---------:|:-----:|:--:|:-------------:|:------:|:------------:|
-| j         | 00    | 00 | 000000000000  |        | j 12bits     |
+| j         | 10    | 00 | 000000000000  |        | j 12bits     |
 
 ### Tipo 6
-| Instrução | Funct | OP | R | X | Rt | Status | Formato        |
+| Instrução | Opcode | OP | R | X | Rt | Status | Formato       |
 |:---------:|:-----:|:--:|:-:|:-:|:--:|:------:|:--------------:|
 | jal       | 00    | 11 | 0 | - | RT |        | jal rt         |
 | jr        | 00    | 11 | 1 | - | RT |        | jr rt          |
 
 ### Tipo 7
-| Instrução | Funct | Rd | OP    | Rs | Rt | Status | Formato       |
+| Instrução | Opcode | Rd | OP    | Rs | Rt | Status | Formato      |
 |:---------:|:-----:|:--:|:-----:|:--:|:--:|:------:|:-------------:|
 | load      | 01    | RD | 10100 | RS | RT |        | load rd, rs   |
 | store     | 01    | RD | 10110 | RS | RT |        | store rs, rt  |
