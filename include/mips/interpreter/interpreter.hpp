@@ -82,6 +82,12 @@ private:
 	 */
 	void updateLabels();
 
+	/**
+	 * Codifica as linhas do programa para que o emulador possa utilizá-las
+	 * em seu datapath.
+	 */
+	void encode();
+
 };
 
 }; // namespace

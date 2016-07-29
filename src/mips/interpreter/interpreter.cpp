@@ -1,6 +1,7 @@
 #include <mips/interpreter/interpreter.hpp>
 #include <mips/interpreter/exception/interpreter_exception.hpp>
 #include <mips/interpreter/encoder/encoder.hpp>
+#include <mips/interpreter/encoder/encoder_factory.hpp>
 #include <mips/interpreter/parser/tokenizer.hpp>
 #include <mips/core.hpp>
 #include <string>
@@ -40,7 +41,7 @@ void Interpreter::processInput() {
 	// i  : addi $t0, $t0, 1
 	// i+1: j -1
 	this->updateLabels();
-
+	this->encode();
 }
 
 void Interpreter::extractLabels() {
@@ -89,5 +90,16 @@ void Interpreter::updateLabels() {
 			}
 		}
 		++i;
+	}
+}
+
+void Interpreter::encode() {
+	std::vector<char*> *tokens;
+	EncoderFactory factory;
+	Encoder *encoder;
+	for (size_t i = 0; i < lines.size(); ++i) {
+		tokens = &lines.at(i);
+		encoder = factory.produce(tokens->at(0));
+		encoder->parse(*tokens);
 	}
 }
