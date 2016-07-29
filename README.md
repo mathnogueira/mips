@@ -65,26 +65,26 @@ $ git push origin branch-SEUNOME
 | addinc    | 01    | RD | 11010  | RS | RT |        | addinc rd, rs, rt |
 | and       | 01    | RD | 00010  | RS | RT |        | and rd, rs, rt    |
 | andnota   | 01    | RD | 01010  | RS | RT |   OK   | andnota rd, rs, rt|
-| asl       | 01    | RD | 10001  | RS | RT |        | asl rd, rs        |
-| asr       | 01    | RD | 10011  | RS | RT |        | asr rd, rs        |
-| deca      | 01    | RD | 11101  | RS | RT |        | deca rd, rs       |
-| inca      | 01    | RD | 11100  | RS | RT |        | inca rd, rs       |
 | addinc    | 01    | RD | 11010  | RS | RT |        | addinc rd, rs, rt |
-| lsl       | 01    | RD | 10000  | RS | RT |        | lsl rd, rs        |
-| lsr       | 01    | RD | 10010  | RS | RT |        | lsr rd, rs        |
 | nand      | 01    | RD | 00011  | RS | RT |   OK   | nand rd, rs, rt   |
 | nor       | 01    | RD | 00101  | RS | RT |        | nor rd, rs, rt    |
-| ones      | 01    | RD | 00001  | RS | RT |   OK   | ones rd           |
-| or        | 01    | RD | 00100  | RS | RT |        | or rd, rs, rt     |
 | ornotb    | 01    | RD | 01011  | RS | RT |        | ornotb rd, rs, rt |
-| passa     | 01    | RD | 01001  | RS | RT |   OK   | passa rd, rs      |
-| passnota  | 01    | RD | 01000  | RS | RT |        | passanota rd, rs  |
 | addinc    | 01    | RD | 11010  | RS | RT |        | addinc rd, rs, rt |
 | sub       | 01    | RD | 11001  | RS | RT |        | sub rd, rs, rt    |
 | subdec    | 01    | RD | 11011  | RS | RT |        | subdec rd, rs, rt |
 | xnor      | 01    | RD | 00111  | RS | RT |   OK   | xnor rd, rs, rt   |
 | xor       | 01    | RD | 00110  | RS | RT |        | xor rd, rs, rt    |
+| or        | 01    | RD | 00100  | RS | RT |        | or rd, rs, rt     |
+| asl       | 01    | RD | 10001  | RS | RT |        | asl rd, rs        |
+| asr       | 01    | RD | 10011  | RS | RT |        | asr rd, rs        |
+| deca      | 01    | RD | 11101  | RS | RT |        | deca rd, rs       |
+| inca      | 01    | RD | 11100  | RS | RT |        | inca rd, rs       |
+| lsl       | 01    | RD | 10000  | RS | RT |        | lsl rd, rs        |
+| lsr       | 01    | RD | 10010  | RS | RT |        | lsr rd, rs        |
+| passa     | 01    | RD | 01001  | RS | RT |   OK   | passa rd, rs      |
+| passnota  | 01    | RD | 01000  | RS | RT |        | passanota rd, rs  |
 | zeros     | 01    | RD | 00000  | -  | -  |   OK   | zeros rd          |
+| ones      | 01    | RD | 00001  | RS | RT |   OK   | ones rd           |
 
 ### Tipo 2
 | Instrução | Rd | Offset11     | Status | Formato             |
