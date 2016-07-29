@@ -74,7 +74,7 @@ $ git push origin branch-SEUNOME
 | lsr       | 01    | RD | 10010  | RS | RT |        |
 | nand      | 01    | RD | 00011  | RS | RT |   OK   |
 | nor       | 01    | RD | 00101  | RS | RT |        |
-| ones      | 01    | RD | 00001  | RS | RT |        |
+| ones      | 01    | RD | 00001  | RS | RT |   OK   |
 | or        | 01    | RD | 00100  | RS | RT |        |
 | ornotb    | 01    | RD | 01011  | RS | RT |        |
 | passa     | 01    | RD | 01001  | RS | RT |   OK   |
