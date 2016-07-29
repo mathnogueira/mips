@@ -76,12 +76,12 @@ $ git push origin branch-SEUNOME
 | nor       | 01    | RD | 00101  | RS | RT |        |
 | ones      | 01    | RD | 00001  | RS | RT |   OK   |
 | or        | 01    | RD | 00100  | RS | RT |        |
-| ornotb    | 01    | RD | 01011  | RS | RT |        |
+| ornotb    | 01    | RD | 01011  | RS | RT |   OK   |
 | passa     | 01    | RD | 01001  | RS | RT |   OK   |
 | passnota  | 01    | RD | 01000  | RS | RT |        |
 | addinc    | 01    | RD | 11010  | RS | RT |        |
 | sub       | 01    | RD | 11001  | RS | RT |        |
-| subdec    | 01    | RD | 11011  | RS | RT |        |
+| subdec    | 01    | RD | 11011  | RS | RT |   OK   |
 | xnor      | 01    | RD | 00111  | RS | RT |   OK   |
 | xor       | 01    | RD | 00110  | RS | RT |        |
 | zeros     | 01    | RD | 00000  | -  | -  |   OK   |
