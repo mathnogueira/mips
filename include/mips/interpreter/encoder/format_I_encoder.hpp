@@ -42,27 +42,27 @@ private:
 	/**
 	 * Opcode extraído da instrução.
 	 */
-	bit8_t opcode;
+	bit16_t opcode;
 
 	/**
 	 * Número do registrador Rs.
 	 */
-	bit8_t rs;
+	bit16_t rs;
 
 	/**
 	 * Número do registrador Rt.
 	 */
-	bit8_t rt;
+	bit16_t rt;
 
 	/**
 	 * Número do registrador Rd.
 	 */
-	bit8_t rd;
+	bit16_t rd;
 
 	/**
 	 * Código de função da operaçao.
 	 */
-	bit8_t funct;
+	bit16_t funct;
 
 };
 
