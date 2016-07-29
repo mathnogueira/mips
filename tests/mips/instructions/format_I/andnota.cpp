@@ -4,7 +4,6 @@
 
 using namespace MIPS;
 
-
 TEST(AndnotaInstruction, differentNumbers) {
 	Register rs("s1");
 	Register rt("s2");

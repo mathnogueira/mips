@@ -1,6 +1,7 @@
 build/
 docs/
 nbproject/
+CMakeFiles/
 
 # Compiled Object files
 *.slo
