@@ -59,63 +59,63 @@ $ git push origin branch-SEUNOME
 ## Tipos de instruções
 
 ### Tipo 1
-| Instrução | Funct | Rd | OPCode | Rs | Rt | Status |
-|:---------:|:-----:|:--:|:------:|:--:|:--:|:------:|
-| add       | 01    | RD | 11000  | RS | RT |        |
-| addinc    | 01    | RD | 11010  | RS | RT |        |
-| and       | 01    | RD | 00010  | RS | RT |        |
-| andnota   | 01    | RD | 01010  | RS | RT |   OK   |
-| asl       | 01    | RD | 10001  | RS | RT |        |
-| asr       | 01    | RD | 10011  | RS | RT |        |
-| deca      | 01    | RD | 11101  | RS | RT |        |
-| inca      | 01    | RD | 11100  | RS | RT |        |
-| addinc    | 01    | RD | 11010  | RS | RT |        |
-| lsl       | 01    | RD | 10000  | RS | RT |        |
-| lsr       | 01    | RD | 10010  | RS | RT |        |
-| nand      | 01    | RD | 00011  | RS | RT |   OK   |
-| nor       | 01    | RD | 00101  | RS | RT |        |
-| ones      | 01    | RD | 00001  | RS | RT |   OK   |
-| or        | 01    | RD | 00100  | RS | RT |        |
-| ornotb    | 01    | RD | 01011  | RS | RT |        |
-| passa     | 01    | RD | 01001  | RS | RT |   OK   |
-| passnota  | 01    | RD | 01000  | RS | RT |        |
-| addinc    | 01    | RD | 11010  | RS | RT |        |
-| sub       | 01    | RD | 11001  | RS | RT |        |
-| subdec    | 01    | RD | 11011  | RS | RT |        |
-| xnor      | 01    | RD | 00111  | RS | RT |   OK   |
-| xor       | 01    | RD | 00110  | RS | RT |        |
-| zeros     | 01    | RD | 00000  | -  | -  |   OK   |
+| Instrução | Funct | Rd | OPCode | Rs | Rt | Status | Formato           |
+|:---------:|:-----:|:--:|:------:|:--:|:--:|:------:|:-----------------:|
+| add       | 01    | RD | 11000  | RS | RT |        | add rd, rs, rt    |
+| addinc    | 01    | RD | 11010  | RS | RT |        | addinc rd, rs, rt |
+| and       | 01    | RD | 00010  | RS | RT |        | and rd, rs, rt    |
+| andnota   | 01    | RD | 01010  | RS | RT |   OK   | andnota rd, rs, rt|
+| asl       | 01    | RD | 10001  | RS | RT |        | asl rd, rs        |
+| asr       | 01    | RD | 10011  | RS | RT |        | asr rd, rs        |
+| deca      | 01    | RD | 11101  | RS | RT |        | deca rd, rs       |
+| inca      | 01    | RD | 11100  | RS | RT |        | inca rd, rs       |
+| addinc    | 01    | RD | 11010  | RS | RT |        | addinc rd, rs, rt |
+| lsl       | 01    | RD | 10000  | RS | RT |        | lsl rd, rs        |
+| lsr       | 01    | RD | 10010  | RS | RT |        | lsr rd, rs        |
+| nand      | 01    | RD | 00011  | RS | RT |   OK   | nand rd, rs, rt   |
+| nor       | 01    | RD | 00101  | RS | RT |        | nor rd, rs, rt    |
+| ones      | 01    | RD | 00001  | RS | RT |   OK   | ones rd           |
+| or        | 01    | RD | 00100  | RS | RT |        | or rd, rs, rt     |
+| ornotb    | 01    | RD | 01011  | RS | RT |        | ornotb rd, rs, rt |
+| passa     | 01    | RD | 01001  | RS | RT |   OK   | passa rd, rs      |
+| passnota  | 01    | RD | 01000  | RS | RT |        | passanota rd, rs  |
+| addinc    | 01    | RD | 11010  | RS | RT |        | addinc rd, rs, rt |
+| sub       | 01    | RD | 11001  | RS | RT |        | sub rd, rs, rt    |
+| subdec    | 01    | RD | 11011  | RS | RT |        | subdec rd, rs, rt |
+| xnor      | 01    | RD | 00111  | RS | RT |   OK   | xnor rd, rs, rt   |
+| xor       | 01    | RD | 00110  | RS | RT |        | xor rd, rs, rt    |
+| zeros     | 01    | RD | 00000  | -  | -  |   OK   | zeros rd          |
 
 ### Tipo 2
-| Instrução | Rd | Offset11     | Status |
-|:---------:|:--:|:------------:|:------:|
-| loadlit   | RD | 00000000000  |   OK   |
+| Instrução | Rd | Offset11     | Status | Formato             |
+|:---------:|:--:|:------------:|:------:|:-------------------:|
+| loadlit   | RD | 00000000000  |   OK   | loadlit rd, 11bits  |
 
 ### Tipo 3
-| Instrução | Funct | Rd | R   | Offset8  | Status |
-|:---------:|:-----:|:--:|:---:|:--------:|:------:|
-| lcl       | 11    | RD | 0   | 00000000 |   OK   |
-| lch       | 11    | RD | 1   | 00000000 |   OK   |
+| Instrução | Funct | Rd | R   | Offset8  | Status | Formato        |
+|:---------:|:-----:|:--:|:---:|:--------:|:------:|:--------------:|
+| lcl       | 11    | RD | 0   | 00000000 |   OK   | lcl rd, 8bits  |
+| lch       | 11    | RD | 1   | 00000000 |   OK   | lch rd, 8bits  |
 
 ### Tipo 4
-| Instrução | Funct | OP | Cond   | Offset8  | Status |
-|:---------:|:-----:|:--:|:------:|:--------:|:------:|
-| jf.cond   | 00    | 00 | 0000   | 00000000 |        |
-| jt.cond   | 01    | 00 | 0000   | 00000000 |        |
+| Instrução | Funct | OP | Cond   | Offset8  | Status | Formato       |
+|:---------:|:-----:|:--:|:------:|:--------:|:------:|:-------------:|
+| jf.cond   | 00    | 00 | 0000   | 00000000 |        | jf.cond 8bits |
+| jt.cond   | 01    | 00 | 0000   | 00000000 |        | jt.conf 8bits |
 
 ### Tipo 5
-| Instrução | Funct | OP | Offset12      | Status |
-|:---------:|:-----:|:--:|:-------------:|:------:|
-| j         | 00    | 00 | 000000000000  |        |
+| Instrução | Funct | OP | Offset12      | Status | Formato      |
+|:---------:|:-----:|:--:|:-------------:|:------:|:------------:|
+| j         | 00    | 00 | 000000000000  |        | j 12bits     |
 
 ### Tipo 6
-| Instrução | Funct | OP | R | X | Rt | Status |
-|:---------:|:-----:|:--:|:-:|:-:|:--:|:------:|
-| jal       | 00    | 11 | 0 | - | RT |        |
-| jr        | 00    | 11 | 1 | - | RT |        |
+| Instrução | Funct | OP | R | X | Rt | Status | Formato        |
+|:---------:|:-----:|:--:|:-:|:-:|:--:|:------:|:--------------:|
+| jal       | 00    | 11 | 0 | - | RT |        | jal rt         |
+| jr        | 00    | 11 | 1 | - | RT |        | jr rt          |
 
 ### Tipo 7
-| Instrução | Funct | Rd | OP    | Rs | Rt | Status |
-|:---------:|:-----:|:--:|:-----:|:--:|:--:|:------:|
-| load      | 01    | RD | 10100 | RS | RT |        |
-| save      | 01    | RD | 10110 | RS | RT |        |
+| Instrução | Funct | Rd | OP    | Rs | Rt | Status | Formato       |
+|:---------:|:-----:|:--:|:-----:|:--:|:--:|:------:|:-------------:|
+| load      | 01    | RD | 10100 | RS | RT |        | load rd, rs   |
+| store     | 01    | RD | 10110 | RS | RT |        | store rs, rt  |
