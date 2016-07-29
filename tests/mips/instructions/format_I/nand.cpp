@@ -10,8 +10,8 @@ TEST(NandInstruction, differentNumbers) {
 	NandInstruction nand(0, &rs, &rt, &rd, 0, 0);
 	rs.put(2);
 	rt.put(0);
-	nand.execute();
-	ASSERT_EQ(rd.get(), 1);
+	bit16_t result = nand.execute();
+	ASSERT_EQ(result, 1);
 }
 
 TEST(NandInstruction, EqualNumbers) {
@@ -21,6 +21,6 @@ TEST(NandInstruction, EqualNumbers) {
 	NandInstruction nand(0, &rs, &rt, &rd, 0, 0);
 	rs.put(2);
 	rt.put(2);
-	nand.execute();
-	ASSERT_EQ(rd.get(), 0);
+	bit16_t result = nand.execute();
+	ASSERT_EQ(result, 0);
 }

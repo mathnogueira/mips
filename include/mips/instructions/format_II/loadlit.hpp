@@ -31,8 +31,10 @@ public:
 
 	/**
 	 * Executa a instrução.
+	 *
+	 * \return resultado da operação
 	 */
-	void execute();
+	bit16_t execute();
 
 };
 

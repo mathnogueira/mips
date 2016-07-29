@@ -31,8 +31,10 @@ public:
 
 	/**
 	 * Função que executa a operação de soma.
-	 */
-	void execute();
+	 *
+  	 * \return resultado da operação
+ 	 */
+    bit16_t execute();
 
 };
 

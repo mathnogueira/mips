@@ -8,14 +8,14 @@ TEST(LclInstruction, positiveNumber) {
 	Register rd("t0");
 	LclInstruction lcl(0, &rd, 2);
 	rd.put(0);
-	lcl.execute();
-	ASSERT_EQ(rd.get(), 2);
+	bit16_t result = lcl.execute();
+	ASSERT_EQ(result, 2);
 }
 
 TEST(LclInstruction, negativeNumber) {
 	Register rd("t0");
 	LclInstruction lcl(0, &rd, -1);
 	rd.put(0);
-	lcl.execute();
-	ASSERT_EQ(rd.get(), 255);
+	bit16_t result = lcl.execute();
+	ASSERT_EQ(result, 255);
 }

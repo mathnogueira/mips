@@ -29,8 +29,10 @@ public:
     /**
      * Método abstrato que deverá ser invocado para que uma instrução seja
      * executada pelo emulador.
+	 *
+	 * \param resultado de saída da instrução.
      */
-    virtual void execute() = 0;
+    virtual bit16_t execute() = 0;
 
 protected:
 

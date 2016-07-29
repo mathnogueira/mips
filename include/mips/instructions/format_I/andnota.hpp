@@ -31,8 +31,10 @@ public:
 
 	/**
 	 * Função que executa a operação de AndnotaInstruction.
+	 *
+	 * \return resultado da operação
 	 */
-	void execute();
+	bit16_t execute();
 
 };
 

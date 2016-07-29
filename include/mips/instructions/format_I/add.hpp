@@ -19,8 +19,10 @@ class AddInstruction : public InstructionI {
 public:
 	/**
 	 * Função que executa a operação de soma.
+	 *
+	 * \return resultado da soma
 	 */
-	void execute();
+	bit16_t execute();
 
 };
 

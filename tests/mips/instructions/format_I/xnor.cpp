@@ -11,8 +11,8 @@ TEST(XnorInstruction, differentNumbers) {
 	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
 	rs.put(12);
 	rt.put(15);
-	xnor.execute();
-	ASSERT_EQ(rd.get(), 0);
+	bit16_t result = xnor.execute();
+	ASSERT_EQ(result, 0);
 }
 
 TEST(XnorInstruction, equalNumbers) {
@@ -22,8 +22,8 @@ TEST(XnorInstruction, equalNumbers) {
 	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
 	rs.put(12);
 	rt.put(12);
-	xnor.execute();
-	ASSERT_EQ(rd.get(), 1);
+	bit16_t result = xnor.execute();
+	ASSERT_EQ(result, 1);
 }
 
 TEST(XnorInstruction, positiveNegative) {
@@ -33,8 +33,8 @@ TEST(XnorInstruction, positiveNegative) {
 	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
 	rs.put(-12);
 	rt.put(15);
-	xnor.execute();
-	ASSERT_EQ(rd.get(), 0);
+	bit16_t result = xnor.execute();
+	ASSERT_EQ(result, 0);
 }
 
 TEST(XnorInstruction, negativeNumbers) {
@@ -44,8 +44,8 @@ TEST(XnorInstruction, negativeNumbers) {
 	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
 	rs.put(-12);
 	rt.put(-15);
-	xnor.execute();
-	ASSERT_EQ(rd.get(), 0);
+	bit16_t result = xnor.execute();
+	ASSERT_EQ(result, 0);
 }
 
 TEST(XnorInstruction, sameNegativeNumbers) {
@@ -55,6 +55,6 @@ TEST(XnorInstruction, sameNegativeNumbers) {
 	XnorInstruction xnor(0, &rs, &rt, &rd, 0, 0);
 	rs.put(-122);
 	rt.put(-122);
-	xnor.execute();
-	ASSERT_EQ(rd.get(), 1);
+	bit16_t result = xnor.execute();
+	ASSERT_EQ(result, 1);
 }

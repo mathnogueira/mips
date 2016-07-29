@@ -50,9 +50,11 @@ public:
      virtual ~InstructionI() {}
 
 	 /**
-	  * Executa a instrução
+	  * Executa a instrução.
+	  *
+	  * \return resultado da instrução
 	  */
-	 virtual void execute() = 0;
+	 virtual bit16_t execute() = 0;
 
 protected:
 

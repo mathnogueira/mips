@@ -33,6 +33,13 @@ public:
 		this->offset = offset;
 	}
 
+	/**
+	 * Executa a instrução.
+	 *
+	 * \return resultado da instrução
+	 */
+	virtual bit16_t execute() = 0;
+
 protected:
 
 	/**

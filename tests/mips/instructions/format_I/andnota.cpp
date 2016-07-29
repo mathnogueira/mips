@@ -11,8 +11,8 @@ TEST(AndnotaInstruction, differentNumbers) {
 	AndnotaInstruction andnota(0, &rs, &rt, &rd, 0, 0);
 	rs.put(12);
 	rt.put(15);
-	andnota.execute();
-	ASSERT_EQ(rd.get(), 0);
+	bit16_t result = andnota.execute();
+	ASSERT_EQ(result, 0);
 }
 
 TEST(AndnotaInstruction, equalNumbers) {
@@ -22,6 +22,6 @@ TEST(AndnotaInstruction, equalNumbers) {
 	AndnotaInstruction andnota(0, &rs, &rt, &rd, 0, 0);
 	rs.put(12);
 	rt.put(12);
-	andnota.execute();
-	ASSERT_EQ(rd.get(), 0);
+	bit16_t result = andnota.execute();
+	ASSERT_EQ(result, 0);
 }

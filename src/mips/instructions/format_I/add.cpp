@@ -2,7 +2,8 @@
 
 using namespace MIPS;
 
-void AddInstruction::execute() {
+bit16_t AddInstruction::execute() {
 	// TEM QUE FAZER EM BINARIO
 	// rd = rs + rt;
+	return 0;
 }
