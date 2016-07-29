@@ -6,7 +6,7 @@
  */
 #pragma once
 
-#include <mips//core.hpp>
+#include <mips/core.hpp>
 
 namespace MIPS {
 
