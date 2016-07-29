@@ -36,6 +36,23 @@ public:
 	 */
 	void parse(std::vector<char*> &params);
 
+private:
+
+	/**
+	 * Registrador de destino.
+	 */
+	bit8_t rd;
+
+	/**
+	 * Bit de identificação da instrução.
+	 */
+	bit8_t r;
+
+	/**
+	 * Offset da instrução.
+	 */
+	bit8_t offset;
+
 };
 
 } // namespace

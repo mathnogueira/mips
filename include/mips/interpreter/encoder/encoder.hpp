@@ -53,6 +53,11 @@ public:
 protected:
 
 	/**
+	 * Opcode da instrução.
+	 */
+	bit8_t opcode;
+
+	/**
 	 * Retorna o número do registrador solicitado.
 	 *
 	 * \param name nome do registrador.

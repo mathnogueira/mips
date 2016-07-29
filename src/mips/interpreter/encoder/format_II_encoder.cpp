@@ -11,12 +11,8 @@ void FormatIIEncoder::parse(std::vector<char*> &params) {
 
 instruction_t FormatIIEncoder::encode() {
 	instruction_t instruction = 0;
-	PRINT_BIN(instruction);
 	instruction |= (opcode << 14);
-	PRINT_BIN(instruction);
 	instruction |= (rd << 11);
-	PRINT_BIN(instruction);
 	instruction |= offset & 0x07ff;
-	PRINT_BIN(instruction);
 	return instruction;
 }

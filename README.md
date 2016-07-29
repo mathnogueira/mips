@@ -112,10 +112,10 @@ $ git push origin branch-SEUNOME
 | lch       | 11    | RD | 1   | 00000000 |   OK   | lch rd, 8bits  |
 
 ### Tipo 4
-| Instrução | Opcode | OP | Cond   | Offset8  | Status | Formato      |
-|:---------:|:-----:|:--:|:------:|:--------:|:------:|:-------------:|
-| jf.cond   | 00    | 00 | 0000   | 00000000 |        | jf.cond 8bits |
-| jt.cond   | 01    | 00 | 0000   | 00000000 |        | jt.conf 8bits |
+| Instrução | Opcode | Funct | Cond   | Offset8  | Status | Formato      |
+|:---------:|:------:|:-----:|:------:|:--------:|:------:|:-------------:|
+| jf.cond   | 00     | 00    | 0000   | 00000000 |        | jf.cond 8bits |
+| jt.cond   | 00     | 01    | 0000   | 00000000 |        | jt.conf 8bits |
 
 ### Tipo 5
 | Instrução | Opcode | OP | Offset12      | Status | Formato     |

@@ -36,6 +36,23 @@ public:
 	 */
 	void parse(std::vector<char*> &params);
 
+private:
+
+	/**
+	 * Código de função da operação
+	 */
+	bit8_t funct;
+
+	/**
+	 * Condição de jump.
+	 */
+	bit8_t cond;
+
+	/**
+	 * Offset do jump.
+	 */
+	bit8_t offset;
+
 };
 
 } // namespace
