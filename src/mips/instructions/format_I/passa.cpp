@@ -1,4 +1,4 @@
-#include <mips/instructions/r_type/passa.hpp>
+#include <mips/instructions/format_I/passa.hpp>
 
 using namespace MIPS;
 

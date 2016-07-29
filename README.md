@@ -89,12 +89,13 @@ $ git push origin branch-SEUNOME
 ### Tipo 2
 | Instrução | Rd | Offset11     | Status |
 |:---------:|:--:|:------------:|:------:|
-| loadlit   | RD | 00000000000  |        |
+| loadlit   | RD | 00000000000  |   OK   |
 
 ### Tipo 3
 | Instrução | Funct | Rd | R   | Offset8  | Status |
 |:---------:|:-----:|:--:|:---:|:--------:|:------:|
-| lcl       | 11    | RD | bit | 00000000 |        |
+| lcl       | 11    | RD | 0   | 00000000 |   OK   |
+| lch       | 11    | RD | 1   | 00000000 |   OK   |
 
 ### Tipo 4
 | Instrução | Funct | OP | Cond   | Offset8  | Status |

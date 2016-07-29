@@ -17,7 +17,7 @@ InstructionDecoder* DecoderFinder::find(instruction_t instruction) {
     bit8_t opcode = getOPCode(instruction);
     InstructionDecoder* decoder = NULL;
     if (Instruction_isR(opcode)) {
-        decoder = new RegisterInstructionDecoder;
+        decoder = new InstructionIDecoder;
     } else if (Instruction_isI(opcode)){
         decoder = NULL;
     } else {

@@ -1,4 +1,4 @@
-#include <mips/instructions/r_type/zero.hpp>
+#include <mips/instructions/format_I/zero.hpp>
 
 using namespace MIPS;
 

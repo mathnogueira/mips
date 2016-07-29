@@ -4,11 +4,11 @@
 
 using namespace MIPS;
 
-RegisterInstructionDecoder::RegisterInstructionDecoder() {}
+InstructionIDecoder::InstructionIDecoder() {}
 
-RegisterInstructionDecoder::~RegisterInstructionDecoder() {}
+InstructionIDecoder::~InstructionIDecoder() {}
 
-Instruction* RegisterInstructionDecoder::decode(instruction_t instruction) {
+Instruction* InstructionIDecoder::decode(instruction_t instruction) {
     return NULL;
 }
 
@@ -19,7 +19,7 @@ Instruction* RegisterInstructionDecoder::decode(instruction_t instruction) {
  * \param instruction instrução binária de 16 bits.
  * \return endereço do registrador source.
  */
-bit8_t RegisterInstructionDecoder::getRs(instruction_t instruction) {
+bit8_t InstructionIDecoder::getRs(instruction_t instruction) {
     instruction = instruction <<= 6;
     return instruction >>= 27;
 }
@@ -31,7 +31,7 @@ bit8_t RegisterInstructionDecoder::getRs(instruction_t instruction) {
  * \param instruction instrução binária de 16 bits.
  * \return endereço do registrador target.
  */
-bit8_t RegisterInstructionDecoder::getRt(instruction_t instruction) {
+bit8_t InstructionIDecoder::getRt(instruction_t instruction) {
     return 0;
 }
 
@@ -42,7 +42,7 @@ bit8_t RegisterInstructionDecoder::getRt(instruction_t instruction) {
  * \param instruction instrução binária de 16 bits.
  * \return endereço do registrador destination.
  */
-bit8_t RegisterInstructionDecoder::getRd(instruction_t instruction) {
+bit8_t InstructionIDecoder::getRd(instruction_t instruction) {
     return 0;
 }
 
@@ -52,7 +52,7 @@ bit8_t RegisterInstructionDecoder::getRd(instruction_t instruction) {
  * \param instruction instrução binária de 16 bits.
  * \return quantidade de shift da instrução.
  */
-bit8_t RegisterInstructionDecoder::getShamt(instruction_t instruction) {
+bit8_t InstructionIDecoder::getShamt(instruction_t instruction) {
     return 0;
 }
 
@@ -62,6 +62,6 @@ bit8_t RegisterInstructionDecoder::getShamt(instruction_t instruction) {
  * \param instruction instrução binária de 16 bits.
  * \return valor do funct
  */
-bit8_t RegisterInstructionDecoder::getFunct(instruction_t instruction) {
+bit8_t InstructionIDecoder::getFunct(instruction_t instruction) {
     return 0;
 }

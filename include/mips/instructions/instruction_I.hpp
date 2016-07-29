@@ -1,5 +1,5 @@
 /**
- * \file register_instruction.hpp
+ * \file instruction_I.hpp
  *
  * Arquivo contendo uma classe que representa uma instrução do tipo (R)egister.
  */
@@ -16,12 +16,12 @@ namespace MIPS {
  *
  * \author Matheus Nogueira
  */
-class RegisterInstruction : public Instruction {
+class InstructionI : public Instruction {
 
 public:
 
     /**
-     * Cria uma nova instrução (R)egister.
+     * Cria uma nova instrução do formato I.
      *
      * \param opcode codigo da operação
      * \param rs registrador source
@@ -30,7 +30,7 @@ public:
      * \param shamt quantidade de shift
      * \param funct bits para escolha da função da instrução
      */
-    RegisterInstruction(bit8_t opcode,
+    InstructionI(bit8_t opcode,
                         Register *rs,
                         Register *rt,
 						Register *rd,
@@ -47,7 +47,7 @@ public:
     /**
      * Destroi a instrução.
      */
-     virtual ~RegisterInstruction() {}
+     virtual ~InstructionI() {}
 
 	 /**
 	  * Executa a instrução

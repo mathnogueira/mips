@@ -1,4 +1,4 @@
-#include <mips/instructions/r_type/add.hpp>
+#include <mips/instructions/format_I/add.hpp>
 
 using namespace MIPS;
 

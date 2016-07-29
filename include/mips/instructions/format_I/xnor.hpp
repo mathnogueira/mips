@@ -1,33 +1,33 @@
 /**
- * \file zero.hpp
+ * \file xnor.hpp
  *
- * Declaração da instrução de ZERO.
+ * Declaração da instrução de XNOR.
  */
 #pragma once
 
-#include <mips/instructions/register_instruction.hpp>
+#include <mips/instructions/instruction_I.hpp>
 
 namespace MIPS {
 
 /**
- * Classe que faz a operação de ZERO no processador.
+ * Classe que faz a operação de XNOR no processador.
  *
- * \author Felipe Dias
+ * \author Matheus Nogueira
  */
-class ZeroInstruction : public RegisterInstruction {
+class XnorInstruction : public InstructionI {
 
 public:
 
 	/**
 	 * Constroi uma nova instrução.
 	 */
-	 ZeroInstruction(bit8_t opcode,
+	 XnorInstruction(bit8_t opcode,
                          Register *rs,
                          Register *rt,
 						 Register *rd,
                          bit8_t shamt,
                          bit8_t funct)
-	: RegisterInstruction(opcode, rs, rt, rd, shamt, funct) {}
+	: InstructionI(opcode, rs, rt, rd, shamt, funct) {}
 
 	/**
 	 * Função que executa a operação de soma.
