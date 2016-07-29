@@ -1,6 +1,6 @@
 LOOP:
-	addi $s0 $s0 -1
-	bne $s0 $zero
+	addi $s0 $s0 $s0
+	bne $s0 $s1 $s0
 		j LOOP
 
 FINISH:

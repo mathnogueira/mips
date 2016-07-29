@@ -15,5 +15,7 @@ bit8_t Encoder::getRegisterNumber(const char *name) {
 	for (size_t i = 0; i < 8; ++i)
 		if (strcmp(name, registers[i]) == 0)
 			return i;
-	throw InterpreterException("Register %s does not exist!", 0);
+	char err[100];
+	sprintf(err, "Register %s does not exist!", name);
+	throw InterpreterException(err, 0);
 }
