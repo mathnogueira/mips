@@ -36,6 +36,13 @@ public:
 	 */
 	void parse(std::vector<char*> &params);
 
+private:
+
+	/**
+	 * Offset do jump.
+	 */
+	bit16_t offset;
+
 };
 
 } // namespace
