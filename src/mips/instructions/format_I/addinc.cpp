@@ -6,10 +6,7 @@ using namespace MIPS;
 bit16_t AddIncInstruction::execute() {
     FullAdder sum;
     
-    //bit16_t result = (sum.add(this->rs->get(), this->rt->get(), 0)) + 1;
-    
-    bit16_t result = sum.add(this->rs->get(), this->rt->get(), 0);
-    result = sum.add(result, 1, 0);
+    bit16_t result = sum.add(this->rs->get(), this->rt->get(), 1);
     
     return result;
 }
