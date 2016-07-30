@@ -36,6 +36,23 @@ public:
 	 */
 	void parse(std::vector<char*> &params);
 
+private:
+
+	/**
+	 * Código de função da operação.
+	 */
+	bit8_t funct;
+
+	/**
+	 * Registrador de destino.
+	 */
+	bit8_t rd;
+
+	/**
+	 * Registrador que indica o endereço da memória.
+	 */
+	bit8_t rs;
+
 };
 
 } // namespace
