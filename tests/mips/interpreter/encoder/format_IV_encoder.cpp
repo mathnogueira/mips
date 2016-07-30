@@ -13,6 +13,16 @@ TEST(FormatIVEncoder, encodeJF_neg) {
 	ASSERT_EQ(instruction, 1149);
 }
 
+TEST(FormatIVEncoder, encodeNegativeJF_neg) {
+	std::vector<char*> params;
+	params.push_back("jf.neg");
+	params.push_back("-128");
+	FormatIVEncoder encoder;
+	encoder.parse(params);
+	instruction_t instruction = encoder.encode();
+	ASSERT_EQ(instruction, 1152);
+}
+
 TEST(FormatIVEncoder, encodeJF_zero) {
 	std::vector<char*> params;
 	params.push_back("jf.zero");
