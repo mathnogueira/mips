@@ -5,9 +5,9 @@ using namespace MIPS;
 
 TEST(FormatIIIEncoder, encodePositiveLCL) {
 	std::vector<char*> params;
-	params.push_back("lcl");
-	params.push_back("$s4");
-	params.push_back("102");
+	params.push_back((char*) "lcl");
+	params.push_back((char*) "$s4");
+	params.push_back((char*) "102");
 	FormatIIIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -16,9 +16,9 @@ TEST(FormatIIIEncoder, encodePositiveLCL) {
 
 TEST(FormatIIIEncoder, encodeNegativeLCL) {
 	std::vector<char*> params;
-	params.push_back("lcl");
-	params.push_back("$s4");
-	params.push_back("-142");
+	params.push_back((char*) "lcl");
+	params.push_back((char*) "$s4");
+	params.push_back((char*) "-142");
 	FormatIIIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -27,9 +27,9 @@ TEST(FormatIIIEncoder, encodeNegativeLCL) {
 
 TEST(FormatIIIEncoder, encodePositiveLCH) {
 	std::vector<char*> params;
-	params.push_back("lch");
-	params.push_back("$s4");
-	params.push_back("102");
+	params.push_back((char*) "lch");
+	params.push_back((char*) "$s4");
+	params.push_back((char*) "102");
 	FormatIIIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -38,9 +38,9 @@ TEST(FormatIIIEncoder, encodePositiveLCH) {
 
 TEST(FormatIIIEncoder, encodeNegativeLCH) {
 	std::vector<char*> params;
-	params.push_back("lch");
-	params.push_back("$s4");
-	params.push_back("-142");
+	params.push_back((char*) "lch");
+	params.push_back((char*) "$s4");
+	params.push_back((char*) "-142");
 	FormatIIIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();

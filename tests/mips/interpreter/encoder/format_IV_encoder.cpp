@@ -5,8 +5,8 @@ using namespace MIPS;
 
 TEST(FormatIVEncoder, encodeJF_neg) {
 	std::vector<char*> params;
-	params.push_back("jf.neg");
-	params.push_back("125");
+	params.push_back((char*) "jf.neg");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -15,8 +15,8 @@ TEST(FormatIVEncoder, encodeJF_neg) {
 
 TEST(FormatIVEncoder, encodeNegativeJF_neg) {
 	std::vector<char*> params;
-	params.push_back("jf.neg");
-	params.push_back("-128");
+	params.push_back((char*) "jf.neg");
+	params.push_back((char*) "-128");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -25,8 +25,8 @@ TEST(FormatIVEncoder, encodeNegativeJF_neg) {
 
 TEST(FormatIVEncoder, encodeJF_zero) {
 	std::vector<char*> params;
-	params.push_back("jf.zero");
-	params.push_back("125");
+	params.push_back((char*) "jf.zero");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -35,8 +35,8 @@ TEST(FormatIVEncoder, encodeJF_zero) {
 
 TEST(FormatIVEncoder, encodeJF_carry) {
 	std::vector<char*> params;
-	params.push_back("jf.carry");
-	params.push_back("125");
+	params.push_back((char*) "jf.carry");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -45,8 +45,8 @@ TEST(FormatIVEncoder, encodeJF_carry) {
 
 TEST(FormatIVEncoder, encodeJF_negzero) {
 	std::vector<char*> params;
-	params.push_back("jf.negzero");
-	params.push_back("125");
+	params.push_back((char*) "jf.negzero");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -55,8 +55,8 @@ TEST(FormatIVEncoder, encodeJF_negzero) {
 
 TEST(FormatIVEncoder, encodeJF_true) {
 	std::vector<char*> params;
-	params.push_back("jf.true");
-	params.push_back("125");
+	params.push_back((char*) "jf.true");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -65,8 +65,8 @@ TEST(FormatIVEncoder, encodeJF_true) {
 
 TEST(FormatIVEncoder, encodeJF_overflow) {
 	std::vector<char*> params;
-	params.push_back("jf.overflow");
-	params.push_back("128");
+	params.push_back((char*) "jf.overflow");
+	params.push_back((char*) "128");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -75,8 +75,8 @@ TEST(FormatIVEncoder, encodeJF_overflow) {
 
 TEST(FormatIVEncoder, encodeJT_neg) {
 	std::vector<char*> params;
-	params.push_back("jt.neg");
-	params.push_back("125");
+	params.push_back((char*) "jt.neg");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -85,8 +85,8 @@ TEST(FormatIVEncoder, encodeJT_neg) {
 
 TEST(FormatIVEncoder, encodeJT_zero) {
 	std::vector<char*> params;
-	params.push_back("jt.zero");
-	params.push_back("125");
+	params.push_back((char*) "jt.zero");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -95,8 +95,8 @@ TEST(FormatIVEncoder, encodeJT_zero) {
 
 TEST(FormatIVEncoder, encodeJT_carry) {
 	std::vector<char*> params;
-	params.push_back("jt.carry");
-	params.push_back("125");
+	params.push_back((char*) "jt.carry");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -105,8 +105,8 @@ TEST(FormatIVEncoder, encodeJT_carry) {
 
 TEST(FormatIVEncoder, encodeJT_negzero) {
 	std::vector<char*> params;
-	params.push_back("jt.negzero");
-	params.push_back("125");
+	params.push_back((char*) "jt.negzero");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -115,8 +115,8 @@ TEST(FormatIVEncoder, encodeJT_negzero) {
 
 TEST(FormatIVEncoder, encodeJT_true) {
 	std::vector<char*> params;
-	params.push_back("jt.true");
-	params.push_back("125");
+	params.push_back((char*) "jt.true");
+	params.push_back((char*) "125");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -125,8 +125,8 @@ TEST(FormatIVEncoder, encodeJT_true) {
 
 TEST(FormatIVEncoder, encodeJT_overflow) {
 	std::vector<char*> params;
-	params.push_back("jt.overflow");
-	params.push_back("128");
+	params.push_back((char*) "jt.overflow");
+	params.push_back((char*) "128");
 	FormatIVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();

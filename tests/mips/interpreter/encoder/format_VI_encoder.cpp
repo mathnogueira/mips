@@ -5,8 +5,8 @@ using namespace MIPS;
 
 TEST(FormatVIEncoder, encodeJal) {
 	std::vector<char*> params;
-	params.push_back("jal");
-	params.push_back("$s6");
+	params.push_back((char*) "jal");
+	params.push_back((char*) "$s6");
 	FormatVIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -15,8 +15,8 @@ TEST(FormatVIEncoder, encodeJal) {
 
 TEST(FormatVIEncoder, encodeJr) {
 	std::vector<char*> params;
-	params.push_back("jr");
-	params.push_back("$s5");
+	params.push_back((char*) "jr");
+	params.push_back((char*) "$s5");
 	FormatVIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
