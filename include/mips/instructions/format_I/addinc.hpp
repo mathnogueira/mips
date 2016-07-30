@@ -1,7 +1,7 @@
 /**
- * \file add.hpp
+ * \file addinc.hpp
  *
- * Declaração da instrução de ADD.
+ * Declaração da instrução de ADDINC.
  */
 #pragma once
 
@@ -10,18 +10,18 @@
 namespace MIPS {
 
 /**
- * Classe que faz a operação de ADD no processador.
+ * Classe que faz a operação de ADDINC no processador.
  *
  * \author Felipe Dias
  */
-class AddInstruction : public InstructionI {
+class AddIncInstruction : public InstructionI {
 
 public:
 
 	/**
 	 * Constroi uma nova instrução.
 	 */
-	 AddInstruction(bit8_t opcode,
+	 AddIncInstruction(bit8_t opcode,
                          Register *rs,
                          Register *rt,
                          bit8_t shamt,
