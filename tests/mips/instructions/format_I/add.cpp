@@ -30,15 +30,15 @@ TEST(AddInstruction, sumNumNegative) {
 	ASSERT_EQ(rd.get(), 1);
 }
 
-TEST(AddIncInstruction, sumNegativeNegative) {
+TEST(AddInstruction, sumNegativeNegative) {
 	Register rs("s0");
 	Register rt("s1");
 	Register rd("s2");
         
-	AddIncInstruction addinc(0, &rs, &rt, 0, 0);
+	AddInstruction add(0, &rs, &rt, 0, 0);
 	rs.put(-3);
 	rt.put(-2);
-	rd.put(addinc.execute());
+	rd.put(add.execute());
         
 	ASSERT_EQ(rd.get(), -5);
 }

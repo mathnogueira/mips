@@ -40,5 +40,5 @@ TEST(AddIncInstruction, sumNegativeNegative) {
 	rt.put(-2);
 	rd.put(addinc.execute());
         
-	ASSERT_EQ(rd.get(), -1);
+	ASSERT_EQ(rd.get(), -4);
 }
