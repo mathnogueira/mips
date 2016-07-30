@@ -11,12 +11,12 @@ TEST(Interpreter, constructor) {
 
 TEST(Interpreter, process) {
 	Interpreter i("../tests/input/test_label.asm");
-	i.processInput();
+	i.compile();
 	SUCCEED();
 }
 
 TEST(Interpreter, input_errors) {
 	Interpreter i("../tests/input/teste_invalid.asm");
-	i.processInput();
+	i.compile();
 	SUCCEED();
 }

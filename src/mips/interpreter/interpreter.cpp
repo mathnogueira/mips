@@ -19,7 +19,7 @@ Interpreter::~Interpreter() {
 	delete fileReader;
 }
 
-void Interpreter::processInput() {
+void Interpreter::compile() {
 	char *line = NULL;
 	Tokenizer tokenizer;
 	while (fileReader->hasNext()) {
@@ -97,9 +97,13 @@ void Interpreter::encode() {
 	std::vector<char*> *tokens;
 	EncoderFactory factory;
 	Encoder *encoder;
+	instruction_t instruction;
+	std::vector<instruction_t> instructions(lines.size());
 	for (size_t i = 0; i < lines.size(); ++i) {
 		tokens = &lines.at(i);
 		encoder = factory.produce(tokens->at(0));
 		encoder->parse(*tokens);
+		instruction = encoder->encode();
+		instructions.push_back(instruction);
 	}
 }

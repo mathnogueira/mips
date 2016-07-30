@@ -37,7 +37,7 @@ public:
 	/**
 	 * Processa o arquivo de entrada para que ele possa ser interpretado.
 	 */
-	void processInput();
+	void compile();
 
 	/**
 	 * Checa se o interpretador encontrou algum erro durante a sua execução. Se sim,

@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
 	}
 	Interpreter interpreter(argv[1]);
 	try {
-		interpreter.processInput();
+		interpreter.compile();
 	} catch (InterpreterException& exception) {
 		// TODO: Criar um handler de erros.
 	}
