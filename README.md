@@ -5,12 +5,13 @@ Emulador do processador MIPS de 16 bits para a disciplina GCC117 - Arquitetura d
 
 ## Tabela de conteúdo
 1. [Estrutura do projeto](#estrutura-do-projeto)
-2. [Ferramentas necessárias](#ferramentas-necessárias)
-3. [Compilando o projeto](#compilando-o-projeto)
+2. [Documentação Doxygen](docs/html/index.html)
+3. [Ferramentas necessárias](#ferramentas-necessárias)
+4. [Compilando o projeto](#compilando-o-projeto)
 	1. [Compilando e executando o projeto](#compilando-e-executando-o-projeto)
 	2. [Compilando e executando testes unitários](#compilando-e-executando-testes-unitários)
-4. [Usando o git](#usando-o-git)
-5. [Tabela de instruções](#tipos-de-instruções)
+5. [Usando o git](#usando-o-git)
+6. [Tabela de instruções](#tipos-de-instruções)
 	1. [Tipo 1](#tipo-1)
 	2. [Tipo 2](#tipo-2)
 	3. [Tipo 3](#tipo-3)
