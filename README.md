@@ -90,8 +90,8 @@ $ git push origin branch-SEUNOME
 | xnor      | 01    | RD | 00111  | RS | RT |   OK   | xnor rd, rs, rt   |
 | xor       | 01    | RD | 00110  | RS | RT |   OK   | xor rd, rs, rt    |
 | or        | 01    | RD | 00100  | RS | RT |   OK   | or rd, rs, rt     |
-| asl       | 01    | RD | 10001  | RS | RT |        | asl rd, rs        |
-| asr       | 01    | RD | 10011  | RS | RT |        | asr rd, rs        |
+| asl       | 01    | RD | 10001  | RS | RT |   OK   | asl rd, rs        |
+| asr       | 01    | RD | 10011  | RS | RT |   OK   | asr rd, rs        |
 | deca      | 01    | RD | 11101  | RS | RT |   OK   | deca rd, rs       |
 | inca      | 01    | RD | 11100  | RS | RT |   OK   | inca rd, rs       |
 | lsl       | 01    | RD | 10000  | RS | RT |        | lsl rd, rs        |
