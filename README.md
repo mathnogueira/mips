@@ -84,7 +84,7 @@ $ git push origin branch-SEUNOME
 | andnota   | 01    | RD | 01010  | RS | RT |   OK   | andnota rd, rs, rt|
 | nand      | 01    | RD | 00011  | RS | RT |   OK   | nand rd, rs, rt   |
 | nor       | 01    | RD | 00101  | RS | RT |   OK   | nor rd, rs, rt    |
-| ornotb    | 01    | RD | 01011  | RS | RT |        | ornotb rd, rs, rt |
+| ornotb    | 01    | RD | 01011  | RS | RT |   OK   | ornotb rd, rs, rt |
 | sub       | 01    | RD | 11001  | RS | RT |        | sub rd, rs, rt    |
 | subdec    | 01    | RD | 11011  | RS | RT |        | subdec rd, rs, rt |
 | xnor      | 01    | RD | 00111  | RS | RT |   OK   | xnor rd, rs, rt   |

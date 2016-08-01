@@ -8,5 +8,3 @@ bit16_t OrnotbInstruction::execute() {
 	bit16_t result = rs | !(rt);
 	return result;
 }
-
-

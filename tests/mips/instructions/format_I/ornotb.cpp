@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include <mips/instructions/format_I/ornotb.hpp>
 #include <mips/memory/register.hpp>
