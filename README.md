@@ -75,11 +75,12 @@ $ git push origin branch-SEUNOME
 ## Tipos de instruções
 
 ### Tipo 1
+
 | Instrução | Funct | Rd | OPCode | Rs | Rt | Status | Formato           |
 |:---------:|:-----:|:--:|:------:|:--:|:--:|:------:|:-----------------:|
 | add       | 01    | RD | 11000  | RS | RT |   OK   | add rd, rs, rt    |
 | addinc    | 01    | RD | 11010  | RS | RT |   OK   | addinc rd, rs, rt |
-| and       | 01    | RD | 00010  | RS | RT |        | and rd, rs, rt    |
+| and       | 01    | RD | 00010  | RS | RT |   OK   | and rd, rs, rt    |
 | andnota   | 01    | RD | 01010  | RS | RT |   OK   | andnota rd, rs, rt|
 | nand      | 01    | RD | 00011  | RS | RT |   OK   | nand rd, rs, rt   |
 | nor       | 01    | RD | 00101  | RS | RT |   OK   | nor rd, rs, rt    |
