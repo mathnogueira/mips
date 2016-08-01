@@ -1,0 +1,89 @@
+\hypertarget{classMIPS_1_1Event}{}\section{M\+I\+PS\+:\+:Event Class Reference}
+\label{classMIPS_1_1Event}\index{M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}}
+
+
+{\ttfamily \#include $<$event.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Event_a3c66c10469c0675dba66809fe92ba165}{Event} (\hyperlink{event_8hpp_a2b933d1ba3dc5a595db4dfa5b049c78c}{Event\+Type} type, void $\ast$data, bool autodestroy=false)
+\item 
+virtual \hyperlink{classMIPS_1_1Event_ae6a30dc2280feb5f1ec745cea46555f1}{$\sim$\+Event} ()
+\item 
+bool \hyperlink{classMIPS_1_1Event_a744dd00b534097bcd4d5db327a9da85a}{should\+Destroy} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{event_8hpp_a2b933d1ba3dc5a595db4dfa5b049c78c}{Event\+Type} \hyperlink{classMIPS_1_1Event_ab726d36d16847f2b2250394c6a462655}{event\+\_\+type}
+\item 
+void $\ast$ \hyperlink{classMIPS_1_1Event_a66f2b7a25dfb644ad5dc5b074f4b41a0}{data\+\_\+ptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável por representar um evento que pode ser despachado pelo despachante de eventos do emulador.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}!Event@{Event}}
+\index{Event@{Event}!M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}}
+\subsubsection[{\texorpdfstring{Event(\+Event\+Type type, void $\ast$data, bool autodestroy=false)}{Event(EventType type, void *data, bool autodestroy=false)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Event\+::\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Type}}]{type, }
+\item[{void $\ast$}]{data, }
+\item[{bool}]{autodestroy = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Event_a3c66c10469c0675dba66809fe92ba165}{}\label{classMIPS_1_1Event_a3c66c10469c0675dba66809fe92ba165}
+Cria um novo evento.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & tipo do evento \\
+\hline
+{\em data} & dados associados ao evento. Esses dados associados devem ser alocados de forma dinâmica pelo programador, utilizando a função malloc. O despachante de eventos é responsável por destruir esses dados após seu uso caso a flag autodestroy seja ativada. \\
+\hline
+{\em autodestroy} & indica que os dados do evento devem ser destruídos após que o evento seja despachado para todos seus ouvintes. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}!````~Event@{$\sim$\+Event}}
+\index{````~Event@{$\sim$\+Event}!M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}}
+\subsubsection[{\texorpdfstring{$\sim$\+Event()}{~Event()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual M\+I\+P\+S\+::\+Event\+::$\sim$\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1Event_ae6a30dc2280feb5f1ec745cea46555f1}{}\label{classMIPS_1_1Event_ae6a30dc2280feb5f1ec745cea46555f1}
+Destroi o evento e os dados relacionados ao mesmo. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}!should\+Destroy@{should\+Destroy}}
+\index{should\+Destroy@{should\+Destroy}!M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}}
+\subsubsection[{\texorpdfstring{should\+Destroy()}{shouldDestroy()}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+I\+P\+S\+::\+Event\+::should\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Event_a744dd00b534097bcd4d5db327a9da85a}{}\label{classMIPS_1_1Event_a744dd00b534097bcd4d5db327a9da85a}
+Verifica se o evento deve se auto destruir.
+
+\begin{DoxyReturn}{Returns}
+true se o evento deve se auto destruir. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}!data\+\_\+ptr@{data\+\_\+ptr}}
+\index{data\+\_\+ptr@{data\+\_\+ptr}!M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}}
+\subsubsection[{\texorpdfstring{data\+\_\+ptr}{data_ptr}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ M\+I\+P\+S\+::\+Event\+::data\+\_\+ptr}\hypertarget{classMIPS_1_1Event_a66f2b7a25dfb644ad5dc5b074f4b41a0}{}\label{classMIPS_1_1Event_a66f2b7a25dfb644ad5dc5b074f4b41a0}
+Ponteiro para os dados do evento. \index{M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}!event\+\_\+type@{event\+\_\+type}}
+\index{event\+\_\+type@{event\+\_\+type}!M\+I\+P\+S\+::\+Event@{M\+I\+P\+S\+::\+Event}}
+\subsubsection[{\texorpdfstring{event\+\_\+type}{event_type}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Event\+Type} M\+I\+P\+S\+::\+Event\+::event\+\_\+type}\hypertarget{classMIPS_1_1Event_ab726d36d16847f2b2250394c6a462655}{}\label{classMIPS_1_1Event_ab726d36d16847f2b2250394c6a462655}
+Tipo de evento. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/util/event/\hyperlink{event_8hpp}{event.\+hpp}\end{DoxyCompactItemize}

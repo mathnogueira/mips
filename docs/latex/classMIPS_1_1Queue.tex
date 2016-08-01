@@ -1,0 +1,119 @@
+\hypertarget{classMIPS_1_1Queue}{}\section{M\+I\+PS\+:\+:Queue$<$ T $>$ Class Template Reference}
+\label{classMIPS_1_1Queue}\index{M\+I\+P\+S\+::\+Queue$<$ T $>$@{M\+I\+P\+S\+::\+Queue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$queue.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMIPS_1_1Queue_1_1Node}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Queue_a9e0601a711a1cca386a294b307016d87}{Queue} ()
+\item 
+\hyperlink{classMIPS_1_1Queue_aec877c1c927ec1fae8b7a1db1b8a3eb5}{$\sim$\+Queue} ()
+\item 
+void \hyperlink{classMIPS_1_1Queue_a77b7b0d1c09253d3efc665f75f3dee45}{push} (T \&elem)
+\item 
+T \hyperlink{classMIPS_1_1Queue_a6a1fb36a33fe4ded5eb8e6c4dd754c54}{pop} ()
+\item 
+T \hyperlink{classMIPS_1_1Queue_adeb864dfe03bceff01a57270337987ad}{get} (size\+\_\+t pos)
+\item 
+size\+\_\+t \hyperlink{classMIPS_1_1Queue_a894681d26fc3e3bf2665a1b81cc18341}{size} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class M\+I\+P\+S\+::\+Queue$<$ T $>$}
+
+Fila genérica que utiliza template para auxiliar em seu reuso.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Matheus} & Nogueira \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}!Queue@{Queue}}
+\index{Queue@{Queue}!M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}}
+\subsubsection[{\texorpdfstring{Queue()}{Queue()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf M\+I\+P\+S\+::\+Queue}$<$ T $>$\+::{\bf Queue} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1Queue_a9e0601a711a1cca386a294b307016d87}{}\label{classMIPS_1_1Queue_a9e0601a711a1cca386a294b307016d87}
+Cria uma nova fila encadeada. \index{M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}!````~Queue@{$\sim$\+Queue}}
+\index{````~Queue@{$\sim$\+Queue}!M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}}
+\subsubsection[{\texorpdfstring{$\sim$\+Queue()}{~Queue()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf M\+I\+P\+S\+::\+Queue}$<$ T $>$\+::$\sim${\bf Queue} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1Queue_aec877c1c927ec1fae8b7a1db1b8a3eb5}{}\label{classMIPS_1_1Queue_aec877c1c927ec1fae8b7a1db1b8a3eb5}
+Destroi a fila e todos os seus elementos. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}!get@{get}}
+\index{get@{get}!M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}}
+\subsubsection[{\texorpdfstring{get(size\+\_\+t pos)}{get(size_t pos)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf M\+I\+P\+S\+::\+Queue}$<$ T $>$\+::get (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1Queue_adeb864dfe03bceff01a57270337987ad}{}\label{classMIPS_1_1Queue_adeb864dfe03bceff01a57270337987ad}
+Recupera o elemento que está na posição especificada da fila.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & posição do elemento na fila. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+elemento na posição especificada. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}!pop@{pop}}
+\index{pop@{pop}!M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}}
+\subsubsection[{\texorpdfstring{pop()}{pop()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf M\+I\+P\+S\+::\+Queue}$<$ T $>$\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1Queue_a6a1fb36a33fe4ded5eb8e6c4dd754c54}{}\label{classMIPS_1_1Queue_a6a1fb36a33fe4ded5eb8e6c4dd754c54}
+Retira um elemento da fila.
+
+\begin{DoxyReturn}{Returns}
+elemento no inicio da fila. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}!push@{push}}
+\index{push@{push}!M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}}
+\subsubsection[{\texorpdfstring{push(\+T \&elem)}{push(T &elem)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf M\+I\+P\+S\+::\+Queue}$<$ T $>$\+::push (
+\begin{DoxyParamCaption}
+\item[{T \&}]{elem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1Queue_a77b7b0d1c09253d3efc665f75f3dee45}{}\label{classMIPS_1_1Queue_a77b7b0d1c09253d3efc665f75f3dee45}
+Adiciona um elemento à fila.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & elemento que será inserido na fila. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}!size@{size}}
+\index{size@{size}!M\+I\+P\+S\+::\+Queue@{M\+I\+P\+S\+::\+Queue}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ size\+\_\+t {\bf M\+I\+P\+S\+::\+Queue}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1Queue_a894681d26fc3e3bf2665a1b81cc18341}{}\label{classMIPS_1_1Queue_a894681d26fc3e3bf2665a1b81cc18341}
+Retorna o tamanho da fila.
+
+\begin{DoxyReturn}{Returns}
+tamanho atual da fila. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/util/structure/queue.\+hpp\end{DoxyCompactItemize}

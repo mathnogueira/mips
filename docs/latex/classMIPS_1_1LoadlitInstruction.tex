@@ -1,0 +1,75 @@
+\hypertarget{classMIPS_1_1LoadlitInstruction}{}\section{M\+I\+PS\+:\+:Loadlit\+Instruction Class Reference}
+\label{classMIPS_1_1LoadlitInstruction}\index{M\+I\+P\+S\+::\+Loadlit\+Instruction@{M\+I\+P\+S\+::\+Loadlit\+Instruction}}
+
+
+{\ttfamily \#include $<$loadlit.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Loadlit\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMIPS_1_1LoadlitInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1LoadlitInstruction_a3f6cbb32be8166dcd9996fcd746ca96d}{Loadlit\+Instruction} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionII_a2a709b8170f2bf653de2102df9403e1f}{rd}, \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionII_ae34cdcf18cd37944dfecb96d5b07b5cb}{offset})
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1LoadlitInstruction_a9f88a932bbbf31375da7686b449608e1}{execute} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Instrução utilizada para carregar 11 bits e carregá-\/los em um registrador definido pelo programador.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Loadlit\+Instruction@{M\+I\+P\+S\+::\+Loadlit\+Instruction}!Loadlit\+Instruction@{Loadlit\+Instruction}}
+\index{Loadlit\+Instruction@{Loadlit\+Instruction}!M\+I\+P\+S\+::\+Loadlit\+Instruction@{M\+I\+P\+S\+::\+Loadlit\+Instruction}}
+\subsubsection[{\texorpdfstring{Loadlit\+Instruction(bit8\+\_\+t opcode, Register $\ast$rd, bit16\+\_\+t offset)}{LoadlitInstruction(bit8_t opcode, Register *rd, bit16_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Loadlit\+Instruction\+::\+Loadlit\+Instruction (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf Register} $\ast$}]{rd, }
+\item[{{\bf bit16\+\_\+t}}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1LoadlitInstruction_a3f6cbb32be8166dcd9996fcd746ca96d}{}\label{classMIPS_1_1LoadlitInstruction_a3f6cbb32be8166dcd9996fcd746ca96d}
+Cria uma instrução de loadlit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & código da operação \\
+\hline
+{\em rd} & registrador de destino \\
+\hline
+{\em offset} & offset de 11 bits \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Loadlit\+Instruction@{M\+I\+P\+S\+::\+Loadlit\+Instruction}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Loadlit\+Instruction@{M\+I\+P\+S\+::\+Loadlit\+Instruction}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Loadlit\+Instruction\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1LoadlitInstruction_a9f88a932bbbf31375da7686b449608e1}{}\label{classMIPS_1_1LoadlitInstruction_a9f88a932bbbf31375da7686b449608e1}
+Executa a instrução.
+
+\begin{DoxyReturn}{Returns}
+resultado da operação 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1InstructionII_aa014c5b0fe877746ca4db85c971a2e93}{M\+I\+P\+S\+::\+Instruction\+II}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/format\+\_\+\+I\+I/\hyperlink{loadlit_8hpp}{loadlit.\+hpp}\end{DoxyCompactItemize}

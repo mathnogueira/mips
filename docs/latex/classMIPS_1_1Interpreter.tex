@@ -1,0 +1,76 @@
+\hypertarget{classMIPS_1_1Interpreter}{}\section{M\+I\+PS\+:\+:Interpreter Class Reference}
+\label{classMIPS_1_1Interpreter}\index{M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}}
+
+
+{\ttfamily \#include $<$interpreter.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Interpreter_a885d19e6aba129b6e8e009b9315b27a2}{Interpreter} (const char $\ast$file)
+\item 
+\hyperlink{classMIPS_1_1Interpreter_a41cc557c63eaedc2227de15df4a965b7}{$\sim$\+Interpreter} ()
+\item 
+void \hyperlink{classMIPS_1_1Interpreter_ad530eb79becefe55e07d1e6c084f7e5d}{compile} ()
+\item 
+bool \hyperlink{classMIPS_1_1Interpreter_a9b27efdc3235bde933c65acc53ae02d0}{ok} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável por receber um texto e criar instruções 16 bits correspondentes para a arquitetura M\+I\+PS 32.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}!Interpreter@{Interpreter}}
+\index{Interpreter@{Interpreter}!M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}}
+\subsubsection[{\texorpdfstring{Interpreter(const char $\ast$file)}{Interpreter(const char *file)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Interpreter\+::\+Interpreter (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Interpreter_a885d19e6aba129b6e8e009b9315b27a2}{}\label{classMIPS_1_1Interpreter_a885d19e6aba129b6e8e009b9315b27a2}
+Cria uma nova instância do interpretador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & arquivo que será interpretado. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}!````~Interpreter@{$\sim$\+Interpreter}}
+\index{````~Interpreter@{$\sim$\+Interpreter}!M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}}
+\subsubsection[{\texorpdfstring{$\sim$\+Interpreter()}{~Interpreter()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Interpreter\+::$\sim$\+Interpreter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Interpreter_a41cc557c63eaedc2227de15df4a965b7}{}\label{classMIPS_1_1Interpreter_a41cc557c63eaedc2227de15df4a965b7}
+Destroi o interpretador. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}!compile@{compile}}
+\index{compile@{compile}!M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}}
+\subsubsection[{\texorpdfstring{compile()}{compile()}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Interpreter\+::compile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Interpreter_ad530eb79becefe55e07d1e6c084f7e5d}{}\label{classMIPS_1_1Interpreter_ad530eb79becefe55e07d1e6c084f7e5d}
+Processa o arquivo de entrada para que ele possa ser interpretado. \index{M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}!ok@{ok}}
+\index{ok@{ok}!M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}}
+\subsubsection[{\texorpdfstring{ok()}{ok()}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+I\+P\+S\+::\+Interpreter\+::ok (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1Interpreter_a9b27efdc3235bde933c65acc53ae02d0}{}\label{classMIPS_1_1Interpreter_a9b27efdc3235bde933c65acc53ae02d0}
+Checa se o interpretador encontrou algum erro durante a sua execução. Se sim, retorna false.
+
+\begin{DoxyReturn}{Returns}
+true se o interpretador realizou sem papel sem erros. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/interpreter/\hyperlink{interpreter_8hpp}{interpreter.\+hpp}\end{DoxyCompactItemize}

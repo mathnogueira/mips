@@ -1,0 +1,53 @@
+\hypertarget{classMIPS_1_1EncoderFactory}{}\section{M\+I\+PS\+:\+:Encoder\+Factory Class Reference}
+\label{classMIPS_1_1EncoderFactory}\index{M\+I\+P\+S\+::\+Encoder\+Factory@{M\+I\+P\+S\+::\+Encoder\+Factory}}
+
+
+{\ttfamily \#include $<$encoder\+\_\+factory.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1EncoderFactory_a2756a65d715e2f6ba953a6acc4ee95a8}{Encoder\+Factory} ()
+\item 
+\hyperlink{classMIPS_1_1Encoder}{Encoder} $\ast$ \hyperlink{classMIPS_1_1EncoderFactory_a38f2aab5758ae0fd464346a61924b853}{produce} (const char $\ast$instruction)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fábrica responsável por referenciar os codificadores corretos para cada instrução da linguagem de montagem do micro-\/\+R\+I\+SC.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Encoder\+Factory@{M\+I\+P\+S\+::\+Encoder\+Factory}!Encoder\+Factory@{Encoder\+Factory}}
+\index{Encoder\+Factory@{Encoder\+Factory}!M\+I\+P\+S\+::\+Encoder\+Factory@{M\+I\+P\+S\+::\+Encoder\+Factory}}
+\subsubsection[{\texorpdfstring{Encoder\+Factory()}{EncoderFactory()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Encoder\+Factory\+::\+Encoder\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1EncoderFactory_a2756a65d715e2f6ba953a6acc4ee95a8}{}\label{classMIPS_1_1EncoderFactory_a2756a65d715e2f6ba953a6acc4ee95a8}
+Cria uma nova fábrica de codificadores. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Encoder\+Factory@{M\+I\+P\+S\+::\+Encoder\+Factory}!produce@{produce}}
+\index{produce@{produce}!M\+I\+P\+S\+::\+Encoder\+Factory@{M\+I\+P\+S\+::\+Encoder\+Factory}}
+\subsubsection[{\texorpdfstring{produce(const char $\ast$instruction)}{produce(const char *instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Encoder}$\ast$ M\+I\+P\+S\+::\+Encoder\+Factory\+::produce (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{instruction}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1EncoderFactory_a38f2aab5758ae0fd464346a61924b853}{}\label{classMIPS_1_1EncoderFactory_a38f2aab5758ae0fd464346a61924b853}
+Produz um codificador para determinada instrução.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & nome da instrução que deve ser codificada. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/interpreter/encoder/\hyperlink{encoder__factory_8hpp}{encoder\+\_\+factory.\+hpp}\end{DoxyCompactItemize}

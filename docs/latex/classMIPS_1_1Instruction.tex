@@ -1,0 +1,94 @@
+\hypertarget{classMIPS_1_1Instruction}{}\section{M\+I\+PS\+:\+:Instruction Class Reference}
+\label{classMIPS_1_1Instruction}\index{M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}}
+
+
+{\ttfamily \#include $<$instruction.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classMIPS_1_1Instruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Instruction_ab99cb1c89cd950412585375681b1466d}{$\sim$\+Instruction} ()
+\item 
+virtual \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a88668dfaf49dd8608f210ba13948d242}{execute} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a78e2b55f80640b476e99ee54f5be068c}{zero}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_ad13e93d52d4df49287f3e92711b3927f}{neg}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a9894219fb3f9f6d0c33959bf45bf8151}{carry}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a34c04dbd0f64117d7b19f8bf6e6cb87a}{overflow}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe abstrata responsável por representar qualquer instrução em uma arquitetura de 16 bits.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}!````~Instruction@{$\sim$\+Instruction}}
+\index{````~Instruction@{$\sim$\+Instruction}!M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{$\sim$\+Instruction()}{~Instruction()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+::$\sim$\+Instruction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1Instruction_ab99cb1c89cd950412585375681b1466d}{}\label{classMIPS_1_1Instruction_ab99cb1c89cd950412585375681b1466d}
+Destroi a instrução. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{execute()=0}{execute()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Instruction\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMIPS_1_1Instruction_a88668dfaf49dd8608f210ba13948d242}{}\label{classMIPS_1_1Instruction_a88668dfaf49dd8608f210ba13948d242}
+Método abstrato que deverá ser invocado para que uma instrução seja executada pelo emulador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resultado} & de saída da instrução. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classMIPS_1_1InstructionI_ae60fca5801bf5415cdff06d2aa11764f}{M\+I\+P\+S\+::\+InstructionI}, \hyperlink{classMIPS_1_1InstructionII_aa014c5b0fe877746ca4db85c971a2e93}{M\+I\+P\+S\+::\+Instruction\+II}, \hyperlink{classMIPS_1_1InstructionIII_aee3071c23abc542e55b446abee766c5e}{M\+I\+P\+S\+::\+Instruction\+I\+II}, \hyperlink{classMIPS_1_1LchInstruction_a6dad60c9189a1e84fd7c789b9642077d}{M\+I\+P\+S\+::\+Lch\+Instruction}, \hyperlink{classMIPS_1_1LclInstruction_a713c7c0e33c9df49f677abfd95f363db}{M\+I\+P\+S\+::\+Lcl\+Instruction}, \hyperlink{classMIPS_1_1LoadlitInstruction_a9f88a932bbbf31375da7686b449608e1}{M\+I\+P\+S\+::\+Loadlit\+Instruction}, \hyperlink{classMIPS_1_1AddInstruction_aa699dc00fdcd4250944f8afaa2fa89eb}{M\+I\+P\+S\+::\+Add\+Instruction}, \hyperlink{classMIPS_1_1AddIncInstruction_aa63fcaf17a9afc2f1b5d09a6291a70d6}{M\+I\+P\+S\+::\+Add\+Inc\+Instruction}, \hyperlink{classMIPS_1_1AndnotaInstruction_afdc3b2836318f4adaa32dfa3bcdf7c45}{M\+I\+P\+S\+::\+Andnota\+Instruction}, \hyperlink{classMIPS_1_1AslInstruction_adafc2d1f549cda9bdf757dc2bac03ca9}{M\+I\+P\+S\+::\+Asl\+Instruction}, \hyperlink{classMIPS_1_1AsrInstruction_aad46283e10517abf6bf5e527ca020d53}{M\+I\+P\+S\+::\+Asr\+Instruction}, \hyperlink{classMIPS_1_1DecaInstruction_a82c3d685d910d2c52163f5faa1750aca}{M\+I\+P\+S\+::\+Deca\+Instruction}, \hyperlink{classMIPS_1_1IncaInstruction_ac78e4a0b037ab4b6b419f4f5a34413c7}{M\+I\+P\+S\+::\+Inca\+Instruction}, \hyperlink{classMIPS_1_1NandInstruction_a2e0266ebee3819e7b4d9bfb44f0e70ac}{M\+I\+P\+S\+::\+Nand\+Instruction}, \hyperlink{classMIPS_1_1NorInstruction_a68bb5cc9920bd63229f4c16c4edb5ab6}{M\+I\+P\+S\+::\+Nor\+Instruction}, \hyperlink{classMIPS_1_1OnesInstruction_aeab25fd32df5c092d4f426371f3f1ff3}{M\+I\+P\+S\+::\+Ones\+Instruction}, \hyperlink{classMIPS_1_1PassaInstruction_ae23b43bfb84d2ef69fa25e50fb5b6072}{M\+I\+P\+S\+::\+Passa\+Instruction}, \hyperlink{classMIPS_1_1PassNotAInstruction_a30b9bdb1feac1adb44e70a3a0eb85cb4}{M\+I\+P\+S\+::\+Pass\+Not\+A\+Instruction}, \hyperlink{classMIPS_1_1SubInstruction_a2b10f6bfda0e7d9651600b530cfccf62}{M\+I\+P\+S\+::\+Sub\+Instruction}, \hyperlink{classMIPS_1_1XnorInstruction_a4b5ae9a875883902c0ed1e237e753f31}{M\+I\+P\+S\+::\+Xnor\+Instruction}, \hyperlink{classMIPS_1_1XorInstruction_aaebc7dc8723627871ba2caf85f01fbea}{M\+I\+P\+S\+::\+Xor\+Instruction}, \hyperlink{classMIPS_1_1ZeroInstruction_a9596a96b4bf7a51672ab14386d111bad}{M\+I\+P\+S\+::\+Zero\+Instruction}, \hyperlink{classMIPS_1_1SubdecInstruction_a6d9e86774b950a584b60d9a48402af2a}{M\+I\+P\+S\+::\+Subdec\+Instruction}, \hyperlink{classMIPS_1_1AndInstruction_a24b2fdb68ff022275db4181e502b7a48}{M\+I\+P\+S\+::\+And\+Instruction}, \hyperlink{classMIPS_1_1OrInstruction_a89859e0bcb3e5ed7f1c53f33f627f041}{M\+I\+P\+S\+::\+Or\+Instruction}, and \hyperlink{classMIPS_1_1OrnotbInstruction_a47aac4ac3ef0ee8c6a694189f26bd80e}{M\+I\+P\+S\+::\+Ornotb\+Instruction}.
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}!carry@{carry}}
+\index{carry@{carry}!M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{carry}{carry}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+::carry\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1Instruction_a9894219fb3f9f6d0c33959bf45bf8151}{}\label{classMIPS_1_1Instruction_a9894219fb3f9f6d0c33959bf45bf8151}
+Flag de carry. \index{M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}!neg@{neg}}
+\index{neg@{neg}!M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{neg}{neg}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+::neg\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1Instruction_ad13e93d52d4df49287f3e92711b3927f}{}\label{classMIPS_1_1Instruction_ad13e93d52d4df49287f3e92711b3927f}
+Flag de negativo \index{M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}!opcode@{opcode}}
+\index{opcode@{opcode}!M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{opcode}{opcode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+::opcode\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{}\label{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}
+Código da operação (opcode) da instrução. \index{M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}!overflow@{overflow}}
+\index{overflow@{overflow}!M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{overflow}{overflow}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+::overflow\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1Instruction_a34c04dbd0f64117d7b19f8bf6e6cb87a}{}\label{classMIPS_1_1Instruction_a34c04dbd0f64117d7b19f8bf6e6cb87a}
+flag de overflow \index{M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}!zero@{zero}}
+\index{zero@{zero}!M\+I\+P\+S\+::\+Instruction@{M\+I\+P\+S\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{zero}{zero}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+::zero\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1Instruction_a78e2b55f80640b476e99ee54f5be068c}{}\label{classMIPS_1_1Instruction_a78e2b55f80640b476e99ee54f5be068c}
+Flag de zero. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/\hyperlink{instruction_8hpp}{instruction.\+hpp}\end{DoxyCompactItemize}

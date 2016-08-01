@@ -1,0 +1,109 @@
+\hypertarget{classMIPS_1_1FileReader}{}\section{M\+I\+PS\+:\+:File\+Reader Class Reference}
+\label{classMIPS_1_1FileReader}\index{M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}}
+
+
+{\ttfamily \#include $<$file\+\_\+reader.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1FileReader_ab3287e189c99bc1c6232e0a874824a04}{File\+Reader} (const char $\ast$filename)
+\item 
+\hyperlink{classMIPS_1_1FileReader_a9151c88a7f99aeddb7f2114b1263ccda}{File\+Reader} (const char $\ast$filename, \hyperlink{classMIPS_1_1Filter}{Filter} \&filter)
+\item 
+\hyperlink{classMIPS_1_1FileReader_a2357f2ae095cb728bfccf5d3b72529a8}{$\sim$\+File\+Reader} ()
+\item 
+char $\ast$ \hyperlink{classMIPS_1_1FileReader_af343e2652200f0ae52cedbfe22dba0cf}{next} ()
+\item 
+void \hyperlink{classMIPS_1_1FileReader_a5f60a3cdab4475ddf28bb3cc77a742ad}{rewind} ()
+\item 
+bool \hyperlink{classMIPS_1_1FileReader_a15e77fbddc428aaab28d750bdd777479}{has\+Next} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável por ler o conteúdo de um arquivo e salvá-\/lo internamente, fazendo com que seja simples para obter as informações do mesmo.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}!File\+Reader@{File\+Reader}}
+\index{File\+Reader@{File\+Reader}!M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}}
+\subsubsection[{\texorpdfstring{File\+Reader(const char $\ast$filename)}{FileReader(const char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+File\+Reader\+::\+File\+Reader (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FileReader_ab3287e189c99bc1c6232e0a874824a04}{}\label{classMIPS_1_1FileReader_ab3287e189c99bc1c6232e0a874824a04}
+Cria um novo leitor de arquivo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & nome do arquivo a ser lido. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}!File\+Reader@{File\+Reader}}
+\index{File\+Reader@{File\+Reader}!M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}}
+\subsubsection[{\texorpdfstring{File\+Reader(const char $\ast$filename, Filter \&filter)}{FileReader(const char *filename, Filter &filter)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+File\+Reader\+::\+File\+Reader (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{{\bf Filter} \&}]{filter}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FileReader_a9151c88a7f99aeddb7f2114b1263ccda}{}\label{classMIPS_1_1FileReader_a9151c88a7f99aeddb7f2114b1263ccda}
+Cria um novo leitor de arquivo que filtra determinadas entradas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & nome do arquivo a ser lido. \\
+\hline
+{\em filter} & filtro a ser utilizado. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}!````~File\+Reader@{$\sim$\+File\+Reader}}
+\index{````~File\+Reader@{$\sim$\+File\+Reader}!M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}}
+\subsubsection[{\texorpdfstring{$\sim$\+File\+Reader()}{~FileReader()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+File\+Reader\+::$\sim$\+File\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FileReader_a2357f2ae095cb728bfccf5d3b72529a8}{}\label{classMIPS_1_1FileReader_a2357f2ae095cb728bfccf5d3b72529a8}
+Destroi o leitor de arquivo e o conteúdo do buffer interno. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}!has\+Next@{has\+Next}}
+\index{has\+Next@{has\+Next}!M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}}
+\subsubsection[{\texorpdfstring{has\+Next()}{hasNext()}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+I\+P\+S\+::\+File\+Reader\+::has\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FileReader_a15e77fbddc428aaab28d750bdd777479}{}\label{classMIPS_1_1FileReader_a15e77fbddc428aaab28d750bdd777479}
+Checa se o arquivo ainda tem conteúdo para ser lido.
+
+\begin{DoxyReturn}{Returns}
+booleano que se true, indica que ainda existe linhas a ser lidas. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}!next@{next}}
+\index{next@{next}!M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}}
+\subsubsection[{\texorpdfstring{next()}{next()}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ M\+I\+P\+S\+::\+File\+Reader\+::next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FileReader_af343e2652200f0ae52cedbfe22dba0cf}{}\label{classMIPS_1_1FileReader_af343e2652200f0ae52cedbfe22dba0cf}
+Retorna a proxima linha do arquivo.
+
+\begin{DoxyReturn}{Returns}
+proxima linha do arquivo. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}!rewind@{rewind}}
+\index{rewind@{rewind}!M\+I\+P\+S\+::\+File\+Reader@{M\+I\+P\+S\+::\+File\+Reader}}
+\subsubsection[{\texorpdfstring{rewind()}{rewind()}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+File\+Reader\+::rewind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FileReader_a5f60a3cdab4475ddf28bb3cc77a742ad}{}\label{classMIPS_1_1FileReader_a5f60a3cdab4475ddf28bb3cc77a742ad}
+Retorna o ponteiro da linha atual para o inicio do arquivo. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/util/\hyperlink{file__reader_8hpp}{file\+\_\+reader.\+hpp}\end{DoxyCompactItemize}

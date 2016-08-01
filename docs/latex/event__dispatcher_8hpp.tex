@@ -1,0 +1,17 @@
+\hypertarget{event__dispatcher_8hpp}{}\section{include/mips/util/event/event\+\_\+dispatcher.hpp File Reference}
+\label{event__dispatcher_8hpp}\index{include/mips/util/event/event\+\_\+dispatcher.\+hpp@{include/mips/util/event/event\+\_\+dispatcher.\+hpp}}
+{\ttfamily \#include $<$mips/util/structure/queue.\+hpp$>$}\\*
+{\ttfamily \#include $<$mips/util/event/event\+\_\+listener.\+hpp$>$}\\*
+{\ttfamily \#include $<$mips/util/event/event.\+hpp$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMIPS_1_1EventDispatcher}{M\+I\+P\+S\+::\+Event\+Dispatcher}
+\item 
+struct \hyperlink{structMIPS_1_1EventDispatcher_1_1ListenerMap}{M\+I\+P\+S\+::\+Event\+Dispatcher\+::\+Listener\+Map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Arquivo contendo o despachante de eventos utilizado por diversos componentes do núcleo do emulador M\+I\+PS. Esse despachante é responsável por criar uma interface de despache de eventos para outros componentes, dessa forma, um componente pode comunicar com outro componente usando troca de mensagens, onde estas são transmitidas via eventos. 

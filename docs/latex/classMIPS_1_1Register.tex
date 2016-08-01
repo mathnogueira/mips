@@ -1,0 +1,102 @@
+\hypertarget{classMIPS_1_1Register}{}\section{M\+I\+PS\+:\+:Register Class Reference}
+\label{classMIPS_1_1Register}\index{M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}}
+
+
+{\ttfamily \#include $<$register.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Register_a56019b9be3e98dbe2f2af79326ffc06d}{Register} (const char $\ast$name, bool protect=false)
+\item 
+\hyperlink{classMIPS_1_1Register_a2f1d711bc1c48c4ebb52bc955ed0b190}{$\sim$\+Register} ()
+\item 
+void \hyperlink{classMIPS_1_1Register_aa22ebc8c3dd83a88cb537bb8bfd6d745}{put} (\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} value)
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1Register_a78679e51c4825a877fb82bd2481c237e}{get} ()
+\item 
+const char $\ast$ \hyperlink{classMIPS_1_1Register_a09fd0ac8d18acb6907e47915f518c695}{get\+Name} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa um registrador de 16 bits.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}!Register@{Register}}
+\index{Register@{Register}!M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}}
+\subsubsection[{\texorpdfstring{Register(const char $\ast$name, bool protect=false)}{Register(const char *name, bool protect=false)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Register\+::\+Register (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{bool}]{protect = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Register_a56019b9be3e98dbe2f2af79326ffc06d}{}\label{classMIPS_1_1Register_a56019b9be3e98dbe2f2af79326ffc06d}
+Cria um novo registrador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nome do registrador. Cria um novo registrador.\\
+\hline
+{\em name} & nome do registrador. \\
+\hline
+{\em protected} & indica se o registrador é protegido para escrita. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}!````~Register@{$\sim$\+Register}}
+\index{````~Register@{$\sim$\+Register}!M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}}
+\subsubsection[{\texorpdfstring{$\sim$\+Register()}{~Register()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Register\+::$\sim$\+Register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Register_a2f1d711bc1c48c4ebb52bc955ed0b190}{}\label{classMIPS_1_1Register_a2f1d711bc1c48c4ebb52bc955ed0b190}
+Destroi o registrador. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}!get@{get}}
+\index{get@{get}!M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Register\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Register_a78679e51c4825a877fb82bd2481c237e}{}\label{classMIPS_1_1Register_a78679e51c4825a877fb82bd2481c237e}
+Pega o valor 16 bits armazenado no registrador.
+
+\begin{DoxyReturn}{Returns}
+valor armazenado no registrador. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}}
+\subsubsection[{\texorpdfstring{get\+Name()}{getName()}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ M\+I\+P\+S\+::\+Register\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Register_a09fd0ac8d18acb6907e47915f518c695}{}\label{classMIPS_1_1Register_a09fd0ac8d18acb6907e47915f518c695}
+Retorna o nome do registrador.
+
+\begin{DoxyReturn}{Returns}
+nome do registrador. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}!put@{put}}
+\index{put@{put}!M\+I\+P\+S\+::\+Register@{M\+I\+P\+S\+::\+Register}}
+\subsubsection[{\texorpdfstring{put(bit16\+\_\+t value)}{put(bit16_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Register\+::put (
+\begin{DoxyParamCaption}
+\item[{{\bf bit16\+\_\+t}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Register_aa22ebc8c3dd83a88cb537bb8bfd6d745}{}\label{classMIPS_1_1Register_aa22ebc8c3dd83a88cb537bb8bfd6d745}
+Define um valor que o registrador irá guardar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & valor 16 bits que será armazenado no registrador. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/memory/\hyperlink{register_8hpp}{register.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,132 @@
+\hypertarget{classMIPS_1_1Encoder}{}\section{M\+I\+PS\+:\+:Encoder Class Reference}
+\label{classMIPS_1_1Encoder}\index{M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}}
+
+
+{\ttfamily \#include $<$encoder.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.012658cm]{classMIPS_1_1Encoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Encoder_a8c8b884b1cab08714cea0e467a5bea97}{Encoder} ()
+\item 
+virtual \hyperlink{classMIPS_1_1Encoder_aa19e1b31786eef05c8633790a12fa2a2}{$\sim$\+Encoder} ()
+\item 
+virtual \hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} \hyperlink{classMIPS_1_1Encoder_ac3ea6ce91eabd41b3c512a39ee4c3550}{encode} ()=0
+\item 
+virtual void \hyperlink{classMIPS_1_1Encoder_a4a29c42d601460be8e8d353d8fc0da34}{parse} (std\+::vector$<$ char $\ast$ $>$ \&params)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Encoder_af0e5dea3612f5063e48257bf0028f2dd}{get\+Register\+Number} (const char $\ast$name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Encoder_a1d07a78c088f8180af5f7b9ec3ca10f0}{opcode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe abstrata que cria uma interface para todos os codificadores de instruções M\+I\+PS 32.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}!Encoder@{Encoder}}
+\index{Encoder@{Encoder}!M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{Encoder()}{Encoder()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Encoder\+::\+Encoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Encoder_a8c8b884b1cab08714cea0e467a5bea97}{}\label{classMIPS_1_1Encoder_a8c8b884b1cab08714cea0e467a5bea97}
+Cria um novo codificador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em labels} & tabela de labels extraídos do código. \\
+\hline
+{\em type} & tipo de codificador. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}!````~Encoder@{$\sim$\+Encoder}}
+\index{````~Encoder@{$\sim$\+Encoder}!M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{$\sim$\+Encoder()}{~Encoder()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual M\+I\+P\+S\+::\+Encoder\+::$\sim$\+Encoder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMIPS_1_1Encoder_aa19e1b31786eef05c8633790a12fa2a2}{}\label{classMIPS_1_1Encoder_aa19e1b31786eef05c8633790a12fa2a2}
+Destroi o codificador. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}!encode@{encode}}
+\index{encode@{encode}!M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{encode()=0}{encode()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf instruction\+\_\+t} M\+I\+P\+S\+::\+Encoder\+::encode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMIPS_1_1Encoder_ac3ea6ce91eabd41b3c512a39ee4c3550}{}\label{classMIPS_1_1Encoder_ac3ea6ce91eabd41b3c512a39ee4c3550}
+Codifica a ultima instrução que foi analisada pelo parser do codificador.
+
+\begin{DoxyReturn}{Returns}
+instrução 16 bits. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classMIPS_1_1FormatIEncoder_af9fcd414057f2c01f2dada479d8592cb}{M\+I\+P\+S\+::\+Format\+I\+Encoder}, \hyperlink{classMIPS_1_1FormatIIEncoder_aaf5f5f9d4c9b6b63b150b239cb5b03fe}{M\+I\+P\+S\+::\+Format\+I\+I\+Encoder}, \hyperlink{classMIPS_1_1FormatIIIEncoder_ab243fc73a602716a7ed15f13dbd2b695}{M\+I\+P\+S\+::\+Format\+I\+I\+I\+Encoder}, \hyperlink{classMIPS_1_1FormatIVEncoder_a1d23ca4c9c81536dd43a18dc8dd43f97}{M\+I\+P\+S\+::\+Format\+I\+V\+Encoder}, \hyperlink{classMIPS_1_1FormatVEncoder_a95e96820cef484d427c64145006d8837}{M\+I\+P\+S\+::\+Format\+V\+Encoder}, \hyperlink{classMIPS_1_1FormatVIEncoder_ae0a892a24d712d260f80dbc6e85b7090}{M\+I\+P\+S\+::\+Format\+V\+I\+Encoder}, and \hyperlink{classMIPS_1_1FormatVIIEncoder_a2afcc51d8983491e39d145766639b995}{M\+I\+P\+S\+::\+Format\+V\+I\+I\+Encoder}.
+
+\index{M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}!get\+Register\+Number@{get\+Register\+Number}}
+\index{get\+Register\+Number@{get\+Register\+Number}!M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{get\+Register\+Number(const char $\ast$name)}{getRegisterNumber(const char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Encoder\+::get\+Register\+Number (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1Encoder_af0e5dea3612f5063e48257bf0028f2dd}{}\label{classMIPS_1_1Encoder_af0e5dea3612f5063e48257bf0028f2dd}
+Retorna o número do registrador solicitado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nome do registrador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+número do registrador 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}!parse@{parse}}
+\index{parse@{parse}!M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{parse(std\+::vector$<$ char $\ast$ $>$ \&params)=0}{parse(std::vector< char * > &params)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void M\+I\+P\+S\+::\+Encoder\+::parse (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ char $\ast$ $>$ \&}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMIPS_1_1Encoder_a4a29c42d601460be8e8d353d8fc0da34}{}\label{classMIPS_1_1Encoder_a4a29c42d601460be8e8d353d8fc0da34}
+Percorre a instrução em assembly e extraí os dados dela para poder montar uma instrução binária.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & parametros da instrução. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classMIPS_1_1FormatIEncoder_a04b46dc7d7b3734e42eaeedc500de2da}{M\+I\+P\+S\+::\+Format\+I\+Encoder}, \hyperlink{classMIPS_1_1FormatIIEncoder_aa988c9638985b07eea58f3e11ff4c2e7}{M\+I\+P\+S\+::\+Format\+I\+I\+Encoder}, \hyperlink{classMIPS_1_1FormatIIIEncoder_a06c8d98fe19c20d5e4f0986d7d500637}{M\+I\+P\+S\+::\+Format\+I\+I\+I\+Encoder}, \hyperlink{classMIPS_1_1FormatIVEncoder_a42f251011a97af63a707b4d0607e18a9}{M\+I\+P\+S\+::\+Format\+I\+V\+Encoder}, \hyperlink{classMIPS_1_1FormatVEncoder_af73c15fbc94eac0f8b28e6d7fa2e4dc2}{M\+I\+P\+S\+::\+Format\+V\+Encoder}, \hyperlink{classMIPS_1_1FormatVIEncoder_a4cec696ab9deca5b957ddbab97139631}{M\+I\+P\+S\+::\+Format\+V\+I\+Encoder}, and \hyperlink{classMIPS_1_1FormatVIIEncoder_a67272c7aad39c6f49c4aa162119215ba}{M\+I\+P\+S\+::\+Format\+V\+I\+I\+Encoder}.
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}!opcode@{opcode}}
+\index{opcode@{opcode}!M\+I\+P\+S\+::\+Encoder@{M\+I\+P\+S\+::\+Encoder}}
+\subsubsection[{\texorpdfstring{opcode}{opcode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Encoder\+::opcode\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1Encoder_a1d07a78c088f8180af5f7b9ec3ca10f0}{}\label{classMIPS_1_1Encoder_a1d07a78c088f8180af5f7b9ec3ca10f0}
+Opcode da instrução. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/interpreter/encoder/\hyperlink{encoder_8hpp}{encoder.\+hpp}\end{DoxyCompactItemize}

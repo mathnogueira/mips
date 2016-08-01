@@ -1,0 +1,87 @@
+\hypertarget{classMIPS_1_1DecoderFinder}{}\section{M\+I\+PS\+:\+:Decoder\+Finder Class Reference}
+\label{classMIPS_1_1DecoderFinder}\index{M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}}
+
+
+{\ttfamily \#include $<$decoder\+\_\+finder.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1DecoderFinder_ae4cf7a2edb104ff6ab61c69a8e4aa3da}{Decoder\+Finder} ()
+\item 
+\hyperlink{classMIPS_1_1DecoderFinder_a7338de0779c6ea514bbb7adf82da1c07}{$\sim$\+Decoder\+Finder} ()
+\item 
+\hyperlink{classMIPS_1_1Instruction}{Instruction} $\ast$ \hyperlink{classMIPS_1_1DecoderFinder_ade32de5a84c67c28c42b98ab891cf669}{decode} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMIPS_1_1InstructionDecoder}{Instruction\+Decoder} $\ast$ \hyperlink{classMIPS_1_1DecoderFinder_a9ea34d6e420f684de5d6fe3b10ce5c6b}{find} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável por encontrar os decodificadores responsáveis por decodificar uma determinada instrução 16 bits.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}!Decoder\+Finder@{Decoder\+Finder}}
+\index{Decoder\+Finder@{Decoder\+Finder}!M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}}
+\subsubsection[{\texorpdfstring{Decoder\+Finder()}{DecoderFinder()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Decoder\+Finder\+::\+Decoder\+Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1DecoderFinder_ae4cf7a2edb104ff6ab61c69a8e4aa3da}{}\label{classMIPS_1_1DecoderFinder_ae4cf7a2edb104ff6ab61c69a8e4aa3da}
+Constrói um novo localizador de decodificadores. \index{M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}!````~Decoder\+Finder@{$\sim$\+Decoder\+Finder}}
+\index{````~Decoder\+Finder@{$\sim$\+Decoder\+Finder}!M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}}
+\subsubsection[{\texorpdfstring{$\sim$\+Decoder\+Finder()}{~DecoderFinder()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Decoder\+Finder\+::$\sim$\+Decoder\+Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1DecoderFinder_a7338de0779c6ea514bbb7adf82da1c07}{}\label{classMIPS_1_1DecoderFinder_a7338de0779c6ea514bbb7adf82da1c07}
+Destroi o localizador de decodificadores. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}!decode@{decode}}
+\index{decode@{decode}!M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}}
+\subsubsection[{\texorpdfstring{decode(instruction\+\_\+t instruction)}{decode(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Instruction}$\ast$ M\+I\+P\+S\+::\+Decoder\+Finder\+::decode (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1DecoderFinder_ade32de5a84c67c28c42b98ab891cf669}{}\label{classMIPS_1_1DecoderFinder_ade32de5a84c67c28c42b98ab891cf669}
+Decodifica uma instrução qualquer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução a ser decodificada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+instrução decodificada. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}!find@{find}}
+\index{find@{find}!M\+I\+P\+S\+::\+Decoder\+Finder@{M\+I\+P\+S\+::\+Decoder\+Finder}}
+\subsubsection[{\texorpdfstring{find(instruction\+\_\+t instruction)}{find(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction\+Decoder}$\ast$ M\+I\+P\+S\+::\+Decoder\+Finder\+::find (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classMIPS_1_1DecoderFinder_a9ea34d6e420f684de5d6fe3b10ce5c6b}{}\label{classMIPS_1_1DecoderFinder_a9ea34d6e420f684de5d6fe3b10ce5c6b}
+Retorna o decodificador adequado para a decodificação de uma instrução 16 bits para a arquitetura do M\+I\+PS.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução que deve ser decodificada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+decodificador adequado para a instrução. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/decoder/\hyperlink{decoder__finder_8hpp}{decoder\+\_\+finder.\+hpp}\end{DoxyCompactItemize}

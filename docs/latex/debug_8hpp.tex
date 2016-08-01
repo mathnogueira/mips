@@ -1,0 +1,67 @@
+\hypertarget{debug_8hpp}{}\section{include/mips/debug.hpp File Reference}
+\label{debug_8hpp}\index{include/mips/debug.\+hpp@{include/mips/debug.\+hpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$mips/core.\+hpp$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries M\+E\+S\+S\+A\+GE}(arg)
+\item 
+\#define {\bfseries D\+E\+B\+UG}(arg)
+\item 
+\#define {\bfseries P\+R\+I\+N\+T\+\_\+\+B\+IN}(num)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Arquivo que contém funções para auxiliar o processo de D\+E\+B\+UG da execução do emulador. 
+
+\subsection{Macro Definition Documentation}
+\index{debug.\+hpp@{debug.\+hpp}!D\+E\+B\+UG@{D\+E\+B\+UG}}
+\index{D\+E\+B\+UG@{D\+E\+B\+UG}!debug.\+hpp@{debug.\+hpp}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+UG}{DEBUG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+UG(
+\begin{DoxyParamCaption}
+\item[{}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{debug_8hpp_a2b693f340408970999294e7bb3dbe67d}{}\label{debug_8hpp_a2b693f340408970999294e7bb3dbe67d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                                   \(\backslash\)
+            std::cout << \textcolor{stringliteral}{"[DEBUG] "} << arg << std::endl;                        \(\backslash\)
+        \}
+\end{DoxyCode}
+\index{debug.\+hpp@{debug.\+hpp}!M\+E\+S\+S\+A\+GE@{M\+E\+S\+S\+A\+GE}}
+\index{M\+E\+S\+S\+A\+GE@{M\+E\+S\+S\+A\+GE}!debug.\+hpp@{debug.\+hpp}}
+\subsubsection[{\texorpdfstring{M\+E\+S\+S\+A\+GE}{MESSAGE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+E\+S\+S\+A\+GE(
+\begin{DoxyParamCaption}
+\item[{}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{debug_8hpp_ad9b35bd881509861cc3254c75acfb850}{}\label{debug_8hpp_ad9b35bd881509861cc3254c75acfb850}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                                 \(\backslash\)
+            std::cout << arg << std::endl;                                     \(\backslash\)
+        \}
+\end{DoxyCode}
+\index{debug.\+hpp@{debug.\+hpp}!P\+R\+I\+N\+T\+\_\+\+B\+IN@{P\+R\+I\+N\+T\+\_\+\+B\+IN}}
+\index{P\+R\+I\+N\+T\+\_\+\+B\+IN@{P\+R\+I\+N\+T\+\_\+\+B\+IN}!debug.\+hpp@{debug.\+hpp}}
+\subsubsection[{\texorpdfstring{P\+R\+I\+N\+T\+\_\+\+B\+IN}{PRINT_BIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+I\+N\+T\+\_\+\+B\+IN(
+\begin{DoxyParamCaption}
+\item[{}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{debug_8hpp_aa660381c871ce694f88d5414a0030286}{}\label{debug_8hpp_aa660381c871ce694f88d5414a0030286}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                   \(\backslash\)
+            char x09878412bin = 0;                  \(\backslash\)
+            char i = 15;                            \(\backslash\)
+            for (; i >= 0; --i) \{                   \(\backslash\)
+                x09878412bin = (num >> i) & 1;      \(\backslash\)
+                printf(\textcolor{stringliteral}{"%d"}, x09878412bin);         \(\backslash\)
+                if (i % 4 == 0)                         \(\backslash\)
+                    printf(\textcolor{stringliteral}{" "});                    \(\backslash\)
+            \}                                       \(\backslash\)
+            printf(\textcolor{stringliteral}{"\(\backslash\)n"});                           \(\backslash\)
+        \}
+\end{DoxyCode}

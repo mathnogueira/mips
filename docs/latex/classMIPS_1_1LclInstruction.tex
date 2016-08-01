@@ -1,0 +1,75 @@
+\hypertarget{classMIPS_1_1LclInstruction}{}\section{M\+I\+PS\+:\+:Lcl\+Instruction Class Reference}
+\label{classMIPS_1_1LclInstruction}\index{M\+I\+P\+S\+::\+Lcl\+Instruction@{M\+I\+P\+S\+::\+Lcl\+Instruction}}
+
+
+{\ttfamily \#include $<$lcl.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Lcl\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMIPS_1_1LclInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1LclInstruction_aae1096406aaf2cbf94f7755d05869d05}{Lcl\+Instruction} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionIII_a76e7b218fc57cd2fc559bf72498090b6}{rd}, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionIII_ad0ebd3b6e7594fc583e9a409bf99a6c7}{offset})
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1LclInstruction_a713c7c0e33c9df49f677abfd95f363db}{execute} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Instrução utilizada para carregar 8 bits e carregá-\/los em um no bit menos significativo do registrador definido pelo programador.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Lcl\+Instruction@{M\+I\+P\+S\+::\+Lcl\+Instruction}!Lcl\+Instruction@{Lcl\+Instruction}}
+\index{Lcl\+Instruction@{Lcl\+Instruction}!M\+I\+P\+S\+::\+Lcl\+Instruction@{M\+I\+P\+S\+::\+Lcl\+Instruction}}
+\subsubsection[{\texorpdfstring{Lcl\+Instruction(bit8\+\_\+t opcode, Register $\ast$rd, bit8\+\_\+t offset)}{LclInstruction(bit8_t opcode, Register *rd, bit8_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Lcl\+Instruction\+::\+Lcl\+Instruction (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf Register} $\ast$}]{rd, }
+\item[{{\bf bit8\+\_\+t}}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1LclInstruction_aae1096406aaf2cbf94f7755d05869d05}{}\label{classMIPS_1_1LclInstruction_aae1096406aaf2cbf94f7755d05869d05}
+Cria uma instrução de lhc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & código da operação \\
+\hline
+{\em rd} & registrador de destino \\
+\hline
+{\em offset} & offset de 11 bits \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Lcl\+Instruction@{M\+I\+P\+S\+::\+Lcl\+Instruction}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Lcl\+Instruction@{M\+I\+P\+S\+::\+Lcl\+Instruction}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Lcl\+Instruction\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1LclInstruction_a713c7c0e33c9df49f677abfd95f363db}{}\label{classMIPS_1_1LclInstruction_a713c7c0e33c9df49f677abfd95f363db}
+Executa a instrução.
+
+\begin{DoxyReturn}{Returns}
+resultado da operação 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1InstructionIII_aee3071c23abc542e55b446abee766c5e}{M\+I\+P\+S\+::\+Instruction\+I\+II}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/format\+\_\+\+I\+I\+I/lcl.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{classMIPS_1_1InterpreterException}{}\section{M\+I\+PS\+:\+:Interpreter\+Exception Class Reference}
+\label{classMIPS_1_1InterpreterException}\index{M\+I\+P\+S\+::\+Interpreter\+Exception@{M\+I\+P\+S\+::\+Interpreter\+Exception}}
+
+
+{\ttfamily \#include $<$interpreter\+\_\+exception.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Interpreter\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMIPS_1_1InterpreterException}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1InterpreterException_a8c3cc0b526ddeca99eee51bfbf353549}{Interpreter\+Exception} (const char $\ast$msg, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} opcode)
+\item 
+virtual const char $\ast$ \hyperlink{classMIPS_1_1InterpreterException_a7ddaf2edf53aaaf5b0ad995635033003}{what} () const   throw ()
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InterpreterException_a6d2fc264fb6b9c61bf9690747d1bf5b6}{get\+Code} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Exceção que é lançada pelo interpretador quando um erro é encontrado no arquivo fonte.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Interpreter\+Exception@{M\+I\+P\+S\+::\+Interpreter\+Exception}!Interpreter\+Exception@{Interpreter\+Exception}}
+\index{Interpreter\+Exception@{Interpreter\+Exception}!M\+I\+P\+S\+::\+Interpreter\+Exception@{M\+I\+P\+S\+::\+Interpreter\+Exception}}
+\subsubsection[{\texorpdfstring{Interpreter\+Exception(const char $\ast$msg, bit8\+\_\+t opcode)}{InterpreterException(const char *msg, bit8_t opcode)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Interpreter\+Exception\+::\+Interpreter\+Exception (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg, }
+\item[{{\bf bit8\+\_\+t}}]{opcode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1InterpreterException_a8c3cc0b526ddeca99eee51bfbf353549}{}\label{classMIPS_1_1InterpreterException_a8c3cc0b526ddeca99eee51bfbf353549}
+Cria uma nova exceção.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & mensagem de erro. \\
+\hline
+{\em opcode} & código do erro. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Interpreter\+Exception@{M\+I\+P\+S\+::\+Interpreter\+Exception}!get\+Code@{get\+Code}}
+\index{get\+Code@{get\+Code}!M\+I\+P\+S\+::\+Interpreter\+Exception@{M\+I\+P\+S\+::\+Interpreter\+Exception}}
+\subsubsection[{\texorpdfstring{get\+Code()}{getCode()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Interpreter\+Exception\+::get\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1InterpreterException_a6d2fc264fb6b9c61bf9690747d1bf5b6}{}\label{classMIPS_1_1InterpreterException_a6d2fc264fb6b9c61bf9690747d1bf5b6}
+Retorna o codigo de operação da exceção.
+
+\begin{DoxyReturn}{Returns}
+codigo de operação. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Interpreter\+Exception@{M\+I\+P\+S\+::\+Interpreter\+Exception}!what@{what}}
+\index{what@{what}!M\+I\+P\+S\+::\+Interpreter\+Exception@{M\+I\+P\+S\+::\+Interpreter\+Exception}}
+\subsubsection[{\texorpdfstring{what() const }{what() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ M\+I\+P\+S\+::\+Interpreter\+Exception\+::what (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  ) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMIPS_1_1InterpreterException_a7ddaf2edf53aaaf5b0ad995635033003}{}\label{classMIPS_1_1InterpreterException_a7ddaf2edf53aaaf5b0ad995635033003}
+Retorna a mensagem de erro.
+
+\begin{DoxyReturn}{Returns}
+mensagem de erro. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/interpreter/exception/interpreter\+\_\+exception.\+hpp\end{DoxyCompactItemize}

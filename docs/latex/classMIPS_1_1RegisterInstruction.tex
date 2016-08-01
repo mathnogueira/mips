@@ -1,0 +1,122 @@
+\hypertarget{classMIPS_1_1RegisterInstruction}{}\section{M\+I\+PS\+:\+:Register\+Instruction Class Reference}
+\label{classMIPS_1_1RegisterInstruction}\index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+
+
+{\ttfamily \#include $<$register\+\_\+instruction.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Register\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.100000cm]{classMIPS_1_1RegisterInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1RegisterInstruction_a045e405b2686a05e3173724582e79944}{Register\+Instruction} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1RegisterInstruction_ac901daa914a523f2725e69ffc1fa6982}{rs}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1RegisterInstruction_af6f209ae3da38c3b58c8791837217c07}{rt}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1RegisterInstruction_a440089aa8e302ded14fbccfcb6cd5d4f}{rd}, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1RegisterInstruction_a92e140a46c42d4ece7a1b497f9228fdc}{shamt}, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1RegisterInstruction_a1e26d32655594e99cbfc576c73ae4f94}{funct})
+\item 
+virtual \hyperlink{classMIPS_1_1RegisterInstruction_a64d533ccc487a60099947e0891be1ff8}{$\sim$\+Register\+Instruction} ()
+\item 
+virtual void \hyperlink{classMIPS_1_1RegisterInstruction_a4e1c8051158926465f93a256122a8eee}{execute} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1RegisterInstruction_ac901daa914a523f2725e69ffc1fa6982}{rs}
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1RegisterInstruction_af6f209ae3da38c3b58c8791837217c07}{rt}
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1RegisterInstruction_a440089aa8e302ded14fbccfcb6cd5d4f}{rd}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1RegisterInstruction_a92e140a46c42d4ece7a1b497f9228fdc}{shamt}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1RegisterInstruction_a1e26d32655594e99cbfc576c73ae4f94}{funct}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa uma instrução do tipo (R)egister.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}!Register\+Instruction@{Register\+Instruction}}
+\index{Register\+Instruction@{Register\+Instruction}!M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+\subsubsection[{\texorpdfstring{Register\+Instruction(bit8\+\_\+t opcode, Register $\ast$rs, Register $\ast$rt, Register $\ast$rd, bit8\+\_\+t shamt, bit8\+\_\+t funct)}{RegisterInstruction(bit8_t opcode, Register *rs, Register *rt, Register *rd, bit8_t shamt, bit8_t funct)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Register\+Instruction\+::\+Register\+Instruction (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf Register} $\ast$}]{rs, }
+\item[{{\bf Register} $\ast$}]{rt, }
+\item[{{\bf Register} $\ast$}]{rd, }
+\item[{{\bf bit8\+\_\+t}}]{shamt, }
+\item[{{\bf bit8\+\_\+t}}]{funct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1RegisterInstruction_a045e405b2686a05e3173724582e79944}{}\label{classMIPS_1_1RegisterInstruction_a045e405b2686a05e3173724582e79944}
+Cria uma nova instrução (R)egister.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & codigo da operação \\
+\hline
+{\em rs} & registrador source \\
+\hline
+{\em rt} & registrador target \\
+\hline
+{\em rd} & registrador destination \\
+\hline
+{\em shamt} & quantidade de shift \\
+\hline
+{\em funct} & bits para escolha da função da instrução \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}!````~Register\+Instruction@{$\sim$\+Register\+Instruction}}
+\index{````~Register\+Instruction@{$\sim$\+Register\+Instruction}!M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+\subsubsection[{\texorpdfstring{$\sim$\+Register\+Instruction()}{~RegisterInstruction()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual M\+I\+P\+S\+::\+Register\+Instruction\+::$\sim$\+Register\+Instruction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMIPS_1_1RegisterInstruction_a64d533ccc487a60099947e0891be1ff8}{}\label{classMIPS_1_1RegisterInstruction_a64d533ccc487a60099947e0891be1ff8}
+Destroi a instrução. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+\subsubsection[{\texorpdfstring{execute()=0}{execute()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void M\+I\+P\+S\+::\+Register\+Instruction\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMIPS_1_1RegisterInstruction_a4e1c8051158926465f93a256122a8eee}{}\label{classMIPS_1_1RegisterInstruction_a4e1c8051158926465f93a256122a8eee}
+Executa a instrução 
+
+Implements \hyperlink{classMIPS_1_1Instruction_a086a1e1717f3039d17df426a3b6f7dfa}{M\+I\+P\+S\+::\+Instruction}.
+
+
+
+Implemented in \hyperlink{classMIPS_1_1NandInstruction_ab507f14f5ec907515526271b893737be}{M\+I\+P\+S\+::\+Nand\+Instruction}, \hyperlink{classMIPS_1_1PassaInstruction_a93544d9455f692ee498fc2e64f3cd449}{M\+I\+P\+S\+::\+Passa\+Instruction}, \hyperlink{classMIPS_1_1XnorInstruction_ac5d4899e874738e1127b7e0a26f431be}{M\+I\+P\+S\+::\+Xnor\+Instruction}, \hyperlink{classMIPS_1_1ZeroInstruction_ae4643f70f7c48720cdbf709ccd5710f1}{M\+I\+P\+S\+::\+Zero\+Instruction}, and \hyperlink{classMIPS_1_1AddInstruction_a6a500b4fda74a6dff7861787fc0e1743}{M\+I\+P\+S\+::\+Add\+Instruction}.
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}!funct@{funct}}
+\index{funct@{funct}!M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+\subsubsection[{\texorpdfstring{funct}{funct}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Register\+Instruction\+::funct\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1RegisterInstruction_a1e26d32655594e99cbfc576c73ae4f94}{}\label{classMIPS_1_1RegisterInstruction_a1e26d32655594e99cbfc576c73ae4f94}
+Valor da funct da instrução. \index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}!rd@{rd}}
+\index{rd@{rd}!M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+\subsubsection[{\texorpdfstring{rd}{rd}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Register\+Instruction\+::rd\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1RegisterInstruction_a440089aa8e302ded14fbccfcb6cd5d4f}{}\label{classMIPS_1_1RegisterInstruction_a440089aa8e302ded14fbccfcb6cd5d4f}
+Registrador destination (Rd) da instrução. \index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}!rs@{rs}}
+\index{rs@{rs}!M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+\subsubsection[{\texorpdfstring{rs}{rs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Register\+Instruction\+::rs\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1RegisterInstruction_ac901daa914a523f2725e69ffc1fa6982}{}\label{classMIPS_1_1RegisterInstruction_ac901daa914a523f2725e69ffc1fa6982}
+Registrador source (Rs) da instrução. \index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}!rt@{rt}}
+\index{rt@{rt}!M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+\subsubsection[{\texorpdfstring{rt}{rt}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Register\+Instruction\+::rt\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1RegisterInstruction_af6f209ae3da38c3b58c8791837217c07}{}\label{classMIPS_1_1RegisterInstruction_af6f209ae3da38c3b58c8791837217c07}
+Registrador target (Rt) da instrução. \index{M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}!shamt@{shamt}}
+\index{shamt@{shamt}!M\+I\+P\+S\+::\+Register\+Instruction@{M\+I\+P\+S\+::\+Register\+Instruction}}
+\subsubsection[{\texorpdfstring{shamt}{shamt}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Register\+Instruction\+::shamt\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1RegisterInstruction_a92e140a46c42d4ece7a1b497f9228fdc}{}\label{classMIPS_1_1RegisterInstruction_a92e140a46c42d4ece7a1b497f9228fdc}
+Valor do shamt (shift amount) da instrução. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/\hyperlink{register__instruction_8hpp}{register\+\_\+instruction.\+hpp}\end{DoxyCompactItemize}

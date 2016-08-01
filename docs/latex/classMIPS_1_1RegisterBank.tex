@@ -1,0 +1,65 @@
+\hypertarget{classMIPS_1_1RegisterBank}{}\section{M\+I\+PS\+:\+:Register\+Bank Class Reference}
+\label{classMIPS_1_1RegisterBank}\index{M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}}
+
+
+{\ttfamily \#include $<$register\+\_\+bank.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1RegisterBank_ad30994f3b2df40a11234f4e53d820cd2}{Register\+Bank} ()
+\item 
+\hyperlink{classMIPS_1_1RegisterBank_ab86cb023791911b8f056870064d29245}{$\sim$\+Register\+Bank} ()
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1RegisterBank_a6a7df1ec1d165a4d7273bde8caa94e45}{get\+Register} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa o banco de registradores do M\+I\+PS. Esta é responsável por gerenciar os registradores do processador.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}!Register\+Bank@{Register\+Bank}}
+\index{Register\+Bank@{Register\+Bank}!M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}}
+\subsubsection[{\texorpdfstring{Register\+Bank()}{RegisterBank()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Register\+Bank\+::\+Register\+Bank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1RegisterBank_ad30994f3b2df40a11234f4e53d820cd2}{}\label{classMIPS_1_1RegisterBank_ad30994f3b2df40a11234f4e53d820cd2}
+Cria uma instância do banco de registradores. \index{M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}!````~Register\+Bank@{$\sim$\+Register\+Bank}}
+\index{````~Register\+Bank@{$\sim$\+Register\+Bank}!M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}}
+\subsubsection[{\texorpdfstring{$\sim$\+Register\+Bank()}{~RegisterBank()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Register\+Bank\+::$\sim$\+Register\+Bank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1RegisterBank_ab86cb023791911b8f056870064d29245}{}\label{classMIPS_1_1RegisterBank_ab86cb023791911b8f056870064d29245}
+Destroi a instância do banco de registradores. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}!get\+Register@{get\+Register}}
+\index{get\+Register@{get\+Register}!M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}}
+\subsubsection[{\texorpdfstring{get\+Register(bit8\+\_\+t id)}{getRegister(bit8_t id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Register\+Bank\+::get\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1RegisterBank_a6a7df1ec1d165a4d7273bde8caa94e45}{}\label{classMIPS_1_1RegisterBank_a6a7df1ec1d165a4d7273bde8caa94e45}
+Retorna um ponteiro para o registrador identificado pelo código especificado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & código do registrador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ponteiro para o registrador. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/memory/\hyperlink{register__bank_8hpp}{register\+\_\+bank.\+hpp}\end{DoxyCompactItemize}

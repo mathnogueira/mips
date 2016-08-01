@@ -1,0 +1,76 @@
+\hypertarget{classMIPS_1_1FullAdder}{}\section{M\+I\+PS\+:\+:Full\+Adder Class Reference}
+\label{classMIPS_1_1FullAdder}\index{M\+I\+P\+S\+::\+Full\+Adder@{M\+I\+P\+S\+::\+Full\+Adder}}
+
+
+{\ttfamily \#include $<$full\+\_\+adder.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1FullAdder_a6b2eecd1b2720d87322810a72ab0cf16}{Full\+Adder} ()
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1FullAdder_a19fda5cf604f2b04f55ebe8aa3972c7f}{add} (\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} a, \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} b, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} c=0)
+\item 
+bool \hyperlink{classMIPS_1_1FullAdder_ad700abfd3da45fe8d25a9f1b071378a8}{overflow} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável por realizar as operações de um somador de 16 bits.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Full\+Adder@{M\+I\+P\+S\+::\+Full\+Adder}!Full\+Adder@{Full\+Adder}}
+\index{Full\+Adder@{Full\+Adder}!M\+I\+P\+S\+::\+Full\+Adder@{M\+I\+P\+S\+::\+Full\+Adder}}
+\subsubsection[{\texorpdfstring{Full\+Adder()}{FullAdder()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Full\+Adder\+::\+Full\+Adder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FullAdder_a6b2eecd1b2720d87322810a72ab0cf16}{}\label{classMIPS_1_1FullAdder_a6b2eecd1b2720d87322810a72ab0cf16}
+Cria um novo somador. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Full\+Adder@{M\+I\+P\+S\+::\+Full\+Adder}!add@{add}}
+\index{add@{add}!M\+I\+P\+S\+::\+Full\+Adder@{M\+I\+P\+S\+::\+Full\+Adder}}
+\subsubsection[{\texorpdfstring{add(bit16\+\_\+t a, bit16\+\_\+t b, bit8\+\_\+t c=0)}{add(bit16_t a, bit16_t b, bit8_t c=0)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Full\+Adder\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf bit16\+\_\+t}}]{a, }
+\item[{{\bf bit16\+\_\+t}}]{b, }
+\item[{{\bf bit8\+\_\+t}}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FullAdder_a19fda5cf604f2b04f55ebe8aa3972c7f}{}\label{classMIPS_1_1FullAdder_a19fda5cf604f2b04f55ebe8aa3972c7f}
+Soma dois números de 16 bits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & primeiro parametro da soma \\
+\hline
+{\em b} & segundo parametro da soma \\
+\hline
+{\em c} & carry de entrada (padrão\+: 0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resultado da soma entre a e b 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Full\+Adder@{M\+I\+P\+S\+::\+Full\+Adder}!overflow@{overflow}}
+\index{overflow@{overflow}!M\+I\+P\+S\+::\+Full\+Adder@{M\+I\+P\+S\+::\+Full\+Adder}}
+\subsubsection[{\texorpdfstring{overflow()}{overflow()}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+I\+P\+S\+::\+Full\+Adder\+::overflow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1FullAdder_ad700abfd3da45fe8d25a9f1b071378a8}{}\label{classMIPS_1_1FullAdder_ad700abfd3da45fe8d25a9f1b071378a8}
+Verifica se houve overflow na operação de adição.
+
+\begin{DoxyReturn}{Returns}
+true se houve overflow. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/circuits/\hyperlink{full__adder_8hpp}{full\+\_\+adder.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\hypertarget{classMIPS_1_1JEncoder}{}\section{M\+I\+PS\+:\+:J\+Encoder Class Reference}
+\label{classMIPS_1_1JEncoder}\index{M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}}
+
+
+{\ttfamily \#include $<$j\+\_\+encoder.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:J\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMIPS_1_1JEncoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1JEncoder_afd3b10f842f961a7ee808450094613ee}{J\+Encoder} (std\+::vector$<$ \hyperlink{structMIPS_1_1Label}{Label} $>$ \&labels)
+\item 
+\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} \hyperlink{classMIPS_1_1JEncoder_a0c2682f5d21da1e872675ccfe8995e62}{encode} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1JEncoder_a7c8a1750a88644f955501b841ea29490}{opcode}
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1JEncoder_a912e11de3756d2d4cb33cbdceb29b021}{address}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Codificador de instruções do tipo J.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}!J\+Encoder@{J\+Encoder}}
+\index{J\+Encoder@{J\+Encoder}!M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}}
+\subsubsection[{\texorpdfstring{J\+Encoder(std\+::vector$<$ Label $>$ \&labels)}{JEncoder(std::vector< Label > &labels)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+J\+Encoder\+::\+J\+Encoder (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Label} $>$ \&}]{labels}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1JEncoder_afd3b10f842f961a7ee808450094613ee}{}\label{classMIPS_1_1JEncoder_afd3b10f842f961a7ee808450094613ee}
+Cria um novo codificador de instruções do tipo J.
+
+
+\begin{DoxyParams}{Parameters}
+{\em labels} & tabela de labels extraídos do código. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}!encode@{encode}}
+\index{encode@{encode}!M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}}
+\subsubsection[{\texorpdfstring{encode()}{encode()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf instruction\+\_\+t} M\+I\+P\+S\+::\+J\+Encoder\+::encode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1JEncoder_a0c2682f5d21da1e872675ccfe8995e62}{}\label{classMIPS_1_1JEncoder_a0c2682f5d21da1e872675ccfe8995e62}
+Codifica uma instrução assembly para uma instrução de 16 bits.
+
+\begin{DoxyReturn}{Returns}
+instrução 16 bits. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1Encoder_ac3ea6ce91eabd41b3c512a39ee4c3550}{M\+I\+P\+S\+::\+Encoder}.
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}!address@{address}}
+\index{address@{address}!M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}}
+\subsubsection[{\texorpdfstring{address}{address}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+J\+Encoder\+::address\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1JEncoder_a912e11de3756d2d4cb33cbdceb29b021}{}\label{classMIPS_1_1JEncoder_a912e11de3756d2d4cb33cbdceb29b021}
+Pseudo-\/endereço para onde o contador de programa deve ser transferido. \index{M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}!opcode@{opcode}}
+\index{opcode@{opcode}!M\+I\+P\+S\+::\+J\+Encoder@{M\+I\+P\+S\+::\+J\+Encoder}}
+\subsubsection[{\texorpdfstring{opcode}{opcode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+J\+Encoder\+::opcode\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1JEncoder_a7c8a1750a88644f955501b841ea29490}{}\label{classMIPS_1_1JEncoder_a7c8a1750a88644f955501b841ea29490}
+Opcode da instrução. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/interpreter/encoder/j\+\_\+encoder.\+hpp\end{DoxyCompactItemize}

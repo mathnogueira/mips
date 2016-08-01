@@ -1,5 +1,4 @@
 build/
-docs/
 nbproject/
 CMakeFiles/
 
@@ -31,3 +30,4 @@ CMakeFiles/
 *.exe
 *.out
 *.app
+

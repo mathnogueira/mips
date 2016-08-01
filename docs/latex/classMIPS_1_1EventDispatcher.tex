@@ -1,0 +1,86 @@
+\hypertarget{classMIPS_1_1EventDispatcher}{}\section{M\+I\+PS\+:\+:Event\+Dispatcher Class Reference}
+\label{classMIPS_1_1EventDispatcher}\index{M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}}
+
+
+{\ttfamily \#include $<$event\+\_\+dispatcher.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMIPS_1_1EventDispatcher_1_1ListenerMap}{Listener\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1EventDispatcher_ac0274686b219131fffa051f3877cf952}{Event\+Dispatcher} ()
+\item 
+virtual \hyperlink{classMIPS_1_1EventDispatcher_ac443528f78d0d446590e1d550a9ed41a}{$\sim$\+Event\+Dispatcher} ()
+\item 
+void \hyperlink{classMIPS_1_1EventDispatcher_a39eedeb6d95d5725a2608880b24ac5fc}{dispatch} (\hyperlink{classMIPS_1_1Event}{Event} \&event)
+\item 
+void \hyperlink{classMIPS_1_1EventDispatcher_a9e4615cf1c83a18a259b6f48756db486}{add\+Event\+Listener} (\hyperlink{classMIPS_1_1EventListener}{Event\+Listener} $\ast$listener, \hyperlink{event_8hpp_a2b933d1ba3dc5a595db4dfa5b049c78c}{Event\+Type} event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável por permitir que componentes do emulador possam se comunicar por troca de mensagens transmitidas por eventos.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}!Event\+Dispatcher@{Event\+Dispatcher}}
+\index{Event\+Dispatcher@{Event\+Dispatcher}!M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{Event\+Dispatcher()}{EventDispatcher()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Event\+Dispatcher\+::\+Event\+Dispatcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1EventDispatcher_ac0274686b219131fffa051f3877cf952}{}\label{classMIPS_1_1EventDispatcher_ac0274686b219131fffa051f3877cf952}
+Cria um novo despachante de eventos. \index{M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}!````~Event\+Dispatcher@{$\sim$\+Event\+Dispatcher}}
+\index{````~Event\+Dispatcher@{$\sim$\+Event\+Dispatcher}!M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{$\sim$\+Event\+Dispatcher()}{~EventDispatcher()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual M\+I\+P\+S\+::\+Event\+Dispatcher\+::$\sim$\+Event\+Dispatcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1EventDispatcher_ac443528f78d0d446590e1d550a9ed41a}{}\label{classMIPS_1_1EventDispatcher_ac443528f78d0d446590e1d550a9ed41a}
+Destroi o despachante de eventos. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}!add\+Event\+Listener@{add\+Event\+Listener}}
+\index{add\+Event\+Listener@{add\+Event\+Listener}!M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{add\+Event\+Listener(\+Event\+Listener $\ast$listener, Event\+Type event)}{addEventListener(EventListener *listener, EventType event)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Event\+Dispatcher\+::add\+Event\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Listener} $\ast$}]{listener, }
+\item[{{\bf Event\+Type}}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1EventDispatcher_a9e4615cf1c83a18a259b6f48756db486}{}\label{classMIPS_1_1EventDispatcher_a9e4615cf1c83a18a259b6f48756db486}
+Adiciona um ouvinte de eventos nesse despachante.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & ouvinte de eventos \\
+\hline
+{\em event} & tipo de evento que o ouvinte irá escutar. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!M\+I\+P\+S\+::\+Event\+Dispatcher@{M\+I\+P\+S\+::\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{dispatch(\+Event \&event)}{dispatch(Event &event)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Event\+Dispatcher\+::dispatch (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} \&}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1EventDispatcher_a39eedeb6d95d5725a2608880b24ac5fc}{}\label{classMIPS_1_1EventDispatcher_a39eedeb6d95d5725a2608880b24ac5fc}
+Despacha um evento para todos os seus ouvintes. Caso o evento esteja marcado com a flag autodestroy, o evento será destruido logo após a chamada desse método.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & evento a ser despachado. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/util/event/\hyperlink{event__dispatcher_8hpp}{event\+\_\+dispatcher.\+hpp}\end{DoxyCompactItemize}

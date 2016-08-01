@@ -1,0 +1,110 @@
+\hypertarget{classMIPS_1_1REncoder}{}\section{M\+I\+PS\+:\+:R\+Encoder Class Reference}
+\label{classMIPS_1_1REncoder}\index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+
+
+{\ttfamily \#include $<$r\+\_\+encoder.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:R\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMIPS_1_1REncoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1REncoder_aecaa80e72064c50b0270f1803e43fa3b}{R\+Encoder} (std\+::vector$<$ \hyperlink{structMIPS_1_1Label}{Label} $>$ \&labels)
+\item 
+\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} \hyperlink{classMIPS_1_1REncoder_a2a5a71f7dd73eea571788fbef3d3276a}{encode} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1REncoder_a04c45c6675a84230191ecf390cee278b}{opcode}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1REncoder_a98545a1686a061f09c8ec3cae568df7e}{rs}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1REncoder_a28985816a2e613fe596463094cbd24e6}{rt}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1REncoder_a66d3a5016d3e8ed0dd36750961195e4a}{rd}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1REncoder_a86e13a93659f403b2d251e66d70d7199}{shamt}
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1REncoder_aa8301de411b55767a7cca2806584edc1}{funct}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Codificador de instruções do tipo I.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}!R\+Encoder@{R\+Encoder}}
+\index{R\+Encoder@{R\+Encoder}!M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+\subsubsection[{\texorpdfstring{R\+Encoder(std\+::vector$<$ Label $>$ \&labels)}{REncoder(std::vector< Label > &labels)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+R\+Encoder\+::\+R\+Encoder (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Label} $>$ \&}]{labels}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1REncoder_aecaa80e72064c50b0270f1803e43fa3b}{}\label{classMIPS_1_1REncoder_aecaa80e72064c50b0270f1803e43fa3b}
+Cria um novo codificador de instruções do tipo R.
+
+
+\begin{DoxyParams}{Parameters}
+{\em labels} & tabela de labels extraídos do código. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}!encode@{encode}}
+\index{encode@{encode}!M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+\subsubsection[{\texorpdfstring{encode()}{encode()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf instruction\+\_\+t} M\+I\+P\+S\+::\+R\+Encoder\+::encode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1REncoder_a2a5a71f7dd73eea571788fbef3d3276a}{}\label{classMIPS_1_1REncoder_a2a5a71f7dd73eea571788fbef3d3276a}
+Codifica uma instrução assembly para uma instrução de 16 bits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & paramêtros da instrução assembly. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+instrução 16 bits. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1Encoder_ac3ea6ce91eabd41b3c512a39ee4c3550}{M\+I\+P\+S\+::\+Encoder}.
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}!funct@{funct}}
+\index{funct@{funct}!M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+\subsubsection[{\texorpdfstring{funct}{funct}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+R\+Encoder\+::funct\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1REncoder_aa8301de411b55767a7cca2806584edc1}{}\label{classMIPS_1_1REncoder_aa8301de411b55767a7cca2806584edc1}
+Código de função da instrução. \index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}!opcode@{opcode}}
+\index{opcode@{opcode}!M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+\subsubsection[{\texorpdfstring{opcode}{opcode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+R\+Encoder\+::opcode\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1REncoder_a04c45c6675a84230191ecf390cee278b}{}\label{classMIPS_1_1REncoder_a04c45c6675a84230191ecf390cee278b}
+Opcode da instrução. \index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}!rd@{rd}}
+\index{rd@{rd}!M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+\subsubsection[{\texorpdfstring{rd}{rd}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+R\+Encoder\+::rd\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1REncoder_a66d3a5016d3e8ed0dd36750961195e4a}{}\label{classMIPS_1_1REncoder_a66d3a5016d3e8ed0dd36750961195e4a}
+Registrador destination \index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}!rs@{rs}}
+\index{rs@{rs}!M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+\subsubsection[{\texorpdfstring{rs}{rs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+R\+Encoder\+::rs\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1REncoder_a98545a1686a061f09c8ec3cae568df7e}{}\label{classMIPS_1_1REncoder_a98545a1686a061f09c8ec3cae568df7e}
+Registrador source. \index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}!rt@{rt}}
+\index{rt@{rt}!M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+\subsubsection[{\texorpdfstring{rt}{rt}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+R\+Encoder\+::rt\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1REncoder_a28985816a2e613fe596463094cbd24e6}{}\label{classMIPS_1_1REncoder_a28985816a2e613fe596463094cbd24e6}
+Registrador target \index{M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}!shamt@{shamt}}
+\index{shamt@{shamt}!M\+I\+P\+S\+::\+R\+Encoder@{M\+I\+P\+S\+::\+R\+Encoder}}
+\subsubsection[{\texorpdfstring{shamt}{shamt}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+R\+Encoder\+::shamt\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1REncoder_a86e13a93659f403b2d251e66d70d7199}{}\label{classMIPS_1_1REncoder_a86e13a93659f403b2d251e66d70d7199}
+Quantidade de shift (shift amount) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/interpreter/encoder/r\+\_\+encoder.\+hpp\end{DoxyCompactItemize}

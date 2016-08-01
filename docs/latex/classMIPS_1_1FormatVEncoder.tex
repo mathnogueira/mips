@@ -1,0 +1,70 @@
+\hypertarget{classMIPS_1_1FormatVEncoder}{}\section{M\+I\+PS\+:\+:Format\+V\+Encoder Class Reference}
+\label{classMIPS_1_1FormatVEncoder}\index{M\+I\+P\+S\+::\+Format\+V\+Encoder@{M\+I\+P\+S\+::\+Format\+V\+Encoder}}
+
+
+{\ttfamily \#include $<$format\+\_\+\+V\+\_\+encoder.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Format\+V\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMIPS_1_1FormatVEncoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} \hyperlink{classMIPS_1_1FormatVEncoder_a95e96820cef484d427c64145006d8837}{encode} ()
+\item 
+void \hyperlink{classMIPS_1_1FormatVEncoder_af73c15fbc94eac0f8b28e6d7fa2e4dc2}{parse} (std\+::vector$<$ char $\ast$ $>$ \&params)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Codificador responsável por transformar uma instrução assembly em uma instrução binária, seguindo o formato de instrução no formato V.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Format\+V\+Encoder@{M\+I\+P\+S\+::\+Format\+V\+Encoder}!encode@{encode}}
+\index{encode@{encode}!M\+I\+P\+S\+::\+Format\+V\+Encoder@{M\+I\+P\+S\+::\+Format\+V\+Encoder}}
+\subsubsection[{\texorpdfstring{encode()}{encode()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf instruction\+\_\+t} M\+I\+P\+S\+::\+Format\+V\+Encoder\+::encode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1FormatVEncoder_a95e96820cef484d427c64145006d8837}{}\label{classMIPS_1_1FormatVEncoder_a95e96820cef484d427c64145006d8837}
+Codifica uma instrução assembly do formato V para uma instrução binária.
+
+\begin{DoxyReturn}{Returns}
+instrução binária de 16 bits 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1Encoder_ac3ea6ce91eabd41b3c512a39ee4c3550}{M\+I\+P\+S\+::\+Encoder}.
+
+\index{M\+I\+P\+S\+::\+Format\+V\+Encoder@{M\+I\+P\+S\+::\+Format\+V\+Encoder}!parse@{parse}}
+\index{parse@{parse}!M\+I\+P\+S\+::\+Format\+V\+Encoder@{M\+I\+P\+S\+::\+Format\+V\+Encoder}}
+\subsubsection[{\texorpdfstring{parse(std\+::vector$<$ char $\ast$ $>$ \&params)}{parse(std::vector< char * > &params)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Format\+V\+Encoder\+::parse (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ char $\ast$ $>$ \&}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1FormatVEncoder_af73c15fbc94eac0f8b28e6d7fa2e4dc2}{}\label{classMIPS_1_1FormatVEncoder_af73c15fbc94eac0f8b28e6d7fa2e4dc2}
+Realiza uma varredura na instrução assembly e define seus campos binários.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & vector de parâmetros da instrução \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMIPS_1_1Encoder_a4a29c42d601460be8e8d353d8fc0da34}{M\+I\+P\+S\+::\+Encoder}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/interpreter/encoder/\hyperlink{format__V__encoder_8hpp}{format\+\_\+\+V\+\_\+encoder.\+hpp}\end{DoxyCompactItemize}
