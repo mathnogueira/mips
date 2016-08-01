@@ -17,10 +17,22 @@ namespace MIPS {
 class SubdecInstruction : public InstructionI {
 
 public:
+
+    /**
+	 * Constroi uma nova instrução.
+	 */
+	 SubdecInstruction(bit8_t opcode,
+                         Register *rs,
+                         Register *rt,
+                         bit8_t shamt,
+                         bit8_t funct)
+	: InstructionI(opcode, rs, rt,  shamt, funct) {}
+
+
 	/**
 	 * Função que executa a operação de subtração.
 	 */
-	void execute();
+	bit16_t execute();
 
 };
 
