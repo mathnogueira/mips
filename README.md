@@ -5,7 +5,7 @@ Emulador do processador MIPS de 16 bits para a disciplina GCC117 - Arquitetura d
 
 ## Tabela de conteúdo
 1. [Estrutura do projeto](#estrutura-do-projeto)
-2. [Documentação Doxygen](http://htmlpreview.github.io/?https://github.com/mathnogueira/mips/blob/master/docs/html/index.html)
+2. [Documentação Doxygen](http://htmlpreview.github.io/?https://github.com/mathnogueira/mips/blob/master/docs/html/index.html){:target="_blank"}
 3. [Ferramentas necessárias](#ferramentas-necessárias)
 4. [Compilando o projeto](#compilando-o-projeto)
 	1. [Compilando e executando o projeto](#compilando-e-executando-o-projeto)
