@@ -31,7 +31,7 @@ public:
 		runtime_error(msg), pMsg(msg) {
 	}
 
-	~MemoryException() {}
+	virtual ~MemoryException() throw() {}
 
 	/**
 	 * Retorna a mensagem de erro.

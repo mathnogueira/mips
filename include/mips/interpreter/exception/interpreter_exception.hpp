@@ -32,7 +32,7 @@ public:
 		runtime_error(msg), pMsg(msg), pOpcode(opcode) {
 	}
 
-	~InterpreterException() {
+	virtual ~InterpreterException() throw() {
 		delete pMsg;
 	}
 
