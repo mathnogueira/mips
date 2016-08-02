@@ -77,7 +77,7 @@ $ git push origin branch-SEUNOME
 
 ### Tipo 1
 
-| Instrução | Funct | Rd | OPCode | Rs | Rt | Status | Formato           |
+| Instrução | OPcode| Rd | Funct  | Rs | Rt | Status | Formato           |
 |:---------:|:-----:|:--:|:------:|:--:|:--:|:------:|:-----------------:|
 | add       | 01    | RD | 11000  | RS | RT |   OK   | add rd, rs, rt    |
 | addinc    | 01    | RD | 11010  | RS | RT |   OK   | addinc rd, rs, rt |
@@ -103,9 +103,9 @@ $ git push origin branch-SEUNOME
 | ones      | 01    | RD | 00001  | RS | RT |   OK   | ones rd           |
 
 ### Tipo 2
-| Instrução | Rd | Offset11     | Status | Formato             |
-|:---------:|:--:|:------------:|:------:|:-------------------:|
-| loadlit   | RD | 00000000000  |   OK   | loadlit rd, 11bits  |
+| Instrução | OpCode | Rd | Offset11     | Status | Formato             |
+|:---------:|:------:|:--:|:------------:|:------:|:-------------------:|
+| loadlit   |   10   | RD | 00000000000  |   OK   | loadlit rd, 11bits  |
 
 ### Tipo 3
 | Instrução | Opcode | Rd | R   | Offset8  | Status | Formato       |
@@ -122,13 +122,13 @@ $ git push origin branch-SEUNOME
 ### Tipo 5
 | Instrução | Opcode | OP | Offset12      | Status | Formato     |
 |:---------:|:-----:|:--:|:-------------:|:------:|:------------:|
-| j         | 10    | 00 | 000000000000  |        | j 12bits     |
+| j         | 00    | 10 | 000000000000  |        | j 12bits     |
 
 ### Tipo 6
 | Instrução | Opcode | OP | R | X | Rt | Status | Formato       |
-|:---------:|:-----:|:--:|:-:|:-:|:--:|:------:|:--------------:|
-| jal       | 00    | 11 | 0 | - | RT |        | jal rt         |
-| jr        | 00    | 11 | 1 | - | RT |        | jr rt          |
+|:---------:|:------:|:--:|:-:|:-:|:--:|:------:|:--------------:|
+| jal       | 00     | 11 | 0 | - | RT |        | jal rt         |
+| jr        | 00     | 11 | 1 | - | RT |        | jr rt          |
 
 ### Tipo 7
 | Instrução | Opcode | Rd | OP    | Rs | Rt | Status | Formato      |
