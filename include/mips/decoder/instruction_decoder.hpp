@@ -41,13 +41,6 @@ public:
      */
     virtual Instruction *decode(instruction_t instruction);
 
-protected:
-
-	/**
-	 * Banco de registradores do decodificador.
-	 */
-	RegisterBank *registerBank;
-
     /**
      * Método responsável por recuperar o código de operação (opcode) de
      * uma instrução.
@@ -56,6 +49,48 @@ protected:
      * \return opcode da instrução.
      */
     bit8_t getOPCode(instruction_t instruction);
+
+    /**
+     * Função que recupera o endereço do registrador source (Rs)
+     * da instrução.
+     *
+     * \param instruction instrução binária de 16 bits.
+     * \return endereço do registrador source.
+     */
+    bit8_t getRs(instruction_t instruction);
+
+    /**
+     * Função que recupera o endereço do registrador target (Rt)
+     * da instrução.
+     *
+     * \param instruction instrução binária de 16 bits.
+     * \return endereço do registrador target.
+     */
+    bit8_t getRt(instruction_t instruction);
+
+    /**
+     * Função que recupera o endereço do registrador destination (Rd)
+     * da instrução.
+     *
+     * \param instruction instrução binária de 16 bits.
+     * \return endereço do registrador destination.
+     */
+    bit8_t getRd(instruction_t instruction);
+
+    /**
+     * Função que recupera o valor do funct da instrução.
+     *
+     * \param instruction instrução binária de 16 bits.
+     * \return valor do funct
+     */
+    bit8_t getFunct(instruction_t instruction);
+
+protected:
+
+	/**
+	 * Banco de registradores do decodificador.
+	 */
+	RegisterBank *registerBank;
 
 };
 

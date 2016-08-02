@@ -24,7 +24,6 @@ public:
 	 * Cria uma instrução de lhc.
 	 *
 	 * \param opcode código da operação
-	 * \param rd registrador de destino
 	 * \param offset offset de 11 bits
 	 */
 	LchInstruction(bit8_t opcode, Register *rd, bit8_t offset) :

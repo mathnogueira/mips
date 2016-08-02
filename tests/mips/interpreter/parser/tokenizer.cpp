@@ -9,7 +9,7 @@ TEST(Tokenizer, alright_mips) {
 	Tokenizer tokenizer;
 	std::vector<char*> tokens;
 	tokenizer.tokenize(cmd, tokens);
-	ASSERT_EQ(tokens.size(), 4);
+	ASSERT_EQ(tokens.size(), (size_t) 4);
 	ASSERT_STREQ(tokens.at(0), "addi");
 	ASSERT_STREQ(tokens.at(1), "r0");
 	ASSERT_STREQ(tokens.at(2), "$zero");
@@ -21,7 +21,7 @@ TEST(Tokenizer, empty_mips) {
 	Tokenizer tokenizer;
 	std::vector<char*> tokens;
 	tokenizer.tokenize(cmd, tokens);
-	ASSERT_EQ(tokens.size(), 0);
+	ASSERT_EQ(tokens.size(), (size_t) 0);
 }
 
 TEST(Tokenizer, whitespace_mips) {
@@ -29,7 +29,7 @@ TEST(Tokenizer, whitespace_mips) {
 	Tokenizer tokenizer;
 	std::vector<char*> tokens;
 	tokenizer.tokenize(cmd, tokens);
-	ASSERT_EQ(tokens.size(), 0);
+	ASSERT_EQ(tokens.size(), (size_t) 0);
 }
 
 TEST(Tokenizer, tab_mips) {
@@ -37,7 +37,7 @@ TEST(Tokenizer, tab_mips) {
 	Tokenizer tokenizer;
 	std::vector<char*> tokens;
 	tokenizer.tokenize(cmd, tokens);
-	ASSERT_EQ(tokens.size(), 4);
+	ASSERT_EQ(tokens.size(), (size_t) 4);
 	ASSERT_STREQ(tokens.at(0), "addi");
 	ASSERT_STREQ(tokens.at(1), "$t0");
 	ASSERT_STREQ(tokens.at(2), "$zero");

@@ -42,7 +42,6 @@ void FileReader::readFile(const char *filename) {
 			line = filter->filter(line);
 		if (line.size() == 0)
 			continue;
-        printf("%d\n", line.size());
 		char *lBuffer = new char[line.size()];
 		line.copy(lBuffer, line.size(), 0);
 		lBuffer[line.size()] = '\0';

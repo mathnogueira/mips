@@ -1,7 +1,6 @@
 #include <mips/cpu.hpp>
 #include <mips/memory/memory.hpp>
 #include <mips/memory/register_bank.hpp>
-#include <mips/decoder/decoder_finder.hpp>
 #include <cstdio>
 
 using namespace MIPS;
@@ -9,7 +8,6 @@ using namespace MIPS;
 CPU::CPU() {
     memory = new Memory;
     bank = new RegisterBank;
-    decoder = new DecoderFinder;
 }
 
 CPU::~CPU() {}
@@ -29,4 +27,8 @@ void CPU::loadProgram(const char *program) {
         fread(&instruction, sizeof(bit16_t), 1, fp);
     }
     fclose(fp);
+}
+
+void CPU::execute() {
+    return;
 }

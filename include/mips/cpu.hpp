@@ -6,7 +6,6 @@
  */
 #pragma once
 
-#include <mips/decoder/decoder_finder.hpp>
 #include <mips/memory/register_bank.hpp>
 #include <mips/memory/memory.hpp>
 
@@ -38,17 +37,19 @@ public:
      */
     void loadProgram(const char *program);
 
+    /**
+     * Executa as instruções carregadas previamente pelo método
+     * loadProgram.
+     *
+     */
+    void execute();
+
 private:
 
     /**
      * Banco de memória do processador.
      */
     RegisterBank *bank;
-
-    /**
-     * Decofificador de instruções.
-     */
-    DecoderFinder *decoder;
 
     /**
      * Memória utilizada pela CPU.
