@@ -12,14 +12,9 @@ void FormatVIEncoder::parse(std::vector<char*> &params) {
 
 instruction_t FormatVIEncoder::encode() {
 	instruction_t instruction = 0;
-	PRINT_BIN(instruction);
 	instruction |= (opcode << 14);
-	PRINT_BIN(instruction);
 	instruction |= (funct << 12);
-	PRINT_BIN(instruction);
 	instruction |= (r << 11);
-	PRINT_BIN(instruction);
 	instruction |= (rt & 0x0007);
-	PRINT_BIN(instruction);
 	return instruction;
 }

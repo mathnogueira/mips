@@ -44,7 +44,7 @@ private:
     /**
      * Registradores para números inteiros.
      */
-    Register *iRegister[32];
+    Register *iRegister[8];
 
 };
 

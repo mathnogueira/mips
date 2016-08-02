@@ -1,3 +1,4 @@
+#include <mips/cpu.hpp>
 #include <mips/interpreter/interpreter.hpp>
 #include <mips/interpreter/exception/interpreter_exception.hpp>
 
@@ -10,10 +11,11 @@ int main(int argc, char **argv) {
 		return -1;
 	}
 	Interpreter interpreter(argv[1]);
+    CPU cpu;
 	try {
 		interpreter.compile("out.mips");
     // Abre arquivo criado pelo interpretador e lê o seu conteúdo
-
+    cpu.loadProgram("out.mips");
 	} catch (const std::runtime_error& exception) {
     std::cout << exception.what() << std::endl;
 		// TODO: Criar um handler de erros.

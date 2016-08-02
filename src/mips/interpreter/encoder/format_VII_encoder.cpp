@@ -12,14 +12,9 @@ void FormatVIIEncoder::parse(std::vector<char*> &params) {
 
 instruction_t FormatVIIEncoder::encode() {
 	instruction_t instruction = 0;
-	PRINT_BIN(instruction);
 	instruction |= (opcode << 14);
-	PRINT_BIN(instruction);
 	instruction |= (rd << 11);
-	PRINT_BIN(instruction);
 	instruction |= (funct << 6);
-	PRINT_BIN(instruction);
 	instruction |= (rs << 3);
-	PRINT_BIN(instruction);
 	return instruction;
 }

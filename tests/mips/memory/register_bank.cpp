@@ -12,8 +12,8 @@ TEST(RegisterBank, constructor) {
 
 TEST(RegisterBank, getRegister) {
 	RegisterBank bank;
-	Register *r = bank.getRegister(8);
-	ASSERT_STREQ("t0", r->getName());
+	Register *r = bank.getRegister(7);
+	ASSERT_STREQ("r7", r->getName());
 	r = bank.getRegister(1);
-	ASSERT_STREQ("at", r->getName());
+	ASSERT_STREQ("r1", r->getName());
 }

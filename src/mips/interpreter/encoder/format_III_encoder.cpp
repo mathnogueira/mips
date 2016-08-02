@@ -14,14 +14,9 @@ void FormatIIIEncoder::parse(std::vector<char*> &params) {
 
 instruction_t FormatIIIEncoder::encode() {
 	instruction_t instruction = 0;
-	PRINT_BIN(instruction);
 	instruction |= (opcode << 14);
-	PRINT_BIN(instruction);
 	instruction |= (rd << 11);
-	PRINT_BIN(instruction);
 	instruction |= (r << 10);
-	PRINT_BIN(instruction);
 	instruction |= (offset & 0x00ff);
-	PRINT_BIN(instruction);
 	return instruction;
 }

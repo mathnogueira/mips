@@ -1,5 +1,5 @@
 /**
- * \file InterpreterException
+ * \file interpreter_exception.hpp
  *
  * Arquivo contendo uma exceção que é lançada pelo interpretador de assembly.
  *

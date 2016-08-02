@@ -23,6 +23,10 @@ namespace MIPS {
             std::cout << "[DEBUG] " << arg << std::endl;                        \
         }
 
+        #define FORMAT_DEBUG(format, ...) {                                     \
+            printf(format, __VA_ARGS__);                                          \
+        }
+
 		// Imprime binário
 		#define PRINT_BIN(num) {					\
 			char x09878412bin = 0;					\

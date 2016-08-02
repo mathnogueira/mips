@@ -101,16 +101,20 @@ void Interpreter::encode(FILE *fp) {
 	EncoderFactory factory;
 	Encoder *encoder;
 	instruction_t instruction;
-	std::vector<instruction_t> instructions(lines.size());
-	for (size_t i = 0; i < lines.size(); ++i) {
+    size_t size = lines.size();
+	std::vector<instruction_t> instructions;
+	for (size_t i = 0; i < size; ++i) {
 		tokens = &lines.at(i);
 		encoder = factory.produce(tokens->at(0));
 		encoder->parse(*tokens);
 		instruction = encoder->encode();
 		instructions.push_back(instruction);
 	}
+    // Escreve cabeçalho de arquivo
+    fwrite(&size, sizeof(size_t), 1, fp);
+    // Escreve o corpo do arquivo
 	for (size_t i = 0; i < instructions.size(); ++i) {
-		// instructions.push_back(instruction);
-		fwrite(&(instructions.at(i)), sizeof(instruction_t), 1, fp);
+        instruction = instructions.at(i);
+		fwrite(&instruction, sizeof(instruction_t), 1, fp);
 	}
 }

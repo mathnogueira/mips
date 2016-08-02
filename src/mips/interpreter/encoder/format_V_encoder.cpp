@@ -10,10 +10,7 @@ void FormatVEncoder::parse(std::vector<char*> &params) {
 
 instruction_t FormatVEncoder::encode() {
 	instruction_t instruction = 0;
-	PRINT_BIN(instruction);
 	instruction |= (opcode << 14);
-	PRINT_BIN(instruction);
 	instruction |= (offset & 0x0fff);
-	PRINT_BIN(instruction);
 	return instruction;
 }

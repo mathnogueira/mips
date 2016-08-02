@@ -60,14 +60,9 @@ void FormatIVEncoder::parse(std::vector<char*> &params) {
 
 instruction_t FormatIVEncoder::encode() {
 	instruction_t instruction = 0;
-	PRINT_BIN(instruction);
 	instruction |= (opcode << 14);
-	PRINT_BIN(instruction);
 	instruction |= (funct << 12);
-	PRINT_BIN(instruction);
 	instruction |= (cond << 8) & 0x0f00;
-	PRINT_BIN(instruction);
 	instruction |= (offset & 0x00ff);
-	PRINT_BIN(instruction);
 	return instruction;
 }

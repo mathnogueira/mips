@@ -7,6 +7,9 @@ using namespace MIPS;
 void FormatIEncoder::parse(std::vector<char*> &params) {
 	char *name = params.at(0);
 	this->opcode = 1;
+    this->rs = 0;
+    this->rt = 0;
+    this->funct = 0;
 	this->rd = this->getRegisterNumber(params.at(1));
 	if (strcmp(name, "zeros") != 0 && strcmp(name, "ones") != 0) {
 		this->rs = this->getRegisterNumber(params.at(2));
