@@ -61,7 +61,7 @@ if (debug)
 	# TODO: Consertar falha com CMP0037 no target do cmake
 	# set (COVERAGE_TEST ON)
 	# Define as flags de debug do compilador
-	set (CMAKE_CXX_FLAGS "-g -O0 -Wall -pg -fprofile-arcs -ftest-coverage")
+	set (CMAKE_CXX_FLAGS "-g -O0 -Wall")
 endif()
 
 # Ativa a construção dos testes de unidade do programa

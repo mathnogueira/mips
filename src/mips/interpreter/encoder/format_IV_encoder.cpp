@@ -6,6 +6,7 @@ using namespace MIPS;
 
 void FormatIVEncoder::parse(std::vector<char*> &params) {
 	char *name = params.at(0);
+    FORMAT_DEBUG("[Codificando instrução %s do formato IV]\n", params.at(0));
 	if (strcmp("jt.neg", name) == 0) {
 		this->cond = 4;
 		this->opcode = 0;
@@ -55,10 +56,13 @@ void FormatIVEncoder::parse(std::vector<char*> &params) {
 		this->opcode = 0;
 		this->funct = 0;
 	}
+    printf("Offset: %s\n", params.at(1));
 	this->offset = atoi(params.at(1));
 }
 
 instruction_t FormatIVEncoder::encode() {
+    MESSAGE("Opcode\tFunct\tCond\tOffset\n");
+    FORMAT_DEBUG("%d\t%d\t%d\t%d\n\n", opcode, funct, cond, offset);
 	instruction_t instruction = 0;
 	instruction |= (opcode << 14);
 	instruction |= (funct << 12);

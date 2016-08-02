@@ -21,6 +21,7 @@ void CPU::loadProgram(const char *program) {
     // Lê os primeiros 4 bytes do arquivo para descobrir o número de
     // instruções que o programa tem
     fread(&size, sizeof(size_t), 1, fp);
+    std::cout << size << std::endl;
     // Inicializa a memória de instruções
     memory->setInstructionSize(size);
     // Insere todas as instruções na memória de instruções

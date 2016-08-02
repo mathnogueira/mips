@@ -24,7 +24,7 @@ namespace MIPS {
         }
 
         #define FORMAT_DEBUG(format, ...) {                                     \
-            printf(format, __VA_ARGS__);                                          \
+            printf(format, __VA_ARGS__);                                        \
         }
 
 		// Imprime binário

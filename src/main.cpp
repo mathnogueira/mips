@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
     // Abre arquivo criado pelo interpretador e lê o seu conteúdo
     cpu.loadProgram("out.mips");
 	} catch (const std::runtime_error& exception) {
-    std::cout << exception.what() << std::endl;
+        std::cout << exception.what() << std::endl;
 		// TODO: Criar um handler de erros.
 	}
 	if (interpreter.ok()) {

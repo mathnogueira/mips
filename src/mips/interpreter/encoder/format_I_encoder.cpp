@@ -5,6 +5,7 @@
 using namespace MIPS;
 
 void FormatIEncoder::parse(std::vector<char*> &params) {
+    FORMAT_DEBUG("[Codificando instrução %s do formato I]\n", params.at(0));
 	char *name = params.at(0);
 	this->opcode = 1;
     this->rs = 0;
@@ -73,6 +74,8 @@ void FormatIEncoder::parse(std::vector<char*> &params) {
 }
 
 instruction_t FormatIEncoder::encode() {
+    MESSAGE("Opcode\tRD\tRS\tRT\tFunct\n");
+    FORMAT_DEBUG("%d\t%d\t%d\t%d\t%d\n\n", opcode, rd, rs, rt, funct);
 	instruction_t instruction = 0;
 	instruction |= (opcode << 14);
 	instruction |= (rd << 11);

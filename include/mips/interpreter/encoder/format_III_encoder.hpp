@@ -51,7 +51,7 @@ private:
 	/**
 	 * Offset da instrução.
 	 */
-	bit8_t offset;
+	bit16_t offset;
 
 };
 

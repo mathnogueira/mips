@@ -16,7 +16,7 @@ FileReader::FileReader(const char* filename, Filter& filter) {
 FileReader::~FileReader() {
 	unsigned long size = this->buffer.size();
 	for (unsigned long i = 0; i < size; ++i) {
-		delete[] this->buffer.at(i);
+		this->buffer.erase(this->buffer.begin(), this->buffer.end());
 	}
 }
 

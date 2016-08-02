@@ -25,8 +25,10 @@ void Interpreter::compile(const char *output) {
 	while (fileReader->hasNext()) {
 		std::vector<char*> tokens;
 		line = fileReader->next();
-		tokenizer.tokenize(line, tokens);
-		lines.push_back(tokens);
+        if (line[0] != ';') {
+    		tokenizer.tokenize(line, tokens);
+    		lines.push_back(tokens);
+        }
 	}
 	// Extraí todos os labels do código para que eles possam ser substituídos
 	// futuramente.
@@ -86,7 +88,7 @@ void Interpreter::updateLabels() {
 		for (unsigned int j = 0; j < labels.size(); ++j) {
 			if (strcmp(param, labels.at(j).label) == 0) {
 				int position = labels.at(j).line - i;
-				char str[10];
+				char *str = new char[10];
 				sprintf(str, "%d", position);
 				lines.at(i).pop_back();
 				lines.at(i).push_back(str);
@@ -105,6 +107,10 @@ void Interpreter::encode(FILE *fp) {
 	std::vector<instruction_t> instructions;
 	for (size_t i = 0; i < size; ++i) {
 		tokens = &lines.at(i);
+        #ifndef NDEBUG
+            for (size_t i = 0; i < tokens->size(); ++i)
+                printf("Token: %s\n", tokens->at(i));
+        #endif
 		encoder = factory.produce(tokens->at(0));
 		encoder->parse(*tokens);
 		instruction = encoder->encode();
