@@ -1,6 +1,7 @@
 build/
 nbproject/
 CMakeFiles/
+**/*.mips
 
 # Compiled Object files
 *.slo
