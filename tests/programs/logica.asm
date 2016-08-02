@@ -9,7 +9,7 @@
 zeros r4
 
 teste0:
-	zeros r0		; Operacao C = A & B;
+	zeros r0
 	zeros r1
 	and r1,r0,r1
 	jf.zero teste1
@@ -29,7 +29,7 @@ teste0:
 	inca r4,r4
 
 teste1:
-	zeros r0		; Operacao C = !A & B
+	zeros r0
 	zeros r1
 	andnota r1,r0,r1
 	jf.zero teste2
@@ -49,7 +49,7 @@ teste1:
 	inca r4,r4
 
 teste2:
-	zeros r0		; Operacao C = A
+	zeros r0
 	passa r1,r0
 	jf.zero teste3
 	ones r0
@@ -59,7 +59,7 @@ teste2:
 	inca r4,r4
 
 teste3:
-	zeros r0		; Operacao C = A ^ B
+	zeros r0
 	zeros r1
 	xor r1,r0,r1
 	jf.zero teste4
@@ -80,7 +80,7 @@ teste3:
 	inca r4,r4
 
 teste4:
-	zeros r0		; Operacao C = A | B
+	zeros r0
 	zeros r1
 	or r1,r0,r1
 	jf.zero teste5
@@ -102,7 +102,8 @@ teste4:
 	inca r4,r4
 
 teste5:
-	zeros r0		; Operacao C = !A & !B
+    ; ola
+	zeros r0
 	zeros r1
 	nor r1,r0,r1
  	passnota r1,r1
@@ -122,7 +123,7 @@ teste5:
 	inca r4,r4
 
 teste6:
-	zeros r0		; Operacao C = !A ^ B
+	zeros r0
 	zeros r1
 	xnor r1,r0,r1
  	passnota r1,r1
@@ -143,7 +144,7 @@ teste6:
 	inca r4,r4
 
 teste7:
-	zeros r0		; Operacao C = !A
+	zeros r0
 	passnota r0,r0
         passnota r0,r0
 	jf.zero teste8
@@ -153,7 +154,7 @@ teste7:
 	inca r4,r4
 
 teste8:
-	zeros r0		; Operacao C = A | !B
+	zeros r0
 	zeros r1
 	ornotb r1,r0,r1
  	passnota r1,r1
@@ -175,7 +176,7 @@ teste8:
 	inca r4,r4
 
 teste9:
-	zeros r0		; Operacao C = !A | !B
+	zeros r0
 	zeros r1
 	nand r1,r0,r1
         passnota r1,r1

@@ -12,20 +12,10 @@ void FormatIEncoder::parse(std::vector<char*> &params) {
     this->rt = 0;
     this->funct = 0;
 	this->rd = this->getRegisterNumber(params.at(1));
-	if (strcmp(name, "zeros") != 0 && strcmp(name, "ones") != 0) {
-		this->rs = this->getRegisterNumber(params.at(2));
-	} if (strcmp(name, "asl") != 0 &&
-		strcmp(name, "asr") != 0 &&
-		strcmp(name, "deca") != 0 &&
-		strcmp(name, "inca") != 0 &&
-		strcmp(name, "lsl") != 0 &&
-		strcmp(name, "lsr") != 0 &&
-		strcmp(name, "passa") != 0 &&
-		strcmp(name, "passanota") != 0 &&
-		strcmp(name, "zeros") != 0 &&
-		strcmp(name, "ones") != 0) {
-			this->rt = this->getRegisterNumber(params.at(3));
-	}
+    if (params.size() >= 3)
+        this->rs = this->getRegisterNumber(params.at(2));
+    if (params.size() == 4)
+        this->rt = this->getRegisterNumber(params.at(3));
 	// Define o código de função
 	if (strcmp(name, "add") == 0)
 		this->funct = 24;

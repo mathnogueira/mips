@@ -43,6 +43,7 @@ namespace MIPS {
         // Não está em debug (cria macros falsas)
         #define MESSAGE(arg) ;
         #define DEBUG(arg) ;
+        #define FORMAT_DEBUG(format, ...) ;
 		#define PRINT_BIN(num) ;
     #endif
 

@@ -1,4 +1,5 @@
 #include <mips/interpreter/interpreter.hpp>
+#include <mips/util/filter/space_filter.hpp>
 #include <mips/interpreter/exception/interpreter_exception.hpp>
 #include <mips/interpreter/encoder/encoder.hpp>
 #include <mips/interpreter/encoder/encoder_factory.hpp>
@@ -10,8 +11,8 @@
 using namespace MIPS;
 
 Interpreter::Interpreter(const char* file) {
-	// SpaceFilter spaceFilter;
-	fileReader = new FileReader(file);
+	SpaceFilter spaceFilter;
+	fileReader = new FileReader(file, spaceFilter);
 	errors = 0;
 }
 
