@@ -30,7 +30,10 @@ public:
 	 */
 	InterpreterException(const char* msg, bit8_t opcode):
 		runtime_error(msg), pMsg(msg), pOpcode(opcode) {
+	}
 
+	~InterpreterException() {
+		delete pMsg;
 	}
 
 	/**

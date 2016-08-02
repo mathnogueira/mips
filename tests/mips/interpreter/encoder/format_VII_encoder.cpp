@@ -6,8 +6,8 @@ using namespace MIPS;
 TEST(FormatVIIEncoder, encodeLoad) {
 	std::vector<char*> params;
 	params.push_back((char*) "load");
-	params.push_back((char*) "$s1");
-	params.push_back((char*) "$s3");
+	params.push_back((char*) "r1");
+	params.push_back((char*) "r3");
 	FormatVIIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -17,8 +17,8 @@ TEST(FormatVIIEncoder, encodeLoad) {
 TEST(FormatVIIEncoder, encodeStore) {
 	std::vector<char*> params;
 	params.push_back((char*) "store");
-	params.push_back((char*) "$s1");
-	params.push_back((char*) "$s3");
+	params.push_back((char*) "r1");
+	params.push_back((char*) "r3");
 	FormatVIIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();

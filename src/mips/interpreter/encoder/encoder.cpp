@@ -7,7 +7,7 @@
 
 using namespace MIPS;
 
-static const char* registers[] = {"$s0", "$s1", "$s2", "$s3", "$s4", "$s5", "$s6", "$s7"};
+static const char* registers[] = {"r0", "r1", "r2", "r3", "r4", "r5", "r6", "r7"};
 
 Encoder::Encoder() {}
 
@@ -15,7 +15,7 @@ bit8_t Encoder::getRegisterNumber(const char *name) {
 	for (size_t i = 0; i < 8; ++i)
 		if (strcmp(name, registers[i]) == 0)
 			return i;
-	char err[100];
+	char *err = new char[50];
 	sprintf(err, "Register %s does not exist!", name);
 	throw InterpreterException(err, 0);
 }

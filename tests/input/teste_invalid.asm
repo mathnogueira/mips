@@ -1,7 +1,7 @@
 LOOP:
-add $s0, $s3, $s1
-subi $s0, $s0, $s1
-bne $s0 $s4 $s0
+add r0, r3, r1
+subi r0, r0, r1
+bne r0 r4 r0
 j LOOP
 
 EXIT:

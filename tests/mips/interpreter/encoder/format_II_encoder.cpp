@@ -6,7 +6,7 @@ using namespace MIPS;
 TEST(FormatIIEncoder, encodePositiveLoadlit) {
 	std::vector<char*> params;
 	params.push_back((char*) "loadlit");
-	params.push_back((char*) "$s4");
+	params.push_back((char*) "r4");
 	params.push_back((char*) "3");
 	FormatIIEncoder encoder;
 	encoder.parse(params);
@@ -17,7 +17,7 @@ TEST(FormatIIEncoder, encodePositiveLoadlit) {
 TEST(FormatIIEncoder, encodeNegativeLoadlit) {
 	std::vector<char*> params;
 	params.push_back((char*) "loadlit");
-	params.push_back((char*) "$s7");
+	params.push_back((char*) "r7");
 	params.push_back((char*) "-1");
 	FormatIIEncoder encoder;
 	encoder.parse(params);

@@ -6,7 +6,7 @@ using namespace MIPS;
 TEST(FormatIIIEncoder, encodePositiveLCL) {
 	std::vector<char*> params;
 	params.push_back((char*) "lcl");
-	params.push_back((char*) "$s4");
+	params.push_back((char*) "r4");
 	params.push_back((char*) "102");
 	FormatIIIEncoder encoder;
 	encoder.parse(params);
@@ -17,7 +17,7 @@ TEST(FormatIIIEncoder, encodePositiveLCL) {
 TEST(FormatIIIEncoder, encodeNegativeLCL) {
 	std::vector<char*> params;
 	params.push_back((char*) "lcl");
-	params.push_back((char*) "$s4");
+	params.push_back((char*) "r4");
 	params.push_back((char*) "-142");
 	FormatIIIEncoder encoder;
 	encoder.parse(params);
@@ -28,7 +28,7 @@ TEST(FormatIIIEncoder, encodeNegativeLCL) {
 TEST(FormatIIIEncoder, encodePositiveLCH) {
 	std::vector<char*> params;
 	params.push_back((char*) "lch");
-	params.push_back((char*) "$s4");
+	params.push_back((char*) "r4");
 	params.push_back((char*) "102");
 	FormatIIIEncoder encoder;
 	encoder.parse(params);
@@ -39,7 +39,7 @@ TEST(FormatIIIEncoder, encodePositiveLCH) {
 TEST(FormatIIIEncoder, encodeNegativeLCH) {
 	std::vector<char*> params;
 	params.push_back((char*) "lch");
-	params.push_back((char*) "$s4");
+	params.push_back((char*) "r4");
 	params.push_back((char*) "-142");
 	FormatIIIEncoder encoder;
 	encoder.parse(params);

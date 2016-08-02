@@ -5,13 +5,13 @@
 using namespace MIPS;
 
 TEST(Tokenizer, alright_mips) {
-	char cmd[60] = "addi $s0, $zero, 2";
+	char cmd[60] = "addi r0, $zero, 2";
 	Tokenizer tokenizer;
 	std::vector<char*> tokens;
 	tokenizer.tokenize(cmd, tokens);
 	ASSERT_EQ(tokens.size(), 4);
 	ASSERT_STREQ(tokens.at(0), "addi");
-	ASSERT_STREQ(tokens.at(1), "$s0");
+	ASSERT_STREQ(tokens.at(1), "r0");
 	ASSERT_STREQ(tokens.at(2), "$zero");
 	ASSERT_STREQ(tokens.at(3), "2");
 }

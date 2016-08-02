@@ -36,8 +36,10 @@ public:
 
 	/**
 	 * Processa o arquivo de entrada para que ele possa ser interpretado.
+	 *
+	 * \param output arquivo que será escrito com as instruções.
 	 */
-	void compile();
+	void compile(const char *output = "out.mips");
 
 	/**
 	 * Checa se o interpretador encontrou algum erro durante a sua execução. Se sim,
@@ -85,8 +87,10 @@ private:
 	/**
 	 * Codifica as linhas do programa para que o emulador possa utilizá-las
 	 * em seu datapath.
+	 *
+	 * \param fp arquivo onde o código compilado será colocado.
 	 */
-	void encode();
+	void encode(FILE *fp);
 
 };
 

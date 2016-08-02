@@ -19,7 +19,7 @@ Interpreter::~Interpreter() {
 	delete fileReader;
 }
 
-void Interpreter::compile() {
+void Interpreter::compile(const char *output) {
 	char *line = NULL;
 	Tokenizer tokenizer;
 	while (fileReader->hasNext()) {
@@ -41,7 +41,10 @@ void Interpreter::compile() {
 	// i  : addi $t0, $t0, 1
 	// i+1: j -1
 	this->updateLabels();
-	this->encode();
+	// Abre o arquivo de saída
+	FILE *fp = fopen(output, "wb");
+	this->encode(fp);
+	fclose(fp);
 }
 
 void Interpreter::extractLabels() {
@@ -93,7 +96,7 @@ void Interpreter::updateLabels() {
 	}
 }
 
-void Interpreter::encode() {
+void Interpreter::encode(FILE *fp) {
 	std::vector<char*> *tokens;
 	EncoderFactory factory;
 	Encoder *encoder;
@@ -105,5 +108,9 @@ void Interpreter::encode() {
 		encoder->parse(*tokens);
 		instruction = encoder->encode();
 		instructions.push_back(instruction);
+	}
+	for (size_t i = 0; i < instructions.size(); ++i) {
+		// instructions.push_back(instruction);
+		fwrite(&(instructions.at(i)), sizeof(instruction_t), 1, fp);
 	}
 }

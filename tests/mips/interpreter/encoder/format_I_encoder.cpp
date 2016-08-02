@@ -7,9 +7,9 @@ using namespace MIPS;
 TEST(FormatIEncoder, encodeAdd) {
 	std::vector<char*> params;
 	params.push_back((char*) "add");
-	params.push_back((char*) "$s0");
-	params.push_back((char*) "$s1");
-	params.push_back((char*) "$s3");
+	params.push_back((char*) "r0");
+	params.push_back((char*) "r1");
+	params.push_back((char*) "r3");
 	FormatIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
@@ -19,9 +19,9 @@ TEST(FormatIEncoder, encodeAdd) {
 TEST(FormatIEncoder, encodeSub) {
 	std::vector<char*> params;
 	params.push_back((char*) "addinc");
-	params.push_back((char*) "$s0");
-	params.push_back((char*) "$s1");
-	params.push_back((char*) "$s3");
+	params.push_back((char*) "r0");
+	params.push_back((char*) "r1");
+	params.push_back((char*) "r3");
 	FormatIEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
