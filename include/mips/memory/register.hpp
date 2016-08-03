@@ -18,18 +18,11 @@ class Register {
 
 public:
 
-    /**
-     * Cria um novo registrador.
-	 *
-	 * \param name nome do registrador.
-	 */
-    // Register(const char* name);
-
 	/**
 	 * Cria um novo registrador.
 	 *
 	 * \param name nome do registrador.
-	 * \param protected indica se o registrador é protegido para escrita.
+	 * \param protect indica se o registrador é protegido para escrita.
 	 */
 	Register(const char* name, bool protect = false);
 

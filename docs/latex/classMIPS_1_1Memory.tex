@@ -1,0 +1,122 @@
+\hypertarget{classMIPS_1_1Memory}{}\section{M\+I\+PS\+:\+:Memory Class Reference}
+\label{classMIPS_1_1Memory}\index{M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}}
+
+
+{\ttfamily \#include $<$memory.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Memory_abac2c5ab745d4b2e0320a020cd2b77f6}{Memory} ()
+\item 
+\hyperlink{classMIPS_1_1Memory_ace3e886fa42efa3e629c7572bf232e05}{$\sim$\+Memory} ()
+\item 
+void \hyperlink{classMIPS_1_1Memory_a636e0ca3d23fc5022a2a4b59a6648210}{set\+Instruction\+Size} (size\+\_\+t size)
+\item 
+void \hyperlink{classMIPS_1_1Memory_a53b03b417ee8efb4a6f3a0020c3bd7ab}{set\+Data\+Size} (size\+\_\+t size)
+\item 
+void \hyperlink{classMIPS_1_1Memory_a8d339b30f29c4dc8044b51c982d5e95b}{write} (\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} data, \hyperlink{core_8hpp_ad5f4c6ca614f67be232930e0e31b9ccc}{bit32\+\_\+t} offset, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} i\+OrD=1)
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1Memory_a93a2aecd6026ecd86e77fcef6b99b91b}{read} (\hyperlink{core_8hpp_ad5f4c6ca614f67be232930e0e31b9ccc}{bit32\+\_\+t} offset, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} i\+OrD=1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável por iteragir com a memória do processador, para assim, criar uma interface de maior facilidade para acessar a memória.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}!Memory@{Memory}}
+\index{Memory@{Memory}!M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}}
+\subsubsection[{\texorpdfstring{Memory()}{Memory()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Memory\+::\+Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Memory_abac2c5ab745d4b2e0320a020cd2b77f6}{}\label{classMIPS_1_1Memory_abac2c5ab745d4b2e0320a020cd2b77f6}
+Cria uma nova unidade de memória. \index{M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}!````~Memory@{$\sim$\+Memory}}
+\index{````~Memory@{$\sim$\+Memory}!M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Memory()}{~Memory()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Memory\+::$\sim$\+Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Memory_ace3e886fa42efa3e629c7572bf232e05}{}\label{classMIPS_1_1Memory_ace3e886fa42efa3e629c7572bf232e05}
+Destroi a unidade de memória. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}!read@{read}}
+\index{read@{read}!M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}}
+\subsubsection[{\texorpdfstring{read(bit32\+\_\+t offset, bit8\+\_\+t i\+Or\+D=1)}{read(bit32_t offset, bit8_t iOrD=1)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Memory\+::read (
+\begin{DoxyParamCaption}
+\item[{{\bf bit32\+\_\+t}}]{offset, }
+\item[{{\bf bit8\+\_\+t}}]{i\+OrD = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Memory_a93a2aecd6026ecd86e77fcef6b99b91b}{}\label{classMIPS_1_1Memory_a93a2aecd6026ecd86e77fcef6b99b91b}
+Lẽ uma palavra que está na posição de memória especificada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & posição da memória que será lida. \\
+\hline
+{\em i\+OrD} & tipo de dado que será lido (instruçao ou dado) (padrão\+: dado) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+palavra armazenada na posição de memória especificada. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}!set\+Data\+Size@{set\+Data\+Size}}
+\index{set\+Data\+Size@{set\+Data\+Size}!M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}}
+\subsubsection[{\texorpdfstring{set\+Data\+Size(size\+\_\+t size)}{setDataSize(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Memory\+::set\+Data\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Memory_a53b03b417ee8efb4a6f3a0020c3bd7ab}{}\label{classMIPS_1_1Memory_a53b03b417ee8efb4a6f3a0020c3bd7ab}
+Define o tamanho da memória de dados.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & tamanho da memória em número de palavras. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}!set\+Instruction\+Size@{set\+Instruction\+Size}}
+\index{set\+Instruction\+Size@{set\+Instruction\+Size}!M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}}
+\subsubsection[{\texorpdfstring{set\+Instruction\+Size(size\+\_\+t size)}{setInstructionSize(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Memory\+::set\+Instruction\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Memory_a636e0ca3d23fc5022a2a4b59a6648210}{}\label{classMIPS_1_1Memory_a636e0ca3d23fc5022a2a4b59a6648210}
+Define o tamanho da memória de instruções.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & tamanho da memória em número de palavras. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}!write@{write}}
+\index{write@{write}!M\+I\+P\+S\+::\+Memory@{M\+I\+P\+S\+::\+Memory}}
+\subsubsection[{\texorpdfstring{write(bit16\+\_\+t data, bit32\+\_\+t offset, bit8\+\_\+t i\+Or\+D=1)}{write(bit16_t data, bit32_t offset, bit8_t iOrD=1)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Memory\+::write (
+\begin{DoxyParamCaption}
+\item[{{\bf bit16\+\_\+t}}]{data, }
+\item[{{\bf bit32\+\_\+t}}]{offset, }
+\item[{{\bf bit8\+\_\+t}}]{i\+OrD = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1Memory_a8d339b30f29c4dc8044b51c982d5e95b}{}\label{classMIPS_1_1Memory_a8d339b30f29c4dc8044b51c982d5e95b}
+Escreve uma palavra na posição de memória especificada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & palavra que será escrita. \\
+\hline
+{\em offset} & posição da memória em que a palavra será escrita. \\
+\hline
+{\em i\+OrD} & tipo de dado que será escrito (instrução ou dados) (padrão\+: dado) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/memory/\hyperlink{memory_8hpp}{memory.\+hpp}\end{DoxyCompactItemize}

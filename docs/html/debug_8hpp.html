@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -97,11 +98,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad9b35bd881509861cc3254c75acfb850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE</b>(arg)</td></tr>
+<tr class="memitem:ad9b35bd881509861cc3254c75acfb850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8hpp.html#ad9b35bd881509861cc3254c75acfb850">MESSAGE</a>(arg)</td></tr>
 <tr class="separator:ad9b35bd881509861cc3254c75acfb850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b693f340408970999294e7bb3dbe67d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEBUG</b>(arg)</td></tr>
+<tr class="memitem:a2b693f340408970999294e7bb3dbe67d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8hpp.html#a2b693f340408970999294e7bb3dbe67d">DEBUG</a>(arg)</td></tr>
 <tr class="separator:a2b693f340408970999294e7bb3dbe67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa660381c871ce694f88d5414a0030286"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINT_BIN</b>(num)</td></tr>
+<tr class="memitem:a16415ab05e2fe6d9c7ced68d776186b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8hpp.html#a16415ab05e2fe6d9c7ced68d776186b9">FORMAT_DEBUG</a>(format, ...)</td></tr>
+<tr class="separator:a16415ab05e2fe6d9c7ced68d776186b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa660381c871ce694f88d5414a0030286"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8hpp.html#aa660381c871ce694f88d5414a0030286">PRINT_BIN</a>(num)</td></tr>
 <tr class="separator:aa660381c871ce694f88d5414a0030286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -120,7 +123,48 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                   \</div><div class="line">            std::cout &lt;&lt; <span class="stringliteral">&quot;[DEBUG] &quot;</span> &lt;&lt; arg &lt;&lt; std::endl;                        \</div><div class="line">        }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                   \</div><div class="line">            std::cout &lt;&lt; <span class="stringliteral">&quot;[DEBUG] &quot;</span> &lt;&lt; arg &lt;&lt; std::endl;                        \</div><div class="line">        }</div></div><!-- fragment --><p>Macro para escrita de mensagens de debug com o prefixo [DEBUG].</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>mensagem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a16415ab05e2fe6d9c7ced68d776186b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FORMAT_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">format, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                     \</div><div class="line">            printf(format, __VA_ARGS__);                                        \</div><div class="line">        }</div></div><!-- fragment --><p>Macro para escrita de uma string formatada no modo debug.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>formato da string </td></tr>
+    <tr><td class="paramname">...</td><td>variant args </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ad9b35bd881509861cc3254c75acfb850"></a>
@@ -136,7 +180,13 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                 \</div><div class="line">            std::cout &lt;&lt; arg &lt;&lt; std::endl;                                     \</div><div class="line">        }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                 \</div><div class="line">            std::cout &lt;&lt; arg &lt;&lt; std::endl;                                     \</div><div class="line">        }</div></div><!-- fragment --><p>Macro para escrita de mensagens em modo de debug </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>mensagem </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aa660381c871ce694f88d5414a0030286"></a>
@@ -152,7 +202,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                   \</div><div class="line">            char x09878412bin = 0;                  \</div><div class="line">            char i = 15;                            \</div><div class="line">            for (; i &gt;= 0; --i) {                   \</div><div class="line">                x09878412bin = (num &gt;&gt; i) &amp; 1;      \</div><div class="line">                printf(<span class="stringliteral">&quot;%d&quot;</span>, x09878412bin);         \</div><div class="line">                if (i % 4 == 0)                         \</div><div class="line">                    printf(<span class="stringliteral">&quot; &quot;</span>);                    \</div><div class="line">            }                                       \</div><div class="line">            printf(<span class="stringliteral">&quot;\n&quot;</span>);                           \</div><div class="line">        }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                   \</div><div class="line">            char x09878412bin = 0;                  \</div><div class="line">            char i = 15;                            \</div><div class="line">            for (; i &gt;= 0; --i) {                   \</div><div class="line">                x09878412bin = (num &gt;&gt; i) &amp; 1;      \</div><div class="line">                printf(<span class="stringliteral">&quot;%d&quot;</span>, x09878412bin);         \</div><div class="line">                if (i % 4 == 0)                         \</div><div class="line">                    printf(<span class="stringliteral">&quot; &quot;</span>);                    \</div><div class="line">            }                                       \</div><div class="line">            printf(<span class="stringliteral">&quot;\n&quot;</span>);                           \</div><div class="line">        }</div></div><!-- fragment --><p>Macro para imprimir um número no formato binário.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>número que será impresso </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 </div><!-- contents -->

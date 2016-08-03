@@ -88,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classMIPS_1_1InstructionDecoder-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -96,53 +95,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="abstract__decoder_8hpp_source.html">abstract_decoder.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for MIPS::InstructionDecoder:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classMIPS_1_1InstructionDecoder.png" usemap="#MIPS::InstructionDecoder_map" alt=""/>
-  <map id="MIPS::InstructionDecoder_map" name="MIPS::InstructionDecoder_map">
-<area href="classMIPS_1_1InstructionIDecoder.html" alt="MIPS::InstructionIDecoder" shape="rect" coords="0,56,158,80"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="instruction__decoder_8hpp_source.html">instruction_decoder.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7078c9cef7be0fe76cabe781337f1b04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a7078c9cef7be0fe76cabe781337f1b04">InstructionDecoder</a> ()</td></tr>
-<tr class="separator:a7078c9cef7be0fe76cabe781337f1b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c1e3f43edf65ca86dba43a9090c9fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a81c1e3f43edf65ca86dba43a9090c9fc">InstructionDecoder</a> (<a class="el" href="classMIPS_1_1RegisterBank.html">RegisterBank</a> &amp;bank)</td></tr>
+<tr class="separator:a81c1e3f43edf65ca86dba43a9090c9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148a38deb0745a55bbd927d186f93c89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a148a38deb0745a55bbd927d186f93c89">~InstructionDecoder</a> ()</td></tr>
 <tr class="separator:a148a38deb0745a55bbd927d186f93c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2058d55e4f24c97674e97a08e53f2d17"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classMIPS_1_1Instruction.html">Instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a2058d55e4f24c97674e97a08e53f2d17">decode</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
-<tr class="separator:a2058d55e4f24c97674e97a08e53f2d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="memitem:adf51f7da13d3256b60d99384cdc4af63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMIPS_1_1Instruction.html">Instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#adf51f7da13d3256b60d99384cdc4af63">decode</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
+<tr class="separator:adf51f7da13d3256b60d99384cdc4af63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba2a37411b5e8d4e7b03c4d5b50399b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a9ba2a37411b5e8d4e7b03c4d5b50399b">getOPCode</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
 <tr class="separator:a9ba2a37411b5e8d4e7b03c4d5b50399b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557dfb2243be5d1a0a369c333817fa86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a557dfb2243be5d1a0a369c333817fa86">getRs</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
+<tr class="separator:a557dfb2243be5d1a0a369c333817fa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da42498cc12ddcc041b42bacbc3b3a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a4da42498cc12ddcc041b42bacbc3b3a1">getRt</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
+<tr class="separator:a4da42498cc12ddcc041b42bacbc3b3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493aeaf3390fb5821596ef3efc22e65b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a493aeaf3390fb5821596ef3efc22e65b">getRd</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
+<tr class="separator:a493aeaf3390fb5821596ef3efc22e65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7148e0ad81662725be7203837a4e46c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#aa7148e0ad81662725be7203837a4e46c">getFunct</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
+<tr class="separator:aa7148e0ad81662725be7203837a4e46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ba48d5683432c3a303b8c42367755f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#adc265a970bc35995b5879784bbb3f1b7">bit16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a09ba48d5683432c3a303b8c42367755f">getOffset</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction, <a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> size=8)</td></tr>
+<tr class="separator:a09ba48d5683432c3a303b8c42367755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad47ec78a48f63bc4ae3863bd0b7de86e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMIPS_1_1RegisterBank.html">RegisterBank</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#ad47ec78a48f63bc4ae3863bd0b7de86e">registerBank</a></td></tr>
-<tr class="separator:ad47ec78a48f63bc4ae3863bd0b7de86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6796453642fca3384868a9539656ab45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMIPS_1_1RegisterBank.html">RegisterBank</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a6796453642fca3384868a9539656ab45">registerBank</a></td></tr>
+<tr class="separator:a6796453642fca3384868a9539656ab45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Classe responsável por receber uma instrução em binário e instanciar uma instrução do emulador que pode executar a instrução equivalente.</p>
 <dl class="section author"><dt>Author</dt><dd>Matheus Nogueira </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7078c9cef7be0fe76cabe781337f1b04"></a>
+<a class="anchor" id="a81c1e3f43edf65ca86dba43a9090c9fc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">MIPS::InstructionDecoder::InstructionDecoder </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classMIPS_1_1RegisterBank.html">RegisterBank</a> &amp;&#160;</td>
+          <td class="paramname"><em>bank</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Cria um novo decodificador de instruções. </p>
+<p>Cria um novo decodificador de instruções.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bank</td><td>banco de registradores usado. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -163,26 +167,18 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2058d55e4f24c97674e97a08e53f2d17"></a>
+<a class="anchor" id="adf51f7da13d3256b60d99384cdc4af63"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classMIPS_1_1Instruction.html">Instruction</a>* MIPS::InstructionDecoder::decode </td>
+          <td class="memname"><a class="el" href="classMIPS_1_1Instruction.html">Instruction</a>* MIPS::InstructionDecoder::decode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a>&#160;</td>
           <td class="paramname"><em>instruction</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Decodifica uma instrução em binário e cria uma instrução do emulador que realize a operação equivalente.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -193,16 +189,70 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ponteiro para a instrução criada pelo emulador. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classMIPS_1_1InstructionIDecoder.html#a5f82ec698a702aee381fe80bb9508c2b">MIPS::InstructionIDecoder</a>.</p>
+</div>
+</div>
+<a class="anchor" id="aa7148e0ad81662725be7203837a4e46c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> MIPS::InstructionDecoder::getFunct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a>&#160;</td>
+          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função que recupera o valor do funct da instrução.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instruction</td><td>instrução binária de 16 bits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>valor do funct </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a09ba48d5683432c3a303b8c42367755f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8hpp.html#adc265a970bc35995b5879784bbb3f1b7">bit16_t</a> MIPS::InstructionDecoder::getOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a>&#160;</td>
+          <td class="paramname"><em>instruction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td>
+          <td class="paramname"><em>size</em> = <code>8</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função que recupera o valor do offset da instrução.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instruction</td><td>instrução binária de 16 bits. </td></tr>
+    <tr><td class="paramname">size</td><td>número de bits de offset </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>valor do offset. </dd></dl>
 
 </div>
 </div>
 <a class="anchor" id="a9ba2a37411b5e8d4e7b03c4d5b50399b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> MIPS::InstructionDecoder::getOPCode </td>
@@ -212,11 +262,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Método responsável por recuperar o código de operação (opcode) de uma instrução.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -229,8 +274,80 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a493aeaf3390fb5821596ef3efc22e65b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> MIPS::InstructionDecoder::getRd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a>&#160;</td>
+          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função que recupera o endereço do registrador destination (Rd) da instrução.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instruction</td><td>instrução binária de 16 bits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>endereço do registrador destination. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a557dfb2243be5d1a0a369c333817fa86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> MIPS::InstructionDecoder::getRs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a>&#160;</td>
+          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função que recupera o endereço do registrador source (Rs) da instrução.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instruction</td><td>instrução binária de 16 bits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>endereço do registrador source. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4da42498cc12ddcc041b42bacbc3b3a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> MIPS::InstructionDecoder::getRt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a>&#160;</td>
+          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função que recupera o endereço do registrador target (Rt) da instrução.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instruction</td><td>instrução binária de 16 bits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>endereço do registrador target. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ad47ec78a48f63bc4ae3863bd0b7de86e"></a>
+<a class="anchor" id="a6796453642fca3384868a9539656ab45"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -238,7 +355,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classMIPS_1_1RegisterBank.html">RegisterBank</a>* MIPS::InstructionDecoder::registerBank</td>
+          <td class="memname"><a class="el" href="classMIPS_1_1RegisterBank.html">RegisterBank</a>&amp; MIPS::InstructionDecoder::registerBank</td>
         </tr>
       </table>
   </td>
@@ -252,7 +369,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/mips/decoder/<a class="el" href="abstract__decoder_8hpp_source.html">abstract_decoder.hpp</a></li>
+<li>include/mips/decoder/<a class="el" href="instruction__decoder_8hpp_source.html">instruction_decoder.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

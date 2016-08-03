@@ -11,8 +11,8 @@ namespace MIPS {
  * Estrutura que armazena o nome do label e a linha que ele se encontra.
  */
 struct Label {
-	char label[64];
-	unsigned long line;
+	char label[64];            ///< Nome do label
+	unsigned long line;        ///< Linha que ele está definido
 };
 
 }; // namespace

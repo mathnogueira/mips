@@ -11,7 +11,7 @@
 \item 
 \hyperlink{classMIPS_1_1Interpreter_a41cc557c63eaedc2227de15df4a965b7}{$\sim$\+Interpreter} ()
 \item 
-void \hyperlink{classMIPS_1_1Interpreter_ad530eb79becefe55e07d1e6c084f7e5d}{compile} ()
+void \hyperlink{classMIPS_1_1Interpreter_a739b19e74d52bc2470800171ed1ab314}{compile} (const char $\ast$output=\char`\"{}out.\+mips\char`\"{})
 \item 
 bool \hyperlink{classMIPS_1_1Interpreter_a9b27efdc3235bde933c65acc53ae02d0}{ok} ()
 \end{DoxyCompactItemize}
@@ -52,12 +52,19 @@ Destroi o interpretador.
 \subsection{Member Function Documentation}
 \index{M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}!compile@{compile}}
 \index{compile@{compile}!M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}}
-\subsubsection[{\texorpdfstring{compile()}{compile()}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Interpreter\+::compile (
+\subsubsection[{\texorpdfstring{compile(const char $\ast$output=""out.\+mips"")}{compile(const char *output="out.mips")}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Interpreter\+::compile (
 \begin{DoxyParamCaption}
-{}
+\item[{const char $\ast$}]{output = {\ttfamily \char`\"{}out.mips\char`\"{}}}
 \end{DoxyParamCaption}
-)}\hypertarget{classMIPS_1_1Interpreter_ad530eb79becefe55e07d1e6c084f7e5d}{}\label{classMIPS_1_1Interpreter_ad530eb79becefe55e07d1e6c084f7e5d}
-Processa o arquivo de entrada para que ele possa ser interpretado. \index{M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}!ok@{ok}}
+)}\hypertarget{classMIPS_1_1Interpreter_a739b19e74d52bc2470800171ed1ab314}{}\label{classMIPS_1_1Interpreter_a739b19e74d52bc2470800171ed1ab314}
+Processa o arquivo de entrada para que ele possa ser interpretado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & arquivo que será escrito com as instruções. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}!ok@{ok}}
 \index{ok@{ok}!M\+I\+P\+S\+::\+Interpreter@{M\+I\+P\+S\+::\+Interpreter}}
 \subsubsection[{\texorpdfstring{ok()}{ok()}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+I\+P\+S\+::\+Interpreter\+::ok (
 \begin{DoxyParamCaption}

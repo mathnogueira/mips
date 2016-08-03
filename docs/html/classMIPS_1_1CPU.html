@@ -102,9 +102,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aff48ae1e9b906b9592749cef411678a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00f6fa1c8a5bf3b46cca66b07e1e184c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1CPU.html#a00f6fa1c8a5bf3b46cca66b07e1e184c">~CPU</a> ()</td></tr>
 <tr class="separator:a00f6fa1c8a5bf3b46cca66b07e1e184c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930b3551bf8fa12c2f143ea375ce6aea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1CPU.html#a930b3551bf8fa12c2f143ea375ce6aea">loadProgram</a> (const char *program)</td></tr>
+<tr class="separator:a930b3551bf8fa12c2f143ea375ce6aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467d31bf7578b4f6f71d0966723bc018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1CPU.html#a467d31bf7578b4f6f71d0966723bc018">execute</a> ()</td></tr>
+<tr class="separator:a467d31bf7578b4f6f71d0966723bc018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Classe que representa o processador MIPS, esta é responsável por gerenciar toda a execução da pipeline de execução das instruções do processador.</p>
+<div class="textblock"><p>Classe que representa o processador m-RISC, esta é responsável por gerenciar toda a execução das instruções no processador.</p>
 <dl class="section author"><dt>Author</dt><dd>Matheus Nogueira </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aff48ae1e9b906b9592749cef411678a7"></a>
@@ -119,7 +123,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Cria um novo processador MIPS. </p>
+<p>Cria uma nova <a class="el" href="classMIPS_1_1CPU.html">CPU</a>. </p>
 
 </div>
 </div>
@@ -135,7 +139,47 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destroi o processador MIPS. </p>
+<p>Destroi a <a class="el" href="classMIPS_1_1CPU.html">CPU</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a467d31bf7578b4f6f71d0966723bc018"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MIPS::CPU::execute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Executa as instruções carregadas previamente pelo método loadProgram. </p>
+
+</div>
+</div>
+<a class="anchor" id="a930b3551bf8fa12c2f143ea375ce6aea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MIPS::CPU::loadProgram </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carrega um programa na memória de instruções do processador.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">program</td><td>caminho para o arquivo contendo o programa. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -12,6 +12,10 @@
 \hyperlink{classMIPS_1_1RegisterBank_ab86cb023791911b8f056870064d29245}{$\sim$\+Register\+Bank} ()
 \item 
 \hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1RegisterBank_a6a7df1ec1d165a4d7273bde8caa94e45}{get\+Register} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} id)
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1RegisterBank_a57fe0222f8176236f88f26e6a3af8ace}{get\+PC} ()
+\item 
+void \hyperlink{classMIPS_1_1RegisterBank_a4c6a18e903ee79d445988b92cadc3914}{write} (\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} result, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} rd)
 \end{DoxyCompactItemize}
 
 
@@ -41,6 +45,18 @@ Cria uma instância do banco de registradores. \index{M\+I\+P\+S\+::\+Register\+
 Destroi a instância do banco de registradores. 
 
 \subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}!get\+PC@{get\+PC}}
+\index{get\+PC@{get\+PC}!M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}}
+\subsubsection[{\texorpdfstring{get\+P\+C()}{getPC()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Register\+Bank\+::get\+PC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1RegisterBank_a57fe0222f8176236f88f26e6a3af8ace}{}\label{classMIPS_1_1RegisterBank_a57fe0222f8176236f88f26e6a3af8ace}
+Retorna o ponteiro para o registrador contador de programa.
+
+\begin{DoxyReturn}{Returns}
+ponteiro para o program counter 
+\end{DoxyReturn}
 \index{M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}!get\+Register@{get\+Register}}
 \index{get\+Register@{get\+Register}!M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}}
 \subsubsection[{\texorpdfstring{get\+Register(bit8\+\_\+t id)}{getRegister(bit8_t id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Register\+Bank\+::get\+Register (
@@ -58,6 +74,23 @@ Retorna um ponteiro para o registrador identificado pelo código especificado.
 \begin{DoxyReturn}{Returns}
 ponteiro para o registrador. 
 \end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}!write@{write}}
+\index{write@{write}!M\+I\+P\+S\+::\+Register\+Bank@{M\+I\+P\+S\+::\+Register\+Bank}}
+\subsubsection[{\texorpdfstring{write(bit16\+\_\+t result, bit8\+\_\+t rd)}{write(bit16_t result, bit8_t rd)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Register\+Bank\+::write (
+\begin{DoxyParamCaption}
+\item[{{\bf bit16\+\_\+t}}]{result, }
+\item[{{\bf bit8\+\_\+t}}]{rd}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1RegisterBank_a4c6a18e903ee79d445988b92cadc3914}{}\label{classMIPS_1_1RegisterBank_a4c6a18e903ee79d445988b92cadc3914}
+Escreve o valor de um registrador usando o seu indice para localizá-\/lo
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & novo valor do registrador \\
+\hline
+{\em rd} & registrador de destino \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

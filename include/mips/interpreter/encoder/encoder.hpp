@@ -24,9 +24,6 @@ public:
 
 	/**
 	 * Cria um novo codificador.
-	 *
-	 * \param labels tabela de labels extraídos do código.
-	 * \param type tipo de codificador.
 	 */
 	Encoder();
 

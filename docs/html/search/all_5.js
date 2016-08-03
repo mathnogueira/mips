@@ -6,7 +6,7 @@ var searchData=
   ['filter',['Filter',['../classMIPS_1_1Filter.html',1,'MIPS']]],
   ['filter',['filter',['../classMIPS_1_1Filter.html#a752c258e9d4090dd774fa4e829c95ae1',1,'MIPS::Filter::filter()'],['../classMIPS_1_1SpaceFilter.html#af6182f9ed8fb061e3ab9d7b437234952',1,'MIPS::SpaceFilter::filter()']]],
   ['filter_2ehpp',['filter.hpp',['../filter_8hpp.html',1,'']]],
-  ['find',['find',['../classMIPS_1_1DecoderFinder.html#a9ea34d6e420f684de5d6fe3b10ce5c6b',1,'MIPS::DecoderFinder']]],
+  ['format_5fdebug',['FORMAT_DEBUG',['../debug_8hpp.html#a16415ab05e2fe6d9c7ced68d776186b9',1,'debug.hpp']]],
   ['format_5fi_5fencoder_2ehpp',['format_I_encoder.hpp',['../format__I__encoder_8hpp.html',1,'']]],
   ['format_5fii_5fencoder_2ehpp',['format_II_encoder.hpp',['../format__II__encoder_8hpp.html',1,'']]],
   ['format_5fiii_5fencoder_2ehpp',['format_III_encoder.hpp',['../format__III__encoder_8hpp.html',1,'']]],
@@ -22,7 +22,7 @@ var searchData=
   ['formatviencoder',['FormatVIEncoder',['../classMIPS_1_1FormatVIEncoder.html',1,'MIPS']]],
   ['formatviiencoder',['FormatVIIEncoder',['../classMIPS_1_1FormatVIIEncoder.html',1,'MIPS']]],
   ['full_5fadder_2ehpp',['full_adder.hpp',['../full__adder_8hpp.html',1,'']]],
-  ['fulladder',['FullAdder',['../classMIPS_1_1FullAdder.html',1,'MIPS']]],
   ['fulladder',['FullAdder',['../classMIPS_1_1FullAdder.html#a6b2eecd1b2720d87322810a72ab0cf16',1,'MIPS::FullAdder']]],
+  ['fulladder',['FullAdder',['../classMIPS_1_1FullAdder.html',1,'MIPS']]],
   ['funct',['funct',['../classMIPS_1_1InstructionI.html#a5c6efcbbd233a7447c1fe24ea0a1e558',1,'MIPS::InstructionI']]]
 ];

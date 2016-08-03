@@ -1,5 +1,5 @@
 /**
- * \file queue.h
+ * \file queue.hpp
  *
  * Arquivo contendo a implementação de uma fila encadeada.
  */
@@ -23,16 +23,16 @@ public:
 	 * Nó da fila.
 	 */
 	struct Node {
-		T content;
-		struct Node* next;
+		T content;            ///< Conteúdo do nó da fila
+		struct Node* next;    ///< Próximo elemento da fila
 	};
 
 	/**
 	 * Cria uma nova fila encadeada.
 	 */
 	Queue() {
-		head_ = NULL;
-		size_ = 0;
+		head_ = NULL;         ///< Cabeça da fila
+		size_ = 0;            ///< Número de elementos da fila
 	}
 
 	/**

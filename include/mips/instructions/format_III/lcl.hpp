@@ -1,5 +1,5 @@
 /**
- * \file lhl.hpp
+ * \file lcl.hpp
  *
  * Instrução que carrega  uma constante com sinal no bit menos significativo
  * do registrador.

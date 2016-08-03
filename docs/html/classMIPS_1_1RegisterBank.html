@@ -104,6 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab86cb023791911b8f056870064d29245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a7df1ec1d165a4d7273bde8caa94e45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMIPS_1_1Register.html">Register</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1RegisterBank.html#a6a7df1ec1d165a4d7273bde8caa94e45">getRegister</a> (<a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> id)</td></tr>
 <tr class="separator:a6a7df1ec1d165a4d7273bde8caa94e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57fe0222f8176236f88f26e6a3af8ace"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMIPS_1_1Register.html">Register</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1RegisterBank.html#a57fe0222f8176236f88f26e6a3af8ace">getPC</a> ()</td></tr>
+<tr class="separator:a57fe0222f8176236f88f26e6a3af8ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6a18e903ee79d445988b92cadc3914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1RegisterBank.html#a4c6a18e903ee79d445988b92cadc3914">write</a> (<a class="el" href="core_8hpp.html#adc265a970bc35995b5879784bbb3f1b7">bit16_t</a> result, <a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> rd)</td></tr>
+<tr class="separator:a4c6a18e903ee79d445988b92cadc3914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Classe que representa o banco de registradores do MIPS. Esta é responsável por gerenciar os registradores do processador.</p>
@@ -142,6 +146,23 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a57fe0222f8176236f88f26e6a3af8ace"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMIPS_1_1Register.html">Register</a>* MIPS::RegisterBank::getPC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retorna o ponteiro para o registrador contador de programa.</p>
+<dl class="section return"><dt>Returns</dt><dd>ponteiro para o program counter </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6a7df1ec1d165a4d7273bde8caa94e45"></a>
 <div class="memitem">
 <div class="memproto">
@@ -163,6 +184,40 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ponteiro para o registrador. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c6a18e903ee79d445988b92cadc3914"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MIPS::RegisterBank::write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#adc265a970bc35995b5879784bbb3f1b7">bit16_t</a>&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td>
+          <td class="paramname"><em>rd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Escreve o valor de um registrador usando o seu indice para localizá-lo</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>novo valor do registrador </td></tr>
+    <tr><td class="paramname">rd</td><td>registrador de destino </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

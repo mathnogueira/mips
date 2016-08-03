@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['passainstruction',['PassaInstruction',['../classMIPS_1_1PassaInstruction.html',1,'MIPS']]],
-  ['passnotainstruction',['PassNotAInstruction',['../classMIPS_1_1PassNotAInstruction.html',1,'MIPS']]]
+  ['onesinstruction',['OnesInstruction',['../classMIPS_1_1OnesInstruction.html',1,'MIPS']]],
+  ['orinstruction',['OrInstruction',['../classMIPS_1_1OrInstruction.html',1,'MIPS']]],
+  ['ornotbinstruction',['OrnotbInstruction',['../classMIPS_1_1OrnotbInstruction.html',1,'MIPS']]]
 ];

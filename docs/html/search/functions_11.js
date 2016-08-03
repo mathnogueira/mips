@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xnorinstruction',['XnorInstruction',['../classMIPS_1_1XnorInstruction.html#aa6ace56cbc1f0a87f0661ecf5925bc2d',1,'MIPS::XnorInstruction']]],
-  ['xorinstruction',['XorInstruction',['../classMIPS_1_1XorInstruction.html#ac6b0e810912319f45b0e42b80d9b0f9e',1,'MIPS::XorInstruction']]]
+  ['what',['what',['../classMIPS_1_1InterpreterException.html#a7ddaf2edf53aaaf5b0ad995635033003',1,'MIPS::InterpreterException::what()'],['../classMIPS_1_1MemoryException.html#a8ee2a716f1c715577736d7b6694d3672',1,'MIPS::MemoryException::what()']]],
+  ['write',['write',['../classMIPS_1_1Memory.html#a8d339b30f29c4dc8044b51c982d5e95b',1,'MIPS::Memory::write()'],['../classMIPS_1_1RegisterBank.html#a4c6a18e903ee79d445988b92cadc3914',1,'MIPS::RegisterBank::write()']]]
 ];

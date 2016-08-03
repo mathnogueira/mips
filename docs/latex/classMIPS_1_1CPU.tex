@@ -10,11 +10,15 @@
 \hyperlink{classMIPS_1_1CPU_aff48ae1e9b906b9592749cef411678a7}{C\+PU} ()
 \item 
 \hyperlink{classMIPS_1_1CPU_a00f6fa1c8a5bf3b46cca66b07e1e184c}{$\sim$\+C\+PU} ()
+\item 
+void \hyperlink{classMIPS_1_1CPU_a930b3551bf8fa12c2f143ea375ce6aea}{load\+Program} (const char $\ast$program)
+\item 
+void \hyperlink{classMIPS_1_1CPU_a467d31bf7578b4f6f71d0966723bc018}{execute} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Classe que representa o processador M\+I\+PS, esta é responsável por gerenciar toda a execução da pipeline de execução das instruções do processador.
+Classe que representa o processador m-\/\+R\+I\+SC, esta é responsável por gerenciar toda a execução das instruções no processador.
 
 \begin{DoxyAuthor}{Author}
 Matheus Nogueira 
@@ -29,14 +33,38 @@ Matheus Nogueira
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{classMIPS_1_1CPU_aff48ae1e9b906b9592749cef411678a7}{}\label{classMIPS_1_1CPU_aff48ae1e9b906b9592749cef411678a7}
-Cria um novo processador M\+I\+PS. \index{M\+I\+P\+S\+::\+C\+PU@{M\+I\+P\+S\+::\+C\+PU}!````~C\+PU@{$\sim$\+C\+PU}}
+Cria uma nova \hyperlink{classMIPS_1_1CPU}{C\+PU}. \index{M\+I\+P\+S\+::\+C\+PU@{M\+I\+P\+S\+::\+C\+PU}!````~C\+PU@{$\sim$\+C\+PU}}
 \index{````~C\+PU@{$\sim$\+C\+PU}!M\+I\+P\+S\+::\+C\+PU@{M\+I\+P\+S\+::\+C\+PU}}
 \subsubsection[{\texorpdfstring{$\sim$\+C\+P\+U()}{~CPU()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+C\+P\+U\+::$\sim$\+C\+PU (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{classMIPS_1_1CPU_a00f6fa1c8a5bf3b46cca66b07e1e184c}{}\label{classMIPS_1_1CPU_a00f6fa1c8a5bf3b46cca66b07e1e184c}
-Destroi o processador M\+I\+PS. 
+Destroi a \hyperlink{classMIPS_1_1CPU}{C\+PU}. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+C\+PU@{M\+I\+P\+S\+::\+C\+PU}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+C\+PU@{M\+I\+P\+S\+::\+C\+PU}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+C\+P\+U\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1CPU_a467d31bf7578b4f6f71d0966723bc018}{}\label{classMIPS_1_1CPU_a467d31bf7578b4f6f71d0966723bc018}
+Executa as instruções carregadas previamente pelo método load\+Program. \index{M\+I\+P\+S\+::\+C\+PU@{M\+I\+P\+S\+::\+C\+PU}!load\+Program@{load\+Program}}
+\index{load\+Program@{load\+Program}!M\+I\+P\+S\+::\+C\+PU@{M\+I\+P\+S\+::\+C\+PU}}
+\subsubsection[{\texorpdfstring{load\+Program(const char $\ast$program)}{loadProgram(const char *program)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+C\+P\+U\+::load\+Program (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{program}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1CPU_a930b3551bf8fa12c2f143ea375ce6aea}{}\label{classMIPS_1_1CPU_a930b3551bf8fa12c2f143ea375ce6aea}
+Carrega um programa na memória de instruções do processador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em program} & caminho para o arquivo contendo o programa. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
@@ -148,7 +149,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMIPS_1_1Instruction.html#a9894219fb3f9f6d0c33959bf45bf8151">MIPS::Instruction</a>
 </li>
 <li>compile()
-: <a class="el" href="classMIPS_1_1Interpreter.html#ad530eb79becefe55e07d1e6c084f7e5d">MIPS::Interpreter</a>
+: <a class="el" href="classMIPS_1_1Interpreter.html#a739b19e74d52bc2470800171ed1ab314">MIPS::Interpreter</a>
+</li>
+<li>content
+: <a class="el" href="structMIPS_1_1Queue_1_1Node.html#a9d9a04736b082d82495e40d5aa1135b0">MIPS::Queue&lt; T &gt;::Node</a>
+</li>
+<li>ControlUnit()
+: <a class="el" href="classMIPS_1_1ControlUnit.html#a4e7f136cf15bc78b878082ba5fe5b629">MIPS::ControlUnit</a>
 </li>
 <li>CPU()
 : <a class="el" href="classMIPS_1_1CPU.html#aff48ae1e9b906b9592749cef411678a7">MIPS::CPU</a>
@@ -164,12 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMIPS_1_1DecaInstruction.html#a12f8f1eb9e3cf3afd1a08353b55e2062">MIPS::DecaInstruction</a>
 </li>
 <li>decode()
-: <a class="el" href="classMIPS_1_1DecoderFinder.html#ade32de5a84c67c28c42b98ab891cf669">MIPS::DecoderFinder</a>
-, <a class="el" href="classMIPS_1_1InstructionDecoder.html#a2058d55e4f24c97674e97a08e53f2d17">MIPS::InstructionDecoder</a>
-, <a class="el" href="classMIPS_1_1InstructionIDecoder.html#a5f82ec698a702aee381fe80bb9508c2b">MIPS::InstructionIDecoder</a>
-</li>
-<li>DecoderFinder()
-: <a class="el" href="classMIPS_1_1DecoderFinder.html#ae4cf7a2edb104ff6ab61c69a8e4aa3da">MIPS::DecoderFinder</a>
+: <a class="el" href="classMIPS_1_1InstructionDecoder.html#adf51f7da13d3256b60d99384cdc4af63">MIPS::InstructionDecoder</a>
 </li>
 <li>dispatch()
 : <a class="el" href="classMIPS_1_1EventDispatcher.html#a39eedeb6d95d5725a2608880b24ac5fc">MIPS::EventDispatcher</a>
@@ -210,6 +212,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classMIPS_1_1AndnotaInstruction.html#afdc3b2836318f4adaa32dfa3bcdf7c45">MIPS::AndnotaInstruction</a>
 , <a class="el" href="classMIPS_1_1AslInstruction.html#adafc2d1f549cda9bdf757dc2bac03ca9">MIPS::AslInstruction</a>
 , <a class="el" href="classMIPS_1_1AsrInstruction.html#aad46283e10517abf6bf5e527ca020d53">MIPS::AsrInstruction</a>
+, <a class="el" href="classMIPS_1_1CPU.html#a467d31bf7578b4f6f71d0966723bc018">MIPS::CPU</a>
 , <a class="el" href="classMIPS_1_1DecaInstruction.html#a82c3d685d910d2c52163f5faa1750aca">MIPS::DecaInstruction</a>
 , <a class="el" href="classMIPS_1_1IncaInstruction.html#ac78e4a0b037ab4b6b419f4f5a34413c7">MIPS::IncaInstruction</a>
 , <a class="el" href="classMIPS_1_1Instruction.html#a88668dfaf49dd8608f210ba13948d242">MIPS::Instruction</a>
@@ -246,9 +249,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMIPS_1_1Filter.html#a752c258e9d4090dd774fa4e829c95ae1">MIPS::Filter</a>
 , <a class="el" href="classMIPS_1_1SpaceFilter.html#af6182f9ed8fb061e3ab9d7b437234952">MIPS::SpaceFilter</a>
 </li>
-<li>find()
-: <a class="el" href="classMIPS_1_1DecoderFinder.html#a9ea34d6e420f684de5d6fe3b10ce5c6b">MIPS::DecoderFinder</a>
-</li>
 <li>FullAdder()
 : <a class="el" href="classMIPS_1_1FullAdder.html#a6b2eecd1b2720d87322810a72ab0cf16">MIPS::FullAdder</a>
 </li>
@@ -267,16 +267,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMIPS_1_1InterpreterException.html#a6d2fc264fb6b9c61bf9690747d1bf5b6">MIPS::InterpreterException</a>
 </li>
 <li>getFunct()
-: <a class="el" href="classMIPS_1_1InstructionIDecoder.html#a92735572aec9bdfd68d32af29b4ab86e">MIPS::InstructionIDecoder</a>
+: <a class="el" href="classMIPS_1_1InstructionDecoder.html#aa7148e0ad81662725be7203837a4e46c">MIPS::InstructionDecoder</a>
 </li>
 <li>getName()
 : <a class="el" href="classMIPS_1_1Register.html#a09fd0ac8d18acb6907e47915f518c695">MIPS::Register</a>
 </li>
+<li>getNext()
+: <a class="el" href="classMIPS_1_1InstructionFinder.html#a73a242cbe648c2d5e1cd0dd9342f798a">MIPS::InstructionFinder</a>
+</li>
+<li>getOffset()
+: <a class="el" href="classMIPS_1_1InstructionDecoder.html#a09ba48d5683432c3a303b8c42367755f">MIPS::InstructionDecoder</a>
+</li>
 <li>getOPCode()
 : <a class="el" href="classMIPS_1_1InstructionDecoder.html#a9ba2a37411b5e8d4e7b03c4d5b50399b">MIPS::InstructionDecoder</a>
 </li>
+<li>getPC()
+: <a class="el" href="classMIPS_1_1RegisterBank.html#a57fe0222f8176236f88f26e6a3af8ace">MIPS::RegisterBank</a>
+</li>
 <li>getRd()
-: <a class="el" href="classMIPS_1_1InstructionIDecoder.html#a50819a3f711de2efa9033f27733b1562">MIPS::InstructionIDecoder</a>
+: <a class="el" href="classMIPS_1_1InstructionDecoder.html#a493aeaf3390fb5821596ef3efc22e65b">MIPS::InstructionDecoder</a>
 </li>
 <li>getRegister()
 : <a class="el" href="classMIPS_1_1RegisterBank.html#a6a7df1ec1d165a4d7273bde8caa94e45">MIPS::RegisterBank</a>
@@ -285,13 +294,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMIPS_1_1Encoder.html#af0e5dea3612f5063e48257bf0028f2dd">MIPS::Encoder</a>
 </li>
 <li>getRs()
-: <a class="el" href="classMIPS_1_1InstructionIDecoder.html#aece98d1c7f45c00c931e5955c1ec0bc1">MIPS::InstructionIDecoder</a>
+: <a class="el" href="classMIPS_1_1InstructionDecoder.html#a557dfb2243be5d1a0a369c333817fa86">MIPS::InstructionDecoder</a>
 </li>
 <li>getRt()
-: <a class="el" href="classMIPS_1_1InstructionIDecoder.html#aec36994fb257983090e6f31b5c40ca6a">MIPS::InstructionIDecoder</a>
-</li>
-<li>getShamt()
-: <a class="el" href="classMIPS_1_1InstructionIDecoder.html#a9b3ae24c21814fcc896678ca70bedf90">MIPS::InstructionIDecoder</a>
+: <a class="el" href="classMIPS_1_1InstructionDecoder.html#a4da42498cc12ddcc041b42bacbc3b3a1">MIPS::InstructionDecoder</a>
 </li>
 </ul>
 
@@ -308,13 +314,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMIPS_1_1IncaInstruction.html#a03f08716ad682f74db7aef71961c4b09">MIPS::IncaInstruction</a>
 </li>
 <li>InstructionDecoder()
-: <a class="el" href="classMIPS_1_1InstructionDecoder.html#a7078c9cef7be0fe76cabe781337f1b04">MIPS::InstructionDecoder</a>
+: <a class="el" href="classMIPS_1_1InstructionDecoder.html#a81c1e3f43edf65ca86dba43a9090c9fc">MIPS::InstructionDecoder</a>
+</li>
+<li>InstructionFinder()
+: <a class="el" href="classMIPS_1_1InstructionFinder.html#abda3d40a1a5f355991fc5f135a826b96">MIPS::InstructionFinder</a>
 </li>
 <li>InstructionI()
 : <a class="el" href="classMIPS_1_1InstructionI.html#a57bdbde86da12b395952eea141867ec2">MIPS::InstructionI</a>
-</li>
-<li>InstructionIDecoder()
-: <a class="el" href="classMIPS_1_1InstructionIDecoder.html#a2bda3506b713f9ff4d9dddeab27b4820">MIPS::InstructionIDecoder</a>
 </li>
 <li>InstructionII()
 : <a class="el" href="classMIPS_1_1InstructionII.html#a0f84efe08b176134df068fed51aca447">MIPS::InstructionII</a>
@@ -335,17 +341,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>label
+: <a class="el" href="structMIPS_1_1Label.html#aeb046f4a05c4ab7c02a87b49bd75de51">MIPS::Label</a>
+</li>
 <li>LchInstruction()
 : <a class="el" href="classMIPS_1_1LchInstruction.html#a6e565d4fb7708e974d0e475bd3fabfa7">MIPS::LchInstruction</a>
 </li>
 <li>LclInstruction()
 : <a class="el" href="classMIPS_1_1LclInstruction.html#aae1096406aaf2cbf94f7755d05869d05">MIPS::LclInstruction</a>
 </li>
+<li>line
+: <a class="el" href="structMIPS_1_1Label.html#a1e25037de487a7b1bbe4840e872024b0">MIPS::Label</a>
+</li>
 <li>listeners
 : <a class="el" href="structMIPS_1_1EventDispatcher_1_1ListenerMap.html#a4cc956ad8c738da563c1db75247e8519">MIPS::EventDispatcher::ListenerMap</a>
 </li>
 <li>LoadlitInstruction()
 : <a class="el" href="classMIPS_1_1LoadlitInstruction.html#a3f6cbb32be8166dcd9996fcd746ca96d">MIPS::LoadlitInstruction</a>
+</li>
+<li>loadProgram()
+: <a class="el" href="classMIPS_1_1CPU.html#a930b3551bf8fa12c2f143ea375ce6aea">MIPS::CPU</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>Memory()
+: <a class="el" href="classMIPS_1_1Memory.html#abac2c5ab745d4b2e0320a020cd2b77f6">MIPS::Memory</a>
+</li>
+<li>MemoryException()
+: <a class="el" href="classMIPS_1_1MemoryException.html#a71649bc565f55557f59622781de590c7">MIPS::MemoryException</a>
 </li>
 </ul>
 
@@ -359,6 +384,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>next()
 : <a class="el" href="classMIPS_1_1FileReader.html#af343e2652200f0ae52cedbfe22dba0cf">MIPS::FileReader</a>
+, <a class="el" href="structMIPS_1_1Queue_1_1Node.html#abd5a8271355d9455cf1cc038217fbecc">MIPS::Queue&lt; T &gt;::Node</a>
 </li>
 <li>NorInstruction()
 : <a class="el" href="classMIPS_1_1NorInstruction.html#a56d6fb7a2f54c446c06a8cba4b159d4f">MIPS::NorInstruction</a>
@@ -441,11 +467,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classMIPS_1_1InstructionII.html#a2a709b8170f2bf653de2102df9403e1f">MIPS::InstructionII</a>
 , <a class="el" href="classMIPS_1_1InstructionIII.html#a76e7b218fc57cd2fc559bf72498090b6">MIPS::InstructionIII</a>
 </li>
+<li>read()
+: <a class="el" href="classMIPS_1_1Memory.html#a93a2aecd6026ecd86e77fcef6b99b91b">MIPS::Memory</a>
+</li>
 <li>Register()
 : <a class="el" href="classMIPS_1_1Register.html#a56019b9be3e98dbe2f2af79326ffc06d">MIPS::Register</a>
 </li>
 <li>registerBank
-: <a class="el" href="classMIPS_1_1InstructionDecoder.html#ad47ec78a48f63bc4ae3863bd0b7de86e">MIPS::InstructionDecoder</a>
+: <a class="el" href="classMIPS_1_1InstructionDecoder.html#a6796453642fca3384868a9539656ab45">MIPS::InstructionDecoder</a>
 </li>
 <li>RegisterBank()
 : <a class="el" href="classMIPS_1_1RegisterBank.html#ad30994f3b2df40a11234f4e53d820cd2">MIPS::RegisterBank</a>
@@ -463,6 +492,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>setDataSize()
+: <a class="el" href="classMIPS_1_1Memory.html#a53b03b417ee8efb4a6f3a0020c3bd7ab">MIPS::Memory</a>
+</li>
+<li>setInstructionSize()
+: <a class="el" href="classMIPS_1_1Memory.html#a636e0ca3d23fc5022a2a4b59a6648210">MIPS::Memory</a>
+</li>
 <li>shamt
 : <a class="el" href="classMIPS_1_1InstructionI.html#aa9b6da37c374c2ec8d96448d341e5e7d">MIPS::InstructionI</a>
 </li>
@@ -497,6 +532,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>what()
 : <a class="el" href="classMIPS_1_1InterpreterException.html#a7ddaf2edf53aaaf5b0ad995635033003">MIPS::InterpreterException</a>
+, <a class="el" href="classMIPS_1_1MemoryException.html#a8ee2a716f1c715577736d7b6694d3672">MIPS::MemoryException</a>
+</li>
+<li>write()
+: <a class="el" href="classMIPS_1_1Memory.html#a8d339b30f29c4dc8044b51c982d5e95b">MIPS::Memory</a>
+, <a class="el" href="classMIPS_1_1RegisterBank.html#a4c6a18e903ee79d445988b92cadc3914">MIPS::RegisterBank</a>
 </li>
 </ul>
 
@@ -522,11 +562,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~ControlUnit()
+: <a class="el" href="classMIPS_1_1ControlUnit.html#a6e1a1d7cd85594c9a575a432770c3aa2">MIPS::ControlUnit</a>
+</li>
 <li>~CPU()
 : <a class="el" href="classMIPS_1_1CPU.html#a00f6fa1c8a5bf3b46cca66b07e1e184c">MIPS::CPU</a>
-</li>
-<li>~DecoderFinder()
-: <a class="el" href="classMIPS_1_1DecoderFinder.html#a7338de0779c6ea514bbb7adf82da1c07">MIPS::DecoderFinder</a>
 </li>
 <li>~Encoder()
 : <a class="el" href="classMIPS_1_1Encoder.html#aa19e1b31786eef05c8633790a12fa2a2">MIPS::Encoder</a>
@@ -546,14 +586,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>~InstructionDecoder()
 : <a class="el" href="classMIPS_1_1InstructionDecoder.html#a148a38deb0745a55bbd927d186f93c89">MIPS::InstructionDecoder</a>
 </li>
+<li>~InstructionFinder()
+: <a class="el" href="classMIPS_1_1InstructionFinder.html#a9079f27b5bca86251ee97196abe20cec">MIPS::InstructionFinder</a>
+</li>
 <li>~InstructionI()
 : <a class="el" href="classMIPS_1_1InstructionI.html#ae330e8a6a7d5820b0e559a7845867518">MIPS::InstructionI</a>
 </li>
-<li>~InstructionIDecoder()
-: <a class="el" href="classMIPS_1_1InstructionIDecoder.html#ab26dc4f11b95e537239a8b83112d9899">MIPS::InstructionIDecoder</a>
-</li>
 <li>~Interpreter()
 : <a class="el" href="classMIPS_1_1Interpreter.html#a41cc557c63eaedc2227de15df4a965b7">MIPS::Interpreter</a>
+</li>
+<li>~Memory()
+: <a class="el" href="classMIPS_1_1Memory.html#ace3e886fa42efa3e629c7572bf232e05">MIPS::Memory</a>
 </li>
 <li>~Queue()
 : <a class="el" href="classMIPS_1_1Queue.html#aec877c1c927ec1fae8b7a1db1b8a3eb5">MIPS::Queue&lt; T &gt;</a>

@@ -1,0 +1,61 @@
+\hypertarget{classMIPS_1_1InstructionFinder}{}\section{M\+I\+PS\+:\+:Instruction\+Finder Class Reference}
+\label{classMIPS_1_1InstructionFinder}\index{M\+I\+P\+S\+::\+Instruction\+Finder@{M\+I\+P\+S\+::\+Instruction\+Finder}}
+
+
+{\ttfamily \#include $<$instruction\+\_\+finder.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1InstructionFinder_abda3d40a1a5f355991fc5f135a826b96}{Instruction\+Finder} (\hyperlink{classMIPS_1_1Memory}{Memory} \&memory\+Unit, \hyperlink{classMIPS_1_1RegisterBank}{Register\+Bank} \&bank)
+\item 
+\hyperlink{classMIPS_1_1InstructionFinder_a9079f27b5bca86251ee97196abe20cec}{$\sim$\+Instruction\+Finder} ()
+\item 
+\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} \hyperlink{classMIPS_1_1InstructionFinder_a73a242cbe648c2d5e1cd0dd9342f798a}{get\+Next} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa a unidade de busca de instruções na memória.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Instruction\+Finder@{M\+I\+P\+S\+::\+Instruction\+Finder}!Instruction\+Finder@{Instruction\+Finder}}
+\index{Instruction\+Finder@{Instruction\+Finder}!M\+I\+P\+S\+::\+Instruction\+Finder@{M\+I\+P\+S\+::\+Instruction\+Finder}}
+\subsubsection[{\texorpdfstring{Instruction\+Finder(\+Memory \&memory\+Unit, Register\+Bank \&bank)}{InstructionFinder(Memory &memoryUnit, RegisterBank &bank)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+Finder\+::\+Instruction\+Finder (
+\begin{DoxyParamCaption}
+\item[{{\bf Memory} \&}]{memory\+Unit, }
+\item[{{\bf Register\+Bank} \&}]{bank}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionFinder_abda3d40a1a5f355991fc5f135a826b96}{}\label{classMIPS_1_1InstructionFinder_abda3d40a1a5f355991fc5f135a826b96}
+Cria uma nova unidade para busca de instruções. \index{M\+I\+P\+S\+::\+Instruction\+Finder@{M\+I\+P\+S\+::\+Instruction\+Finder}!````~Instruction\+Finder@{$\sim$\+Instruction\+Finder}}
+\index{````~Instruction\+Finder@{$\sim$\+Instruction\+Finder}!M\+I\+P\+S\+::\+Instruction\+Finder@{M\+I\+P\+S\+::\+Instruction\+Finder}}
+\subsubsection[{\texorpdfstring{$\sim$\+Instruction\+Finder()}{~InstructionFinder()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+Finder\+::$\sim$\+Instruction\+Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionFinder_a9079f27b5bca86251ee97196abe20cec}{}\label{classMIPS_1_1InstructionFinder_a9079f27b5bca86251ee97196abe20cec}
+Destroi a unidade de busca de instruções. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Instruction\+Finder@{M\+I\+P\+S\+::\+Instruction\+Finder}!get\+Next@{get\+Next}}
+\index{get\+Next@{get\+Next}!M\+I\+P\+S\+::\+Instruction\+Finder@{M\+I\+P\+S\+::\+Instruction\+Finder}}
+\subsubsection[{\texorpdfstring{get\+Next()}{getNext()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf instruction\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Finder\+::get\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionFinder_a73a242cbe648c2d5e1cd0dd9342f798a}{}\label{classMIPS_1_1InstructionFinder_a73a242cbe648c2d5e1cd0dd9342f798a}
+Retorna a próxima instrução a ser executada, utilizando o registrador PC para identificá-\/la.
+
+\begin{DoxyReturn}{Returns}
+próxima instrução a ser executada. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/units/\hyperlink{instruction__finder_8hpp}{instruction\+\_\+finder.\+hpp}\end{DoxyCompactItemize}

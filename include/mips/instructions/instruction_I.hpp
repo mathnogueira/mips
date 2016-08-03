@@ -26,7 +26,6 @@ public:
      * \param opcode codigo da operação
      * \param rs registrador source
      * \param rt registrador target
-     * \param rd registrador destination
      * \param shamt quantidade de shift
      * \param funct bits para escolha da função da instrução
      */

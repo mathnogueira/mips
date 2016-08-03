@@ -2,32 +2,33 @@
 \label{classMIPS_1_1InstructionDecoder}\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
 
 
-{\ttfamily \#include $<$abstract\+\_\+decoder.\+hpp$>$}
+{\ttfamily \#include $<$instruction\+\_\+decoder.\+hpp$>$}
 
-Inheritance diagram for M\+I\+PS\+:\+:Instruction\+Decoder\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classMIPS_1_1InstructionDecoder}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classMIPS_1_1InstructionDecoder_a7078c9cef7be0fe76cabe781337f1b04}{Instruction\+Decoder} ()
+\hyperlink{classMIPS_1_1InstructionDecoder_a81c1e3f43edf65ca86dba43a9090c9fc}{Instruction\+Decoder} (\hyperlink{classMIPS_1_1RegisterBank}{Register\+Bank} \&bank)
 \item 
 \hyperlink{classMIPS_1_1InstructionDecoder_a148a38deb0745a55bbd927d186f93c89}{$\sim$\+Instruction\+Decoder} ()
 \item 
-virtual \hyperlink{classMIPS_1_1Instruction}{Instruction} $\ast$ \hyperlink{classMIPS_1_1InstructionDecoder_a2058d55e4f24c97674e97a08e53f2d17}{decode} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
+\hyperlink{classMIPS_1_1Instruction}{Instruction} $\ast$ \hyperlink{classMIPS_1_1InstructionDecoder_adf51f7da13d3256b60d99384cdc4af63}{decode} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
 \item 
 \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_a9ba2a37411b5e8d4e7b03c4d5b50399b}{get\+O\+P\+Code} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_a557dfb2243be5d1a0a369c333817fa86}{get\+Rs} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_a4da42498cc12ddcc041b42bacbc3b3a1}{get\+Rt} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_a493aeaf3390fb5821596ef3efc22e65b}{get\+Rd} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_aa7148e0ad81662725be7203837a4e46c}{get\+Funct} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_a09ba48d5683432c3a303b8c42367755f}{get\+Offset} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} size=8)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classMIPS_1_1RegisterBank}{Register\+Bank} $\ast$ \hyperlink{classMIPS_1_1InstructionDecoder_ad47ec78a48f63bc4ae3863bd0b7de86e}{register\+Bank}
+\hyperlink{classMIPS_1_1RegisterBank}{Register\+Bank} \& \hyperlink{classMIPS_1_1InstructionDecoder_a6796453642fca3384868a9539656ab45}{register\+Bank}
 \end{DoxyCompactItemize}
 
 
@@ -42,12 +43,19 @@ Matheus Nogueira
 \subsection{Constructor \& Destructor Documentation}
 \index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!Instruction\+Decoder@{Instruction\+Decoder}}
 \index{Instruction\+Decoder@{Instruction\+Decoder}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
-\subsubsection[{\texorpdfstring{Instruction\+Decoder()}{InstructionDecoder()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+Decoder\+::\+Instruction\+Decoder (
+\subsubsection[{\texorpdfstring{Instruction\+Decoder(\+Register\+Bank \&bank)}{InstructionDecoder(RegisterBank &bank)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+Decoder\+::\+Instruction\+Decoder (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf Register\+Bank} \&}]{bank}
 \end{DoxyParamCaption}
-)}\hypertarget{classMIPS_1_1InstructionDecoder_a7078c9cef7be0fe76cabe781337f1b04}{}\label{classMIPS_1_1InstructionDecoder_a7078c9cef7be0fe76cabe781337f1b04}
-Cria um novo decodificador de instruções. \index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!````~Instruction\+Decoder@{$\sim$\+Instruction\+Decoder}}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_a81c1e3f43edf65ca86dba43a9090c9fc}{}\label{classMIPS_1_1InstructionDecoder_a81c1e3f43edf65ca86dba43a9090c9fc}
+Cria um novo decodificador de instruções.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bank} & banco de registradores usado. \\
+\hline
+\end{DoxyParams}
+\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!````~Instruction\+Decoder@{$\sim$\+Instruction\+Decoder}}
 \index{````~Instruction\+Decoder@{$\sim$\+Instruction\+Decoder}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
 \subsubsection[{\texorpdfstring{$\sim$\+Instruction\+Decoder()}{~InstructionDecoder()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+Decoder\+::$\sim$\+Instruction\+Decoder (
 \begin{DoxyParamCaption}
@@ -59,11 +67,11 @@ Destroi o decodificador de instruções.
 \subsection{Member Function Documentation}
 \index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!decode@{decode}}
 \index{decode@{decode}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
-\subsubsection[{\texorpdfstring{decode(instruction\+\_\+t instruction)}{decode(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Instruction}$\ast$ M\+I\+P\+S\+::\+Instruction\+Decoder\+::decode (
+\subsubsection[{\texorpdfstring{decode(instruction\+\_\+t instruction)}{decode(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Instruction}$\ast$ M\+I\+P\+S\+::\+Instruction\+Decoder\+::decode (
 \begin{DoxyParamCaption}
 \item[{{\bf instruction\+\_\+t}}]{instruction}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1InstructionDecoder_a2058d55e4f24c97674e97a08e53f2d17}{}\label{classMIPS_1_1InstructionDecoder_a2058d55e4f24c97674e97a08e53f2d17}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_adf51f7da13d3256b60d99384cdc4af63}{}\label{classMIPS_1_1InstructionDecoder_adf51f7da13d3256b60d99384cdc4af63}
 Decodifica uma instrução em binário e cria uma instrução do emulador que realize a operação equivalente.
 
 
@@ -74,17 +82,50 @@ Decodifica uma instrução em binário e cria uma instrução do emulador que re
 \begin{DoxyReturn}{Returns}
 ponteiro para a instrução criada pelo emulador. 
 \end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+Funct@{get\+Funct}}
+\index{get\+Funct@{get\+Funct}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Funct(instruction\+\_\+t instruction)}{getFunct(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Decoder\+::get\+Funct (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_aa7148e0ad81662725be7203837a4e46c}{}\label{classMIPS_1_1InstructionDecoder_aa7148e0ad81662725be7203837a4e46c}
+Função que recupera o valor do funct da instrução.
 
 
-Reimplemented in \hyperlink{classMIPS_1_1InstructionIDecoder_a5f82ec698a702aee381fe80bb9508c2b}{M\+I\+P\+S\+::\+Instruction\+I\+Decoder}.
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução binária de 16 bits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor do funct 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+Offset@{get\+Offset}}
+\index{get\+Offset@{get\+Offset}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Offset(instruction\+\_\+t instruction, bit8\+\_\+t size=8)}{getOffset(instruction_t instruction, bit8_t size=8)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Decoder\+::get\+Offset (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction, }
+\item[{{\bf bit8\+\_\+t}}]{size = {\ttfamily 8}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_a09ba48d5683432c3a303b8c42367755f}{}\label{classMIPS_1_1InstructionDecoder_a09ba48d5683432c3a303b8c42367755f}
+Função que recupera o valor do offset da instrução.
 
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução binária de 16 bits. \\
+\hline
+{\em size} & número de bits de offset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor do offset. 
+\end{DoxyReturn}
 \index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+O\+P\+Code@{get\+O\+P\+Code}}
 \index{get\+O\+P\+Code@{get\+O\+P\+Code}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
 \subsubsection[{\texorpdfstring{get\+O\+P\+Code(instruction\+\_\+t instruction)}{getOPCode(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Decoder\+::get\+O\+P\+Code (
 \begin{DoxyParamCaption}
 \item[{{\bf instruction\+\_\+t}}]{instruction}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionDecoder_a9ba2a37411b5e8d4e7b03c4d5b50399b}{}\label{classMIPS_1_1InstructionDecoder_a9ba2a37411b5e8d4e7b03c4d5b50399b}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_a9ba2a37411b5e8d4e7b03c4d5b50399b}{}\label{classMIPS_1_1InstructionDecoder_a9ba2a37411b5e8d4e7b03c4d5b50399b}
 Método responsável por recuperar o código de operação (opcode) de uma instrução.
 
 
@@ -95,14 +136,65 @@ Método responsável por recuperar o código de operação (opcode) de uma instr
 \begin{DoxyReturn}{Returns}
 opcode da instrução. 
 \end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+Rd@{get\+Rd}}
+\index{get\+Rd@{get\+Rd}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Rd(instruction\+\_\+t instruction)}{getRd(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Decoder\+::get\+Rd (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_a493aeaf3390fb5821596ef3efc22e65b}{}\label{classMIPS_1_1InstructionDecoder_a493aeaf3390fb5821596ef3efc22e65b}
+Função que recupera o endereço do registrador destination (Rd) da instrução.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução binária de 16 bits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+endereço do registrador destination. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+Rs@{get\+Rs}}
+\index{get\+Rs@{get\+Rs}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Rs(instruction\+\_\+t instruction)}{getRs(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Decoder\+::get\+Rs (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_a557dfb2243be5d1a0a369c333817fa86}{}\label{classMIPS_1_1InstructionDecoder_a557dfb2243be5d1a0a369c333817fa86}
+Função que recupera o endereço do registrador source (Rs) da instrução.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução binária de 16 bits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+endereço do registrador source. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+Rt@{get\+Rt}}
+\index{get\+Rt@{get\+Rt}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Rt(instruction\+\_\+t instruction)}{getRt(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Decoder\+::get\+Rt (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_a4da42498cc12ddcc041b42bacbc3b3a1}{}\label{classMIPS_1_1InstructionDecoder_a4da42498cc12ddcc041b42bacbc3b3a1}
+Função que recupera o endereço do registrador target (Rt) da instrução.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução binária de 16 bits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+endereço do registrador target. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
 \index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!register\+Bank@{register\+Bank}}
 \index{register\+Bank@{register\+Bank}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
-\subsubsection[{\texorpdfstring{register\+Bank}{registerBank}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register\+Bank}$\ast$ M\+I\+P\+S\+::\+Instruction\+Decoder\+::register\+Bank\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionDecoder_ad47ec78a48f63bc4ae3863bd0b7de86e}{}\label{classMIPS_1_1InstructionDecoder_ad47ec78a48f63bc4ae3863bd0b7de86e}
+\subsubsection[{\texorpdfstring{register\+Bank}{registerBank}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register\+Bank}\& M\+I\+P\+S\+::\+Instruction\+Decoder\+::register\+Bank\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionDecoder_a6796453642fca3384868a9539656ab45}{}\label{classMIPS_1_1InstructionDecoder_a6796453642fca3384868a9539656ab45}
 Banco de registradores do decodificador. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/mips/decoder/abstract\+\_\+decoder.\+hpp\end{DoxyCompactItemize}
+include/mips/decoder/\hyperlink{instruction__decoder_8hpp}{instruction\+\_\+decoder.\+hpp}\end{DoxyCompactItemize}

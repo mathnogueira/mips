@@ -6,11 +6,13 @@
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define {\bfseries M\+E\+S\+S\+A\+GE}(arg)
+\#define \hyperlink{debug_8hpp_ad9b35bd881509861cc3254c75acfb850}{M\+E\+S\+S\+A\+GE}(arg)
 \item 
-\#define {\bfseries D\+E\+B\+UG}(arg)
+\#define \hyperlink{debug_8hpp_a2b693f340408970999294e7bb3dbe67d}{D\+E\+B\+UG}(arg)
 \item 
-\#define {\bfseries P\+R\+I\+N\+T\+\_\+\+B\+IN}(num)
+\#define \hyperlink{debug_8hpp_a16415ab05e2fe6d9c7ced68d776186b9}{F\+O\+R\+M\+A\+T\+\_\+\+D\+E\+B\+UG}(format, ...)
+\item 
+\#define \hyperlink{debug_8hpp_aa660381c871ce694f88d5414a0030286}{P\+R\+I\+N\+T\+\_\+\+B\+IN}(num)
 \end{DoxyCompactItemize}
 
 
@@ -31,6 +33,36 @@ Arquivo que contém funções para auxiliar o processo de D\+E\+B\+UG da execuç
             std::cout << \textcolor{stringliteral}{"[DEBUG] "} << arg << std::endl;                        \(\backslash\)
         \}
 \end{DoxyCode}
+Macro para escrita de mensagens de debug com o prefixo \mbox{[}D\+E\+B\+UG\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & mensagem \\
+\hline
+\end{DoxyParams}
+\index{debug.\+hpp@{debug.\+hpp}!F\+O\+R\+M\+A\+T\+\_\+\+D\+E\+B\+UG@{F\+O\+R\+M\+A\+T\+\_\+\+D\+E\+B\+UG}}
+\index{F\+O\+R\+M\+A\+T\+\_\+\+D\+E\+B\+UG@{F\+O\+R\+M\+A\+T\+\_\+\+D\+E\+B\+UG}!debug.\+hpp@{debug.\+hpp}}
+\subsubsection[{\texorpdfstring{F\+O\+R\+M\+A\+T\+\_\+\+D\+E\+B\+UG}{FORMAT_DEBUG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+O\+R\+M\+A\+T\+\_\+\+D\+E\+B\+UG(
+\begin{DoxyParamCaption}
+\item[{}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{debug_8hpp_a16415ab05e2fe6d9c7ced68d776186b9}{}\label{debug_8hpp_a16415ab05e2fe6d9c7ced68d776186b9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                     \(\backslash\)
+            printf(format, \_\_VA\_ARGS\_\_);                                        \(\backslash\)
+        \}
+\end{DoxyCode}
+Macro para escrita de uma string formatada no modo debug.
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & formato da string \\
+\hline
+{\em ...} & variant args \\
+\hline
+\end{DoxyParams}
 \index{debug.\+hpp@{debug.\+hpp}!M\+E\+S\+S\+A\+GE@{M\+E\+S\+S\+A\+GE}}
 \index{M\+E\+S\+S\+A\+GE@{M\+E\+S\+S\+A\+GE}!debug.\+hpp@{debug.\+hpp}}
 \subsubsection[{\texorpdfstring{M\+E\+S\+S\+A\+GE}{MESSAGE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+E\+S\+S\+A\+GE(
@@ -44,6 +76,11 @@ Arquivo que contém funções para auxiliar o processo de D\+E\+B\+UG da execuç
             std::cout << arg << std::endl;                                     \(\backslash\)
         \}
 \end{DoxyCode}
+Macro para escrita de mensagens em modo de debug 
+\begin{DoxyParams}{Parameters}
+{\em arg} & mensagem \\
+\hline
+\end{DoxyParams}
 \index{debug.\+hpp@{debug.\+hpp}!P\+R\+I\+N\+T\+\_\+\+B\+IN@{P\+R\+I\+N\+T\+\_\+\+B\+IN}}
 \index{P\+R\+I\+N\+T\+\_\+\+B\+IN@{P\+R\+I\+N\+T\+\_\+\+B\+IN}!debug.\+hpp@{debug.\+hpp}}
 \subsubsection[{\texorpdfstring{P\+R\+I\+N\+T\+\_\+\+B\+IN}{PRINT_BIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+I\+N\+T\+\_\+\+B\+IN(
@@ -65,3 +102,10 @@ Arquivo que contém funções para auxiliar o processo de D\+E\+B\+UG da execuç
             printf(\textcolor{stringliteral}{"\(\backslash\)n"});                           \(\backslash\)
         \}
 \end{DoxyCode}
+Macro para imprimir um número no formato binário.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & número que será impresso \\
+\hline
+\end{DoxyParams}

@@ -50,7 +50,7 @@ public:
      *
      * \param data palavra que será escrita.
      * \param offset posição da memória em que a palavra será escrita.
-     * \param type tipo de dado que será escrito (instrução ou dados) (padrão: dado)
+     * \param iOrD tipo de dado que será escrito (instrução ou dados) (padrão: dado)
      */
     void write(bit16_t data, bit32_t offset, bit8_t iOrD = 1);
 
@@ -58,7 +58,7 @@ public:
      * Lẽ uma palavra que está na posição de memória especificada.
      *
      * \param offset posição da memória que será lida.
-     * \param type tipo de dado que será lido (instruçao ou dado) (padrão: dado)
+     * \param iOrD tipo de dado que será lido (instruçao ou dado) (padrão: dado)
      * \return palavra armazenada na posição de memória especificada.
      */
     bit16_t read(bit32_t offset, bit8_t iOrD = 1);

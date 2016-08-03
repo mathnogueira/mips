@@ -1,5 +1,5 @@
 /**
- * \file decoder.hpp
+ * \file instruction_decoder.hpp
  *
  * Arquivo contendo um decodificador de instruções para a arquitetura MIPS de
  * 16 bits.

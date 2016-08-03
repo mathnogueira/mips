@@ -1,5 +1,5 @@
 /**
- * \file lhc.hpp
+ * \file lch.hpp
  *
  * Instrução que carrega  uma constante com sinal no bit mais significativo
  * do registrador.
@@ -24,6 +24,7 @@ public:
 	 * Cria uma instrução de lhc.
 	 *
 	 * \param opcode código da operação
+     * \param rd registrador rd
 	 * \param offset offset de 11 bits
 	 */
 	LchInstruction(bit8_t opcode, Register *rd, bit8_t offset) :

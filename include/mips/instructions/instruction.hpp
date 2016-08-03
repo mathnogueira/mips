@@ -30,7 +30,7 @@ public:
      * Método abstrato que deverá ser invocado para que uma instrução seja
      * executada pelo emulador.
 	 *
-	 * \param resultado de saída da instrução.
+	 * \return resultado de saída da instrução.
      */
     virtual bit16_t execute() = 0;
 
