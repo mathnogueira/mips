@@ -3,7 +3,6 @@
 using namespace MIPS;
 
 bit16_t OnesInstruction::execute() {
-	// this->rd->put(1);
 	this->neg = 0;
 	this->zero = 0;
 	this->carry = 0;

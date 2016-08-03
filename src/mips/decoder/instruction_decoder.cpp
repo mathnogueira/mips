@@ -19,21 +19,29 @@
 #include <mips/instructions/format_I/xnor.hpp>
 #include <mips/instructions/format_I/xor.hpp>
 #include <mips/instructions/format_I/zero.hpp>
+#include <mips/instructions/format_II/loadlit.hpp>
+#include <mips/instructions/format_III/lch.hpp>
+#include <mips/instructions/format_III/lcl.hpp>
 #include <cstdlib>
+#include <cmath>
 
 using namespace MIPS;
 
-InstructionDecoder::InstructionDecoder() {}
+InstructionDecoder::InstructionDecoder(RegisterBank &bank) : registerBank(bank) {}
 
 InstructionDecoder::~InstructionDecoder() {}
 
 Instruction* InstructionDecoder::decode(instruction_t instruction) {
     bit8_t opcode = getOPCode(instruction);
     bit8_t funct = getFunct(instruction);
+    bit16_t offset;
     // Lê os dois registradores
-    Register *rs = registerBank->getRegister(getRs(instruction));
-    Register *rt = registerBank->getRegister(getRt(instruction));
+    Register *rs = registerBank.getRegister(getRs(instruction));
+    Register *rt = registerBank.getRegister(getRt(instruction));
+    Register *rd = registerBank.getRegister(getRd(instruction));
     Instruction *instr = NULL;
+    printf("OPCODE: %d\n", opcode);
+    printf("FUNCT: %d\n", funct);
     switch (opcode) {
         case 0:
             // Instruções de JUMP condicional ou incondicionais
@@ -129,22 +137,28 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
                 case 22:
                     // store
                     break;
+                case 24:
+                    // Add
+                    instr = new AddInstruction(opcode, rs, rt, 0, funct);
+                    break;
             }
             break;
         case 2:
             // Loadlit
+            offset = getOffset(instruction, 11);
+            instr = new LoadlitInstruction(opcode, rd, offset);
             break;
         case 3:
             // LCL e LCH
             // Verifica campo R
             bit8_t r = (instruction >> 9) & 1;
-            bit8_t rdId = getRd(instruction);
-            Register *rd = registerBank->getRegister(rdId);
+            offset = getOffset(instruction, 8);
             if (r) {
                 // LCH
-                instr = LchInstruction(opcode, rd);
+                instr = new LchInstruction(opcode, rd, offset);
             } else {
                 // LCL
+                instr = new LclInstruction(opcode, rd, offset);
             }
             break;
     }
@@ -197,4 +211,15 @@ bit8_t InstructionDecoder::getRd(instruction_t instruction) {
  */
 bit8_t InstructionDecoder::getFunct(instruction_t instruction) {
     return (instruction >> 6) & 0x001f;
+}
+
+/**
+ * Função que recupera o valor do offset da instrução.
+ *
+ * \param instruction instrução binária de 16 bits.
+ * \param size número de bits de offset
+ * \return valor do offset.
+ */
+bit16_t InstructionDecoder::getOffset(instruction_t instruction, bit8_t size) {
+    return instruction & (bit16_t)(pow(2, size)-1);
 }

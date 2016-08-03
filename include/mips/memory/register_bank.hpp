@@ -39,12 +39,32 @@ public:
      */
     Register* getRegister(bit8_t id);
 
+    /**
+     * Retorna o ponteiro para o registrador contador de programa.
+     *
+     * \return ponteiro para o program counter
+     */
+    Register* getPC();
+
+    /**
+     * Escreve o valor de um registrador usando o seu indice para localizá-lo
+     *
+     * \param result novo valor do registrador
+     * \param rd registrador de destino
+     */
+    void write(bit16_t result, bit8_t rd);
+
 private:
 
     /**
      * Registradores para números inteiros.
      */
     Register *iRegister[8];
+
+    /**
+     * Registrador contador de programa.
+     */
+    Register *pc;
 
 };
 

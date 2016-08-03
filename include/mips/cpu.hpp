@@ -8,6 +8,9 @@
 
 #include <mips/memory/register_bank.hpp>
 #include <mips/memory/memory.hpp>
+#include <mips/units/instruction_finder.hpp>
+#include <mips/units/control.hpp>
+#include <mips/decoder/instruction_decoder.hpp>
 
 namespace MIPS {
 
@@ -56,6 +59,20 @@ private:
      */
     Memory *memory;
 
+    /**
+     * Buscador de instruções.
+     */
+    InstructionFinder * instructionFinder;
+
+    /**
+     * Decoficador de instrução.
+     */
+    InstructionDecoder * instructionDecoder;
+
+    /**
+     * Unidade de controle de execução.
+     */
+    ControlUnit * controlUnit;
 };
 
 };

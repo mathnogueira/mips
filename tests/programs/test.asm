@@ -2,3 +2,12 @@ ones r1
 ones r3
 zeros r2
 add r0, r1, r2
+add r0, r0, r0
+loadlit r0 2047
+add r0, r0, r0
+add r0, r0, r0
+add r0, r0, r0
+add r0, r0, r0
+add r0, r0, r0
+
+inca r0

@@ -64,6 +64,8 @@ bit16_t Memory::read(bit32_t offset, bit8_t iOrD) {
     }
     // Verifica se offset é válido
     if (offset < 0 || offset >= size) {
+        std::cout << offset << std::endl;
+        std::cout << size << std::endl;
         // Não pode escrever na memória
         // Gera erro
         throw MemoryException("Indice de memória não pode ser acessado!");

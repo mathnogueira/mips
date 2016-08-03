@@ -13,6 +13,7 @@ Register::~Register() {}
 void Register::put(bit16_t value) {
 	if (this->isProtected == false)
 		this->content = value;
+    std::cout << "Atualizando o " << name << " com o valor " << content << std::endl;
 }
 
 bit16_t Register::get() {

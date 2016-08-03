@@ -56,7 +56,6 @@ void FormatIVEncoder::parse(std::vector<char*> &params) {
 		this->opcode = 0;
 		this->funct = 0;
 	}
-    printf("Offset: %s\n", params.at(1));
 	this->offset = atoi(params.at(1));
 }
 

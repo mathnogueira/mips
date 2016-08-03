@@ -12,6 +12,7 @@ RegisterBank::RegisterBank() {
 	this->iRegister[5] = new Register("r5");
 	this->iRegister[6] = new Register("r6");
 	this->iRegister[7] = new Register("r7");
+    this->pc = new Register("pc");
 }
 
 RegisterBank::~RegisterBank() {
@@ -22,4 +23,12 @@ RegisterBank::~RegisterBank() {
 
 Register* RegisterBank::getRegister(bit8_t id) {
 	return this->iRegister[id];
+}
+
+Register* RegisterBank::getPC() {
+    return pc;
+}
+
+void RegisterBank::write(bit16_t result, bit8_t rd) {
+    getRegister(rd)->put(result);
 }

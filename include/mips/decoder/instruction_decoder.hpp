@@ -24,8 +24,10 @@ class InstructionDecoder {
 public:
     /**
      * Cria um novo decodificador de instruções.
+     *
+     * \param bank banco de registradores usado.
      */
-    InstructionDecoder();
+    InstructionDecoder(RegisterBank &bank);
 
     /**
      * Destroi o decodificador de instruções.
@@ -39,7 +41,7 @@ public:
      * \param instruction instrução 16 bits em binário.
      * \return ponteiro para a instrução criada pelo emulador.
      */
-    virtual Instruction *decode(instruction_t instruction);
+    Instruction *decode(instruction_t instruction);
 
     /**
      * Método responsável por recuperar o código de operação (opcode) de
@@ -85,12 +87,21 @@ public:
      */
     bit8_t getFunct(instruction_t instruction);
 
+    /**
+     * Função que recupera o valor do offset da instrução.
+     *
+     * \param instruction instrução binária de 16 bits.
+     * \param size número de bits de offset
+     * \return valor do offset.
+     */
+    bit16_t getOffset(instruction_t instruction, bit8_t size = 8);
+
 protected:
 
 	/**
 	 * Banco de registradores do decodificador.
 	 */
-	RegisterBank *registerBank;
+	RegisterBank &registerBank;
 
 };
 
