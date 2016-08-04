@@ -1,6 +1,6 @@
 LOOP:
-	addi r0 r0 r0
-	bne r0 r1 r0
+	add r0 r0 r0
+	jf.zero r0 r1 r0
 		j LOOP
 
 FINISH:

@@ -33,7 +33,7 @@ public:
 	}
 
 	virtual ~InterpreterException() throw() {
-		delete pMsg;
+		delete[] pMsg;
 	}
 
 	/**

@@ -1,1 +1,1 @@
-add r0 $zero r1
+add r0 r2 r1

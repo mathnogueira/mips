@@ -1,4 +1,5 @@
 #include <mips/interpreter/encoder/encoder_factory.hpp>
+#include <mips/interpreter/exception/interpreter_exception.hpp>
 #include <cstring>
 
 using namespace MIPS;
@@ -34,5 +35,30 @@ Encoder* EncoderFactory::produce(const char *instruction) {
 	if (strcmp("loadlit", instruction) == 0)
 		return &encoder2;
 	// Formato 1
-	return &encoder1;
+    if (strcmp("add", instruction) == 0 ||
+        strcmp("addinc", instruction) == 0 ||
+        strcmp("and", instruction) == 0 ||
+        strcmp("andnota", instruction) == 0 ||
+        strcmp("nand", instruction) == 0 ||
+        strcmp("ornotb", instruction) == 0 ||
+        strcmp("sub", instruction) == 0 ||
+        strcmp("subdec", instruction) == 0 ||
+        strcmp("xnor", instruction) == 0 ||
+        strcmp("xor", instruction) == 0 ||
+        strcmp("or", instruction) == 0 ||
+        strcmp("asl", instruction) == 0 ||
+        strcmp("asr", instruction) == 0 ||
+        strcmp("deca", instruction) == 0 ||
+        strcmp("inca", instruction) == 0 ||
+        strcmp("lsl", instruction) == 0 ||
+        strcmp("lsr", instruction) == 0 ||
+        strcmp("passa", instruction) == 0 ||
+        strcmp("passnota", instruction) == 0 ||
+        strcmp("zeros", instruction) == 0 ||
+        strcmp("ones", instruction) == 0)
+	   return &encoder1;
+    // Não existe a instrução
+    char *err = new char[60];
+    sprintf(err, "Instrução %s não existe", instruction);
+    throw InterpreterException(err, 2);
 }

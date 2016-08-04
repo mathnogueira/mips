@@ -20,3 +20,12 @@ TEST(Interpreter, input_errors) {
 	i.compile();
 	SUCCEED();
 }
+
+TEST(Interpreter, inexistent_instruction) {
+    Interpreter i("../tests/input/invalid_instruction.asm");
+    try {
+        i.compile();
+    } catch (InterpreterException &ex) {
+        SUCCEED();
+    }
+}
