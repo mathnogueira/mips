@@ -13,7 +13,6 @@ TEST(Memory, writeAndRetrieveData) {
     ASSERT_EQ(memory.read(4), 256);
     ASSERT_EQ(memory.read(2), 512);
     ASSERT_EQ(memory.read(7), 722);
-    ASSERT_EQ(3, 2);
 }
 
 TEST(Memory, writeAndRetrieveDataFromInvalidOffset) {
