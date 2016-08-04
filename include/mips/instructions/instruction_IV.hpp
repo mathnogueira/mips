@@ -36,7 +36,7 @@ public:
 	/**
 	 * Executa a instrução.
 	 *
-	 * \return resultado da instrução
+	 * \return 0 se o desvio não é tomado, 1 se o desvio for tomado.
 	 */
 	virtual bit16_t execute() = 0;
 

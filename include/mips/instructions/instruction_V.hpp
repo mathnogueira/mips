@@ -35,7 +35,7 @@ public:
 	/**
 	 * Executa a instrução.
 	 *
-	 * \return resultado da instrução
+	 * \return endereço da próxima instrução.
 	 */
 	virtual bit16_t execute() = 0;
 
