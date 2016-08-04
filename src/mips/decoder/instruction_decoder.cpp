@@ -39,11 +39,14 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
     Register *rs = registerBank.getRegister(getRs(instruction));
     Register *rt = registerBank.getRegister(getRt(instruction));
     Register *rd = registerBank.getRegister(getRd(instruction));
+    Register *pc;
     Instruction *instr = NULL;
     printf("OPCODE: %d\n", opcode);
     printf("FUNCT: %d\n", funct);
     switch (opcode) {
         case 0:
+            pc = registerBank.getPC();
+            // Pega o registrador pc
             // Instruções de JUMP condicional ou incondicionais
             // Jal e JR
             // Verifica os códigos de função
@@ -141,6 +144,26 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
                     // Add
                     instr = new AddInstruction(opcode, rs, rt, 0, funct);
                     break;
+                case 25:
+                    // Sub
+                    instr = new SubInstruction(opcode, rs, rt, 0, funct);
+                    break;
+                case 26:
+                    // Addinc
+                    instr = new AddIncInstruction(opcode, rs, rt, 0, funct);
+                    break;
+                case 27:
+                    // Subdec
+                    instr = new SubdecInstruction(opcode, rs, rt, 0, funct);
+                    break;
+                case 28:
+                    // Inca
+                    instr = new IncaInstruction(opcode, rs, rt, 0, funct);
+                    break;
+                case 29:
+                    // Deca
+                    instr = new DecaInstruction(opcode, rs, rt, 0, funct);
+                    break;
             }
             break;
         case 2:
@@ -151,7 +174,7 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
         case 3:
             // LCL e LCH
             // Verifica campo R
-            bit8_t r = (instruction >> 9) & 1;
+            bit8_t r = (instruction >> 10) & 1;
             offset = getOffset(instruction, 8);
             if (r) {
                 // LCH

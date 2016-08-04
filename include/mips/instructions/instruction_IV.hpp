@@ -1,0 +1,57 @@
+/**
+ * \file instruction_IV.hpp
+ *
+ * Arquivo descrevendo o formato de uma instrução do formato IV.
+ */
+#pragma once
+
+#include <mips/core.hpp>
+#include <mips/flag.hpp>
+#include <mips/instructions/instruction.hpp>
+#include <mips/memory/register.hpp>
+
+namespace MIPS {
+
+/**
+ * Classe que representa uma instrução do formato IV do trabalho.
+ *
+ * \author Matheus Nogueira
+ */
+class InstructionIV : public Instruction {
+
+public:
+
+	/**
+	 * Cria uma nova instrução do formato IV
+	 *
+	 * \param opcode código da operação
+	 * \param aluFlags Flags vindas da ALU
+     * \param offset offset do jump.
+	 */
+	InstructionIV(bit8_t opcode, struct ALUFlags &aluFlags, bit8_t offset) :  flags(aluFlags) {
+		this->opcode = opcode;
+		this->offset = offset;
+	}
+
+	/**
+	 * Executa a instrução.
+	 *
+	 * \return resultado da instrução
+	 */
+	virtual bit16_t execute() = 0;
+
+protected:
+
+	/**
+	 * Offset da instrução de jump
+	 */
+	bit8_t offset;
+
+	/**
+	 * Flags de saída da ALU
+	 */
+	struct ALUFlags &flags;
+
+};
+
+} // namespace
