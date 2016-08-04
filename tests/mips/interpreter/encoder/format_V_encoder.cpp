@@ -10,7 +10,7 @@ TEST(FormatVEncoder, encodeJumpPositiveOffset) {
 	FormatVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
-	ASSERT_EQ(instruction, -31701);
+	ASSERT_EQ(instruction, 9259);
 }
 
 TEST(FormatVEncoder, encodeJumpNegativeOffset) {
@@ -20,5 +20,5 @@ TEST(FormatVEncoder, encodeJumpNegativeOffset) {
 	FormatVEncoder encoder;
 	encoder.parse(params);
 	instruction_t instruction = encoder.encode();
-	ASSERT_EQ(instruction, -29739);
+	ASSERT_EQ(instruction, 11221);
 }

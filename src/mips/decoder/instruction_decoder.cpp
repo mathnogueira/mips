@@ -45,7 +45,7 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
     printf("FUNCT: %d\n", funct);
     switch (opcode) {
         case 0:
-            pc = registerBank.getPC();
+            // pc = registerBank.getPC();
             // Pega o registrador pc
             // Instruções de JUMP condicional ou incondicionais
             // Jal e JR
