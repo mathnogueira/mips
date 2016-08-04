@@ -8,6 +8,7 @@
 #pragma once
 
 #include <mips/core.hpp>
+#include <mips/units/control.hpp>
 
 namespace MIPS {
 
@@ -33,6 +34,13 @@ public:
 	 * \return resultado de saída da instrução.
      */
     virtual bit16_t execute() = 0;
+
+    /**
+     * Método utilizado para atualizar os sinais de controle do processador.s
+     *
+     * \param control unidade de controle do processador.
+     */
+    virtual void updateControl(ControlUnit &control) {}
 
 protected:
 

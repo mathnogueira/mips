@@ -49,7 +49,8 @@ void CPU::execute() {
         // Decodifica a instrução
         Instruction *instructionObject = instructionDecoder->decode(instruction);
         // Executa a instrução
-        // if (instructionObject)
+        // Atualiza as flags de controle
+        instructionObject->updateControl(*controlUnit);
         result = instructionObject->execute();
         // Pega o índice do registrador RD
         bit8_t rd = instructionDecoder->getRd(instruction);

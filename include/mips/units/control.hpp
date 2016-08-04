@@ -16,7 +16,7 @@ namespace MIPS {
 class ControlUnit {
 
 public:
-    
+
     /**
      * Cria uma nova unidade de controle.
      */
@@ -26,6 +26,21 @@ public:
      * Destroi a unidade de controle.
      */
     ~ControlUnit();
+
+    /**
+     * Flag de escrita em banco de registradores.
+     */
+    bool regwrite;
+
+    /**
+     * Flag de branch.
+     */
+    bool branch;
+
+    /**
+     * Flag de jump
+     */
+    bool jump;
 
 };
 
