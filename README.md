@@ -1,5 +1,5 @@
-# Emulador de MIPS 16 bits
-Emulador do processador MIPS de 16 bits para a disciplina GCC117 - Arquitetura de Computadores.
+# Emulador de uRISC 16 bits
+Emulador do processador uRISC de 16 bits para a disciplina GCC117 - Arquitetura de Computadores.
 
 [![Build Status](https://travis-ci.org/mathnogueira/mips.svg?branch=master)](https://travis-ci.org/mathnogueira/mips)
 
