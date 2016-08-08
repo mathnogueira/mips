@@ -25,7 +25,7 @@ void CPU::loadProgram(const char *program) {
     FILE *fp = fopen(program, "rb");
     size_t size;
     bit16_t instruction;
-    // Lê os primeiros 4 bytes do arquivo para descobrir o número de
+    // Lê os primeiros 8 bytes do arquivo para descobrir o número de
     // instruções que o programa tem
     fread(&size, sizeof(size_t), 1, fp);
     // Inicializa a memória de instruções
@@ -43,7 +43,7 @@ void CPU::execute() {
         // Busca a instrução e incrementa o PC
         instruction_t instruction = instructionFinder->getNext();
         // Se for instrução de HALT, para a execução
-        if (instruction == 0)
+        if (instruction == 0x0000)
             return;
         bit16_t result = 0;
         // Decodifica a instrução
