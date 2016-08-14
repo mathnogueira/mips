@@ -133,5 +133,5 @@ $ git push origin branch-SEUNOME
 ### Tipo 7
 | Instrução | Opcode | Rd | OP    | Rs | Rt | Status | Formato      |
 |:---------:|:-----:|:--:|:-----:|:--:|:--:|:------:|:-------------:|
-| load      | 01    | RD | 10100 | RS | RT |        | load rd, rs   |
-| store     | 01    | RD | 10110 | RS | RT |        | store rs, rt  |
+| load      | 01    | RD | 10100 | RS | RT |   OK   | load rd, rs   |
+| store     | 01    | RD | 10110 | RS | RT |   OK   | store rs, rt  |
