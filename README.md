@@ -95,8 +95,8 @@ $ git push origin branch-SEUNOME
 | asr       | 01    | RD | 10011  | RS | RT |   OK   | asr rd, rs        |
 | deca      | 01    | RD | 11101  | RS | RT |   OK   | deca rd, rs       |
 | inca      | 01    | RD | 11100  | RS | RT |   OK   | inca rd, rs       |
-| lsl       | 01    | RD | 10000  | RS | RT |        | lsl rd, rs        |
-| lsr       | 01    | RD | 10010  | RS | RT |        | lsr rd, rs        |
+| lsl       | 01    | RD | 10000  | RS | RT |   OK   | lsl rd, rs        |
+| lsr       | 01    | RD | 10010  | RS | RT |   OK   | lsr rd, rs        |
 | passa     | 01    | RD | 01001  | RS | RT |   OK   | passa rd, rs      |
 | passnota  | 01    | RD | 01000  | RS | RT |   OK   | passnota rd, rs  |
 | zeros     | 01    | RD | 00000  | -  | -  |   OK   | zeros rd          |
