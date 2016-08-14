@@ -1,7 +1,7 @@
 /**
- * \file rsl.hpp
+ * \file lsr.hpp
  *
- * Declaração da instrução de RSL.
+ * Declaração da instrução de LSR.
  */
 #pragma once
 
@@ -10,18 +10,18 @@
 namespace MIPS {
 
 /**
- * Classe que faz a operação de RSL no processador.
+ * Classe que faz a operação de LSR no processador.
  *
  * \author Felipe Dias
  */
-class RslInstruction : public InstructionI {
+class LsrInstruction : public InstructionI {
 
 public:
 
 	/**
 	 * Constroi uma nova instrução.
 	 */
-	 RslInstruction(bit8_t opcode,
+	 LsrInstruction(bit8_t opcode,
                          Register *rs,
                          Register *rt,
                          bit8_t shamt,
