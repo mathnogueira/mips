@@ -4,6 +4,6 @@
 using namespace MIPS;
 
 bit16_t LsrInstruction::execute() {
-    
-    return ((unsigned) rs->get() >> 1);
+
+    return (rs->get() >> 1) & 0x7fff;
 }

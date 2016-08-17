@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <mips/instructions/format_I/lsr.hpp>
 #include <mips/memory/register.hpp>
+#include <mips/debug.hpp>
 
 using namespace MIPS;
 
@@ -22,12 +23,12 @@ TEST(LsrInstruction, NegativeNumber) {
 	Register rs("s0");
 	LsrInstruction lsr(0, &rs, NULL, 0, 0);
 	rs.put(-6);
-	ASSERT_EQ(lsr.execute(), -3);
+	ASSERT_EQ(lsr.execute(), 32765);
 }
 
 TEST(LsrInstruction, NegativeNumberOdd) {
 	Register rs("s0");
 	LsrInstruction lsr(0, &rs, NULL, 0, 0);
 	rs.put(-9);
-	ASSERT_EQ(lsr.execute(), -5);
+	ASSERT_EQ(lsr.execute(), 32763);
 }
