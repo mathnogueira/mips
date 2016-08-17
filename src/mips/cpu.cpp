@@ -30,11 +30,13 @@ void CPU::loadProgram(const char *program) {
     fread(&size, sizeof(size_t), 1, fp);
     // Inicializa a memória de instruções
     memory->setInstructionSize(size);
+	controlUnit->memWrite = true;
     // Insere todas as instruções na memória de instruções
     for (size_t i = 0; i < size; ++i) {
         fread(&instruction, sizeof(bit16_t), 1, fp);
         memory->write(instruction, i, 0);
     }
+	controlUnit->memWrite = false;
     fclose(fp);
 }
 

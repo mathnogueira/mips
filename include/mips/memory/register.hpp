@@ -22,9 +22,8 @@ public:
 	 * Cria um novo registrador.
 	 *
 	 * \param name nome do registrador.
-	 * \param protect indica se o registrador é protegido para escrita.
 	 */
-	Register(const char* name, bool protect = false);
+	Register(const char* name);
 
 	/**
 	 * Destroi o registrador.
@@ -63,12 +62,6 @@ private:
      * Conteúdo do registrador.
      */
     bit16_t content;
-
-	/**
-	 * Indica se o registrador é protegido contra escrita.
-	 */
-	bool isProtected;
-
 };
 
 }; // namespace

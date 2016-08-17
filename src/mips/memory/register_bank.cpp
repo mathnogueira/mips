@@ -13,6 +13,8 @@ RegisterBank::RegisterBank(ControlUnit &controlUnit) : control(controlUnit)  {
 	this->iRegister[6] = new Register("r6");
 	this->iRegister[7] = new Register("r7");
     this->pc = new Register("pc");
+	for (bit8_t i = 0; i < 8; ++i)
+		iRegister[i]->put(0);
 }
 
 RegisterBank::~RegisterBank(){
@@ -30,6 +32,7 @@ Register* RegisterBank::getPC() {
 }
 
 void RegisterBank::write(bit16_t result, bit8_t rd) {
+	FORMAT_DEBUG("regwrite %d\n", control.regwrite);
 	if (control.regwrite == false)
 		return;
     getRegister(rd)->put(result);

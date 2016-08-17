@@ -22,9 +22,3 @@ TEST(Register, changeValue) {
 	r.put(r.get() + 32);
 	ASSERT_EQ(64, r.get());
 }
-
-TEST(Register, changeProtectedRegister) {
-	Register r("zero", true);
-	r.put(32);
-	ASSERT_EQ(0, r.get());
-}

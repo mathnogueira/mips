@@ -95,6 +95,14 @@ public:
 	 */
 	bit8_t getJumpOp(instruction_t instruction);
 
+	/**
+	 * Pega o valor de condição do jump.
+	 *
+	 * \param instruction instrução binária de 16 bits.
+	 * \return valor do cond.
+	 */
+	bit8_t getJumpCond(instruction_t instruction);
+
     /**
      * Função que recupera o valor do offset da instrução.
      *

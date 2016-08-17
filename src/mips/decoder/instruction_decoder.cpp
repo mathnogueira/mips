@@ -36,26 +36,53 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
     bit8_t opcode = getOPCode(instruction);
     bit8_t funct = getFunct(instruction);
     bit16_t offset;
+	bit8_t cond = 0;
     // Lê os dois registradores
     Register *rs = registerBank.getRegister(getRs(instruction));
     Register *rt = registerBank.getRegister(getRt(instruction));
     Register *rd = registerBank.getRegister(getRd(instruction));
     Instruction *instr = NULL;
+	PRINT_BIN(instruction);
     printf("OPCODE: %d\n", opcode);
     printf("FUNCT: %d\n", funct);
     switch (opcode) {
         case 0:
 			funct = getJumpOp(instruction);
+			//cond = getJumpCond(instruction);
 			printf("FUNCT: %d\n", funct);
             // Instruções de JUMP condicional ou incondicionais
             // Jal e JR
             // Verifica os códigos de função
             if (funct == 0) {
                 // JF.cond, deve checar o código da condição
-				DEBUG("JF.Cond");
+				if (cond == 4)
+					// Neg
+				if (cond == 5)
+					// Zero
+				if (cond == 6)
+					// Carry
+				if (cond == 7)
+					// Negzero
+				if (cond == 0)
+					// True
+				if (cond == 3)
+					// Overflow
+					;
             } else if (funct == 1) {
                 // JT.cond, deve checar o código da condição
-				DEBUG("JT.Cond");
+				if (cond == 4)
+					// Neg
+				if (cond == 5)
+					// Zero
+				if (cond == 6)
+					// Carry
+				if (cond == 7)
+					// Negzero
+				if (cond == 0)
+					// True
+				if (cond == 3)
+					// Overflow
+					;
             } else if (funct == 2) {
 				DEBUG("Jump");
                 return new JumpInstruction(opcode, getOffset(instruction, 12));
@@ -247,6 +274,16 @@ bit8_t InstructionDecoder::getFunct(instruction_t instruction) {
  */
 bit8_t InstructionDecoder::getJumpOp(instruction_t instruction) {
 	return (instruction >> 12) & 0x0003;
+}
+
+/**
+ * Pega o valor de condição do jump.
+ *
+ * \param instruction instrução binária de 16 bits.
+ * \return valor do cond.
+ */
+bit8_t InstructionDecoder::getJumpCond(instruction_t instruction) {
+	return (instruction >> 8) & 0x000f;
 }
 
 /**

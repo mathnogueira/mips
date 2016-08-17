@@ -2,17 +2,15 @@
 
 using namespace MIPS;
 
-Register::Register(const char* name, bool protect) {
+Register::Register(const char* name) {
 	this->name = name;
 	this->content = 0;
-	this->isProtected = protect;
 }
 
 Register::~Register() {}
 
 void Register::put(bit16_t value) {
-	if (this->isProtected == false)
-		this->content = value;
+	content = value;
     std::cout << "Atualizando o " << name << " com o valor " << content << std::endl;
 }
 
