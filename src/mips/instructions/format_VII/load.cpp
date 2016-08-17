@@ -2,7 +2,5 @@
 using namespace MIPS;
 
 bit16_t LoadInstruction::execute() {
-    this->rt->put(this->memory->read(this->rs->get()));
-    
-    return 1;
+    return this->memory->read(this->rs->get());
 }

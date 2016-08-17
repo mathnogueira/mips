@@ -7,8 +7,8 @@ using namespace MIPS;
 
 CPU::CPU() {
     memory = new Memory;
-    bank = new RegisterBank;
-    controlUnit = new ControlUnit;
+	controlUnit = new ControlUnit;
+	bank = new RegisterBank(*controlUnit);
     instructionFinder = new InstructionFinder(*memory, *bank);
     instructionDecoder = new InstructionDecoder(*bank);
 }
@@ -42,8 +42,9 @@ void CPU::execute() {
     do {
         // Busca a instrução e incrementa o PC
         instruction_t instruction = instructionFinder->getNext();
+		PRINT_BIN(instruction);
         // Se for instrução de HALT, para a execução
-        if (instruction == 0x0000)
+        if (instruction == 0x2fff)
             return;
         bit16_t result = 0;
         // Decodifica a instrução
@@ -52,10 +53,21 @@ void CPU::execute() {
         // Atualiza as flags de controle
         instructionObject->updateControl(*controlUnit);
         result = instructionObject->execute();
-        // Pega o índice do registrador RD
-        bit8_t rd = instructionDecoder->getRd(instruction);
+		// Verifica se a instrução era um jump, e se haverá o desvio
+		if (controlUnit->jump && result == 1) {
+			// Atualiza o PC
+			bank->getPC()->put(instructionDecoder->getOffset(instruction, 12));
+		}
+        // Pega o índice do registrador de destino
+        bit8_t regdst;
+		if (controlUnit->regDst)
+			regdst = instructionDecoder->getRd(instruction);
+		else
+			regdst = instructionDecoder->getRt(instruction);
         // Coloca o valor no banco de registradores
         // O valor só será escrito se a flag do controle for definida como true
-        bank->write(result, rd);
+        bank->write(result, regdst);
+		// Reseta as flags
+		controlUnit->reset();
     } while (true);
 }

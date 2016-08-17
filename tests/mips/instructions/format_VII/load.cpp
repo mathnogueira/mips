@@ -13,11 +13,10 @@ TEST(LoadTest, LoadPositive) {
 
     Register ra("r3");
     Register rc("r6");
-    
+
     ra.put(2);
 
     LoadInstruction load(01, &ra, &rc, &memory);
-    load.execute();
-   
-    ASSERT_EQ(rc.get(), 13);
+
+    ASSERT_EQ(load.execute(), 13);
 }

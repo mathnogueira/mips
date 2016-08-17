@@ -27,10 +27,30 @@ public:
      */
     ~ControlUnit();
 
+	/**
+	 * Reseta as flags do controle.
+	 */
+	void reset();
+
+	/**
+	 * Flag que indica o registrador de destino.
+	 */
+	bool regDst;
+
     /**
      * Flag de escrita em banco de registradores.
      */
     bool regwrite;
+
+	/**
+	 * Flag que indica que haverá leitura de memória.
+	 */
+	bool memRead;
+
+	/**
+	 * Flag que indica que haverá escrita na memória.
+	 */
+	bool memWrite;
 
     /**
      * Flag de branch.
