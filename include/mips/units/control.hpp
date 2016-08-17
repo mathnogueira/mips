@@ -27,6 +27,11 @@ public:
      */
     ~ControlUnit();
 
+	/**
+	 * Reseta as flags do controle.
+	 */
+	void reset();
+
     /**
      * Flag de escrita em banco de registradores.
      */

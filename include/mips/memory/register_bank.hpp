@@ -8,6 +8,7 @@
 
 #include <mips/core.hpp>
 #include <mips/memory/register.hpp>
+#include <mips/units/control.hpp>
 
 namespace MIPS {
 
@@ -24,7 +25,7 @@ public:
 	/**
 	 * Cria uma instância do banco de registradores.
 	 */
-	RegisterBank();
+	RegisterBank(ControlUnit &controlUnit);
 
 	/**
 	 * Destroi a instância do banco de registradores.
@@ -65,6 +66,11 @@ private:
      * Registrador contador de programa.
      */
     Register *pc;
+
+	/**
+	 * Unidade de controle.
+	 */
+	ControlUnit &control;
 
 };
 

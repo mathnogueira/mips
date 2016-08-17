@@ -28,6 +28,13 @@ public:
 		InstructionV(opcode, offset) {}
 
 	/**
+     * Método utilizado para atualizar os sinais de controle do processador.
+     *
+     * \param control unidade de controle do processador.
+     */
+    void updateControl(ControlUnit &control);
+
+	/**
 	 * Executa a instrução.
 	 *
 	 * \return returna 0 se o desvio não for tomado, 1 se desvio for tomado.

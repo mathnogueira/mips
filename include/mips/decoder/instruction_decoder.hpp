@@ -87,6 +87,14 @@ public:
      */
     bit8_t getFunct(instruction_t instruction);
 
+	/**
+	 * Pega o valor do codigo de diferenciação dos jumps.
+	 *
+	 * \param instruction instrução binária de 16 bits.
+	 * \return valor de diferenciação.
+	 */
+	bit8_t getJumpOp(instruction_t instruction);
+
     /**
      * Função que recupera o valor do offset da instrução.
      *
