@@ -1,7 +1,7 @@
 /**
  * \file store.hpp
  *
- * Instrução de Store, carrega na posição da memória endereçada pelo 
+ * Instrução de Store, carrega na posição da memória endereçada pelo
  * registrador X o conteúdo do registrador Y.
  */
 #pragma once
@@ -11,7 +11,7 @@
 namespace MIPS {
 
 /**
- * Instrução de Store, carrega na posição da memória endereçada pelo 
+ * Instrução de Store, carrega na posição da memória endereçada pelo
  * registrador X o conteúdo do registrador Y.
  *
  * \author Felipe Dias
@@ -35,6 +35,15 @@ public:
      * \return resultado da instrução
      */
     bit16_t execute();
+
+	/**
+	 * Método utilizado para atualizar os sinais de controle do processador.
+	 *
+	 * \param control unidade de controle do processador.
+	 */
+	void updateControl(ControlUnit &control) {
+		control.memWrite = true;
+	}
 
 };
 

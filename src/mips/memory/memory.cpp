@@ -4,7 +4,7 @@
 
 using namespace MIPS;
 
-Memory::Memory() {
+Memory::Memory(ControlUnit &controlUnit) : control(controlUnit) {
     instructions = NULL;
     data = NULL;
 }
@@ -31,6 +31,9 @@ void Memory::setDataSize(size_t size) {
 }
 
 void Memory::write(bit16_t data, bit32_t offset, bit8_t iOrD) {
+	// Nao escreve se a flag de memWrite estiver falsa
+	if (control.memWrite == false)
+		return;
     bit16_t *memory;
     bit32_t size;
     if (iOrD) {

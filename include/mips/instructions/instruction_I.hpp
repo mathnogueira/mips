@@ -60,6 +60,7 @@ public:
       */
      void updateControl(ControlUnit &control) {
 		 control.regwrite = true;
+		 control.regDst = true; // RD
 	 }
 
 protected:

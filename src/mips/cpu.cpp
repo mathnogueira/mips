@@ -6,8 +6,8 @@
 using namespace MIPS;
 
 CPU::CPU() {
-    memory = new Memory;
 	controlUnit = new ControlUnit;
+	memory = new Memory(*controlUnit);
 	bank = new RegisterBank(*controlUnit);
     instructionFinder = new InstructionFinder(*memory, *bank);
     instructionDecoder = new InstructionDecoder(*bank);

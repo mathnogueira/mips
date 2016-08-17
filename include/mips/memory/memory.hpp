@@ -8,6 +8,7 @@
 #pragma once
 
 #include <mips/core.hpp>
+#include <mips/units/control.hpp>
 
 namespace MIPS {
 
@@ -23,8 +24,10 @@ public:
 
     /**
      * Cria uma nova unidade de memória.
+	 *
+	 * \param controlUnit unidade de controle do processador.
      */
-    Memory();
+    Memory(ControlUnit &controlUnit);
 
     /**
      * Destroi a unidade de memória.
@@ -84,6 +87,11 @@ private:
      * Tamanaho da memória de dados.
      */
     size_t dataSize;
+
+	/**
+	 * Unidade de controle do processador.
+	 */
+	ControlUnit &control;
 
 };
 

@@ -36,6 +36,17 @@ public:
 	 */
 	bit16_t execute();
 
+	/**
+	 * Método utilizado para atualizar os sinais de controle do processador.
+	 *
+	 * \param control unidade de controle do processador.
+	 */
+	void updateControl(ControlUnit &control) {
+		control.regwrite = true;
+		control.regDst = false; // RD
+		control.memRead = true;
+	}
+
 };
 
 } // namespace

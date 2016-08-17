@@ -3,11 +3,14 @@
 #include <mips/memory/register.hpp>
 #include <mips/memory/memory.hpp>
 #include <mips/memory/memory_exception.hpp>
+#include <mips/units/control.hpp>
 
 using namespace MIPS;
 
 TEST(LoadTest, LoadPositive) {
-    Memory memory;
+	ControlUnit cu;
+	cu.memWrite = true;
+    Memory memory(cu);
     memory.setDataSize(3);
     memory.write(13, 2); //palavra 13 na posição 2
 
