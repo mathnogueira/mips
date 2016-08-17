@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.2.15)  3 AUG 2016 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.2.15)  8 AUG 2016 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1138,251 +1138,275 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 3.
 
 
+LaTeX Warning: Reference `structMIPS_1_1ALUFlags' on page 1 undefined on input 
+line 3.
+
+
 LaTeX Warning: Reference `classMIPS_1_1ControlUnit' on page 1 undefined on inpu
-t line 3.
+t line 4.
 
 
-LaTeX Warning: Reference `classMIPS_1_1CPU' on page 1 undefined on input line 4
+LaTeX Warning: Reference `classMIPS_1_1CPU' on page 1 undefined on input line 5
 .
 
 
 LaTeX Warning: Reference `classMIPS_1_1Encoder' on page 1 undefined on input li
-ne 5.
+ne 6.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatIEncoder' on page 1 undefined on i
-nput line 7.
+nput line 8.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatIIEncoder' on page 1 undefined on 
-input line 8.
+input line 9.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatIIIEncoder' on page 1 undefined on
- input line 9.
+ input line 10.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatIVEncoder' on page 1 undefined on 
-input line 10.
+input line 11.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatVEncoder' on page 1 undefined on i
-nput line 11.
+nput line 12.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatVIEncoder' on page 1 undefined on 
-input line 12.
+input line 13.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatVIIEncoder' on page 1 undefined on
- input line 13.
+ input line 14.
 
 
 LaTeX Warning: Reference `classMIPS_1_1EncoderFactory' on page 1 undefined on i
-nput line 15.
+nput line 16.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Event' on page 1 undefined on input line
- 16.
+ 17.
 
 
 LaTeX Warning: Reference `classMIPS_1_1EventDispatcher' on page 1 undefined on 
-input line 17.
+input line 18.
 
 
 LaTeX Warning: Reference `classMIPS_1_1EventListener' on page 1 undefined on in
-put line 18.
+put line 19.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FileReader' on page 1 undefined on input
- line 19.
+ line 20.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Filter' on page 1 undefined on input lin
-e 20.
+e 21.
 
 
 LaTeX Warning: Reference `classMIPS_1_1SpaceFilter' on page 1 undefined on inpu
-t line 22.
+t line 23.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FullAdder' on page 1 undefined on input 
-line 24.
+line 25.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Instruction' on page 1 undefined on inpu
-t line 25.
+t line 26.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InstructionI' on page 1 undefined on inp
-ut line 27.
+ut line 28.
 
 
 LaTeX Warning: Reference `classMIPS_1_1AddIncInstruction' on page 1 undefined o
-n input line 29.
+n input line 30.
 
 
 LaTeX Warning: Reference `classMIPS_1_1AddInstruction' on page 1 undefined on i
-nput line 30.
-
-
-LaTeX Warning: Reference `classMIPS_1_1AndInstruction' on page 1 undefined on i
 nput line 31.
 
 
+LaTeX Warning: Reference `classMIPS_1_1AndInstruction' on page 1 undefined on i
+nput line 32.
+
+
 LaTeX Warning: Reference `classMIPS_1_1AndnotaInstruction' on page 1 undefined 
-on input line 32.
+on input line 33.
 
 
 LaTeX Warning: Reference `classMIPS_1_1AslInstruction' on page 1 undefined on i
-nput line 33.
-
-
-LaTeX Warning: Reference `classMIPS_1_1AsrInstruction' on page 1 undefined on i
 nput line 34.
 
 
+LaTeX Warning: Reference `classMIPS_1_1AsrInstruction' on page 1 undefined on i
+nput line 35.
+
+
 LaTeX Warning: Reference `classMIPS_1_1DecaInstruction' on page 1 undefined on 
-input line 35.
-
-
-LaTeX Warning: Reference `classMIPS_1_1IncaInstruction' on page 1 undefined on 
 input line 36.
 
 
-LaTeX Warning: Reference `classMIPS_1_1NandInstruction' on page 1 undefined on 
+LaTeX Warning: Reference `classMIPS_1_1IncaInstruction' on page 1 undefined on 
 input line 37.
 
 
+LaTeX Warning: Reference `classMIPS_1_1NandInstruction' on page 1 undefined on 
+input line 38.
+
+
 LaTeX Warning: Reference `classMIPS_1_1NorInstruction' on page 1 undefined on i
-nput line 38.
+nput line 39.
 
 
 LaTeX Warning: Reference `classMIPS_1_1OnesInstruction' on page 1 undefined on 
-input line 39.
+input line 40.
 
 
 LaTeX Warning: Reference `classMIPS_1_1OrInstruction' on page 1 undefined on in
-put line 40.
+put line 41.
 
 
 LaTeX Warning: Reference `classMIPS_1_1OrnotbInstruction' on page 1 undefined o
-n input line 41.
+n input line 42.
 
 
 LaTeX Warning: Reference `classMIPS_1_1PassaInstruction' on page 1 undefined on
- input line 42.
+ input line 43.
 
 
 LaTeX Warning: Reference `classMIPS_1_1PassNotAInstruction' on page 1 undefined
- on input line 43.
+ on input line 44.
 
 
 LaTeX Warning: Reference `classMIPS_1_1SubdecInstruction' on page 1 undefined o
-n input line 44.
+n input line 45.
 
 
 LaTeX Warning: Reference `classMIPS_1_1SubInstruction' on page 1 undefined on i
-nput line 45.
+nput line 46.
 
 
 LaTeX Warning: Reference `classMIPS_1_1XnorInstruction' on page 1 undefined on 
-input line 46.
-
-
-LaTeX Warning: Reference `classMIPS_1_1XorInstruction' on page 1 undefined on i
-nput line 47.
+input line 47.
 
 [1
 
 ]
 
+LaTeX Warning: Reference `classMIPS_1_1XorInstruction' on page 2 undefined on i
+nput line 48.
+
+
 LaTeX Warning: Reference `classMIPS_1_1ZeroInstruction' on page 2 undefined on 
-input line 48.
+input line 49.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InstructionII' on page 2 undefined on in
-put line 50.
+put line 51.
 
 
 LaTeX Warning: Reference `classMIPS_1_1LoadlitInstruction' on page 2 undefined 
-on input line 52.
+on input line 53.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InstructionIII' on page 2 undefined on i
-nput line 54.
+nput line 55.
 
 
 LaTeX Warning: Reference `classMIPS_1_1LchInstruction' on page 2 undefined on i
-nput line 56.
-
-
-LaTeX Warning: Reference `classMIPS_1_1LclInstruction' on page 2 undefined on i
 nput line 57.
 
 
-LaTeX Warning: Reference `classMIPS_1_1InstructionDecoder' on page 2 undefined 
-on input line 60.
+LaTeX Warning: Reference `classMIPS_1_1LclInstruction' on page 2 undefined on i
+nput line 58.
 
 
-LaTeX Warning: Reference `classMIPS_1_1InstructionFinder' on page 2 undefined o
-n input line 61.
+LaTeX Warning: Reference `classMIPS_1_1InstructionIV' on page 2 undefined on in
+put line 60.
 
 
-LaTeX Warning: Reference `classMIPS_1_1Interpreter' on page 2 undefined on inpu
-t line 62.
+LaTeX Warning: Reference `classMIPS_1_1JtZeroInstruction' on page 2 undefined o
+n input line 62.
 
 
-LaTeX Warning: Reference `structMIPS_1_1Label' on page 2 undefined on input lin
-e 63.
+LaTeX Warning: Reference `classMIPS_1_1InstructionV' on page 2 undefined on inp
+ut line 64.
 
 
-LaTeX Warning: Reference `structMIPS_1_1EventDispatcher_1_1ListenerMap' on page
- 2 undefined on input line 64.
+LaTeX Warning: Reference `classMIPS_1_1InstructionVI' on page 2 undefined on in
+put line 65.
 
 
-LaTeX Warning: Reference `classMIPS_1_1Memory' on page 2 undefined on input lin
-e 65.
-
-
-LaTeX Warning: Reference `structMIPS_1_1Queue_1_1Node' on page 2 undefined on i
+LaTeX Warning: Reference `classMIPS_1_1InstructionVII' on page 2 undefined on i
 nput line 66.
 
 
-LaTeX Warning: Reference `classMIPS_1_1Queue' on page 2 undefined on input line
- 67.
+LaTeX Warning: Reference `classMIPS_1_1InstructionDecoder' on page 2 undefined 
+on input line 68.
+
+
+LaTeX Warning: Reference `classMIPS_1_1InstructionFinder' on page 2 undefined o
+n input line 69.
+
+
+LaTeX Warning: Reference `classMIPS_1_1Interpreter' on page 2 undefined on inpu
+t line 70.
+
+
+LaTeX Warning: Reference `structMIPS_1_1Label' on page 2 undefined on input lin
+e 71.
+
+
+LaTeX Warning: Reference `structMIPS_1_1EventDispatcher_1_1ListenerMap' on page
+ 2 undefined on input line 72.
+
+
+LaTeX Warning: Reference `classMIPS_1_1Memory' on page 2 undefined on input lin
+e 73.
+
+
+LaTeX Warning: Reference `structMIPS_1_1Queue_1_1Node' on page 2 undefined on i
+nput line 74.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Queue' on page 2 undefined on input line
- 68.
+ 75.
+
+
+LaTeX Warning: Reference `classMIPS_1_1Queue' on page 2 undefined on input line
+ 76.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Register' on page 2 undefined on input l
-ine 69.
+ine 77.
 
 
 LaTeX Warning: Reference `classMIPS_1_1RegisterBank' on page 2 undefined on inp
-ut line 70.
+ut line 78.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InterpreterException' on page 2 undefine
-d on input line 72.
+d on input line 80.
 
 
 LaTeX Warning: Reference `classMIPS_1_1MemoryException' on page 2 undefined on 
-input line 73.
+input line 81.
 
 
 LaTeX Warning: Reference `classMIPS_1_1SignalExtender' on page 2 undefined on i
-nput line 75.
+nput line 83.
 
 
 LaTeX Warning: Reference `classMIPS_1_1SignalInversor' on page 2 undefined on i
-nput line 76.
+nput line 84.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Tokenizer' on page 2 undefined on input 
-line 77.
+line 85.
 
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
@@ -1401,239 +1425,263 @@ LaTeX Warning: Reference `classMIPS_1_1AddInstruction' on page 3 undefined on i
 nput line 4.
 
 
+LaTeX Warning: Reference `structMIPS_1_1ALUFlags' on page 3 undefined on input 
+line 5.
+
+
 LaTeX Warning: Reference `classMIPS_1_1AndInstruction' on page 3 undefined on i
-nput line 5.
+nput line 6.
 
 
 LaTeX Warning: Reference `classMIPS_1_1AndnotaInstruction' on page 3 undefined 
-on input line 6.
+on input line 7.
 
 
 LaTeX Warning: Reference `classMIPS_1_1AslInstruction' on page 3 undefined on i
-nput line 7.
-
-
-LaTeX Warning: Reference `classMIPS_1_1AsrInstruction' on page 3 undefined on i
 nput line 8.
 
 
+LaTeX Warning: Reference `classMIPS_1_1AsrInstruction' on page 3 undefined on i
+nput line 9.
+
+
 LaTeX Warning: Reference `classMIPS_1_1ControlUnit' on page 3 undefined on inpu
-t line 9.
+t line 10.
 
 
 LaTeX Warning: Reference `classMIPS_1_1CPU' on page 3 undefined on input line 1
-0.
+1.
 
 
 LaTeX Warning: Reference `classMIPS_1_1DecaInstruction' on page 3 undefined on 
-input line 11.
+input line 12.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Encoder' on page 3 undefined on input li
-ne 12.
+ne 13.
 
 
 LaTeX Warning: Reference `classMIPS_1_1EncoderFactory' on page 3 undefined on i
-nput line 13.
+nput line 14.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Event' on page 3 undefined on input line
- 14.
+ 15.
 
 
 LaTeX Warning: Reference `classMIPS_1_1EventDispatcher' on page 3 undefined on 
-input line 15.
+input line 16.
 
 
 LaTeX Warning: Reference `classMIPS_1_1EventListener' on page 3 undefined on in
-put line 16.
+put line 17.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FileReader' on page 3 undefined on input
- line 17.
+ line 18.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Filter' on page 3 undefined on input lin
-e 18.
+e 19.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatIEncoder' on page 3 undefined on i
-nput line 19.
+nput line 20.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatIIEncoder' on page 3 undefined on 
-input line 20.
+input line 21.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatIIIEncoder' on page 3 undefined on
- input line 21.
+ input line 22.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatIVEncoder' on page 3 undefined on 
-input line 22.
+input line 23.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatVEncoder' on page 3 undefined on i
-nput line 23.
+nput line 24.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatVIEncoder' on page 3 undefined on 
-input line 24.
+input line 25.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FormatVIIEncoder' on page 3 undefined on
- input line 25.
+ input line 26.
 
 
 LaTeX Warning: Reference `classMIPS_1_1FullAdder' on page 3 undefined on input 
-line 26.
+line 27.
 
 
 LaTeX Warning: Reference `classMIPS_1_1IncaInstruction' on page 3 undefined on 
-input line 27.
+input line 28.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Instruction' on page 3 undefined on inpu
-t line 28.
+t line 29.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InstructionDecoder' on page 3 undefined 
-on input line 29.
+on input line 30.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InstructionFinder' on page 3 undefined o
-n input line 30.
+n input line 31.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InstructionI' on page 3 undefined on inp
-ut line 31.
+ut line 32.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InstructionII' on page 3 undefined on in
-put line 32.
+put line 33.
 
 
 LaTeX Warning: Reference `classMIPS_1_1InstructionIII' on page 3 undefined on i
-nput line 33.
+nput line 34.
 
 
-LaTeX Warning: Reference `classMIPS_1_1Interpreter' on page 3 undefined on inpu
-t line 34.
+LaTeX Warning: Reference `classMIPS_1_1InstructionIV' on page 3 undefined on in
+put line 35.
 
 
-LaTeX Warning: Reference `classMIPS_1_1InterpreterException' on page 3 undefine
-d on input line 35.
+LaTeX Warning: Reference `classMIPS_1_1InstructionV' on page 3 undefined on inp
+ut line 36.
 
 
-LaTeX Warning: Reference `structMIPS_1_1Label' on page 3 undefined on input lin
-e 36.
+LaTeX Warning: Reference `classMIPS_1_1InstructionVI' on page 3 undefined on in
+put line 37.
 
 
-LaTeX Warning: Reference `classMIPS_1_1LchInstruction' on page 3 undefined on i
-nput line 37.
-
-
-LaTeX Warning: Reference `classMIPS_1_1LclInstruction' on page 3 undefined on i
+LaTeX Warning: Reference `classMIPS_1_1InstructionVII' on page 3 undefined on i
 nput line 38.
 
 
-LaTeX Warning: Reference `structMIPS_1_1EventDispatcher_1_1ListenerMap' on page
- 3 undefined on input line 39.
+LaTeX Warning: Reference `classMIPS_1_1Interpreter' on page 3 undefined on inpu
+t line 39.
 
 
-LaTeX Warning: Reference `classMIPS_1_1LoadlitInstruction' on page 3 undefined 
-on input line 40.
+LaTeX Warning: Reference `classMIPS_1_1InterpreterException' on page 3 undefine
+d on input line 40.
 
 
-LaTeX Warning: Reference `classMIPS_1_1Memory' on page 3 undefined on input lin
-e 41.
+LaTeX Warning: Reference `classMIPS_1_1JtZeroInstruction' on page 3 undefined o
+n input line 41.
 
 [3
 
 ]
 
-LaTeX Warning: Reference `classMIPS_1_1MemoryException' on page 4 undefined on 
-input line 42.
+LaTeX Warning: Reference `structMIPS_1_1Label' on page 4 undefined on input lin
+e 42.
 
 
-LaTeX Warning: Reference `classMIPS_1_1NandInstruction' on page 4 undefined on 
-input line 43.
+LaTeX Warning: Reference `classMIPS_1_1LchInstruction' on page 4 undefined on i
+nput line 43.
 
 
-LaTeX Warning: Reference `structMIPS_1_1Queue_1_1Node' on page 4 undefined on i
+LaTeX Warning: Reference `classMIPS_1_1LclInstruction' on page 4 undefined on i
 nput line 44.
 
 
+LaTeX Warning: Reference `structMIPS_1_1EventDispatcher_1_1ListenerMap' on page
+ 4 undefined on input line 45.
+
+
+LaTeX Warning: Reference `classMIPS_1_1LoadlitInstruction' on page 4 undefined 
+on input line 46.
+
+
+LaTeX Warning: Reference `classMIPS_1_1Memory' on page 4 undefined on input lin
+e 47.
+
+
+LaTeX Warning: Reference `classMIPS_1_1MemoryException' on page 4 undefined on 
+input line 48.
+
+
+LaTeX Warning: Reference `classMIPS_1_1NandInstruction' on page 4 undefined on 
+input line 49.
+
+
+LaTeX Warning: Reference `structMIPS_1_1Queue_1_1Node' on page 4 undefined on i
+nput line 50.
+
+
 LaTeX Warning: Reference `classMIPS_1_1NorInstruction' on page 4 undefined on i
-nput line 45.
+nput line 51.
 
 
 LaTeX Warning: Reference `classMIPS_1_1OnesInstruction' on page 4 undefined on 
-input line 46.
+input line 52.
 
 
 LaTeX Warning: Reference `classMIPS_1_1OrInstruction' on page 4 undefined on in
-put line 47.
+put line 53.
 
 
 LaTeX Warning: Reference `classMIPS_1_1OrnotbInstruction' on page 4 undefined o
-n input line 48.
+n input line 54.
 
 
 LaTeX Warning: Reference `classMIPS_1_1PassaInstruction' on page 4 undefined on
- input line 49.
+ input line 55.
 
 
 LaTeX Warning: Reference `classMIPS_1_1PassNotAInstruction' on page 4 undefined
- on input line 50.
+ on input line 56.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Queue' on page 4 undefined on input line
- 51.
+ 57.
 
 
 LaTeX Warning: Reference `classMIPS_1_1Register' on page 4 undefined on input l
-ine 52.
+ine 58.
 
 
 LaTeX Warning: Reference `classMIPS_1_1RegisterBank' on page 4 undefined on inp
-ut line 53.
+ut line 59.
 
 
 LaTeX Warning: Reference `classMIPS_1_1SignalExtender' on page 4 undefined on i
-nput line 54.
+nput line 60.
 
 
 LaTeX Warning: Reference `classMIPS_1_1SignalInversor' on page 4 undefined on i
-nput line 55.
-
-
-LaTeX Warning: Reference `classMIPS_1_1SpaceFilter' on page 4 undefined on inpu
-t line 56.
-
-
-LaTeX Warning: Reference `classMIPS_1_1SubdecInstruction' on page 4 undefined o
-n input line 57.
-
-
-LaTeX Warning: Reference `classMIPS_1_1SubInstruction' on page 4 undefined on i
-nput line 58.
-
-
-LaTeX Warning: Reference `classMIPS_1_1Tokenizer' on page 4 undefined on input 
-line 59.
-
-
-LaTeX Warning: Reference `classMIPS_1_1XnorInstruction' on page 4 undefined on 
-input line 60.
-
-
-LaTeX Warning: Reference `classMIPS_1_1XorInstruction' on page 4 undefined on i
 nput line 61.
 
 
+LaTeX Warning: Reference `classMIPS_1_1SpaceFilter' on page 4 undefined on inpu
+t line 62.
+
+
+LaTeX Warning: Reference `classMIPS_1_1SubdecInstruction' on page 4 undefined o
+n input line 63.
+
+
+LaTeX Warning: Reference `classMIPS_1_1SubInstruction' on page 4 undefined on i
+nput line 64.
+
+
+LaTeX Warning: Reference `classMIPS_1_1Tokenizer' on page 4 undefined on input 
+line 65.
+
+
+LaTeX Warning: Reference `classMIPS_1_1XnorInstruction' on page 4 undefined on 
+input line 66.
+
+
+LaTeX Warning: Reference `classMIPS_1_1XorInstruction' on page 4 undefined on i
+nput line 67.
+
+
 LaTeX Warning: Reference `classMIPS_1_1ZeroInstruction' on page 4 undefined on 
-input line 62.
+input line 68.
 
 ) [4]
 Chapter 3.
@@ -1648,204 +1696,226 @@ LaTeX Warning: Reference `cpu_8hpp' on page 5 undefined on input line 4.
 LaTeX Warning: Reference `debug_8hpp' on page 5 undefined on input line 5.
 
 
-LaTeX Warning: Reference `full__adder_8hpp' on page 5 undefined on input line 6
+LaTeX Warning: Reference `flag_8hpp' on page 5 undefined on input line 6.
+
+
+LaTeX Warning: Reference `full__adder_8hpp' on page 5 undefined on input line 7
 .
 
 
 LaTeX Warning: Reference `signal__extender_8hpp' on page 5 undefined on input l
-ine 7.
-
-
-LaTeX Warning: Reference `signal__inversor_8hpp' on page 5 undefined on input l
 ine 8.
 
 
+LaTeX Warning: Reference `signal__inversor_8hpp' on page 5 undefined on input l
+ine 9.
+
+
 LaTeX Warning: Reference `instruction__decoder_8hpp' on page 5 undefined on inp
-ut line 9.
+ut line 10.
 
 
 LaTeX Warning: Reference `instruction_8hpp' on page 5 undefined on input line 1
-0.
+1.
 
 
 LaTeX Warning: Reference `instruction__I_8hpp' on page 5 undefined on input lin
-e 11.
+e 12.
 
 
 LaTeX Warning: Reference `instruction__II_8hpp' on page 5 undefined on input li
-ne 12.
+ne 13.
 
 
 LaTeX Warning: Reference `instruction__III_8hpp' on page 5 undefined on input l
-ine 13.
+ine 14.
 
 
-LaTeX Warning: Reference `add_8hpp' on page 5 undefined on input line 14.
+LaTeX Warning: Reference `instruction__IV_8hpp' on page 5 undefined on input li
+ne 15.
 
 
-LaTeX Warning: Reference `addinc_8hpp' on page 5 undefined on input line 15.
+LaTeX Warning: Reference `instruction__V_8hpp' on page 5 undefined on input lin
+e 16.
 
 
-LaTeX Warning: Reference `and_8hpp' on page 5 undefined on input line 16.
+LaTeX Warning: Reference `instruction__VI_8hpp' on page 5 undefined on input li
+ne 17.
 
 
-LaTeX Warning: Reference `andnota_8hpp' on page 5 undefined on input line 17.
+LaTeX Warning: Reference `instruction__VII_8hpp' on page 5 undefined on input l
+ine 18.
 
 
-LaTeX Warning: Reference `asl_8hpp' on page 5 undefined on input line 18.
+LaTeX Warning: Reference `add_8hpp' on page 5 undefined on input line 19.
 
 
-LaTeX Warning: Reference `asr_8hpp' on page 5 undefined on input line 19.
+LaTeX Warning: Reference `addinc_8hpp' on page 5 undefined on input line 20.
 
 
-LaTeX Warning: Reference `deca_8hpp' on page 5 undefined on input line 20.
+LaTeX Warning: Reference `and_8hpp' on page 5 undefined on input line 21.
 
 
-LaTeX Warning: Reference `inca_8hpp' on page 5 undefined on input line 21.
+LaTeX Warning: Reference `andnota_8hpp' on page 5 undefined on input line 22.
 
 
-LaTeX Warning: Reference `nand_8hpp' on page 5 undefined on input line 22.
+LaTeX Warning: Reference `asl_8hpp' on page 5 undefined on input line 23.
 
 
-LaTeX Warning: Reference `nor_8hpp' on page 5 undefined on input line 23.
+LaTeX Warning: Reference `asr_8hpp' on page 5 undefined on input line 24.
 
 
-LaTeX Warning: Reference `ones_8hpp' on page 5 undefined on input line 24.
+LaTeX Warning: Reference `deca_8hpp' on page 5 undefined on input line 25.
 
 
-LaTeX Warning: Reference `or_8hpp' on page 5 undefined on input line 25.
+LaTeX Warning: Reference `inca_8hpp' on page 5 undefined on input line 26.
 
 
-LaTeX Warning: Reference `ornotb_8hpp' on page 5 undefined on input line 26.
+LaTeX Warning: Reference `nand_8hpp' on page 5 undefined on input line 27.
 
 
-LaTeX Warning: Reference `passa_8hpp' on page 5 undefined on input line 27.
+LaTeX Warning: Reference `nor_8hpp' on page 5 undefined on input line 28.
 
 
-LaTeX Warning: Reference `passnota_8hpp' on page 5 undefined on input line 28.
+LaTeX Warning: Reference `ones_8hpp' on page 5 undefined on input line 29.
 
 
-LaTeX Warning: Reference `sub_8hpp' on page 5 undefined on input line 29.
+LaTeX Warning: Reference `or_8hpp' on page 5 undefined on input line 30.
 
 
-LaTeX Warning: Reference `subdec_8hpp' on page 5 undefined on input line 30.
+LaTeX Warning: Reference `ornotb_8hpp' on page 5 undefined on input line 31.
 
 
-LaTeX Warning: Reference `xnor_8hpp' on page 5 undefined on input line 31.
+LaTeX Warning: Reference `passa_8hpp' on page 5 undefined on input line 32.
 
 
-LaTeX Warning: Reference `xor_8hpp' on page 5 undefined on input line 32.
+LaTeX Warning: Reference `passnota_8hpp' on page 5 undefined on input line 33.
 
 
-LaTeX Warning: Reference `zero_8hpp' on page 5 undefined on input line 33.
+LaTeX Warning: Reference `sub_8hpp' on page 5 undefined on input line 34.
 
 
-LaTeX Warning: Reference `loadlit_8hpp' on page 5 undefined on input line 34.
+LaTeX Warning: Reference `subdec_8hpp' on page 5 undefined on input line 35.
 
 
-LaTeX Warning: Reference `lch_8hpp' on page 5 undefined on input line 35.
+LaTeX Warning: Reference `xnor_8hpp' on page 5 undefined on input line 36.
 
 
-LaTeX Warning: Reference `lcl_8hpp' on page 5 undefined on input line 36.
+LaTeX Warning: Reference `xor_8hpp' on page 5 undefined on input line 37.
 
 
-LaTeX Warning: Reference `interpreter_8hpp' on page 5 undefined on input line 3
-7.
+LaTeX Warning: Reference `zero_8hpp' on page 5 undefined on input line 38.
 
 
-LaTeX Warning: Reference `label_8hpp' on page 5 undefined on input line 38.
+LaTeX Warning: Reference `loadlit_8hpp' on page 5 undefined on input line 39.
 
 
-LaTeX Warning: Reference `encoder_8hpp' on page 5 undefined on input line 39.
+LaTeX Warning: Reference `lch_8hpp' on page 5 undefined on input line 40.
 
 
-LaTeX Warning: Reference `encoder__factory_8hpp' on page 5 undefined on input l
-ine 40.
-
-
-LaTeX Warning: Reference `format__I__encoder_8hpp' on page 5 undefined on input
- line 41.
+LaTeX Warning: Reference `lcl_8hpp' on page 5 undefined on input line 41.
 
 [5
 
 ]
 
+LaTeX Warning: Reference `jt__zero_8hpp' on page 6 undefined on input line 42.
+
+
+LaTeX Warning: Reference `interpreter_8hpp' on page 6 undefined on input line 4
+3.
+
+
+LaTeX Warning: Reference `label_8hpp' on page 6 undefined on input line 44.
+
+
+LaTeX Warning: Reference `encoder_8hpp' on page 6 undefined on input line 45.
+
+
+LaTeX Warning: Reference `encoder__factory_8hpp' on page 6 undefined on input l
+ine 46.
+
+
+LaTeX Warning: Reference `format__I__encoder_8hpp' on page 6 undefined on input
+ line 47.
+
+
 LaTeX Warning: Reference `format__II__encoder_8hpp' on page 6 undefined on inpu
-t line 42.
+t line 48.
 
 
 LaTeX Warning: Reference `format__III__encoder_8hpp' on page 6 undefined on inp
-ut line 43.
+ut line 49.
 
 
 LaTeX Warning: Reference `format__IV__encoder_8hpp' on page 6 undefined on inpu
-t line 44.
+t line 50.
 
 
 LaTeX Warning: Reference `format__V__encoder_8hpp' on page 6 undefined on input
- line 45.
+ line 51.
 
 
 LaTeX Warning: Reference `format__VI__encoder_8hpp' on page 6 undefined on inpu
-t line 46.
+t line 52.
 
 
 LaTeX Warning: Reference `format__VII__encoder_8hpp' on page 6 undefined on inp
-ut line 47.
+ut line 53.
 
 
 LaTeX Warning: Reference `interpreter__exception_8hpp' on page 6 undefined on i
-nput line 48.
+nput line 54.
 
 
-LaTeX Warning: Reference `tokenizer_8hpp' on page 6 undefined on input line 49.
+LaTeX Warning: Reference `tokenizer_8hpp' on page 6 undefined on input line 55.
 
 
 
-LaTeX Warning: Reference `memory_8hpp' on page 6 undefined on input line 50.
+LaTeX Warning: Reference `memory_8hpp' on page 6 undefined on input line 56.
 
 
 LaTeX Warning: Reference `memory__exception_8hpp' on page 6 undefined on input 
-line 51.
+line 57.
 
 
-LaTeX Warning: Reference `register_8hpp' on page 6 undefined on input line 52.
+LaTeX Warning: Reference `register_8hpp' on page 6 undefined on input line 58.
 
 
 LaTeX Warning: Reference `register__bank_8hpp' on page 6 undefined on input lin
-e 53.
+e 59.
 
 
-LaTeX Warning: Reference `control_8hpp' on page 6 undefined on input line 54.
+LaTeX Warning: Reference `control_8hpp' on page 6 undefined on input line 60.
 
 
 LaTeX Warning: Reference `instruction__finder_8hpp' on page 6 undefined on inpu
-t line 55.
+t line 61.
 
 
 LaTeX Warning: Reference `file__reader_8hpp' on page 6 undefined on input line 
-56.
+62.
 
 
-LaTeX Warning: Reference `event_8hpp' on page 6 undefined on input line 57.
+LaTeX Warning: Reference `event_8hpp' on page 6 undefined on input line 63.
 
 
 LaTeX Warning: Reference `event__dispatcher_8hpp' on page 6 undefined on input 
-line 58.
+line 64.
 
 
 LaTeX Warning: Reference `event__listener_8hpp' on page 6 undefined on input li
-ne 59.
+ne 65.
 
 
-LaTeX Warning: Reference `filter_8hpp' on page 6 undefined on input line 60.
+LaTeX Warning: Reference `filter_8hpp' on page 6 undefined on input line 66.
 
 
 LaTeX Warning: Reference `space__filter_8hpp' on page 6 undefined on input line
- 61.
+ 67.
 
 
-LaTeX Warning: Reference `queue_8hpp' on page 6 undefined on input line 62.
+LaTeX Warning: Reference `queue_8hpp' on page 6 undefined on input line 68.
 
 ) [6]
 Chapter 4.
@@ -1857,7 +1927,7 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
 (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<classMIPS_1_1AddIncInstruction.pdf, id=277, 501.875pt x 391.07103pt>
+<classMIPS_1_1AddIncInstruction.pdf, id=307, 501.875pt x 391.07103pt>
 File: classMIPS_1_1AddIncInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1AddIncInstruction.pdf>
@@ -1912,7 +1982,7 @@ Underfull \hbox (badness 10000) detected at line 55
  []
 
 ) (./classMIPS_1_1AddInstruction.tex
-<classMIPS_1_1AddInstruction.pdf, id=321, 501.875pt x 439.60234pt>
+<classMIPS_1_1AddInstruction.pdf, id=351, 501.875pt x 439.60234pt>
 File: classMIPS_1_1AddInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1AddInstruction.pdf>
@@ -1941,15 +2011,22 @@ Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
+) (./structMIPS_1_1ALUFlags.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 12.
 ) (./classMIPS_1_1AndInstruction.tex
-<classMIPS_1_1AndInstruction.pdf, id=357, 501.875pt x 439.60234pt>
+<classMIPS_1_1AndInstruction.pdf, id=396, 501.875pt x 439.60234pt>
 File: classMIPS_1_1AndInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1AndInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1AndInstruction.pdf used on input line 10.
 
 (pdftex.def)             Requested size: 97.44786pt x 85.35826pt.
-
+ [9]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -1966,20 +2043,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 42.
 
-[9 <./classMIPS_1_1AndInstruction.pdf>]) (./classMIPS_1_1AndnotaInstruction.tex
-<classMIPS_1_1AndnotaInstruction.pdf, id=393, 501.875pt x 374.06752pt>
+) (./classMIPS_1_1AndnotaInstruction.tex
+<classMIPS_1_1AndnotaInstruction.pdf, id=430, 501.875pt x 374.06752pt>
 File: classMIPS_1_1AndnotaInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1AndnotaInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1AndnotaInstruction.pdf used on input line
  10.
 (pdftex.def)             Requested size: 114.51752pt x 85.35826pt.
-
+ [10 <./classMIPS_1_1AndInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
 
-[10 <./classMIPS_1_1AndnotaInstruction.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 42.
@@ -1998,14 +2074,14 @@ Underfull \hbox (badness 10000) detected at line 55
  []
 
 ) (./classMIPS_1_1AslInstruction.tex
-<classMIPS_1_1AslInstruction.pdf, id=430, 501.875pt x 456.25455pt>
+<classMIPS_1_1AslInstruction.pdf, id=467, 501.875pt x 456.25455pt>
 File: classMIPS_1_1AslInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1AslInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1AslInstruction.pdf used on input line 10.
 
 (pdftex.def)             Requested size: 93.8869pt x 85.35826pt.
- [11 <./classMIPS_1_1AslInstruction.pdf>]
+ [11 <./classMIPS_1_1AndnotaInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -2028,14 +2104,14 @@ Underfull \hbox (badness 10000) detected at line 55
  []
 
 ) (./classMIPS_1_1AsrInstruction.tex
-<classMIPS_1_1AsrInstruction.pdf, id=462, 501.875pt x 449.4391pt>
+<classMIPS_1_1AsrInstruction.pdf, id=503, 501.875pt x 449.4391pt>
 File: classMIPS_1_1AsrInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1AsrInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1AsrInstruction.pdf used on input line 10.
 
 (pdftex.def)             Requested size: 95.31128pt x 85.35826pt.
- [12 <./classMIPS_1_1AsrInstruction.pdf>]
+ [12 <./classMIPS_1_1AslInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -2057,30 +2133,30 @@ Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
-) (./classMIPS_1_1ControlUnit.tex
-Underfull \hbox (badness 10000) detected at line 19
+) (./classMIPS_1_1ControlUnit.tex [13 <./classMIPS_1_1AsrInstruction.pdf>]
+Underfull \hbox (badness 10000) detected at line 28
 [][][]
  []
 
-[13]) (./classMIPS_1_1CPU.tex
+) (./classMIPS_1_1CPU.tex [14]
 Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
-[14]
+[15]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 4.1 on input line 66.
 
 ) (./classMIPS_1_1DecaInstruction.tex
-<classMIPS_1_1DecaInstruction.pdf, id=540, 501.875pt x 418.23253pt>
+<classMIPS_1_1DecaInstruction.pdf, id=610, 501.875pt x 418.23253pt>
 File: classMIPS_1_1DecaInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1DecaInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1DecaInstruction.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 102.42555pt x 85.35826pt.
- [15 <./classMIPS_1_1DecaInstruction.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -2102,69 +2178,65 @@ Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
-) (./classMIPS_1_1Encoder.tex
-<classMIPS_1_1Encoder.pdf, id=579, 501.875pt x 36.30563pt>
+[16 <./classMIPS_1_1DecaInstruction.pdf>]) (./classMIPS_1_1Encoder.tex
+<classMIPS_1_1Encoder.pdf, id=644, 501.875pt x 36.30563pt>
 File: classMIPS_1_1Encoder.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1Encoder.pdf>
 Package pdftex.def Info: classMIPS_1_1Encoder.pdf used on input line 10.
 (pdftex.def)             Requested size: 398.30716pt x 28.8131pt.
- [16 <./classMIPS_1_1Encoder.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.2 on input line 60.
-
-
-Underfull \hbox (badness 10000) detected at line 80
+[17 <./classMIPS_1_1Encoder.pdf>]
+Underfull \hbox (badness 10000) detected at line 71
 [][][]
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 85--86
+Underfull \hbox (badness 1521) in paragraph at lines 76--77
 []\T1/phv/m/n/10 Implemented in [][]M[]I[]P[]S[]::[]Format[]I[]Encoder[][], [][
 ]M[]I[]P[]S[]::[]Format[]I[]I[]Encoder[][], [][]M[]I[]P[]S[]::[]Format[]I[]I[]I
 []Encoder[][], [][]M[]I[]P[]S[]::[]Format[]I[]V[]
  []
 
-[17]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.3 on input line 100.
+(longtable)                in table 4.2 on input line 91.
 
 
-Underfull \hbox (badness 10000) detected at line 101
+Underfull \hbox (badness 10000) detected at line 92
 [][][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 110.
+(hyperref)                removing `alignment tab' on input line 101.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.4 on input line 117.
+(longtable)                in table 4.3 on input line 108.
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 120--121
+Underfull \hbox (badness 1521) in paragraph at lines 111--112
 []\T1/phv/m/n/10 Implemented in [][]M[]I[]P[]S[]::[]Format[]I[]Encoder[][], [][
 ]M[]I[]P[]S[]::[]Format[]I[]I[]Encoder[][], [][]M[]I[]P[]S[]::[]Format[]I[]I[]I
 []Encoder[][], [][]M[]I[]P[]S[]::[]Format[]I[]V[]
  []
 
-) (./classMIPS_1_1EncoderFactory.tex [18]
+[18]) (./classMIPS_1_1EncoderFactory.tex
 Underfull \hbox (badness 10000) detected at line 19
 [][][]
  []
 
+[19]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.5 on input line 48.
+(longtable)                in table 4.4 on input line 48.
 
-) (./classMIPS_1_1Event.tex [19]
+) (./classMIPS_1_1Event.tex
 Underfull \hbox (badness 10000) detected at line 28
 [][][]
  []
@@ -2175,9 +2247,13 @@ LaTeX Font Warning: Font shape `T1/pcr/bc/it' undefined
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.6 on input line 53.
+(longtable)                in table 4.5 on input line 53.
 
 
+Overfull \vbox (10.93376pt too high) has occurred while \output is active []
+
+
+[20]
 Underfull \hbox (badness 10000) detected at line 73
 [][][]
  []
@@ -2190,7 +2266,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 84.
 
-[20]) (./classMIPS_1_1EventDispatcher.tex
+) (./classMIPS_1_1EventDispatcher.tex
 Underfull \hbox (badness 10000) detected at line 28
 [][][]
  []
@@ -2198,7 +2274,7 @@ Underfull \hbox (badness 10000) detected at line 28
 [21]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.7 on input line 67.
+(longtable)                in table 4.6 on input line 67.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2206,9 +2282,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.8 on input line 81.
+(longtable)                in table 4.7 on input line 81.
 
-) (./classMIPS_1_1EventListener.tex
+) (./classMIPS_1_1EventListener.tex [22]
 Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
@@ -2219,20 +2295,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.9 on input line 36.
+(longtable)                in table 4.8 on input line 36.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22])
-(./classMIPS_1_1FileReader.tex
+) (./classMIPS_1_1FileReader.tex [23]
 Underfull \hbox (badness 10000) detected at line 27
 [][][]
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.10 on input line 46.
+(longtable)                in table 4.9 on input line 46.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2240,12 +2312,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.11 on input line 63.
+(longtable)                in table 4.10 on input line 63.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
 Underfull \hbox (badness 10000) detected at line 83
 [][][]
  []
@@ -2255,8 +2324,8 @@ Underfull \hbox (badness 10000) detected at line 95
 [][][]
  []
 
-) (./classMIPS_1_1Filter.tex
-<classMIPS_1_1Filter.pdf, id=790, 501.875pt x 331.81966pt>
+[24]) (./classMIPS_1_1Filter.tex
+<classMIPS_1_1Filter.pdf, id=856, 501.875pt x 331.81966pt>
 File: classMIPS_1_1Filter.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1Filter.pdf>
@@ -2271,10 +2340,10 @@ Underfull \hbox (badness 10000) detected at line 23
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 35.
 
-[24 <./classMIPS_1_1Filter.pdf>]
+[25 <./classMIPS_1_1Filter.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.12 on input line 42.
+(longtable)                in table 4.11 on input line 42.
 
 
 Underfull \hbox (badness 10000) detected at line 43
@@ -2282,14 +2351,14 @@ Underfull \hbox (badness 10000) detected at line 43
  []
 
 ) (./classMIPS_1_1FormatIEncoder.tex
-<classMIPS_1_1FormatIEncoder.pdf, id=813, 501.875pt x 274.99739pt>
+<classMIPS_1_1FormatIEncoder.pdf, id=878, 501.875pt x 274.99739pt>
 File: classMIPS_1_1FormatIEncoder.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1FormatIEncoder.pdf>
 Package pdftex.def Info: classMIPS_1_1FormatIEncoder.pdf used on input line 10.
 
 (pdftex.def)             Requested size: 103.84995pt x 56.9055pt.
- [25 <./classMIPS_1_1FormatIEncoder.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -2303,19 +2372,20 @@ Underfull \hbox (badness 10000) detected at line 41
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 54.
 
+[26 <./classMIPS_1_1FormatIEncoder.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.13 on input line 61.
+(longtable)                in table 4.12 on input line 61.
 
 ) (./classMIPS_1_1FormatIIEncoder.tex
-<classMIPS_1_1FormatIIEncoder.pdf, id=837, 501.875pt x 269.46672pt>
+<classMIPS_1_1FormatIIEncoder.pdf, id=904, 501.875pt x 269.46672pt>
 File: classMIPS_1_1FormatIIEncoder.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1FormatIIEncoder.pdf>
 Package pdftex.def Info: classMIPS_1_1FormatIIEncoder.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 105.97887pt x 56.9055pt.
- [26 <./classMIPS_1_1FormatIIEncoder.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -2329,19 +2399,20 @@ Underfull \hbox (badness 10000) detected at line 41
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 54.
 
+[27 <./classMIPS_1_1FormatIIEncoder.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.14 on input line 61.
+(longtable)                in table 4.13 on input line 61.
 
 ) (./classMIPS_1_1FormatIIIEncoder.tex
-<classMIPS_1_1FormatIIIEncoder.pdf, id=861, 501.875pt x 264.14685pt>
+<classMIPS_1_1FormatIIIEncoder.pdf, id=931, 501.875pt x 264.14685pt>
 File: classMIPS_1_1FormatIIIEncoder.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1FormatIIIEncoder.pdf>
 Package pdftex.def Info: classMIPS_1_1FormatIIIEncoder.pdf used on input line 1
 0.
 (pdftex.def)             Requested size: 108.11543pt x 56.9055pt.
- [27]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -2355,12 +2426,13 @@ Underfull \hbox (badness 10000) detected at line 41
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 54.
 
+[28 <./classMIPS_1_1FormatIIIEncoder.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.15 on input line 61.
+(longtable)                in table 4.14 on input line 61.
 
-[28 <./classMIPS_1_1FormatIIIEncoder.pdf>]) (./classMIPS_1_1FormatIVEncoder.tex
-<classMIPS_1_1FormatIVEncoder.pdf, id=899, 501.875pt x 259.02773pt>
+) (./classMIPS_1_1FormatIVEncoder.tex
+<classMIPS_1_1FormatIVEncoder.pdf, id=956, 501.875pt x 259.02773pt>
 File: classMIPS_1_1FormatIVEncoder.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1FormatIVEncoder.pdf>
@@ -2384,10 +2456,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [29 <./classMIPS_1_1FormatIVEncoder.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.16 on input line 61.
+(longtable)                in table 4.15 on input line 61.
 
 ) (./classMIPS_1_1FormatVEncoder.tex
-<classMIPS_1_1FormatVEncoder.pdf, id=923, 501.875pt x 264.14685pt>
+<classMIPS_1_1FormatVEncoder.pdf, id=981, 501.875pt x 264.14685pt>
 File: classMIPS_1_1FormatVEncoder.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1FormatVEncoder.pdf>
@@ -2411,10 +2483,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [30 <./classMIPS_1_1FormatVEncoder.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.17 on input line 61.
+(longtable)                in table 4.16 on input line 61.
 
 ) (./classMIPS_1_1FormatVIEncoder.tex
-<classMIPS_1_1FormatVIEncoder.pdf, id=948, 501.875pt x 259.02773pt>
+<classMIPS_1_1FormatVIEncoder.pdf, id=1006, 501.875pt x 259.02773pt>
 File: classMIPS_1_1FormatVIEncoder.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1FormatVIEncoder.pdf>
@@ -2438,10 +2510,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [31 <./classMIPS_1_1FormatVIEncoder.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.18 on input line 61.
+(longtable)                in table 4.17 on input line 61.
 
 ) (./classMIPS_1_1FormatVIIEncoder.tex
-<classMIPS_1_1FormatVIIEncoder.pdf, id=973, 501.875pt x 254.10936pt>
+<classMIPS_1_1FormatVIIEncoder.pdf, id=1032, 501.875pt x 254.10936pt>
 File: classMIPS_1_1FormatVIIEncoder.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1FormatVIIEncoder.pdf>
@@ -2465,7 +2537,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [32 <./classMIPS_1_1FormatVIIEncoder.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.19 on input line 61.
+(longtable)                in table 4.18 on input line 61.
 
 ) (./classMIPS_1_1FullAdder.tex
 Underfull \hbox (badness 10000) detected at line 21
@@ -2486,7 +2558,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.20 on input line 56.
+(longtable)                in table 4.19 on input line 56.
 
 
 Overfull \vbox (17.3646pt too high) has occurred while \output is active []
@@ -2503,7 +2575,7 @@ Underfull \hbox (badness 10000) detected at line 69
  []
 
 ) (./classMIPS_1_1IncaInstruction.tex
-<classMIPS_1_1IncaInstruction.pdf, id=1024, 501.875pt x 436.41043pt>
+<classMIPS_1_1IncaInstruction.pdf, id=1082, 501.875pt x 436.41043pt>
 File: classMIPS_1_1IncaInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1IncaInstruction.pdf>
@@ -2533,22 +2605,39 @@ Underfull \hbox (badness 10000) detected at line 55
  []
 
 ) (./classMIPS_1_1Instruction.tex
-<classMIPS_1_1Instruction.pdf, id=1056, 501.875pt x 522.66269pt>
+<classMIPS_1_1Instruction.pdf, id=1115, 501.875pt x 290.36479pt>
 File: classMIPS_1_1Instruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1Instruction.pdf>
 Package pdftex.def Info: classMIPS_1_1Instruction.pdf used on input line 10.
-(pdftex.def)             Requested size: 327.85368pt x 341.43306pt.
+(pdftex.def)             Requested size: 398.34544pt x 230.46532pt.
  [35 <./classMIPS_1_1Instruction.pdf>]
-Underfull \hbox (badness 10000) detected at line 38
+Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.21 on input line 67.
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
 
-[36]) (./classMIPS_1_1InstructionDecoder.tex
+
+Underfull \hbox (badness 5245) in paragraph at lines 70--71
+[]\T1/phv/m/n/10 Implemented in [][]M[]I[]P[]S[]::[]InstructionI[][], [][]M[]I[
+]P[]S[]::[]Instruction[]V[]II[][], [][]M[]I[]P[]S[]::[]Instruction[]VI[][], [][
+]M[]I[]P[]S[]::[]Instruction[]II[][], [][]M[]I[]P[]S[]::[]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 78.
+
+[36]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.20 on input line 85.
+
+) (./classMIPS_1_1InstructionDecoder.tex [37]
 Underfull \hbox (badness 10000) detected at line 38
 [][][]
  []
@@ -2557,10 +2646,9 @@ Underfull \hbox (badness 10000) detected at line 38
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 50.
 
-[37]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.22 on input line 57.
+(longtable)                in table 4.21 on input line 57.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2568,7 +2656,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.23 on input line 81.
+(longtable)                in table 4.22 on input line 81.
 
 
 Underfull \hbox (badness 10000) detected at line 82
@@ -2579,14 +2667,12 @@ Underfull \hbox (badness 10000) detected at line 82
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 91.
 
+[38]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.24 on input line 98.
+(longtable)                in table 4.23 on input line 98.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
 Underfull \hbox (badness 10000) detected at line 99
 [][][]
  []
@@ -2601,7 +2687,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.25 on input line 118.
+(longtable)                in table 4.24 on input line 118.
 
 
 Underfull \hbox (badness 10000) detected at line 119
@@ -2614,7 +2700,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.26 on input line 135.
+(longtable)                in table 4.25 on input line 135.
 
 
 Underfull \hbox (badness 10000) detected at line 136
@@ -2627,7 +2713,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.27 on input line 152.
+(longtable)                in table 4.26 on input line 152.
 
 
 Underfull \hbox (badness 10000) detected at line 153
@@ -2641,7 +2727,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [39]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.28 on input line 169.
+(longtable)                in table 4.27 on input line 169.
 
 
 Underfull \hbox (badness 10000) detected at line 170
@@ -2654,7 +2740,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.29 on input line 186.
+(longtable)                in table 4.28 on input line 186.
 
 
 Underfull \hbox (badness 10000) detected at line 187
@@ -2666,25 +2752,27 @@ Underfull \hbox (badness 10000) detected at line 21
 [][][]
  []
 
+[40]
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
 (Font)              Font shape `T1/phv/bc/sl' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
 (Font)              scaled to size 6.29996pt on input line 34.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 34.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 34.
 
-[40]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 34.
+
+
 Underfull \hbox (badness 10000) detected at line 54
 [][][]
  []
 
 ) (./classMIPS_1_1InstructionI.tex
-<classMIPS_1_1InstructionI.pdf, id=1251, 501.875pt x 1306.6617pt>
+<classMIPS_1_1InstructionI.pdf, id=1324, 501.875pt x 1306.6617pt>
 File: classMIPS_1_1InstructionI.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1InstructionI.pdf>
@@ -2695,6 +2783,7 @@ Underfull \hbox (badness 10000) detected at line 38
 [][][]
  []
 
+[42 <./classMIPS_1_1InstructionI.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 54.
@@ -2707,18 +2796,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 54.
 
-[42 <./classMIPS_1_1InstructionI.pdf>] [43]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.30 on input line 71.
+(longtable)                in table 4.29 on input line 69.
 
 
-Underfull \hbox (badness 10000) detected at line 91
+Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
 
-) (./classMIPS_1_1InstructionII.tex [44]
-<classMIPS_1_1InstructionII.pdf, id=1342, 501.875pt x 398.84007pt>
+[43]) (./classMIPS_1_1InstructionII.tex
+<classMIPS_1_1InstructionII.pdf, id=1411, 501.875pt x 398.84007pt>
 File: classMIPS_1_1InstructionII.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1InstructionII.pdf>
@@ -2737,10 +2825,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 46.
 
-[45 <./classMIPS_1_1InstructionII.pdf>]
+[44 <./classMIPS_1_1InstructionII.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.31 on input line 57.
+(longtable)                in table 4.30 on input line 57.
 
 
 Underfull \hbox (badness 10000) detected at line 70
@@ -2748,14 +2836,14 @@ Underfull \hbox (badness 10000) detected at line 70
  []
 
 ) (./classMIPS_1_1InstructionIII.tex
-<classMIPS_1_1InstructionIII.pdf, id=1380, 501.875pt x 223.05333pt>
+<classMIPS_1_1InstructionIII.pdf, id=1450, 501.875pt x 223.05333pt>
 File: classMIPS_1_1InstructionIII.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1InstructionIII.pdf>
 Package pdftex.def Info: classMIPS_1_1InstructionIII.pdf used on input line 10.
 
 (pdftex.def)             Requested size: 192.06229pt x 85.35826pt.
- [46 <./classMIPS_1_1InstructionIII.pdf>]
+ [45 <./classMIPS_1_1InstructionIII.pdf>]
 Underfull \hbox (badness 10000) detected at line 32
 [][][]
  []
@@ -2770,6 +2858,40 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
+(longtable)                in table 4.31 on input line 57.
+
+
+Underfull \hbox (badness 10000) detected at line 70
+[][][]
+ []
+
+[46]) (./classMIPS_1_1InstructionIV.tex
+<classMIPS_1_1InstructionIV.pdf, id=1501, 501.875pt x 396.22026pt>
+File: classMIPS_1_1InstructionIV.pdf Graphic file (type pdf)
+
+<use classMIPS_1_1InstructionIV.pdf>
+Package pdftex.def Info: classMIPS_1_1InstructionIV.pdf used on input line 10.
+(pdftex.def)             Requested size: 108.11543pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) detected at line 32
+[][][]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 46.
+
+[47 <./classMIPS_1_1InstructionIV.pdf>]
+
+Package longtable Warning: Column widths have changed
 (longtable)                in table 4.32 on input line 57.
 
 
@@ -2777,19 +2899,100 @@ Underfull \hbox (badness 10000) detected at line 70
 [][][]
  []
 
-[47]) (./classMIPS_1_1Interpreter.tex
+) (./classMIPS_1_1InstructionV.tex
+<classMIPS_1_1InstructionV.pdf, id=1539, 501.875pt x 326.41951pt>
+File: classMIPS_1_1InstructionV.pdf Graphic file (type pdf)
+
+<use classMIPS_1_1InstructionV.pdf>
+Package pdftex.def Info: classMIPS_1_1InstructionV.pdf used on input line 10.
+(pdftex.def)             Requested size: 87.49248pt x 56.9055pt.
+ [48 <./classMIPS_1_1InstructionV.pdf>]
+Underfull \hbox (badness 10000) detected at line 30
+[][][]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 43.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 43.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.33 on input line 52.
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+) (./classMIPS_1_1InstructionVI.tex [49]
+<classMIPS_1_1InstructionVI.pdf, id=1585, 501.875pt x 318.65047pt>
+File: classMIPS_1_1InstructionVI.pdf Graphic file (type pdf)
+
+<use classMIPS_1_1InstructionVI.pdf>
+Package pdftex.def Info: classMIPS_1_1InstructionVI.pdf used on input line 10.
+(pdftex.def)             Requested size: 89.6214pt x 56.9055pt.
+
+Underfull \hbox (badness 10000) detected at line 32
+[][][]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 46.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.34 on input line 57.
+
+[50 <./classMIPS_1_1InstructionVI.pdf>]
+Underfull \hbox (badness 10000) detected at line 70
+[][][]
+ []
+
+) (./classMIPS_1_1InstructionVII.tex
+<classMIPS_1_1InstructionVII.pdf, id=1623, 501.875pt x 311.24278pt>
+File: classMIPS_1_1InstructionVII.pdf Graphic file (type pdf)
+
+<use classMIPS_1_1InstructionVII.pdf>
+Package pdftex.def Info: classMIPS_1_1InstructionVII.pdf used on input line 10.
+
+(pdftex.def)             Requested size: 91.75798pt x 56.9055pt.
+
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 49.
+
+[51 <./classMIPS_1_1InstructionVII.pdf>]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.35 on input line 62.
+
+
+Underfull \hbox (badness 10000) detected at line 75
+[][][]
+ []
+
+) (./classMIPS_1_1Interpreter.tex [52]
 Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.33 on input line 42.
+(longtable)                in table 4.36 on input line 42.
 
-[48]
+[53]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.34 on input line 66.
+(longtable)                in table 4.37 on input line 66.
 
 
 Underfull \hbox (badness 10000) detected at line 76
@@ -2797,7 +3000,7 @@ Underfull \hbox (badness 10000) detected at line 76
  []
 
 ) (./classMIPS_1_1InterpreterException.tex
-<classMIPS_1_1InterpreterException.pdf, id=1454, 501.875pt x 236.17233pt>
+<classMIPS_1_1InterpreterException.pdf, id=1701, 501.875pt x 236.17233pt>
 File: classMIPS_1_1InterpreterException.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1InterpreterException.pdf>
@@ -2809,14 +3012,14 @@ Underfull \hbox (badness 10000) detected at line 27
 [][][]
  []
 
-[49 <./classMIPS_1_1InterpreterException.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 40.
 
+[54 <./classMIPS_1_1InterpreterException.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.35 on input line 49.
+(longtable)                in table 4.38 on input line 49.
 
 
 Underfull \hbox (badness 10000) detected at line 62
@@ -2828,8 +3031,43 @@ Underfull \hbox (badness 10000) detected at line 74
 [][][]
  []
 
-) (./structMIPS_1_1Label.tex [50]) (./classMIPS_1_1LchInstruction.tex
-<classMIPS_1_1LchInstruction.pdf, id=1493, 501.875pt x 446.10666pt>
+) (./classMIPS_1_1JtZeroInstruction.tex
+<classMIPS_1_1JtZeroInstruction.pdf, id=1728, 501.875pt x 396.22026pt>
+File: classMIPS_1_1JtZeroInstruction.pdf Graphic file (type pdf)
+
+<use classMIPS_1_1JtZeroInstruction.pdf>
+Package pdftex.def Info: classMIPS_1_1JtZeroInstruction.pdf used on input line 
+10.
+(pdftex.def)             Requested size: 108.11543pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) detected at line 26
+[][][]
+ []
+
+[55 <./classMIPS_1_1JtZeroInstruction.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 40.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.39 on input line 51.
+
+
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+) (./structMIPS_1_1Label.tex [56]) (./classMIPS_1_1LchInstruction.tex
+<classMIPS_1_1LchInstruction.pdf, id=1771, 501.875pt x 446.10666pt>
 File: classMIPS_1_1LchInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1LchInstruction.pdf>
@@ -2849,18 +3087,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 40.
 
-[51 <./classMIPS_1_1LchInstruction.pdf>]
+[57 <./classMIPS_1_1LchInstruction.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.36 on input line 49.
+(longtable)                in table 4.40 on input line 51.
 
 
-Underfull \hbox (badness 10000) detected at line 62
+Underfull \hbox (badness 10000) detected at line 64
 [][][]
  []
 
 ) (./classMIPS_1_1LclInstruction.tex
-<classMIPS_1_1LclInstruction.pdf, id=1526, 501.875pt x 459.73756pt>
+<classMIPS_1_1LclInstruction.pdf, id=1805, 501.875pt x 459.73756pt>
 File: classMIPS_1_1LclInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1LclInstruction.pdf>
@@ -2880,33 +3118,26 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 40.
 
-[52 <./classMIPS_1_1LclInstruction.pdf>] [53]
+[58 <./classMIPS_1_1LclInstruction.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.37 on input line 51.
+(longtable)                in table 4.41 on input line 51.
 
 
 Underfull \hbox (badness 10000) detected at line 64
 [][][]
  []
 
-) (./structMIPS_1_1EventDispatcher_1_1ListenerMap.tex
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 12.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 12.
-)
+) (./structMIPS_1_1EventDispatcher_1_1ListenerMap.tex [59])
 (./classMIPS_1_1LoadlitInstruction.tex
-<classMIPS_1_1LoadlitInstruction.pdf, id=1568, 501.875pt x 398.84007pt>
+<classMIPS_1_1LoadlitInstruction.pdf, id=1851, 501.875pt x 398.84007pt>
 File: classMIPS_1_1LoadlitInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1LoadlitInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1LoadlitInstruction.pdf used on input line
  10.
 (pdftex.def)             Requested size: 107.40324pt x 85.35826pt.
- [54]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -2919,11 +3150,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 40.
 
+[60 <./classMIPS_1_1LoadlitInstruction.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.38 on input line 51.
+(longtable)                in table 4.42 on input line 51.
 
-[55 <./classMIPS_1_1LoadlitInstruction.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 64
 [][][]
  []
@@ -2951,12 +3183,11 @@ Type  H <return>  for immediate help.
                                                   
 l.58 Lẽ
           uma palavra que está na posição de memória especificada.
-? s
-OK, entering \scrollmode...
-[56]
+? 
+[61]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.39 on input line 66.
+(longtable)                in table 4.43 on input line 66.
 
 
 Underfull \hbox (badness 10000) detected at line 67
@@ -2969,7 +3200,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.40 on input line 83.
+(longtable)                in table 4.44 on input line 83.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2977,7 +3208,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.41 on input line 97.
+(longtable)                in table 4.45 on input line 97.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2991,26 +3222,31 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 106.
 
+
+Underfull \vbox (badness 2626) has occurred while \output is active []
+
+ [62]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.42 on input line 117.
+(longtable)                in table 4.46 on input line 117.
 
 ) (./classMIPS_1_1MemoryException.tex
-<classMIPS_1_1MemoryException.pdf, id=1645, 501.875pt x 255.73543pt>
+<classMIPS_1_1MemoryException.pdf, id=1930, 501.875pt x 255.73543pt>
 File: classMIPS_1_1MemoryException.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1MemoryException.pdf>
 Package pdftex.def Info: classMIPS_1_1MemoryException.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 111.66875pt x 56.9055pt.
- [57]
+
 Underfull \hbox (badness 10000) detected at line 25
 [][][]
  []
 
+[63 <./classMIPS_1_1MemoryException.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.43 on input line 44.
+(longtable)                in table 4.47 on input line 44.
 
 
 Underfull \hbox (badness 10000) detected at line 57
@@ -3018,14 +3254,14 @@ Underfull \hbox (badness 10000) detected at line 57
  []
 
 ) (./classMIPS_1_1NandInstruction.tex
-<classMIPS_1_1NandInstruction.pdf, id=1662, 501.875pt x 418.23253pt>
+<classMIPS_1_1NandInstruction.pdf, id=1953, 501.875pt x 418.23253pt>
 File: classMIPS_1_1NandInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1NandInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1NandInstruction.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 102.42555pt x 85.35826pt.
- [58 <./classMIPS_1_1MemoryException.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3042,7 +3278,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 42.
 
-
+[64 <./classMIPS_1_1NandInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
@@ -3064,15 +3300,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[59 <./classMIPS_1_1NandInstruction.pdf>]) (./classMIPS_1_1NorInstruction.tex
-<classMIPS_1_1NorInstruction.pdf, id=1717, 501.875pt x 446.10666pt>
+) (./classMIPS_1_1NorInstruction.tex
+<classMIPS_1_1NorInstruction.pdf, id=1992, 501.875pt x 446.10666pt>
 File: classMIPS_1_1NorInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1NorInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1NorInstruction.pdf used on input line 10.
 
 (pdftex.def)             Requested size: 96.02348pt x 85.35826pt.
-
+ [65]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3089,20 +3325,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 42.
 
-[60 <./classMIPS_1_1NorInstruction.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
 ) (./classMIPS_1_1OnesInstruction.tex
-<classMIPS_1_1OnesInstruction.pdf, id=1756, 501.875pt x 418.23253pt>
+<classMIPS_1_1OnesInstruction.pdf, id=2023, 501.875pt x 418.23253pt>
 File: classMIPS_1_1OnesInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1OnesInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1OnesInstruction.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 102.42555pt x 85.35826pt.
-
+ [66 <./classMIPS_1_1NorInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3119,19 +3355,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 42.
 
-[61 <./classMIPS_1_1OnesInstruction.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
 ) (./classMIPS_1_1OrInstruction.tex
-<classMIPS_1_1OrInstruction.pdf, id=1789, 501.875pt x 466.8642pt>
+<classMIPS_1_1OrInstruction.pdf, id=2058, 501.875pt x 466.8642pt>
 File: classMIPS_1_1OrInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1OrInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1OrInstruction.pdf used on input line 10.
 (pdftex.def)             Requested size: 91.75798pt x 85.35826pt.
- [62 <./classMIPS_1_1OrInstruction.pdf>]
+ [67 <./classMIPS_1_1OnesInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3149,14 +3385,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 42.
 
 ) (./classMIPS_1_1OrnotbInstruction.tex
-<classMIPS_1_1OrnotbInstruction.pdf, id=1823, 501.875pt x 393.6306pt>
+<classMIPS_1_1OrnotbInstruction.pdf, id=2095, 501.875pt x 393.6306pt>
 File: classMIPS_1_1OrnotbInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1OrnotbInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1OrnotbInstruction.pdf used on input line 
 10.
 (pdftex.def)             Requested size: 108.82764pt x 85.35826pt.
- [63 <./classMIPS_1_1OrnotbInstruction.pdf>]
+ [68 <./classMIPS_1_1OrInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3174,14 +3410,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 42.
 
 ) (./classMIPS_1_1PassaInstruction.tex
-<classMIPS_1_1PassaInstruction.pdf, id=1860, 501.875pt x 406.9303pt>
+<classMIPS_1_1PassaInstruction.pdf, id=2131, 501.875pt x 406.9303pt>
 File: classMIPS_1_1PassaInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1PassaInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1PassaInstruction.pdf used on input line 1
 0.
 (pdftex.def)             Requested size: 105.27432pt x 85.35826pt.
- [64 <./classMIPS_1_1PassaInstruction.pdf>]
+ [69 <./classMIPS_1_1OrnotbInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3204,14 +3440,14 @@ Underfull \hbox (badness 10000) detected at line 55
  []
 
 ) (./classMIPS_1_1PassNotAInstruction.tex
-<classMIPS_1_1PassNotAInstruction.pdf, id=1896, 501.875pt x 356.36136pt>
+<classMIPS_1_1PassNotAInstruction.pdf, id=2167, 501.875pt x 356.36136pt>
 File: classMIPS_1_1PassNotAInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1PassNotAInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1PassNotAInstruction.pdf used on input lin
 e 10.
 (pdftex.def)             Requested size: 120.2074pt x 85.35826pt.
- [65 <./classMIPS_1_1PassNotAInstruction.pdf>]
+ [70 <./classMIPS_1_1PassaInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3250,71 +3486,72 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[66]
+[71 <./classMIPS_1_1PassNotAInstruction.pdf>]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.44 on input line 39.
+(longtable)                in table 4.48 on input line 39.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 66.
+(hyperref)                removing `subscript' on input line 68.
 
+[72]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.45 on input line 73.
+(longtable)                in table 4.49 on input line 75.
 
 
-Underfull \hbox (badness 10000) detected at line 74
+Underfull \hbox (badness 10000) detected at line 76
 [][][]
  []
 
-[67]
-Underfull \hbox (badness 10000) detected at line 86
+
+Underfull \hbox (badness 10000) detected at line 88
 [][][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 95.
+(hyperref)                removing `alignment tab' on input line 97.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.46 on input line 102.
+(longtable)                in table 4.50 on input line 104.
 
 
-Underfull \hbox (badness 10000) detected at line 112
+Underfull \hbox (badness 10000) detected at line 114
 [][][]
  []
 
-) (./classMIPS_1_1Register.tex
+) (./classMIPS_1_1Register.tex [73]
 Underfull \hbox (badness 10000) detected at line 25
 [][][]
  []
 
-[68] [69]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.47 on input line 49.
+(longtable)                in table 4.51 on input line 47.
 
 
-Underfull \hbox (badness 10000) detected at line 69
+Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 81
+Underfull \hbox (badness 10000) detected at line 79
 [][][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 90.
+(hyperref)                removing `subscript' on input line 88.
 
+[74]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.48 on input line 97.
+(longtable)                in table 4.52 on input line 95.
 
-) (./classMIPS_1_1RegisterBank.tex [70]
+) (./classMIPS_1_1RegisterBank.tex
 Underfull \hbox (badness 10000) detected at line 25
 [][][]
  []
@@ -3328,11 +3565,12 @@ Underfull \hbox (badness 10000) detected at line 57
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 66.
 
+[75]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.49 on input line 73.
+(longtable)                in table 4.53 on input line 73.
 
-[71]
+
 Underfull \hbox (badness 10000) detected at line 74
 [][][]
  []
@@ -3347,7 +3585,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.50 on input line 93.
+(longtable)                in table 4.54 on input line 93.
 
 ) (./classMIPS_1_1SignalExtender.tex
 Underfull \hbox (badness 10000) detected at line 17
@@ -3362,11 +3600,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 30.
 
+[76]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.51 on input line 39.
+(longtable)                in table 4.55 on input line 39.
 
-[72]
+
 Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
@@ -3380,17 +3619,18 @@ Underfull \hbox (badness 10000) detected at line 19
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 41.
 
+[77]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.52 on input line 48.
+(longtable)                in table 4.56 on input line 48.
 
 
 Underfull \hbox (badness 10000) detected at line 49
 [][][]
  []
 
-[73]) (./classMIPS_1_1SpaceFilter.tex
-<classMIPS_1_1SpaceFilter.pdf, id=2083, 501.875pt x 331.81966pt>
+) (./classMIPS_1_1SpaceFilter.tex
+<classMIPS_1_1SpaceFilter.pdf, id=2357, 501.875pt x 331.81966pt>
 File: classMIPS_1_1SpaceFilter.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1SpaceFilter.pdf>
@@ -3407,15 +3647,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.53 on input line 42.
+(longtable)                in table 4.57 on input line 42.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78 <./classMIPS_1_1SpaceFilter.pdf>]
 Underfull \hbox (badness 10000) detected at line 43
 [][][]
  []
 
-) (./classMIPS_1_1SubdecInstruction.tex [74 <./classMIPS_1_1SpaceFilter.pdf>]
-<classMIPS_1_1SubdecInstruction.pdf, id=2103, 501.875pt x 383.60315pt>
+) (./classMIPS_1_1SubdecInstruction.tex
+<classMIPS_1_1SubdecInstruction.pdf, id=2378, 501.875pt x 383.60315pt>
 File: classMIPS_1_1SubdecInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1SubdecInstruction.pdf>
@@ -3439,15 +3682,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 42.
 
-) (./classMIPS_1_1SubInstruction.tex
-<classMIPS_1_1SubInstruction.pdf, id=2119, 501.875pt x 442.83441pt>
+) (./classMIPS_1_1SubInstruction.tex [79 <./classMIPS_1_1SubdecInstruction.pdf>
+] <classMIPS_1_1SubInstruction.pdf, id=2412, 501.875pt x 442.83441pt>
 File: classMIPS_1_1SubInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1SubInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1SubInstruction.pdf used on input line 10.
 
 (pdftex.def)             Requested size: 96.73567pt x 85.35826pt.
- [75 <./classMIPS_1_1SubdecInstruction.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3469,7 +3712,7 @@ Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
-) (./classMIPS_1_1Tokenizer.tex [76 <./classMIPS_1_1SubInstruction.pdf>]
+[80 <./classMIPS_1_1SubInstruction.pdf>]) (./classMIPS_1_1Tokenizer.tex
 Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
@@ -3480,17 +3723,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.54 on input line 39.
+(longtable)                in table 4.58 on input line 39.
 
-) (./classMIPS_1_1XnorInstruction.tex
-<classMIPS_1_1XnorInstruction.pdf, id=2176, 501.875pt x 424.12453pt>
+[81]) (./classMIPS_1_1XnorInstruction.tex
+<classMIPS_1_1XnorInstruction.pdf, id=2462, 501.875pt x 424.12453pt>
 File: classMIPS_1_1XnorInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1XnorInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1XnorInstruction.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 101.00117pt x 85.35826pt.
- [77 <./classMIPS_1_1XnorInstruction.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3512,15 +3755,15 @@ Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
-) (./classMIPS_1_1XorInstruction.tex
-<classMIPS_1_1XorInstruction.pdf, id=2210, 501.875pt x 446.10666pt>
+) (./classMIPS_1_1XorInstruction.tex [82 <./classMIPS_1_1XnorInstruction.pdf>]
+<classMIPS_1_1XorInstruction.pdf, id=2498, 501.875pt x 446.10666pt>
 File: classMIPS_1_1XorInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1XorInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1XorInstruction.pdf used on input line 10.
 
 (pdftex.def)             Requested size: 96.02348pt x 85.35826pt.
- [78 <./classMIPS_1_1XorInstruction.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3543,14 +3786,14 @@ Underfull \hbox (badness 10000) detected at line 55
  []
 
 ) (./classMIPS_1_1ZeroInstruction.tex
-<classMIPS_1_1ZeroInstruction.pdf, id=2245, 501.875pt x 424.12453pt>
+<classMIPS_1_1ZeroInstruction.pdf, id=2514, 501.875pt x 424.12453pt>
 File: classMIPS_1_1ZeroInstruction.pdf Graphic file (type pdf)
 
 <use classMIPS_1_1ZeroInstruction.pdf>
 Package pdftex.def Info: classMIPS_1_1ZeroInstruction.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 101.00117pt x 85.35826pt.
- [79 <./classMIPS_1_1ZeroInstruction.pdf>]
+ [83 <./classMIPS_1_1XorInstruction.pdf>]
 Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
@@ -3572,7 +3815,7 @@ Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
-) [80]
+) [84 <./classMIPS_1_1ZeroInstruction.pdf>]
 Chapter 5.
 (./full__adder_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -3595,7 +3838,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./core_8hpp.tex [81
+) (./core_8hpp.tex [85
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -3623,19 +3866,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-[82]) (./debug_8hpp.tex
+[86]) (./debug_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
+[87]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.1 on input line 42.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 43.
+(hyperref)                removing `subscript' on input line 50.
 
-[83]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.2 on input line 65.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.3 on input line 83.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 69.
+(hyperref)                removing `subscript' on input line 90.
+
+[88]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.4 on input line 111.
+
+) (./instruction__decoder_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+) (./flag_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
 
 ) (./add_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -3647,7 +3917,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[84]) (./and_8hpp.tex
+[89]) (./and_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -3662,7 +3932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[85]) (./nor_8hpp.tex
+[90]) (./nor_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -3677,7 +3947,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[86]) (./ornotb_8hpp.tex
+[91]) (./ornotb_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -3692,7 +3962,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[87]) (./subdec_8hpp.tex
+[92]) (./subdec_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -3707,7 +3977,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[88]) (./zero_8hpp.tex
+[93]) (./zero_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -3717,17 +3987,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./instruction_8hpp.tex
+) (./lch_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[89]) (./instruction__I_8hpp.tex
+[94]) (./lcl_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+) (./instruction_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+) (./instruction__I_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-) (./instruction__II_8hpp.tex
+[95]) (./instruction__II_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
@@ -3737,7 +4017,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-[90]) (./encoder_8hpp.tex
+) (./instruction__IV_8hpp.tex [96]
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+) (./instruction__V_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+) (./instruction__VI_8hpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+) (./instruction__VII_8hpp.tex [97]
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+) (./encoder_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
@@ -3747,7 +4047,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
  []
 
-[91]) (./format__I__encoder_8hpp.tex
+[98]) (./format__I__encoder_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
@@ -3757,12 +4057,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-) (./format__III__encoder_8hpp.tex
+) (./format__III__encoder_8hpp.tex [99]
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-[92]) (./format__IV__encoder_8hpp.tex
+) (./format__IV__encoder_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
@@ -3777,7 +4077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-[93]) (./format__VII__encoder_8hpp.tex
+[100]) (./format__VII__encoder_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
@@ -3792,7 +4092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
 
-[94]) (./label_8hpp.tex) (./tokenizer_8hpp.tex
+[101]) (./label_8hpp.tex) (./tokenizer_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -3802,7 +4102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[95]
+[102]
 
 ! Package inputenc Error: Unicode char ĩ (U+129)
 (inputenc)                not set up for use with LaTeX.
@@ -3814,10 +4114,7 @@ Type  H <return>  for immediate help.
 l.12 ...sponsável por encapsular a memória de ĩ
                                                   nstruções e a memória d...
 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 ) (./memory__exception_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
@@ -3833,12 +4130,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-[96]) (./control_8hpp.tex) (./instruction__finder_8hpp.tex
+[103]) (./control_8hpp.tex) (./instruction__finder_8hpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-) (./event_8hpp.tex [97]
+) (./event_8hpp.tex [104]
 Underfull \hbox (badness 10000) detected at line 25
 [][][]
  []
@@ -3865,7 +4162,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./file__reader_8hpp.tex [98]
+) (./file__reader_8hpp.tex [105]
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
@@ -3880,16 +4177,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) [99] [100]
+) (./queue_8hpp.tex [106]
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+) [107] [108
+
+]
 No file refman.ind.
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
 
 
 Package rerunfilecheck Warning: File `refman.out' has changed.
@@ -3898,7 +4202,7 @@ Package rerunfilecheck Warning: File `refman.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `refman.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  EF99F7A4EA068552298DC7E11B0C3535;135037.
+(rerunfilecheck)             After:  814C8886AA364FA17B4B27B8BA4100B4;152099.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3908,16 +4212,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 269.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
  ) 
 Here is how much of TeX's memory you used:
- 16571 strings out of 493054
- 258026 string characters out of 6140586
+ 16817 strings out of 493054
+ 264935 string characters out of 6140586
  315572 words of memory out of 5000000
- 18469 multiletter control sequences out of 15000+600000
- 68089 words of font info for 77 fonts, out of 8000000 for 9000
+ 18535 multiletter control sequences out of 15000+600000
+ 69888 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,16n,92p,2971b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,3516b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{core_8hpp_ad5f4c6ca614f67be232930e0e31b9ccc} has 
 been referenced but does not exist, replaced by a fixed one
 
@@ -3944,10 +4248,10 @@ usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dis
 t/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb
 >
-Output written on refman.pdf (104 pages, 425417 bytes).
+Output written on refman.pdf (112 pages, 466251 bytes).
 PDF statistics:
- 2897 PDF objects out of 2984 (max. 8388607)
- 2674 compressed objects within 27 object streams
- 1161 named destinations out of 1200 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3268 PDF objects out of 3580 (max. 8388607)
+ 3023 compressed objects within 31 object streams
+ 1311 named destinations out of 1440 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

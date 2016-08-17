@@ -32,6 +32,16 @@ public:
      */
     bool regwrite;
 
+	/**
+	 * Flag que indica que haverá leitura de memória.
+	 */
+	bool memRead;
+
+	/**
+	 * Flag que indica que haverá escrita na memória.
+	 */
+	bool memWrite;
+
     /**
      * Flag de branch.
      */

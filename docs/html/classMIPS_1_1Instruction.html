@@ -105,6 +105,10 @@ Inheritance diagram for MIPS::Instruction:</div>
 <area href="classMIPS_1_1InstructionI.html" alt="MIPS::InstructionI" shape="rect" coords="0,56,161,80"/>
 <area href="classMIPS_1_1InstructionII.html" alt="MIPS::InstructionII" shape="rect" coords="342,56,503,80"/>
 <area href="classMIPS_1_1InstructionIII.html" alt="MIPS::InstructionIII" shape="rect" coords="513,56,674,80"/>
+<area href="classMIPS_1_1InstructionIV.html" alt="MIPS::InstructionIV" shape="rect" coords="855,56,1016,80"/>
+<area href="classMIPS_1_1InstructionV.html" alt="MIPS::InstructionV" shape="rect" coords="1026,56,1187,80"/>
+<area href="classMIPS_1_1InstructionVI.html" alt="MIPS::InstructionVI" shape="rect" coords="1197,56,1358,80"/>
+<area href="classMIPS_1_1InstructionVII.html" alt="MIPS::InstructionVII" shape="rect" coords="1368,56,1529,80"/>
 <area href="classMIPS_1_1AddIncInstruction.html" alt="MIPS::AddIncInstruction" shape="rect" coords="171,112,332,136"/>
 <area href="classMIPS_1_1AddInstruction.html" alt="MIPS::AddInstruction" shape="rect" coords="171,168,332,192"/>
 <area href="classMIPS_1_1AndInstruction.html" alt="MIPS::AndInstruction" shape="rect" coords="171,224,332,248"/>
@@ -128,6 +132,8 @@ Inheritance diagram for MIPS::Instruction:</div>
 <area href="classMIPS_1_1LoadlitInstruction.html" alt="MIPS::LoadlitInstruction" shape="rect" coords="342,112,503,136"/>
 <area href="classMIPS_1_1LchInstruction.html" alt="MIPS::LchInstruction" shape="rect" coords="684,112,845,136"/>
 <area href="classMIPS_1_1LclInstruction.html" alt="MIPS::LclInstruction" shape="rect" coords="684,168,845,192"/>
+<area href="classMIPS_1_1JtZeroInstruction.html" alt="MIPS::JtZeroInstruction" shape="rect" coords="855,112,1016,136"/>
+<area href="classMIPS_1_1JumpInstruction.html" alt="MIPS::JumpInstruction" shape="rect" coords="1026,112,1187,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -137,6 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab99cb1c89cd950412585375681b1466d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88668dfaf49dd8608f210ba13948d242"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="core_8hpp.html#adc265a970bc35995b5879784bbb3f1b7">bit16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1Instruction.html#a88668dfaf49dd8608f210ba13948d242">execute</a> ()=0</td></tr>
 <tr class="separator:a88668dfaf49dd8608f210ba13948d242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df847adef2997446ffca9b71c2f3112"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1Instruction.html#a7df847adef2997446ffca9b71c2f3112">updateControl</a> (<a class="el" href="classMIPS_1_1ControlUnit.html">ControlUnit</a> &amp;control)</td></tr>
+<tr class="separator:a7df847adef2997446ffca9b71c2f3112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -203,7 +211,38 @@ Protected Attributes</h2></td></tr>
 <p>Método abstrato que deverá ser invocado para que uma instrução seja executada pelo emulador.</p>
 <dl class="section return"><dt>Returns</dt><dd>resultado de saída da instrução. </dd></dl>
 
-<p>Implemented in <a class="el" href="classMIPS_1_1InstructionI.html#ae60fca5801bf5415cdff06d2aa11764f">MIPS::InstructionI</a>, <a class="el" href="classMIPS_1_1InstructionII.html#aa014c5b0fe877746ca4db85c971a2e93">MIPS::InstructionII</a>, <a class="el" href="classMIPS_1_1InstructionIII.html#aee3071c23abc542e55b446abee766c5e">MIPS::InstructionIII</a>, <a class="el" href="classMIPS_1_1LchInstruction.html#a6dad60c9189a1e84fd7c789b9642077d">MIPS::LchInstruction</a>, <a class="el" href="classMIPS_1_1LclInstruction.html#a713c7c0e33c9df49f677abfd95f363db">MIPS::LclInstruction</a>, <a class="el" href="classMIPS_1_1LoadlitInstruction.html#a9f88a932bbbf31375da7686b449608e1">MIPS::LoadlitInstruction</a>, <a class="el" href="classMIPS_1_1AddInstruction.html#aa699dc00fdcd4250944f8afaa2fa89eb">MIPS::AddInstruction</a>, <a class="el" href="classMIPS_1_1AddIncInstruction.html#aa63fcaf17a9afc2f1b5d09a6291a70d6">MIPS::AddIncInstruction</a>, <a class="el" href="classMIPS_1_1AndnotaInstruction.html#afdc3b2836318f4adaa32dfa3bcdf7c45">MIPS::AndnotaInstruction</a>, <a class="el" href="classMIPS_1_1AslInstruction.html#adafc2d1f549cda9bdf757dc2bac03ca9">MIPS::AslInstruction</a>, <a class="el" href="classMIPS_1_1AsrInstruction.html#aad46283e10517abf6bf5e527ca020d53">MIPS::AsrInstruction</a>, <a class="el" href="classMIPS_1_1DecaInstruction.html#a82c3d685d910d2c52163f5faa1750aca">MIPS::DecaInstruction</a>, <a class="el" href="classMIPS_1_1IncaInstruction.html#ac78e4a0b037ab4b6b419f4f5a34413c7">MIPS::IncaInstruction</a>, <a class="el" href="classMIPS_1_1NandInstruction.html#a2e0266ebee3819e7b4d9bfb44f0e70ac">MIPS::NandInstruction</a>, <a class="el" href="classMIPS_1_1NorInstruction.html#a68bb5cc9920bd63229f4c16c4edb5ab6">MIPS::NorInstruction</a>, <a class="el" href="classMIPS_1_1OnesInstruction.html#aeab25fd32df5c092d4f426371f3f1ff3">MIPS::OnesInstruction</a>, <a class="el" href="classMIPS_1_1PassaInstruction.html#ae23b43bfb84d2ef69fa25e50fb5b6072">MIPS::PassaInstruction</a>, <a class="el" href="classMIPS_1_1PassNotAInstruction.html#a30b9bdb1feac1adb44e70a3a0eb85cb4">MIPS::PassNotAInstruction</a>, <a class="el" href="classMIPS_1_1SubInstruction.html#a2b10f6bfda0e7d9651600b530cfccf62">MIPS::SubInstruction</a>, <a class="el" href="classMIPS_1_1XnorInstruction.html#a4b5ae9a875883902c0ed1e237e753f31">MIPS::XnorInstruction</a>, <a class="el" href="classMIPS_1_1XorInstruction.html#aaebc7dc8723627871ba2caf85f01fbea">MIPS::XorInstruction</a>, <a class="el" href="classMIPS_1_1ZeroInstruction.html#a9596a96b4bf7a51672ab14386d111bad">MIPS::ZeroInstruction</a>, <a class="el" href="classMIPS_1_1SubdecInstruction.html#a6d9e86774b950a584b60d9a48402af2a">MIPS::SubdecInstruction</a>, <a class="el" href="classMIPS_1_1AndInstruction.html#a24b2fdb68ff022275db4181e502b7a48">MIPS::AndInstruction</a>, <a class="el" href="classMIPS_1_1OrInstruction.html#a89859e0bcb3e5ed7f1c53f33f627f041">MIPS::OrInstruction</a>, and <a class="el" href="classMIPS_1_1OrnotbInstruction.html#a47aac4ac3ef0ee8c6a694189f26bd80e">MIPS::OrnotbInstruction</a>.</p>
+<p>Implemented in <a class="el" href="classMIPS_1_1InstructionI.html#ae60fca5801bf5415cdff06d2aa11764f">MIPS::InstructionI</a>, <a class="el" href="classMIPS_1_1InstructionVII.html#ab004a9cdc0efa7afacb964352abf3ee7">MIPS::InstructionVII</a>, <a class="el" href="classMIPS_1_1InstructionVI.html#a0a334d9d507fca448eaa7b0190c17531">MIPS::InstructionVI</a>, <a class="el" href="classMIPS_1_1InstructionII.html#aa014c5b0fe877746ca4db85c971a2e93">MIPS::InstructionII</a>, <a class="el" href="classMIPS_1_1InstructionIII.html#aee3071c23abc542e55b446abee766c5e">MIPS::InstructionIII</a>, <a class="el" href="classMIPS_1_1InstructionIV.html#ae9eeb2c1aa5392cc3e2d9f2d816b799c">MIPS::InstructionIV</a>, <a class="el" href="classMIPS_1_1InstructionV.html#a511d8ba098bcca95f1e91ff6616470ef">MIPS::InstructionV</a>, <a class="el" href="classMIPS_1_1LchInstruction.html#a6dad60c9189a1e84fd7c789b9642077d">MIPS::LchInstruction</a>, <a class="el" href="classMIPS_1_1LclInstruction.html#a713c7c0e33c9df49f677abfd95f363db">MIPS::LclInstruction</a>, <a class="el" href="classMIPS_1_1LoadlitInstruction.html#a9f88a932bbbf31375da7686b449608e1">MIPS::LoadlitInstruction</a>, <a class="el" href="classMIPS_1_1AddInstruction.html#aa699dc00fdcd4250944f8afaa2fa89eb">MIPS::AddInstruction</a>, <a class="el" href="classMIPS_1_1AddIncInstruction.html#aa63fcaf17a9afc2f1b5d09a6291a70d6">MIPS::AddIncInstruction</a>, <a class="el" href="classMIPS_1_1AndnotaInstruction.html#afdc3b2836318f4adaa32dfa3bcdf7c45">MIPS::AndnotaInstruction</a>, <a class="el" href="classMIPS_1_1AslInstruction.html#adafc2d1f549cda9bdf757dc2bac03ca9">MIPS::AslInstruction</a>, <a class="el" href="classMIPS_1_1AsrInstruction.html#aad46283e10517abf6bf5e527ca020d53">MIPS::AsrInstruction</a>, <a class="el" href="classMIPS_1_1DecaInstruction.html#a82c3d685d910d2c52163f5faa1750aca">MIPS::DecaInstruction</a>, <a class="el" href="classMIPS_1_1IncaInstruction.html#ac78e4a0b037ab4b6b419f4f5a34413c7">MIPS::IncaInstruction</a>, <a class="el" href="classMIPS_1_1NandInstruction.html#a2e0266ebee3819e7b4d9bfb44f0e70ac">MIPS::NandInstruction</a>, <a class="el" href="classMIPS_1_1NorInstruction.html#a68bb5cc9920bd63229f4c16c4edb5ab6">MIPS::NorInstruction</a>, <a class="el" href="classMIPS_1_1OnesInstruction.html#aeab25fd32df5c092d4f426371f3f1ff3">MIPS::OnesInstruction</a>, <a class="el" href="classMIPS_1_1PassaInstruction.html#ae23b43bfb84d2ef69fa25e50fb5b6072">MIPS::PassaInstruction</a>, <a class="el" href="classMIPS_1_1PassNotAInstruction.html#a30b9bdb1feac1adb44e70a3a0eb85cb4">MIPS::PassNotAInstruction</a>, <a class="el" href="classMIPS_1_1SubInstruction.html#a2b10f6bfda0e7d9651600b530cfccf62">MIPS::SubInstruction</a>, <a class="el" href="classMIPS_1_1XnorInstruction.html#a4b5ae9a875883902c0ed1e237e753f31">MIPS::XnorInstruction</a>, <a class="el" href="classMIPS_1_1XorInstruction.html#aaebc7dc8723627871ba2caf85f01fbea">MIPS::XorInstruction</a>, <a class="el" href="classMIPS_1_1ZeroInstruction.html#a9596a96b4bf7a51672ab14386d111bad">MIPS::ZeroInstruction</a>, <a class="el" href="classMIPS_1_1JtZeroInstruction.html#a8a56439dd5df5fcf00344304b8409e45">MIPS::JtZeroInstruction</a>, <a class="el" href="classMIPS_1_1SubdecInstruction.html#a6d9e86774b950a584b60d9a48402af2a">MIPS::SubdecInstruction</a>, <a class="el" href="classMIPS_1_1JumpInstruction.html#a843961af93d20e35dd1fab6bf341e16e">MIPS::JumpInstruction</a>, <a class="el" href="classMIPS_1_1AndInstruction.html#a24b2fdb68ff022275db4181e502b7a48">MIPS::AndInstruction</a>, <a class="el" href="classMIPS_1_1OrInstruction.html#a89859e0bcb3e5ed7f1c53f33f627f041">MIPS::OrInstruction</a>, and <a class="el" href="classMIPS_1_1OrnotbInstruction.html#a47aac4ac3ef0ee8c6a694189f26bd80e">MIPS::OrnotbInstruction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7df847adef2997446ffca9b71c2f3112"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MIPS::Instruction::updateControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMIPS_1_1ControlUnit.html">ControlUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>control</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Método utilizado para atualizar os sinais de controle do processador.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">control</td><td>unidade de controle do processador. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

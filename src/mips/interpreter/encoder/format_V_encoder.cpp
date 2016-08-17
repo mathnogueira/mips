@@ -13,8 +13,12 @@ instruction_t FormatVEncoder::encode() {
     MESSAGE("Opcode\tOffset\n");
     FORMAT_DEBUG("%d\t%d\n\n", opcode, offset);
 	instruction_t instruction = 0;
-	instruction |= (opcode << 14);
-    instruction |= (2 << 12);
-	instruction |= (offset & 0x0fff);
+	if (offset >= 0) {
+		instruction |= (opcode << 14);
+	    instruction |= (2 << 12);
+		instruction |= (offset & 0x0fff);
+	} else {
+		instruction = 0x2fff;
+	}
 	return instruction;
 }

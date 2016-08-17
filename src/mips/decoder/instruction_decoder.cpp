@@ -22,6 +22,7 @@
 #include <mips/instructions/format_II/loadlit.hpp>
 #include <mips/instructions/format_III/lch.hpp>
 #include <mips/instructions/format_III/lcl.hpp>
+#include <mips/instructions/format_V/j.hpp>
 #include <cstdlib>
 #include <cmath>
 
@@ -45,8 +46,6 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
     printf("FUNCT: %d\n", funct);
     switch (opcode) {
         case 0:
-            // pc = registerBank.getPC();
-            // Pega o registrador pc
             // Instruções de JUMP condicional ou incondicionais
             // Jal e JR
             // Verifica os códigos de função
@@ -55,7 +54,7 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
             } else if (funct == 1) {
                 // JT.cond, deve checar o código da condição
             } else if (funct == 2) {
-                // Jump incondicional
+                return new JumpInstruction(opcode, getOffset(instruction, 12));
             } else if (funct == 3) {
                 // Pode ser tanto jal, como pode ser jr. Deve checar o campo R.
                 bit8_t r = (instruction >> 10) & 1;

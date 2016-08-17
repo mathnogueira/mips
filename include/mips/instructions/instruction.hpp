@@ -36,7 +36,7 @@ public:
     virtual bit16_t execute() = 0;
 
     /**
-     * Método utilizado para atualizar os sinais de controle do processador.s
+     * Método utilizado para atualizar os sinais de controle do processador.
      *
      * \param control unidade de controle do processador.
      */

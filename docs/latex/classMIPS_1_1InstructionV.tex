@@ -1,0 +1,86 @@
+\hypertarget{classMIPS_1_1InstructionV}{}\section{M\+I\+PS\+:\+:InstructionV Class Reference}
+\label{classMIPS_1_1InstructionV}\index{M\+I\+P\+S\+::\+InstructionV@{M\+I\+P\+S\+::\+InstructionV}}
+
+
+{\ttfamily \#include $<$instruction\+\_\+\+V.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:InstructionV\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMIPS_1_1InstructionV}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1InstructionV_a258d90fae989725cbada7cd80a626d73}{InstructionV} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionV_ac2e294fde4971aa6a149480f22ae29e9}{offset})
+\item 
+virtual \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionV_a511d8ba098bcca95f1e91ff6616470ef}{execute} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionV_ac2e294fde4971aa6a149480f22ae29e9}{offset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa uma instrução do formato V do trabalho.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+InstructionV@{M\+I\+P\+S\+::\+InstructionV}!InstructionV@{InstructionV}}
+\index{InstructionV@{InstructionV}!M\+I\+P\+S\+::\+InstructionV@{M\+I\+P\+S\+::\+InstructionV}}
+\subsubsection[{\texorpdfstring{Instruction\+V(bit8\+\_\+t opcode, bit16\+\_\+t offset)}{InstructionV(bit8_t opcode, bit16_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+V\+::\+InstructionV (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf bit16\+\_\+t}}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1InstructionV_a258d90fae989725cbada7cd80a626d73}{}\label{classMIPS_1_1InstructionV_a258d90fae989725cbada7cd80a626d73}
+Cria uma nova instrução do formato V
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & código da operação \\
+\hline
+{\em offset} & offset do jump. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+InstructionV@{M\+I\+P\+S\+::\+InstructionV}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+InstructionV@{M\+I\+P\+S\+::\+InstructionV}}
+\subsubsection[{\texorpdfstring{execute()=0}{execute()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Instruction\+V\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMIPS_1_1InstructionV_a511d8ba098bcca95f1e91ff6616470ef}{}\label{classMIPS_1_1InstructionV_a511d8ba098bcca95f1e91ff6616470ef}
+Executa a instrução.
+
+\begin{DoxyReturn}{Returns}
+endereço da próxima instrução. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1Instruction_a88668dfaf49dd8608f210ba13948d242}{M\+I\+P\+S\+::\+Instruction}.
+
+
+
+Implemented in \hyperlink{classMIPS_1_1JumpInstruction_a843961af93d20e35dd1fab6bf341e16e}{M\+I\+P\+S\+::\+Jump\+Instruction}.
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+InstructionV@{M\+I\+P\+S\+::\+InstructionV}!offset@{offset}}
+\index{offset@{offset}!M\+I\+P\+S\+::\+InstructionV@{M\+I\+P\+S\+::\+InstructionV}}
+\subsubsection[{\texorpdfstring{offset}{offset}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Instruction\+V\+::offset\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionV_ac2e294fde4971aa6a149480f22ae29e9}{}\label{classMIPS_1_1InstructionV_ac2e294fde4971aa6a149480f22ae29e9}
+Offset do jump 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/\hyperlink{instruction__V_8hpp}{instruction\+\_\+\+V.\+hpp}\end{DoxyCompactItemize}

@@ -88,7 +88,17 @@ void Interpreter::updateLabels() {
 		// Verifica se existe algum label
 		for (unsigned int j = 0; j < labels.size(); ++j) {
 			if (strcmp(param, labels.at(j).label) == 0) {
-				int position = labels.at(j).line - i;
+				int position = labels.at(j).line;
+				if (strcmp(lines.at(i).at(0), "j") != 0) {
+					// posição relativa para desvios condicionais
+					position = labels.at(j).line - i;
+				} else {
+					position = labels.at(j).line;
+					if (position == i) {
+						// Instrução de HALT
+						position = -1;
+					}
+				}
 				char *str = new char[10];
 				sprintf(str, "%d", position);
 				lines.at(i).pop_back();

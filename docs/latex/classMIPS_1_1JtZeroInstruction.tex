@@ -1,0 +1,75 @@
+\hypertarget{classMIPS_1_1JtZeroInstruction}{}\section{M\+I\+PS\+:\+:Jt\+Zero\+Instruction Class Reference}
+\label{classMIPS_1_1JtZeroInstruction}\index{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction@{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction}}
+
+
+{\ttfamily \#include $<$jt\+\_\+zero.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Jt\+Zero\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMIPS_1_1JtZeroInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1JtZeroInstruction_a2968f65f63844b0f2afb5cea2bbcc910}{Jt\+Zero\+Instruction} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, struct \hyperlink{structMIPS_1_1ALUFlags}{A\+L\+U\+Flags} \&alu\+Flags, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionIV_abcb91e65c800a41bf9c46b5770120b36}{offset})
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1JtZeroInstruction_a8a56439dd5df5fcf00344304b8409e45}{execute} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Instrução que faz o desvio se a flag zero da A\+LU está setada como 1.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction@{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction}!Jt\+Zero\+Instruction@{Jt\+Zero\+Instruction}}
+\index{Jt\+Zero\+Instruction@{Jt\+Zero\+Instruction}!M\+I\+P\+S\+::\+Jt\+Zero\+Instruction@{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction}}
+\subsubsection[{\texorpdfstring{Jt\+Zero\+Instruction(bit8\+\_\+t opcode, struct A\+L\+U\+Flags \&alu\+Flags, bit8\+\_\+t offset)}{JtZeroInstruction(bit8_t opcode, struct ALUFlags &aluFlags, bit8_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Jt\+Zero\+Instruction\+::\+Jt\+Zero\+Instruction (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{struct {\bf A\+L\+U\+Flags} \&}]{alu\+Flags, }
+\item[{{\bf bit8\+\_\+t}}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1JtZeroInstruction_a2968f65f63844b0f2afb5cea2bbcc910}{}\label{classMIPS_1_1JtZeroInstruction_a2968f65f63844b0f2afb5cea2bbcc910}
+Cria uma instrução de jump on true.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & código da operação \\
+\hline
+{\em alu\+Flags} & objeto de flags da A\+LU \\
+\hline
+{\em offset} & offset de 11 bits \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction@{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Jt\+Zero\+Instruction@{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Jt\+Zero\+Instruction\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1JtZeroInstruction_a8a56439dd5df5fcf00344304b8409e45}{}\label{classMIPS_1_1JtZeroInstruction_a8a56439dd5df5fcf00344304b8409e45}
+Executa a instrução.
+
+\begin{DoxyReturn}{Returns}
+returna 0 se o desvio não for tomado, 1 se desvio for tomado. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1InstructionIV_ae9eeb2c1aa5392cc3e2d9f2d816b799c}{M\+I\+P\+S\+::\+Instruction\+IV}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/format\+\_\+\+I\+V/jt\+\_\+zero.\+hpp\end{DoxyCompactItemize}

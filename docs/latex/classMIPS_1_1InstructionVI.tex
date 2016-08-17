@@ -1,0 +1,90 @@
+\hypertarget{classMIPS_1_1InstructionVI}{}\section{M\+I\+PS\+:\+:Instruction\+VI Class Reference}
+\label{classMIPS_1_1InstructionVI}\index{M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}}
+
+
+{\ttfamily \#include $<$instruction\+\_\+\+V\+I.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Instruction\+VI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMIPS_1_1InstructionVI}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1InstructionVI_a21d1521859953e06854fd741fbfe22c1}{Instruction\+VI} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionVI_a0a48712f3022c8c5731f6d4d371a2515}{rt}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionVI_a6d2e8e3afa4cf64d0b08b1907db097f3}{pc})
+\item 
+virtual \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionVI_a0a334d9d507fca448eaa7b0190c17531}{execute} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1InstructionVI_a6d2e8e3afa4cf64d0b08b1907db097f3}{pc}
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1InstructionVI_a0a48712f3022c8c5731f6d4d371a2515}{rt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa uma instrução do formato VI do trabalho.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}!Instruction\+VI@{Instruction\+VI}}
+\index{Instruction\+VI@{Instruction\+VI}!M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}}
+\subsubsection[{\texorpdfstring{Instruction\+V\+I(bit8\+\_\+t opcode, Register $\ast$rt, Register $\ast$pc)}{InstructionVI(bit8_t opcode, Register *rt, Register *pc)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+V\+I\+::\+Instruction\+VI (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf Register} $\ast$}]{rt, }
+\item[{{\bf Register} $\ast$}]{pc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1InstructionVI_a21d1521859953e06854fd741fbfe22c1}{}\label{classMIPS_1_1InstructionVI_a21d1521859953e06854fd741fbfe22c1}
+Cria uma nova instrução do formato VI
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & código da operação \\
+\hline
+{\em rt} & registrador target \\
+\hline
+{\em pc} & registrador de contador de programa \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}}
+\subsubsection[{\texorpdfstring{execute()=0}{execute()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Instruction\+V\+I\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMIPS_1_1InstructionVI_a0a334d9d507fca448eaa7b0190c17531}{}\label{classMIPS_1_1InstructionVI_a0a334d9d507fca448eaa7b0190c17531}
+Executa a instrução.
+
+\begin{DoxyReturn}{Returns}
+resultado da instrução 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1Instruction_a88668dfaf49dd8608f210ba13948d242}{M\+I\+P\+S\+::\+Instruction}.
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}!pc@{pc}}
+\index{pc@{pc}!M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}}
+\subsubsection[{\texorpdfstring{pc}{pc}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Instruction\+V\+I\+::pc\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionVI_a6d2e8e3afa4cf64d0b08b1907db097f3}{}\label{classMIPS_1_1InstructionVI_a6d2e8e3afa4cf64d0b08b1907db097f3}
+Registrador de contador de programa \index{M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}!rt@{rt}}
+\index{rt@{rt}!M\+I\+P\+S\+::\+Instruction\+VI@{M\+I\+P\+S\+::\+Instruction\+VI}}
+\subsubsection[{\texorpdfstring{rt}{rt}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Instruction\+V\+I\+::rt\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionVI_a0a48712f3022c8c5731f6d4d371a2515}{}\label{classMIPS_1_1InstructionVI_a0a48712f3022c8c5731f6d4d371a2515}
+Registrador target. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/\hyperlink{instruction__VI_8hpp}{instruction\+\_\+\+V\+I.\+hpp}\end{DoxyCompactItemize}

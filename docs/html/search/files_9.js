@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ones_2ehpp',['ones.hpp',['../ones_8hpp.html',1,'']]],
-  ['or_2ehpp',['or.hpp',['../or_8hpp.html',1,'']]],
-  ['ornotb_2ehpp',['ornotb.hpp',['../ornotb_8hpp.html',1,'']]]
+  ['nand_2ehpp',['nand.hpp',['../nand_8hpp.html',1,'']]],
+  ['nor_2ehpp',['nor.hpp',['../nor_8hpp.html',1,'']]]
 ];

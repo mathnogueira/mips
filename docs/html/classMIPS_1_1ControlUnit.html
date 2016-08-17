@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classMIPS_1_1ControlUnit-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MIPS::ControlUnit Class Reference</div>  </div>
@@ -102,6 +103,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4e7f136cf15bc78b878082ba5fe5b629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e1a1d7cd85594c9a575a432770c3aa2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1ControlUnit.html#a6e1a1d7cd85594c9a575a432770c3aa2">~ControlUnit</a> ()</td></tr>
 <tr class="separator:a6e1a1d7cd85594c9a575a432770c3aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a18884b753a77aa99c9ff404e16c6ac7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1ControlUnit.html#a18884b753a77aa99c9ff404e16c6ac7a">regwrite</a></td></tr>
+<tr class="separator:a18884b753a77aa99c9ff404e16c6ac7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9e61b37cb75b89cdde98446d89e89d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1ControlUnit.html#abe9e61b37cb75b89cdde98446d89e89d">memRead</a></td></tr>
+<tr class="separator:abe9e61b37cb75b89cdde98446d89e89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0c87c1f08276807cd241a9484980bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1ControlUnit.html#aba0c87c1f08276807cd241a9484980bc">memWrite</a></td></tr>
+<tr class="separator:aba0c87c1f08276807cd241a9484980bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19c9a24c47bdde835e273e81a485e28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1ControlUnit.html#aa19c9a24c47bdde835e273e81a485e28">branch</a></td></tr>
+<tr class="separator:aa19c9a24c47bdde835e273e81a485e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c01a649cd685fc1a52e3c3c45e96e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1ControlUnit.html#a13c01a649cd685fc1a52e3c3c45e96e7">jump</a></td></tr>
+<tr class="separator:a13c01a649cd685fc1a52e3c3c45e96e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Unidade de controle do processador. Essa unidade é responsável por setar todas as flags que serão utilizadas para executar uma instrução.</p>
@@ -136,6 +150,72 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Destroi a unidade de controle. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa19c9a24c47bdde835e273e81a485e28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MIPS::ControlUnit::branch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag de branch. </p>
+
+</div>
+</div>
+<a class="anchor" id="a13c01a649cd685fc1a52e3c3c45e96e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MIPS::ControlUnit::jump</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag de jump </p>
+
+</div>
+</div>
+<a class="anchor" id="abe9e61b37cb75b89cdde98446d89e89d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MIPS::ControlUnit::memRead</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag que indica que haverá leitura de memória. </p>
+
+</div>
+</div>
+<a class="anchor" id="aba0c87c1f08276807cd241a9484980bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MIPS::ControlUnit::memWrite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag que indica que haverá escrita na memória. </p>
+
+</div>
+</div>
+<a class="anchor" id="a18884b753a77aa99c9ff404e16c6ac7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MIPS::ControlUnit::regwrite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag de escrita em banco de registradores. </p>
 
 </div>
 </div>

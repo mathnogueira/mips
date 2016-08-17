@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['passa_2ehpp',['passa.hpp',['../passa_8hpp.html',1,'']]],
-  ['passnota_2ehpp',['passnota.hpp',['../passnota_8hpp.html',1,'']]]
+  ['ones_2ehpp',['ones.hpp',['../ones_8hpp.html',1,'']]],
+  ['or_2ehpp',['or.hpp',['../or_8hpp.html',1,'']]],
+  ['ornotb_2ehpp',['ornotb.hpp',['../ornotb_8hpp.html',1,'']]]
 ];
