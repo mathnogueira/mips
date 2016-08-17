@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['queue',['Queue',['../classMIPS_1_1Queue.html',1,'MIPS']]],
-  ['queue_3c_20mips_3a_3aeventlistener_20_2a_20_3e',['Queue&lt; MIPS::EventListener * &gt;',['../classMIPS_1_1Queue.html',1,'MIPS']]]
+  ['passainstruction',['PassaInstruction',['../classMIPS_1_1PassaInstruction.html',1,'MIPS']]],
+  ['passnotainstruction',['PassNotAInstruction',['../classMIPS_1_1PassNotAInstruction.html',1,'MIPS']]]
 ];

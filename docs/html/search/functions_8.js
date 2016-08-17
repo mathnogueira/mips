@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['lchinstruction',['LchInstruction',['../classMIPS_1_1LchInstruction.html#a6e565d4fb7708e974d0e475bd3fabfa7',1,'MIPS::LchInstruction']]],
-  ['lclinstruction',['LclInstruction',['../classMIPS_1_1LclInstruction.html#aae1096406aaf2cbf94f7755d05869d05',1,'MIPS::LclInstruction']]],
-  ['loadlitinstruction',['LoadlitInstruction',['../classMIPS_1_1LoadlitInstruction.html#a3f6cbb32be8166dcd9996fcd746ca96d',1,'MIPS::LoadlitInstruction']]],
-  ['loadprogram',['loadProgram',['../classMIPS_1_1CPU.html#a930b3551bf8fa12c2f143ea375ce6aea',1,'MIPS::CPU']]]
+  ['jtzeroinstruction',['JtZeroInstruction',['../classMIPS_1_1JtZeroInstruction.html#a2968f65f63844b0f2afb5cea2bbcc910',1,'MIPS::JtZeroInstruction']]],
+  ['jumpinstruction',['JumpInstruction',['../classMIPS_1_1JumpInstruction.html#a5688d5a7c2ded2c3b8a32cb395cb9db9',1,'MIPS::JumpInstruction']]]
 ];

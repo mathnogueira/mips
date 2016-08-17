@@ -3,7 +3,7 @@
 
 using namespace MIPS;
 
-RegisterBank::RegisterBank() {
+RegisterBank::RegisterBank(ControlUnit &controlUnit) : control(controlUnit)  {
 	this->iRegister[0] = new Register("r0");
 	this->iRegister[1] = new Register("r1");
 	this->iRegister[2] = new Register("r2");
@@ -15,7 +15,7 @@ RegisterBank::RegisterBank() {
     this->pc = new Register("pc");
 }
 
-RegisterBank::~RegisterBank() {
+RegisterBank::~RegisterBank(){
 	for (unsigned char i = 0; i < 8; ++i) {
 		delete this->iRegister[i];
 	}
@@ -30,5 +30,7 @@ Register* RegisterBank::getPC() {
 }
 
 void RegisterBank::write(bit16_t result, bit8_t rd) {
+	if (control.regwrite == false)
+		return;
     getRegister(rd)->put(result);
 }

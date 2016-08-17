@@ -3,13 +3,15 @@
 #include <mips/decoder/instruction_decoder.hpp>
 #include <mips/instructions/instruction_I.hpp>
 #include <mips/memory/register_bank.hpp>
+#include <mips/units/control.hpp>
 #include <iostream>
 
 using namespace MIPS;
 
 TEST(InstructionDecoder, getInstructionInfo) {
+	ControlUnit cu;
+	RegisterBank bank(cu);
     instruction_t instruction = 0x799a;
-    RegisterBank bank;
     InstructionDecoder decoder(bank);
     // InstructionI *emu_instruction = (InstructionI*) decoder.decode(instruction);
     ASSERT_EQ(decoder.getOPCode(instruction), 1);
@@ -21,7 +23,8 @@ TEST(InstructionDecoder, getInstructionInfo) {
 }
 
 TEST(InstructionDecoder, getOffset) {
-    RegisterBank bank;
+	ControlUnit cu;
+	RegisterBank bank(cu);
     InstructionDecoder decoder(bank);
     instruction_t instruction = 0x1cf3;
     ASSERT_EQ(decoder.getOffset(instruction, 8), 0x00f3);

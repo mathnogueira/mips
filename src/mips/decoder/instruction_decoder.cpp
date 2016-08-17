@@ -22,6 +22,7 @@
 #include <mips/instructions/format_II/loadlit.hpp>
 #include <mips/instructions/format_III/lch.hpp>
 #include <mips/instructions/format_III/lcl.hpp>
+#include <mips/instructions/format_V/j.hpp>
 #include <cstdlib>
 #include <cmath>
 
@@ -39,23 +40,25 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
     Register *rs = registerBank.getRegister(getRs(instruction));
     Register *rt = registerBank.getRegister(getRt(instruction));
     Register *rd = registerBank.getRegister(getRd(instruction));
-    Register *pc;
     Instruction *instr = NULL;
     printf("OPCODE: %d\n", opcode);
     printf("FUNCT: %d\n", funct);
     switch (opcode) {
         case 0:
-            // pc = registerBank.getPC();
-            // Pega o registrador pc
+			funct = getJumpOp(instruction);
+			printf("FUNCT: %d\n", funct);
             // Instruções de JUMP condicional ou incondicionais
             // Jal e JR
             // Verifica os códigos de função
             if (funct == 0) {
                 // JF.cond, deve checar o código da condição
+				DEBUG("JF.Cond");
             } else if (funct == 1) {
                 // JT.cond, deve checar o código da condição
+				DEBUG("JT.Cond");
             } else if (funct == 2) {
-                // Jump incondicional
+				DEBUG("Jump");
+                return new JumpInstruction(opcode, getOffset(instruction, 12));
             } else if (funct == 3) {
                 // Pode ser tanto jal, como pode ser jr. Deve checar o campo R.
                 bit8_t r = (instruction >> 10) & 1;
@@ -234,6 +237,16 @@ bit8_t InstructionDecoder::getRd(instruction_t instruction) {
  */
 bit8_t InstructionDecoder::getFunct(instruction_t instruction) {
     return (instruction >> 6) & 0x001f;
+}
+
+/**
+ * Pega o valor do codigo de diferenciação dos jumps.
+ *
+ * \param instruction instrução binária de 16 bits.
+ * \return valor de diferenciação.
+ */
+bit8_t InstructionDecoder::getJumpOp(instruction_t instruction) {
+	return (instruction >> 12) & 0x0003;
 }
 
 /**

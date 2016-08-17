@@ -2,6 +2,7 @@ var searchData=
 [
   ['file_5freader_2ehpp',['file_reader.hpp',['../file__reader_8hpp.html',1,'']]],
   ['filter_2ehpp',['filter.hpp',['../filter_8hpp.html',1,'']]],
+  ['flag_2ehpp',['flag.hpp',['../flag_8hpp.html',1,'']]],
   ['format_5fi_5fencoder_2ehpp',['format_I_encoder.hpp',['../format__I__encoder_8hpp.html',1,'']]],
   ['format_5fii_5fencoder_2ehpp',['format_II_encoder.hpp',['../format__II__encoder_8hpp.html',1,'']]],
   ['format_5fiii_5fencoder_2ehpp',['format_III_encoder.hpp',['../format__III__encoder_8hpp.html',1,'']]],

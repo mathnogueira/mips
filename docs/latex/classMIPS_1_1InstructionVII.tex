@@ -1,0 +1,98 @@
+\hypertarget{classMIPS_1_1InstructionVII}{}\section{M\+I\+PS\+:\+:Instruction\+V\+II Class Reference}
+\label{classMIPS_1_1InstructionVII}\index{M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}}
+
+
+{\ttfamily \#include $<$instruction\+\_\+\+V\+I\+I.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Instruction\+V\+II\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMIPS_1_1InstructionVII}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1InstructionVII_a43d5166f940af6178bd179ea81df6a55}{Instruction\+V\+II} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionVII_a8e51202e0b22f8e74668f6de95089e60}{rs}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionVII_a8710c06b6e7816f330b0c5daea3402a4}{rt}, \hyperlink{classMIPS_1_1Memory}{Memory} $\ast$\hyperlink{classMIPS_1_1InstructionVII_a4fb34750bedbf137b43f9b55b591e0d7}{memory})
+\item 
+virtual \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionVII_ab004a9cdc0efa7afacb964352abf3ee7}{execute} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1InstructionVII_a8e51202e0b22f8e74668f6de95089e60}{rs}
+\item 
+\hyperlink{classMIPS_1_1Register}{Register} $\ast$ \hyperlink{classMIPS_1_1InstructionVII_a8710c06b6e7816f330b0c5daea3402a4}{rt}
+\item 
+\hyperlink{classMIPS_1_1Memory}{Memory} $\ast$ \hyperlink{classMIPS_1_1InstructionVII_a4fb34750bedbf137b43f9b55b591e0d7}{memory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa uma instrução do formato V\+II do trabalho.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}!Instruction\+V\+II@{Instruction\+V\+II}}
+\index{Instruction\+V\+II@{Instruction\+V\+II}!M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}}
+\subsubsection[{\texorpdfstring{Instruction\+V\+I\+I(bit8\+\_\+t opcode, Register $\ast$rs, Register $\ast$rt, Memory $\ast$memory)}{InstructionVII(bit8_t opcode, Register *rs, Register *rt, Memory *memory)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Instruction\+V\+I\+I\+::\+Instruction\+V\+II (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf Register} $\ast$}]{rs, }
+\item[{{\bf Register} $\ast$}]{rt, }
+\item[{{\bf Memory} $\ast$}]{memory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1InstructionVII_a43d5166f940af6178bd179ea81df6a55}{}\label{classMIPS_1_1InstructionVII_a43d5166f940af6178bd179ea81df6a55}
+Cria uma nova instrução do formato V\+II
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & código da operação \\
+\hline
+{\em rs} & registrador destination \\
+\hline
+{\em rt} & registrador target \\
+\hline
+{\em memory} & unidade de memória do processador \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}}
+\subsubsection[{\texorpdfstring{execute()=0}{execute()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Instruction\+V\+I\+I\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMIPS_1_1InstructionVII_ab004a9cdc0efa7afacb964352abf3ee7}{}\label{classMIPS_1_1InstructionVII_ab004a9cdc0efa7afacb964352abf3ee7}
+Executa a instrução.
+
+\begin{DoxyReturn}{Returns}
+resultado da instrução 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1Instruction_a88668dfaf49dd8608f210ba13948d242}{M\+I\+P\+S\+::\+Instruction}.
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}!memory@{memory}}
+\index{memory@{memory}!M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}}
+\subsubsection[{\texorpdfstring{memory}{memory}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Memory}$\ast$ M\+I\+P\+S\+::\+Instruction\+V\+I\+I\+::memory\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionVII_a4fb34750bedbf137b43f9b55b591e0d7}{}\label{classMIPS_1_1InstructionVII_a4fb34750bedbf137b43f9b55b591e0d7}
+Unidade de memória usada para acessar os dados. \index{M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}!rs@{rs}}
+\index{rs@{rs}!M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}}
+\subsubsection[{\texorpdfstring{rs}{rs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Instruction\+V\+I\+I\+::rs\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionVII_a8e51202e0b22f8e74668f6de95089e60}{}\label{classMIPS_1_1InstructionVII_a8e51202e0b22f8e74668f6de95089e60}
+Registrador source \index{M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}!rt@{rt}}
+\index{rt@{rt}!M\+I\+P\+S\+::\+Instruction\+V\+II@{M\+I\+P\+S\+::\+Instruction\+V\+II}}
+\subsubsection[{\texorpdfstring{rt}{rt}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ M\+I\+P\+S\+::\+Instruction\+V\+I\+I\+::rt\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMIPS_1_1InstructionVII_a8710c06b6e7816f330b0c5daea3402a4}{}\label{classMIPS_1_1InstructionVII_a8710c06b6e7816f330b0c5daea3402a4}
+Registrador target. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/\hyperlink{instruction__VII_8hpp}{instruction\+\_\+\+V\+I\+I.\+hpp}\end{DoxyCompactItemize}

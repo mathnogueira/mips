@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zeroinstruction',['ZeroInstruction',['../classMIPS_1_1ZeroInstruction.html',1,'MIPS']]]
+  ['xnorinstruction',['XnorInstruction',['../classMIPS_1_1XnorInstruction.html',1,'MIPS']]],
+  ['xorinstruction',['XorInstruction',['../classMIPS_1_1XorInstruction.html',1,'MIPS']]]
 ];

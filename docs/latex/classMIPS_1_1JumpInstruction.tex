@@ -1,0 +1,72 @@
+\hypertarget{classMIPS_1_1JumpInstruction}{}\section{M\+I\+PS\+:\+:Jump\+Instruction Class Reference}
+\label{classMIPS_1_1JumpInstruction}\index{M\+I\+P\+S\+::\+Jump\+Instruction@{M\+I\+P\+S\+::\+Jump\+Instruction}}
+
+
+{\ttfamily \#include $<$j.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Jump\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMIPS_1_1JumpInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1JumpInstruction_a5688d5a7c2ded2c3b8a32cb395cb9db9}{Jump\+Instruction} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionV_ac2e294fde4971aa6a149480f22ae29e9}{offset})
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1JumpInstruction_a843961af93d20e35dd1fab6bf341e16e}{execute} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Instrução que faz o desvio se a flag zero da A\+LU está setada como 1.
+
+\begin{DoxyAuthor}{Author}
+Matheus Nogueira 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Jump\+Instruction@{M\+I\+P\+S\+::\+Jump\+Instruction}!Jump\+Instruction@{Jump\+Instruction}}
+\index{Jump\+Instruction@{Jump\+Instruction}!M\+I\+P\+S\+::\+Jump\+Instruction@{M\+I\+P\+S\+::\+Jump\+Instruction}}
+\subsubsection[{\texorpdfstring{Jump\+Instruction(bit8\+\_\+t opcode, bit16\+\_\+t offset)}{JumpInstruction(bit8_t opcode, bit16_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Jump\+Instruction\+::\+Jump\+Instruction (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf bit16\+\_\+t}}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1JumpInstruction_a5688d5a7c2ded2c3b8a32cb395cb9db9}{}\label{classMIPS_1_1JumpInstruction_a5688d5a7c2ded2c3b8a32cb395cb9db9}
+Cria uma instrução de jump.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & código da operação \\
+\hline
+{\em offset} & offset de 12 bits \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Jump\+Instruction@{M\+I\+P\+S\+::\+Jump\+Instruction}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Jump\+Instruction@{M\+I\+P\+S\+::\+Jump\+Instruction}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Jump\+Instruction\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1JumpInstruction_a843961af93d20e35dd1fab6bf341e16e}{}\label{classMIPS_1_1JumpInstruction_a843961af93d20e35dd1fab6bf341e16e}
+Executa a instrução.
+
+\begin{DoxyReturn}{Returns}
+returna 0 se o desvio não for tomado, 1 se desvio for tomado. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1InstructionV_a511d8ba098bcca95f1e91ff6616470ef}{M\+I\+P\+S\+::\+InstructionV}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/format\+\_\+\+V/\hyperlink{j_8hpp}{j.\+hpp}\end{DoxyCompactItemize}

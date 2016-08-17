@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['zero',['zero',['../classMIPS_1_1Instruction.html#a78e2b55f80640b476e99ee54f5be068c',1,'MIPS::Instruction']]],
-  ['zero_2ehpp',['zero.hpp',['../zero_8hpp.html',1,'']]],
-  ['zeroinstruction',['ZeroInstruction',['../classMIPS_1_1ZeroInstruction.html#ac8e066062f919823b60900d2f3e23348',1,'MIPS::ZeroInstruction']]],
-  ['zeroinstruction',['ZeroInstruction',['../classMIPS_1_1ZeroInstruction.html',1,'MIPS']]]
+  ['what',['what',['../classMIPS_1_1InterpreterException.html#a7ddaf2edf53aaaf5b0ad995635033003',1,'MIPS::InterpreterException::what()'],['../classMIPS_1_1MemoryException.html#a8ee2a716f1c715577736d7b6694d3672',1,'MIPS::MemoryException::what()']]],
+  ['write',['write',['../classMIPS_1_1Memory.html#a8d339b30f29c4dc8044b51c982d5e95b',1,'MIPS::Memory::write()'],['../classMIPS_1_1RegisterBank.html#a4c6a18e903ee79d445988b92cadc3914',1,'MIPS::RegisterBank::write()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['event_5ftype',['event_type',['../classMIPS_1_1Event.html#ab726d36d16847f2b2250394c6a462655',1,'MIPS::Event']]]
+  ['data_5fptr',['data_ptr',['../classMIPS_1_1Event.html#a66f2b7a25dfb644ad5dc5b074f4b41a0',1,'MIPS::Event']]]
 ];

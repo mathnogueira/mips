@@ -2,16 +2,19 @@
 #include <mips/core.hpp>
 #include <mips/memory/register_bank.hpp>
 #include <mips/memory/register.hpp>
+#include <mips/units/control.hpp>
 
 using namespace MIPS;
 
 TEST(RegisterBank, constructor) {
-	RegisterBank bank;
+	ControlUnit cu;
+	RegisterBank bank(cu);
 	SUCCEED();
 }
 
 TEST(RegisterBank, getRegister) {
-	RegisterBank bank;
+	ControlUnit cu;
+	RegisterBank bank(cu);
 	Register *r = bank.getRegister(7);
 	ASSERT_STREQ("r7", r->getName());
 	r = bank.getRegister(1);

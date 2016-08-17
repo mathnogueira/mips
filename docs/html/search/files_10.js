@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zero_2ehpp',['zero.hpp',['../zero_8hpp.html',1,'']]]
+  ['xnor_2ehpp',['xnor.hpp',['../xnor_8hpp.html',1,'']]],
+  ['xor_2ehpp',['xor.hpp',['../xor_8hpp.html',1,'']]]
 ];

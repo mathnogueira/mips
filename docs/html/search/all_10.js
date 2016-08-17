@@ -1,20 +1,16 @@
 var searchData=
 [
-  ['setdatasize',['setDataSize',['../classMIPS_1_1Memory.html#a53b03b417ee8efb4a6f3a0020c3bd7ab',1,'MIPS::Memory']]],
-  ['setinstructionsize',['setInstructionSize',['../classMIPS_1_1Memory.html#a636e0ca3d23fc5022a2a4b59a6648210',1,'MIPS::Memory']]],
-  ['shamt',['shamt',['../classMIPS_1_1InstructionI.html#aa9b6da37c374c2ec8d96448d341e5e7d',1,'MIPS::InstructionI']]],
-  ['shoulddestroy',['shouldDestroy',['../classMIPS_1_1Event.html#a744dd00b534097bcd4d5db327a9da85a',1,'MIPS::Event']]],
-  ['signal_5fextender_2ehpp',['signal_extender.hpp',['../signal__extender_8hpp.html',1,'']]],
-  ['signal_5finversor_2ehpp',['signal_inversor.hpp',['../signal__inversor_8hpp.html',1,'']]],
-  ['signalextender',['SignalExtender',['../classMIPS_1_1SignalExtender.html',1,'MIPS']]],
-  ['signalinversor',['SignalInversor',['../classMIPS_1_1SignalInversor.html#a2094a0ba93d39dabb48653a070fc536d',1,'MIPS::SignalInversor']]],
-  ['signalinversor',['SignalInversor',['../classMIPS_1_1SignalInversor.html',1,'MIPS']]],
-  ['size',['size',['../classMIPS_1_1Queue.html#a894681d26fc3e3bf2665a1b81cc18341',1,'MIPS::Queue']]],
-  ['space_5ffilter_2ehpp',['space_filter.hpp',['../space__filter_8hpp.html',1,'']]],
-  ['spacefilter',['SpaceFilter',['../classMIPS_1_1SpaceFilter.html',1,'MIPS']]],
-  ['subdec_2ehpp',['subdec.hpp',['../subdec_8hpp.html',1,'']]],
-  ['subdecinstruction',['SubdecInstruction',['../classMIPS_1_1SubdecInstruction.html',1,'MIPS']]],
-  ['subdecinstruction',['SubdecInstruction',['../classMIPS_1_1SubdecInstruction.html#add4c367579966be84f60cf36d84ae332',1,'MIPS::SubdecInstruction']]],
-  ['subinstruction',['SubInstruction',['../classMIPS_1_1SubInstruction.html',1,'MIPS']]],
-  ['subinstruction',['SubInstruction',['../classMIPS_1_1SubInstruction.html#af6979540068224336b460cb680690ecf',1,'MIPS::SubInstruction']]]
+  ['rd',['rd',['../classMIPS_1_1InstructionII.html#a2a709b8170f2bf653de2102df9403e1f',1,'MIPS::InstructionII::rd()'],['../classMIPS_1_1InstructionIII.html#a76e7b218fc57cd2fc559bf72498090b6',1,'MIPS::InstructionIII::rd()']]],
+  ['read',['read',['../classMIPS_1_1Memory.html#a93a2aecd6026ecd86e77fcef6b99b91b',1,'MIPS::Memory']]],
+  ['register',['Register',['../classMIPS_1_1Register.html',1,'MIPS']]],
+  ['register',['Register',['../classMIPS_1_1Register.html#a56019b9be3e98dbe2f2af79326ffc06d',1,'MIPS::Register']]],
+  ['register_2ehpp',['register.hpp',['../register_8hpp.html',1,'']]],
+  ['register_5fbank_2ehpp',['register_bank.hpp',['../register__bank_8hpp.html',1,'']]],
+  ['register_5fupdate',['REGISTER_UPDATE',['../event_8hpp.html#a2b933d1ba3dc5a595db4dfa5b049c78ca4e84576d52b903ea21f03ffb8161712e',1,'MIPS']]],
+  ['registerbank',['RegisterBank',['../classMIPS_1_1RegisterBank.html',1,'MIPS']]],
+  ['registerbank',['registerBank',['../classMIPS_1_1InstructionDecoder.html#a6796453642fca3384868a9539656ab45',1,'MIPS::InstructionDecoder::registerBank()'],['../classMIPS_1_1RegisterBank.html#ad30994f3b2df40a11234f4e53d820cd2',1,'MIPS::RegisterBank::RegisterBank()']]],
+  ['regwrite',['regwrite',['../classMIPS_1_1ControlUnit.html#a18884b753a77aa99c9ff404e16c6ac7a',1,'MIPS::ControlUnit']]],
+  ['rewind',['rewind',['../classMIPS_1_1FileReader.html#a5f60a3cdab4475ddf28bb3cc77a742ad',1,'MIPS::FileReader']]],
+  ['rs',['rs',['../classMIPS_1_1InstructionI.html#a2be191d5b3dce505e2e626ec02eb4d62',1,'MIPS::InstructionI::rs()'],['../classMIPS_1_1InstructionVII.html#a8e51202e0b22f8e74668f6de95089e60',1,'MIPS::InstructionVII::rs()']]],
+  ['rt',['rt',['../classMIPS_1_1InstructionI.html#add1db07a5c954f35271de8c8a5737487',1,'MIPS::InstructionI::rt()'],['../classMIPS_1_1InstructionVI.html#a0a48712f3022c8c5731f6d4d371a2515',1,'MIPS::InstructionVI::rt()'],['../classMIPS_1_1InstructionVII.html#a8710c06b6e7816f330b0c5daea3402a4',1,'MIPS::InstructionVII::rt()']]]
 ];

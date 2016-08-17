@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['parse',['parse',['../classMIPS_1_1Encoder.html#a4a29c42d601460be8e8d353d8fc0da34',1,'MIPS::Encoder::parse()'],['../classMIPS_1_1FormatIEncoder.html#a04b46dc7d7b3734e42eaeedc500de2da',1,'MIPS::FormatIEncoder::parse()'],['../classMIPS_1_1FormatIIEncoder.html#aa988c9638985b07eea58f3e11ff4c2e7',1,'MIPS::FormatIIEncoder::parse()'],['../classMIPS_1_1FormatIIIEncoder.html#a06c8d98fe19c20d5e4f0986d7d500637',1,'MIPS::FormatIIIEncoder::parse()'],['../classMIPS_1_1FormatIVEncoder.html#a42f251011a97af63a707b4d0607e18a9',1,'MIPS::FormatIVEncoder::parse()'],['../classMIPS_1_1FormatVEncoder.html#af73c15fbc94eac0f8b28e6d7fa2e4dc2',1,'MIPS::FormatVEncoder::parse()'],['../classMIPS_1_1FormatVIEncoder.html#a4cec696ab9deca5b957ddbab97139631',1,'MIPS::FormatVIEncoder::parse()'],['../classMIPS_1_1FormatVIIEncoder.html#a67272c7aad39c6f49c4aa162119215ba',1,'MIPS::FormatVIIEncoder::parse()']]],
-  ['passa_2ehpp',['passa.hpp',['../passa_8hpp.html',1,'']]],
-  ['passainstruction',['PassaInstruction',['../classMIPS_1_1PassaInstruction.html',1,'MIPS']]],
-  ['passainstruction',['PassaInstruction',['../classMIPS_1_1PassaInstruction.html#acc56ffbb33152fef680a714c2ba4a154',1,'MIPS::PassaInstruction']]],
-  ['passnota_2ehpp',['passnota.hpp',['../passnota_8hpp.html',1,'']]],
-  ['passnotainstruction',['PassNotAInstruction',['../classMIPS_1_1PassNotAInstruction.html',1,'MIPS']]],
-  ['passnotainstruction',['PassNotAInstruction',['../classMIPS_1_1PassNotAInstruction.html#a4e68ad0b8200cd75f2b08346e7b2031a',1,'MIPS::PassNotAInstruction']]],
-  ['pop',['pop',['../classMIPS_1_1Queue.html#a6a1fb36a33fe4ded5eb8e6c4dd754c54',1,'MIPS::Queue']]],
-  ['print_5fbin',['PRINT_BIN',['../debug_8hpp.html#aa660381c871ce694f88d5414a0030286',1,'debug.hpp']]],
-  ['produce',['produce',['../classMIPS_1_1EncoderFactory.html#a38f2aab5758ae0fd464346a61924b853',1,'MIPS::EncoderFactory']]],
-  ['push',['push',['../classMIPS_1_1Queue.html#a77b7b0d1c09253d3efc665f75f3dee45',1,'MIPS::Queue']]],
-  ['put',['put',['../classMIPS_1_1Register.html#aa22ebc8c3dd83a88cb537bb8bfd6d745',1,'MIPS::Register']]]
+  ['offset',['offset',['../classMIPS_1_1InstructionII.html#ae34cdcf18cd37944dfecb96d5b07b5cb',1,'MIPS::InstructionII::offset()'],['../classMIPS_1_1InstructionIII.html#ad0ebd3b6e7594fc583e9a409bf99a6c7',1,'MIPS::InstructionIII::offset()'],['../classMIPS_1_1InstructionIV.html#abcb91e65c800a41bf9c46b5770120b36',1,'MIPS::InstructionIV::offset()'],['../classMIPS_1_1InstructionV.html#ac2e294fde4971aa6a149480f22ae29e9',1,'MIPS::InstructionV::offset()']]],
+  ['ok',['ok',['../classMIPS_1_1Interpreter.html#a9b27efdc3235bde933c65acc53ae02d0',1,'MIPS::Interpreter']]],
+  ['ones_2ehpp',['ones.hpp',['../ones_8hpp.html',1,'']]],
+  ['onesinstruction',['OnesInstruction',['../classMIPS_1_1OnesInstruction.html',1,'MIPS']]],
+  ['onesinstruction',['OnesInstruction',['../classMIPS_1_1OnesInstruction.html#ac12775ee6e4e5c1a33636384c4f6244e',1,'MIPS::OnesInstruction']]],
+  ['opcode',['opcode',['../classMIPS_1_1Instruction.html#a45cc6808b5dde8a5d41067d148b55476',1,'MIPS::Instruction::opcode()'],['../classMIPS_1_1Encoder.html#a1d07a78c088f8180af5f7b9ec3ca10f0',1,'MIPS::Encoder::opcode()']]],
+  ['or_2ehpp',['or.hpp',['../or_8hpp.html',1,'']]],
+  ['orinstruction',['OrInstruction',['../classMIPS_1_1OrInstruction.html',1,'MIPS']]],
+  ['orinstruction',['OrInstruction',['../classMIPS_1_1OrInstruction.html#a5e9d9d3677eaf08e528c186149d59662',1,'MIPS::OrInstruction']]],
+  ['ornotb_2ehpp',['ornotb.hpp',['../ornotb_8hpp.html',1,'']]],
+  ['ornotbinstruction',['OrnotbInstruction',['../classMIPS_1_1OrnotbInstruction.html#aea52181c168c690a024590196516c89e',1,'MIPS::OrnotbInstruction']]],
+  ['ornotbinstruction',['OrnotbInstruction',['../classMIPS_1_1OrnotbInstruction.html',1,'MIPS']]],
+  ['overflow',['overflow',['../structMIPS_1_1ALUFlags.html#a9f3ea56726a1e5f09fd13d8f7be3c234',1,'MIPS::ALUFlags::overflow()'],['../classMIPS_1_1Instruction.html#a34c04dbd0f64117d7b19f8bf6e6cb87a',1,'MIPS::Instruction::overflow()'],['../classMIPS_1_1FullAdder.html#ad700abfd3da45fe8d25a9f1b071378a8',1,'MIPS::FullAdder::overflow()']]]
 ];
