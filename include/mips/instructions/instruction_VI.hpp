@@ -21,33 +21,41 @@ class InstructionVI : public Instruction {
 
 public:
 
-	/**
-	 * Cria uma nova instrução do formato VI
-	 *
-	 * \param opcode código da operação
-	 * \param rt registrador target
+    /**
+     * Cria uma nova instrução do formato VI
+     *
+     * \param opcode código da operação
+     * \param rs registrador source
+     * \param rt registrador target
      * \param pc registrador de contador de programa
-	 */
-	InstructionVI(bit8_t opcode, Register *rt, Register *pc) {
-		this->opcode = opcode;
+     */
+    InstructionVI(bit8_t opcode, Register *rs, Register *rt, Register *pc) {
+        this->opcode = opcode;
+        this->rs = rs;
         this->rt = rt;
         this->pc = pc;
-	}
+    }
 
-	/**
-	 * Executa a instrução.
-	 *
-	 * \return resultado da instrução
-	 */
-	virtual bit16_t execute() = 0;
+    /**
+     * Executa a instrução.
+     *
+     * \return resultado da instrução
+     */
+    virtual bit16_t execute() = 0;
 
 protected:
 
-	/**
-	 * Registrador de contador de programa
-	 */
-	Register *pc;
+    /**
+     * Registrador de contador de programa
+     */
+    Register *pc;
 
+    
+    /**
+     * Registrador source.
+     */
+    Register *rs;
+    
     /**
      * Registrador target.
      */
