@@ -1,7 +1,7 @@
 /**
- * \file jt_carry.hpp
+ * \file jf_carry.hpp
  *
- * Instrução que faz o desvio quando a flag carry da alu é igual a 0.
+ * Instrução que faz o desvio quando a flag carry da alu é igual a 1.
  */
 #pragma once
 
@@ -10,28 +10,28 @@
 namespace MIPS {
 
 /**
- * Instrução que faz o desvio se a flag carry da ALU está setada como 0.
+ * Instrução que faz o desvio se a flag carry da ALU está setada como 1.
  *
  * \author Felipe Dias
  */
-class JtCarryInstruction : public InstructionIV {
+class JfCarryInstruction : public InstructionIV {
 
 public:
 
     /**
-     * Cria uma instrução de jump on true.
+     * Cria uma instrução de jump on false.
      *
      * \param opcode código da operação
      * \param aluFlags objeto de flags da ALU
     * \param offset offset de 8 bits
     */
-    JtCarryInstruction(bit8_t opcode, struct ALUFlags &aluFlags, bit8_t offset) :
+    JfCarryInstruction(bit8_t opcode, struct ALUFlags &aluFlags, bit8_t offset) :
             InstructionIV(opcode, aluFlags, offset) {}
 
     /**
      * Executa a instrução.
      *
-     * \return retorna 1 se o desvio não for tomado, 0 se desvio for tomado.
+     * \return returna 0 se o desvio não for tomado, 1 se desvio for tomado.
      */
     bit16_t execute();
 

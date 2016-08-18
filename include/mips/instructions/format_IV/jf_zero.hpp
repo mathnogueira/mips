@@ -1,7 +1,7 @@
 /**
- * \file jt_zero.hpp
+ * \file jf_zero.hpp
  *
- * Instrução que faz o desvio quando a flag zero da alu é igual a 1.
+ * Instrução que faz o desvio quando a flag zero da alu é igual a 0.
  */
 #pragma once
 
@@ -10,11 +10,11 @@
 namespace MIPS {
 
 /**
- * Instrução que faz o desvio se a flag zero da ALU está setada como 1.
+ * Instrução que faz o desvio se a flag zero da ALU está setada como 0.
  *
  * \author Matheus Nogueira
  */
-class JtZeroInstruction : public InstructionIV {
+class JfZeroInstruction : public InstructionIV {
 
 public:
 
@@ -25,7 +25,7 @@ public:
      * \param aluFlags objeto de flags da ALU
     * \param offset offset de 8 bits
     */
-   JtZeroInstruction(bit8_t opcode, struct ALUFlags &aluFlags, bit8_t offset) :
+   JfZeroInstruction(bit8_t opcode, struct ALUFlags &aluFlags, bit8_t offset) :
            InstructionIV(opcode, aluFlags, offset) {}
 
    /**
