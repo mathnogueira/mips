@@ -31,8 +31,6 @@ int main(int argc, char **argv) {
 	// Pega as opções do interpretado
 	struct options options;
 	optget(argc, argv, options);
-	printf("Dump %d : %d -> %d\n", options.dump, options.dump_start, options.dump_size);
-	printf("Screen %d\n", options.screen);
 	Interpreter interpreter(argv[1]);
     CPU cpu(options);
 	try {
