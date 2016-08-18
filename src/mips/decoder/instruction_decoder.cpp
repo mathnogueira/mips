@@ -6,6 +6,8 @@
 #include <mips/instructions/format_I/andnota.hpp>
 #include <mips/instructions/format_I/asl.hpp>
 #include <mips/instructions/format_I/asr.hpp>
+#include <mips/instructions/format_I/lsl.hpp>
+#include <mips/instructions/format_I/lsr.hpp>
 #include <mips/instructions/format_I/deca.hpp>
 #include <mips/instructions/format_I/inca.hpp>
 #include <mips/instructions/format_I/nand.hpp>
@@ -29,14 +31,21 @@
 #include <mips/instructions/format_IV/jt_overflow.hpp>
 #include <mips/instructions/format_IV/jt_true.hpp>
 #include <mips/instructions/format_IV/jt_zero.hpp>
-
+#include <mips/instructions/format_IV/jf_carry.hpp>
+#include <mips/instructions/format_IV/jf_neg.hpp>
+#include <mips/instructions/format_IV/jf_negzero.hpp>
+#include <mips/instructions/format_IV/jf_overflow.hpp>
+#include <mips/instructions/format_IV/jf_true.hpp>
+#include <mips/instructions/format_IV/jf_zero.hpp>
 #include <mips/instructions/format_V/j.hpp>
+#include <mips/instructions/format_VII/load.hpp>
+#include <mips/instructions/format_VII/store.hpp>
 #include <cstdlib>
 #include <cmath>
 
 using namespace MIPS;
 
-InstructionDecoder::InstructionDecoder(RegisterBank &bank) : registerBank(bank) {}
+InstructionDecoder::InstructionDecoder(RegisterBank &bank, Memory &mem) : registerBank(bank), memory(mem) {}
 
 InstructionDecoder::~InstructionDecoder() {}
 
@@ -64,18 +73,17 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
             if (funct == 0) {
                 // JF.cond, deve checar o código da condição
 				if (cond == 4)
-					// Neg
+					return new JfNegInstruction(opcode, *flags, offset);
 				if (cond == 5)
-					// Zero
+					return new JfZeroInstruction(opcode, *flags, offset);
 				if (cond == 6)
-					// Carry
+					return new JfCarryInstruction(opcode, *flags, offset);
 				if (cond == 7)
-					// Negzero
+					return new JfNegzeroInstruction(opcode, *flags, offset);
 				if (cond == 0)
-					// True
+					return new JfTrueInstruction(opcode, *flags, offset);
 				if (cond == 3)
-					// Overflow
-					;
+					return new JfOverflowInstruction(opcode, *flags, offset);
             } else if (funct == 1) {
                 // JT.cond, deve checar o código da condição
 				if (cond == 4)
@@ -156,7 +164,7 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
                     break;
                 case 16:
                     // lsl
-                    // instr = new LslInstruction(opcode, rs, rt, 0, funct);
+                    instr = new LslInstruction(opcode, rs, rt, 0, funct);
                     break;
                 case 17:
                     // asl
@@ -164,7 +172,7 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
                     break;
                 case 18:
                     // lsr
-                    // instr = new LsrInstruction(opcode, rs, rt, 0, funct);
+                    instr = new LsrInstruction(opcode, rs, rt, 0, funct);
                     break;
                 case 19:
                     // asr
@@ -172,10 +180,11 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
                     break;
                 case 20:
                     // load
-                    // instr = new LoadInstruction(opcode, rs, rt, 0, funct);
+                    instr = new LoadInstruction(opcode, rs, rt, &memory);
                     break;
                 case 22:
                     // store
+					instr = new StoreInstruction(opcode, rs, rt, &memory);
                     break;
                 case 24:
                     // Add

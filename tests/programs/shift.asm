@@ -7,7 +7,8 @@
 ;
     loadlit r0,1000
 	ones r1
-L1:	store r0,r1
+L1:	
+store r0,r1
 	inca r0,r0
 	lsl r1,r1
 	jf.neg L1

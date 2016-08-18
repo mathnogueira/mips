@@ -9,6 +9,7 @@
 
 #include <mips/core.hpp>
 #include <mips/units/control.hpp>
+#include <mips/flag.hpp>
 
 namespace MIPS {
 
@@ -42,6 +43,15 @@ public:
      */
     virtual void updateControl(ControlUnit &control) {}
 
+	/**
+	 * Define a estrutura de flags da ALU.
+	 *
+	 * \param aluFlags flags da ALU.
+	 */
+	void setALUFlags(struct ALUFlags &aluFlags) {
+		flags = &aluFlags;
+	}
+
 protected:
 
     /**
@@ -50,24 +60,9 @@ protected:
     bit8_t opcode;
 
 	/**
-	 * Flag de zero.
+	 * Flags da ALU.
 	 */
-	bit8_t zero;
-
-	/**
-	 * Flag de negativo
-	 */
-	bit8_t neg;
-
-	/**
-	 * Flag de carry.
-	 */
-	bit8_t carry;
-
-	/**
-	 * flag de overflow
-	 */
-	bit8_t overflow;
+	struct ALUFlags *flags;
 };
 
 }; // namespace

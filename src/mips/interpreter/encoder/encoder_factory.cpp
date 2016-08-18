@@ -43,6 +43,7 @@ Encoder* EncoderFactory::produce(const char *instruction) {
         strcmp("ornotb", instruction) == 0 ||
         strcmp("sub", instruction) == 0 ||
         strcmp("subdec", instruction) == 0 ||
+		strcmp("nor", instruction) == 0 ||
         strcmp("xnor", instruction) == 0 ||
         strcmp("xor", instruction) == 0 ||
         strcmp("or", instruction) == 0 ||

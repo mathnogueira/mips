@@ -11,7 +11,7 @@ CPU::CPU() {
 	memory = new Memory(*controlUnit);
 	bank = new RegisterBank(*controlUnit);
     instructionFinder = new InstructionFinder(*memory, *bank);
-    instructionDecoder = new InstructionDecoder(*bank);
+    instructionDecoder = new InstructionDecoder(*bank, *memory);
 	instructionDecoder->setALUFlags(&aluFlags);
 }
 
@@ -32,6 +32,8 @@ void CPU::loadProgram(const char *program) {
     fread(&size, sizeof(size_t), 1, fp);
     // Inicializa a memória de instruções
     memory->setInstructionSize(size);
+	// Carrega memória de dados
+	memory->setDataSize(64 * 1024);
 	controlUnit->memWrite = true;
     // Insere todas as instruções na memória de instruções
     for (size_t i = 0; i < size; ++i) {
@@ -55,6 +57,7 @@ void CPU::execute() {
         // Executa a instrução
         // Atualiza as flags de controle
         instructionObject->updateControl(*controlUnit);
+		instructionObject->setALUFlags(aluFlags);
         result = instructionObject->execute();
 		// Verifica se a instrução era um jump, e se haverá o desvio
 		if (controlUnit->jump && result == 1) {

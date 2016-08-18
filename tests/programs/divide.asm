@@ -9,9 +9,11 @@
 	zeros r4
 
 LOOP:   sub r2,r2,r3
-    ;    jt.neg SAIDA
+        jt.neg SAIDA
 	inca r4,r4
 	j LOOP
 
 SAIDA: 	loadlit r3,1000
 	store r3,r4
+
+HALT: j HALT

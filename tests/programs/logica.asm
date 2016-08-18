@@ -199,3 +199,5 @@ teste9:
 
 result: loadlit r0, 1000
 	store r0,r4
+
+HALT: j HALT

@@ -10,6 +10,7 @@
 #include <mips/core.hpp>
 #include <mips/instructions/instruction.hpp>
 #include <mips/memory/register_bank.hpp>
+#include <mips/memory/memory.hpp>
 
 namespace MIPS {
 
@@ -26,8 +27,9 @@ public:
      * Cria um novo decodificador de instruções.
      *
      * \param bank banco de registradores usado.
+	 * \param mem unidade de memória
      */
-    InstructionDecoder(RegisterBank &bank);
+    InstructionDecoder(RegisterBank &bank, Memory &mem);
 
     /**
      * Destroi o decodificador de instruções.
@@ -133,6 +135,11 @@ protected:
 	 * Flags da ALU.
 	 */
 	struct ALUFlags *flags;
+
+	/**
+	 * Unidade de memoria.
+	 */
+	Memory &memory;
 
 };
 

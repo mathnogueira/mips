@@ -11,8 +11,9 @@ using namespace MIPS;
 TEST(InstructionDecoder, getInstructionInfo) {
 	ControlUnit cu;
 	RegisterBank bank(cu);
+	Memory memory(cu);
     instruction_t instruction = 0x799a;
-    InstructionDecoder decoder(bank);
+    InstructionDecoder decoder(bank, memory);
     // InstructionI *emu_instruction = (InstructionI*) decoder.decode(instruction);
     ASSERT_EQ(decoder.getOPCode(instruction), 1);
     ASSERT_EQ(decoder.getRd(instruction), 7);
@@ -24,7 +25,8 @@ TEST(InstructionDecoder, getInstructionInfo) {
 TEST(InstructionDecoder, getOffset) {
 	ControlUnit cu;
 	RegisterBank bank(cu);
-    InstructionDecoder decoder(bank);
+	Memory memory(cu);
+    InstructionDecoder decoder(bank, memory);
     instruction_t instruction = 0x1cf3;
     ASSERT_EQ(decoder.getOffset(instruction, 8), -13);
     ASSERT_EQ(decoder.getOffset(instruction, 11), -781);
@@ -33,7 +35,8 @@ TEST(InstructionDecoder, getOffset) {
 TEST(InstructionDecoder, getNegativeOffset) {
 	ControlUnit cu;
 	RegisterBank bank(cu);
-    InstructionDecoder decoder(bank);
+	Memory memory(cu);
+    InstructionDecoder decoder(bank, memory);
     instruction_t instruction = 0xffff;
     ASSERT_EQ(decoder.getOffset(instruction, 8), -1);
 }
