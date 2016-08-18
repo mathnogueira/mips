@@ -118,7 +118,6 @@ void Interpreter::encode(FILE *fp) {
 	std::vector<instruction_t> instructions;
 	for (size_t i = 0; i < size; ++i) {
 		tokens = &lines.at(i);
-		std::cout << tokens->at(0) << std::endl;
 		encoder = factory.produce(tokens->at(0));
 		encoder->parse(*tokens);
 		instruction = encoder->encode();

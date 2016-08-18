@@ -51,7 +51,7 @@ void CPU::execute() {
         instruction_t instruction = instructionFinder->getNext();
         // Se for instrução de HALT, para a execução
         if (instruction == 0x2fff)
-            return;
+            break;
         bit16_t result = 0;
         // Decodifica a instrução
         Instruction *instructionObject = instructionDecoder->decode(instruction);
@@ -85,6 +85,10 @@ void CPU::execute() {
 		// Reseta as flags
 		controlUnit->reset();
 		// Imprime o relatório da instrução executada
-		Logger::screen(*bank, aluFlags);
+		if (options.screen)
+			Logger::screen(*bank, aluFlags, instruction);
     } while (true);
+	// Imprime o dump de memória
+	if (options.dump)
+		Logger::dump(*memory, options.dump_start, options.dump_size);
 }
