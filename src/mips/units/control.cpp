@@ -12,4 +12,5 @@ void ControlUnit::reset() {
 	memRead = false;
 	branch = false;
 	jump = false;
+	regDst = false;
 }

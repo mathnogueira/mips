@@ -22,34 +22,34 @@ class InstructionVII : public Instruction {
 
 public:
 
-	/**
-	 * Cria uma nova instrução do formato VII
-	 *
-	 * \param opcode código da operação
+    /**
+     * Cria uma nova instrução do formato VII
+     *
+     * \param opcode código da operação
      * \param rs registrador destination
      * \param rt registrador target
      * \param memory unidade de memória do processador
-	 */
-	InstructionVII(bit8_t opcode, Register *rs, Register *rt, Memory *memory) {
-		this->opcode = opcode;
+     */
+    InstructionVII(bit8_t opcode, Register *rs, Register *rt, Memory *memory) {
+        this->opcode = opcode;
         this->rs = rs;
         this->rt = rt;
         this->memory = memory;
-	}
+    }
 
-	/**
-	 * Executa a instrução.
-	 *
-	 * \return resultado da instrução
-	 */
-	virtual bit16_t execute() = 0;
+    /**
+     * Executa a instrução.
+     *
+     * \return resultado da instrução
+     */
+    virtual bit16_t execute() = 0;
 
 protected:
 
-	/**
-	 * Registrador source
-	 */
-	Register *rs;
+    /**
+     * Registrador source
+     */
+    Register *rs;
 
     /**
      * Registrador target.

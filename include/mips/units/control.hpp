@@ -32,6 +32,11 @@ public:
 	 */
 	void reset();
 
+	/**
+	 * Flag que indica o registrador de destino.
+	 */
+	bool regDst;
+
     /**
      * Flag de escrita em banco de registradores.
      */

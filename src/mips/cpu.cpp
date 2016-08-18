@@ -58,11 +58,15 @@ void CPU::execute() {
 			// Atualiza o PC
 			bank->getPC()->put(instructionDecoder->getOffset(instruction, 12));
 		}
-        // Pega o índice do registrador RD
-        bit8_t rd = instructionDecoder->getRd(instruction);
+        // Pega o índice do registrador de destino
+        bit8_t regdst;
+		if (controlUnit->regDst)
+			regdst = instructionDecoder->getRd(instruction);
+		else
+			regdst = instructionDecoder->getRt(instruction);
         // Coloca o valor no banco de registradores
         // O valor só será escrito se a flag do controle for definida como true
-        bank->write(result, rd);
+        bank->write(result, regdst);
 		// Reseta as flags
 		controlUnit->reset();
     } while (true);
