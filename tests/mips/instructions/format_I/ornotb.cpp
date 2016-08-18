@@ -8,6 +8,8 @@ TEST(OrnotbInstruction, differentNumbers) {
 	Register rs("s1");
 	Register rt("s2");
 	OrnotbInstruction ornotb(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	ornotb.setALUFlags(flags);
 	rs.put(15);
 	rt.put(20);
 	bit16_t result = ornotb.execute();
@@ -18,6 +20,8 @@ TEST(OrnotbInstruction, equalNumbers) {
 	Register rs("s1");
 	Register rt("s2");
 	OrnotbInstruction ornotb(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	ornotb.setALUFlags(flags);
 	rs.put(1);
 	rt.put(1);
 	bit16_t result = ornotb.execute();
@@ -28,6 +32,8 @@ TEST(OrnotbInstruction, OddRs) {
 	Register rs("s1");
 	Register rt("s2");
 	OrnotbInstruction ornotb(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	ornotb.setALUFlags(flags);
 	rs.put(5);
 	rt.put(0);
 	bit16_t result = ornotb.execute();
@@ -38,6 +44,8 @@ TEST(OrnotbInstruction, EvenRs) {
 	Register rs("s1");
 	Register rt("s2");
 	OrnotbInstruction ornotb(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	ornotb.setALUFlags(flags);
 	rs.put(4);
 	rt.put(0);
 	bit16_t result = ornotb.execute();

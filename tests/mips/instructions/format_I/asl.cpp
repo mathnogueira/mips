@@ -7,6 +7,8 @@ using namespace MIPS;
 TEST(AslInstruction, positiveNumber) {
 	Register rs("s0");
 	AslInstruction asl(0, &rs, NULL, 0, 0);
+	struct ALUFlags flags;
+	asl.setALUFlags(flags);
 	rs.put(6);
 	ASSERT_EQ(asl.execute(), 12);
 }
@@ -14,6 +16,8 @@ TEST(AslInstruction, positiveNumber) {
 TEST(AslInstruction, positiveNumberOdd) {
 	Register rs("s0");
 	AslInstruction asl(0, &rs, NULL, 0, 0);
+	struct ALUFlags flags;
+	asl.setALUFlags(flags);
 	rs.put(9);
 	ASSERT_EQ(asl.execute(), 18);
 }
@@ -21,6 +25,8 @@ TEST(AslInstruction, positiveNumberOdd) {
 TEST(AslInstruction, NegativeNumber) {
 	Register rs("s0");
 	AslInstruction asl(0, &rs, NULL, 0, 0);
+	struct ALUFlags flags;
+	asl.setALUFlags(flags);
 	rs.put(-6);
 	ASSERT_EQ(asl.execute(), -12);
 }
@@ -28,6 +34,8 @@ TEST(AslInstruction, NegativeNumber) {
 TEST(AslInstruction, NegativeNumberOdd) {
 	Register rs("s0");
 	AslInstruction asl(0, &rs, NULL, 0, 0);
+	struct ALUFlags flags;
+	asl.setALUFlags(flags);
 	rs.put(-9);
 	ASSERT_EQ(asl.execute(), -18);
 }

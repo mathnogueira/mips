@@ -8,6 +8,8 @@ TEST(NandInstruction, differentNumbers) {
 	Register rt("s1");
 	Register rd("s2");
 	NandInstruction nand(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	nand.setALUFlags(flags);
 	rs.put(2);
 	rt.put(0);
 	bit16_t result = nand.execute();
@@ -19,6 +21,8 @@ TEST(NandInstruction, EqualNumbers) {
 	Register rt("s1");
 	Register rd("s2");
 	NandInstruction nand(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	nand.setALUFlags(flags);
 	rs.put(2);
 	rt.put(2);
 	bit16_t result = nand.execute();

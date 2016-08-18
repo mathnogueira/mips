@@ -9,6 +9,8 @@ TEST(XnorInstruction, differentNumbers) {
 	Register rt("s2");
 	Register rd("s0");
 	XnorInstruction xnor(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xnor.setALUFlags(flags);
 	rs.put(12);
 	rt.put(15);
 	bit16_t result = xnor.execute();
@@ -20,6 +22,8 @@ TEST(XnorInstruction, equalNumbers) {
 	Register rt("s2");
 	Register rd("s0");
 	XnorInstruction xnor(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xnor.setALUFlags(flags);
 	rs.put(12);
 	rt.put(12);
 	bit16_t result = xnor.execute();
@@ -31,6 +35,8 @@ TEST(XnorInstruction, positiveNegative) {
 	Register rt("s2");
 	Register rd("s0");
 	XnorInstruction xnor(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xnor.setALUFlags(flags);
 	rs.put(-12);
 	rt.put(15);
 	bit16_t result = xnor.execute();
@@ -42,6 +48,8 @@ TEST(XnorInstruction, negativeNumbers) {
 	Register rt("s2");
 	Register rd("s0");
 	XnorInstruction xnor(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xnor.setALUFlags(flags);
 	rs.put(-12);
 	rt.put(-15);
 	bit16_t result = xnor.execute();
@@ -53,6 +61,8 @@ TEST(XnorInstruction, sameNegativeNumbers) {
 	Register rt("s2");
 	Register rd("s0");
 	XnorInstruction xnor(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xnor.setALUFlags(flags);
 	rs.put(-122);
 	rt.put(-122);
 	bit16_t result = xnor.execute();

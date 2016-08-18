@@ -9,6 +9,8 @@ TEST(AndnotaInstruction, differentNumbers) {
 	Register rt("s2");
 	Register rd("s0");
 	AndnotaInstruction andnota(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	andnota.setALUFlags(flags);
 	rs.put(12);
 	rt.put(15);
 	bit16_t result = andnota.execute();
@@ -20,6 +22,8 @@ TEST(AndnotaInstruction, equalNumbers) {
 	Register rt("s2");
 	Register rd("s0");
 	AndnotaInstruction andnota(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	andnota.setALUFlags(flags);
 	rs.put(12);
 	rt.put(12);
 	bit16_t result = andnota.execute();

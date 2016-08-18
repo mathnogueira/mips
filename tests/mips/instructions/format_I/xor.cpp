@@ -9,6 +9,8 @@ TEST(XorInstruction, zeroZero) {
 	Register rt("s2");
 	Register rd("s0");
 	XorInstruction xOr(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xOr.setALUFlags(flags);
 	rs.put(0);
 	rt.put(0);
 	bit16_t result = xOr.execute();
@@ -20,6 +22,8 @@ TEST(XorInstruction, zeroOne) {
 	Register rt("s2");
 	Register rd("s0");
 	XorInstruction xOr(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xOr.setALUFlags(flags);
 	rs.put(0);
 	rt.put(1);
 	bit16_t result = xOr.execute();
@@ -31,6 +35,8 @@ TEST(XorInstruction, oneZero) {
 	Register rt("s2");
 	Register rd("s0");
 	XorInstruction xOr(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xOr.setALUFlags(flags);
 	rs.put(1);
 	rt.put(0);
 	bit16_t result = xOr.execute();
@@ -42,6 +48,8 @@ TEST(XorInstruction, oneOne) {
 	Register rt("s2");
 	Register rd("s0");
 	XorInstruction xOr(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	xOr.setALUFlags(flags);
 	rs.put(1);
 	rt.put(1);
 	bit16_t result = xOr.execute();

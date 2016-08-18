@@ -7,6 +7,8 @@ using namespace MIPS;
 TEST(AsrInstruction, positiveNumber) {
 	Register rs("s0");
 	AsrInstruction asr(0, &rs, NULL, 0, 0);
+	struct ALUFlags flags;
+	asr.setALUFlags(flags);
 	rs.put(6);
 	ASSERT_EQ(asr.execute(), 3);
 }
@@ -14,6 +16,8 @@ TEST(AsrInstruction, positiveNumber) {
 TEST(AsrInstruction, positiveNumberOdd) {
 	Register rs("s0");
 	AsrInstruction asr(0, &rs, NULL, 0, 0);
+	struct ALUFlags flags;
+	asr.setALUFlags(flags);
 	rs.put(9);
 	ASSERT_EQ(asr.execute(), 4);
 }
@@ -21,6 +25,8 @@ TEST(AsrInstruction, positiveNumberOdd) {
 TEST(AsrInstruction, NegativeNumber) {
 	Register rs("s0");
 	AsrInstruction asr(0, &rs, NULL, 0, 0);
+	struct ALUFlags flags;
+	asr.setALUFlags(flags);
 	rs.put(-6);
 	ASSERT_EQ(asr.execute(), -3);
 }
@@ -28,6 +34,8 @@ TEST(AsrInstruction, NegativeNumber) {
 TEST(AsrInstruction, NegativeNumberOdd) {
 	Register rs("s0");
 	AsrInstruction asr(0, &rs, NULL, 0, 0);
+	struct ALUFlags flags;
+	asr.setALUFlags(flags);
 	rs.put(-9);
 	ASSERT_EQ(asr.execute(), -5);
 }

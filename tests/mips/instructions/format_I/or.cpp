@@ -17,6 +17,8 @@ TEST(OrInstruction, differentNumbers) {
 	Register rt("s2");
 	Register rd("s0");
 	OrInstruction Or(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	Or.setALUFlags(flags);
 	rs.put(12);
 	rt.put(15);
 	bit16_t result = Or.execute();
@@ -28,6 +30,8 @@ TEST(OrInstruction, equalNumbers) {
 	Register rt("s2");
 	Register rd("s0");
 	OrInstruction Or(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	Or.setALUFlags(flags);
 	rs.put(12);
 	rt.put(12);
 	bit16_t result = Or.execute();

@@ -8,12 +8,14 @@ TEST(AddInstruction, sumOk) {
 	Register rs("s0");
 	Register rt("s1");
 	Register rd("s2");
-        
+
 	AddInstruction add(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	add.setALUFlags(flags);
 	rs.put(3);
 	rt.put(2);
 	rd.put(add.execute());
-        
+
 	ASSERT_EQ(rd.get(), 5);
 }
 
@@ -21,12 +23,14 @@ TEST(AddInstruction, sumNumNegative) {
 	Register rs("s0");
 	Register rt("s1");
 	Register rd("s2");
-        
+
 	AddInstruction add(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	add.setALUFlags(flags);
 	rs.put(3);
 	rt.put(-2);
 	rd.put(add.execute());
-        
+
 	ASSERT_EQ(rd.get(), 1);
 }
 
@@ -34,11 +38,13 @@ TEST(AddInstruction, sumNegativeNegative) {
 	Register rs("s0");
 	Register rt("s1");
 	Register rd("s2");
-        
+
 	AddInstruction add(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	add.setALUFlags(flags);
 	rs.put(-3);
 	rt.put(-2);
 	rd.put(add.execute());
-        
+
 	ASSERT_EQ(rd.get(), -5);
 }

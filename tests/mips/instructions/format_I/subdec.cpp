@@ -8,6 +8,8 @@ TEST(SubDecInstruction, subtrairDoisPositivos) {
     Register rs("s0");
     Register rt("s1");
     SubdecInstruction subdec(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	subdec.setALUFlags(flags);
     rs.put(20);
     rt.put(10);
     bit16_t result = subdec.execute();
@@ -18,6 +20,8 @@ TEST(SubDecInstruction, subtrairDoisNegativos) {
     Register rs("s0");
     Register rt("s1");
     SubdecInstruction subdec(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	subdec.setALUFlags(flags);
     rs.put(-20);
     rt.put(-10);
     bit16_t result = subdec.execute();
@@ -28,6 +32,8 @@ TEST(SubDecInstruction, subtrairPositivoNegativo) {
     Register rs("s0");
     Register rt("s1");
     SubdecInstruction subdec(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	subdec.setALUFlags(flags);
     rs.put(20);
     rt.put(-10);
     bit16_t result = subdec.execute();
@@ -38,6 +44,8 @@ TEST(SubDecInstruction, subtrairNegativoPositivo) {
     Register rs("s0");
     Register rt("s1");
     SubdecInstruction subdec(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	subdec.setALUFlags(flags);
     rs.put(-40);
     rt.put(10);
     bit16_t result = subdec.execute();

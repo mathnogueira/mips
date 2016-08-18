@@ -9,6 +9,8 @@ TEST(NorInstruction, zeroZero) {
 	Register rt("s2");
 	Register rd("s0");
 	NorInstruction nor(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	nor.setALUFlags(flags);
 	rs.put(0);
 	rt.put(0);
 	bit16_t result = nor.execute();
@@ -20,6 +22,8 @@ TEST(NorInstruction, zeroOne) {
 	Register rt("s2");
 	Register rd("s0");
 	NorInstruction nor(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	nor.setALUFlags(flags);
 	rs.put(0);
 	rt.put(1);
 	bit16_t result = nor.execute();
@@ -31,6 +35,8 @@ TEST(NorInstruction, oneZero) {
 	Register rt("s2");
 	Register rd("s0");
 	NorInstruction nor(0, &rs, &rt, 0, 0);
+	struct ALUFlags flags;
+	nor.setALUFlags(flags);
 	rs.put(1);
 	rt.put(0);
 	bit16_t result = nor.execute();
