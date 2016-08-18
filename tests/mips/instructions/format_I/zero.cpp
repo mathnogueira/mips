@@ -5,9 +5,12 @@
 using namespace MIPS;
 
 TEST(ZeroInstruction, zero) {
-	Register rd("t0");
+	Register rd("r0");
+	struct ALUFlags flags;
 	ZeroInstruction zero(0, NULL, NULL, 0, 0);
+	zero.setALUFlags(flags);
 	rd.put(22);
+	DEBUG("bug");
 	bit16_t result = zero.execute();
 	ASSERT_EQ(result, 0);
 }
