@@ -52,3 +52,17 @@ TEST(FullAdder, sumUsingCarry) {
 	ASSERT_EQ(result, 25);
 	ASSERT_FALSE(adder.overflow());
 }
+
+TEST(FullAdder, carry) {
+	FullAdder adder;
+	bit16_t a = 0xffff;
+	bit16_t b = 0xffff;
+
+	bit16_t result = adder.add(a, b, 0);
+	ASSERT_TRUE(adder.carry());
+
+	a = 0x0fff;
+	b = 0x0fff;
+	adder.add(a, b, 0);
+	ASSERT_FALSE(adder.carry());
+}

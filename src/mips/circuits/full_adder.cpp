@@ -31,6 +31,7 @@ bit16_t FullAdder::add(bit16_t a, bit16_t b, bit8_t c) {
 	}
 	if ((a >= 0 && b >= 0 && result < 0) || (a < 0 && b < 0 && result >= 0))
 		flagOverflow = true;
+	this->carryFlag = carry;
 	return result;
 }
 

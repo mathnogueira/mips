@@ -59,14 +59,11 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
     Register *rt = registerBank.getRegister(getRt(instruction));
     Register *rd = registerBank.getRegister(getRd(instruction));
     Instruction *instr = NULL;
-    printf("OPCODE: %d\n", opcode);
-    printf("FUNCT: %d\n", funct);
     switch (opcode) {
         case 0:
 			funct = getJumpOp(instruction);
 			offset = getOffset(instruction, 8);
 			//cond = getJumpCond(instruction);
-			printf("FUNCT: %d\n", funct);
             // Instruções de JUMP condicional ou incondicionais
             // Jal e JR
             // Verifica os códigos de função

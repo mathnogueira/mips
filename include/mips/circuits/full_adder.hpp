@@ -41,12 +41,24 @@ public:
 	 */
 	bool overflow();
 
+	/**
+	 * Verifica a flag de carry.
+	 *
+	 * \return flag de carry.
+	 */
+	bool carry() { return carryFlag; }
+
 private:
 
 	/**
 	 * Flag que identifica carry no ultimo bit da operação.
 	 */
 	bool flagOverflow;
+
+	/**
+	 * Flag de carry.
+	 */
+	bool carryFlag;
 
 };
 
