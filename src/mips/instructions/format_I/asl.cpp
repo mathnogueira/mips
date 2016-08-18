@@ -4,5 +4,13 @@
 using namespace MIPS;
 
 bit16_t AslInstruction::execute() {
-    return rs->get() << 1;
+    bit16_t result = rs->get() << 1;
+    
+    // Flags
+    this->flags->neg = result < 0;
+    this->flags->zero = result == 0;
+    this->flags->carry = (this->rs->get() >> 15) & 1;
+    this->flags->overflow = ((rs->get() >> 15) & 1) ^ ((rs->get() >> 14) & 1);
+    
+    return result;
 }

@@ -9,10 +9,10 @@ bit16_t NorInstruction::execute() {
 	// this->rd->put(result);
 
 	// Flags
-	this->flags->neg = 0;
-	this->flags->zero = 0;
-	this->flags->carry = 0;
-	this->flags->overflow = 0;
+	this->flags->neg = result < 0;
+    this->flags->zero = result == 0;
+    this->flags->carry = 0;
+    this->flags->overflow = 0;
 
     return result;
 }

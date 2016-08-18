@@ -11,5 +11,13 @@ bit16_t SubInstruction::execute() {
     bit16_t rt = this->rt->get();
     // Inverte RT
     rt = inversor.invert(rt);
-    return adder.add(rs, rt);
+	bit16_t result = adder.add(rs, rt);
+
+    // Flags
+    this->flags->neg = result < 0;
+    this->flags->zero = result == 0;
+    // TO DO this->flags->carry = 0;
+    this->flags->overflow = adder.overflow();
+
+    return result;
 }

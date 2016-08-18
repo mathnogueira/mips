@@ -12,5 +12,13 @@ bit16_t SubdecInstruction::execute() {
     // Inverte RT
     rt = inversor.invert(rt);
     bit16_t sub = adder.add(rs, rt);
-    return adder.add(sub, inversor.invert(1));
+
+    bit16_t result = adder.add(sub, inversor.invert(1));
+    // Flags
+    this->flags->neg = result < 0;
+    this->flags->zero = result == 0;
+    // TO DO this->flags->carry = 0;
+    this->flags->overflow = adder.overflow();
+    
+    return result;
 }
