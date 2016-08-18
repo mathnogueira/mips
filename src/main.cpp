@@ -1,6 +1,7 @@
 #include <mips/cpu.hpp>
 #include <mips/interpreter/interpreter.hpp>
 #include <mips/interpreter/exception/interpreter_exception.hpp>
+#include <cstdlib>
 #include <cstring>
 
 
