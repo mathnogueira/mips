@@ -16,7 +16,7 @@ bit16_t SubInstruction::execute() {
     // Flags
     this->flags->neg = result < 0;
     this->flags->zero = result == 0;
-    // TO DO this->flags->carry = 0;
+    this->flags->carry = adder.carry();
     this->flags->overflow = adder.overflow();
 
     return result;

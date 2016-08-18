@@ -10,7 +10,7 @@ bit16_t IncaInstruction::execute() {
     // Flags
     this->flags->neg = result < 0;
     this->flags->zero = result == 0;
-    // TO DO this->flags->carry = 0;
+    this->flags->carry = sum.carry();
     this->flags->overflow = sum.overflow();
 
     return result;
