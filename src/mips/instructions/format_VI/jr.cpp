@@ -3,7 +3,7 @@
 using namespace MIPS;
 
 bit16_t JrInstruction::execute() {
-    this->pc->put(this->rs->get());
-    
+    this->pc->put(this->rt->get());
+
     return 1;
 }

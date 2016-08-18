@@ -13,8 +13,9 @@ void optget(int args, char **argv, struct options &options) {
 	for (int i = 2; i < args; ++i) {
 		if (strcmp("-s", argv[i]) == 0)
 			options.screen = true;
-		else if (strcmp("-p", argv[i]) == 0)
+		else if (strcmp("-p", argv[i]) == 0) {
 			options.pause = true;
+		}
 		else if (strcmp("-d", argv[i]) == 0) {
 			options.dump = true;
 			options.dump_start = (bit16_t) strtol(argv[i+1], NULL, 16);

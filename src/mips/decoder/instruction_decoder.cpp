@@ -38,6 +38,8 @@
 #include <mips/instructions/format_IV/jf_true.hpp>
 #include <mips/instructions/format_IV/jf_zero.hpp>
 #include <mips/instructions/format_V/j.hpp>
+#include <mips/instructions/format_VI/jal.hpp>
+#include <mips/instructions/format_VI/jr.hpp>
 #include <mips/instructions/format_VII/load.hpp>
 #include <mips/instructions/format_VII/store.hpp>
 #include <cstdlib>
@@ -58,12 +60,13 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
     Register *rs = registerBank.getRegister(getRs(instruction));
     Register *rt = registerBank.getRegister(getRt(instruction));
     Register *rd = registerBank.getRegister(getRd(instruction));
+	Register *pc = registerBank.getPC();
     Instruction *instr = NULL;
     switch (opcode) {
         case 0:
 			funct = getJumpOp(instruction);
 			offset = getOffset(instruction, 8);
-			//cond = getJumpCond(instruction);
+			cond = getJumpCond(instruction);
             // Instruções de JUMP condicional ou incondicionais
             // Jal e JR
             // Verifica os códigos de função
@@ -101,10 +104,14 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
             } else if (funct == 3) {
                 // Pode ser tanto jal, como pode ser jr. Deve checar o campo R.
                 bit8_t r = (instruction >> 10) & 1;
+				rs = registerBank.getRegister(7);
                 if (r) {
                     // JR
+					return new JrInstruction(opcode, rs, rt, pc);
                 } else {
                     // JAL
+					FORMAT_DEBUG("%s\n", rt->getName());
+					return new JalInstruction(opcode, rs, rt, pc);
                 }
             }
             break;
@@ -201,17 +208,17 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
                     break;
                 case 28:
                     // Inca
-                    instr = new IncaInstruction(opcode, rs, rt, 0, funct);
+                    instr = new IncaInstruction(opcode, rd, rt, 0, funct);
                     break;
                 case 29:
                     // Deca
-                    instr = new DecaInstruction(opcode, rs, rt, 0, funct);
+                    instr = new DecaInstruction(opcode, rd, rt, 0, funct);
                     break;
             }
             break;
         case 2:
             // Loadlit
-            offset = getOffset(instruction, 12);
+            offset = getOffset(instruction, 11);
             instr = new LoadlitInstruction(opcode, rd, offset);
             break;
         case 3:

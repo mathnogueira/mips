@@ -16,9 +16,9 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 option(test "Building unit tests." OFF)
 
 # Para definir modo de debug
-# -Ddebug=ON
+# -Ddebug=OFF
 # Padrão: Desativado
-option(debug "Buiding in debug mode" ON)
+option(debug "Buiding in debug mode" OFF)
 
 # Define se o GNU G++ será utilizado para compilar o código
 # -Dgnucompiler=ON
@@ -27,7 +27,7 @@ option(gnucompiler "Building using GNU G++" ON)
 
 #### Configurações básicas do projeto ####
 # Nome do projeto
-set (PROJECT_NAME mips)
+set (PROJECT_NAME urisk)
 
 # Tipo de build que será realizada
 # Por padrão, o programa é compilado para modo release, porém, caso -Ddebug=ON é especificado,

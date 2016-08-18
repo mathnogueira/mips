@@ -62,8 +62,14 @@ void CPU::execute() {
         result = instructionObject->execute();
 		// Verifica se a instrução era um jump, e se haverá o desvio
 		if (controlUnit->jump && result == 1) {
-			// Atualiza o PC
-			bank->getPC()->put(instructionDecoder->getOffset(instruction, 12));
+			bit8_t funct = (instruction >> 12) & 3;
+			FORMAT_DEBUG("FUNCT %d\n", funct);
+			if (funct == 2) {
+				// JUMP
+				// Atualiza o PC
+				bank->getPC()->put(instructionDecoder->getOffset(instruction, 12));
+			}
+			controlUnit->regwrite = false;
 		}
 		// Verifica se é um branch
 		if (controlUnit->branch && result == 1) {
@@ -72,6 +78,7 @@ void CPU::execute() {
 			FORMAT_DEBUG("PC: %d\n", pc->get());
 			FORMAT_DEBUG("Offset: %d\n", instructionDecoder->getOffset(instruction, 8));
 			pc->put(pc->get() + instructionDecoder->getOffset(instruction, 8));
+			controlUnit->regwrite = false;
 		}
         // Pega o índice do registrador de destino
         bit8_t regdst;
@@ -87,6 +94,8 @@ void CPU::execute() {
 		// Imprime o relatório da instrução executada
 		if (options.screen)
 			Logger::screen(*bank, aluFlags, instruction);
+		if (options.pause)
+			getchar();
     } while (true);
 	// Imprime o dump de memória
 	if (options.dump)

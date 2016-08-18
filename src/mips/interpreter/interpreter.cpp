@@ -91,7 +91,7 @@ void Interpreter::updateLabels() {
 				int position = labels.at(j).line;
 				if (strcmp(lines.at(i).at(0), "j") != 0) {
 					// posição relativa para desvios condicionais
-					position = labels.at(j).line - i;
+					position = labels.at(j).line - i - 1;
 				} else {
 					position = labels.at(j).line;
 					if (position == i) {
