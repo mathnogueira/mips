@@ -3,5 +3,5 @@
 using namespace MIPS;
 
 bit16_t JtNegInstruction::execute() {
-    return flags.neg < 0;
+    return flags.neg;
 }

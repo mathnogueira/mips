@@ -116,13 +116,13 @@ $ git push origin branch-SEUNOME
 ### Tipo 4
 | Instrução | Opcode | Funct | Cond   | Offset8  | Status | Formato      |
 |:---------:|:------:|:-----:|:------:|:--------:|:------:|:-------------:|
-| jf.cond   | 00     | 00    | 0000   | 00000000 |        | jf.cond 8bits |
-| jt.cond   | 00     | 01    | 0000   | 00000000 |        | jt.conf 8bits |
+| jf.cond   | 00     | 00    | 0000   | 00000000 |   OK   | jf.cond 8bits |
+| jt.cond   | 00     | 01    | 0000   | 00000000 |   OK   | jt.conf 8bits |
 
 ### Tipo 5
 | Instrução | Opcode | OP | Offset12      | Status | Formato     |
 |:---------:|:-----:|:--:|:-------------:|:------:|:------------:|
-| j         | 00    | 10 | 000000000000  |        | j 12bits     |
+| j         | 00    | 10 | 000000000000  |   OK   | j 12bits     |
 
 ### Tipo 6
 | Instrução | Opcode | OP | R | X | Rt | Status | Formato       |
