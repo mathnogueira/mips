@@ -10,9 +10,13 @@
 \hyperlink{classMIPS_1_1ControlUnit_a4e7f136cf15bc78b878082ba5fe5b629}{Control\+Unit} ()
 \item 
 \hyperlink{classMIPS_1_1ControlUnit_a6e1a1d7cd85594c9a575a432770c3aa2}{$\sim$\+Control\+Unit} ()
+\item 
+void \hyperlink{classMIPS_1_1ControlUnit_a7de8a744457b38df762e7f9ed67ce3ef}{reset} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classMIPS_1_1ControlUnit_a4efae70e7973481e3f1bb8f91ba22322}{reg\+Dst}
 \item 
 bool \hyperlink{classMIPS_1_1ControlUnit_a18884b753a77aa99c9ff404e16c6ac7a}{regwrite}
 \item 
@@ -51,6 +55,16 @@ Cria uma nova unidade de controle. \index{M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P
 )}\hypertarget{classMIPS_1_1ControlUnit_a6e1a1d7cd85594c9a575a432770c3aa2}{}\label{classMIPS_1_1ControlUnit_a6e1a1d7cd85594c9a575a432770c3aa2}
 Destroi a unidade de controle. 
 
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}!reset@{reset}}
+\index{reset@{reset}!M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Control\+Unit\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1ControlUnit_a7de8a744457b38df762e7f9ed67ce3ef}{}\label{classMIPS_1_1ControlUnit_a7de8a744457b38df762e7f9ed67ce3ef}
+Reseta as flags do controle. 
+
 \subsection{Member Data Documentation}
 \index{M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}!branch@{branch}}
 \index{branch@{branch}!M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}}
@@ -64,7 +78,10 @@ Flag de jump \index{M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit
 Flag que indica que haverá leitura de memória. \index{M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}!mem\+Write@{mem\+Write}}
 \index{mem\+Write@{mem\+Write}!M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}}
 \subsubsection[{\texorpdfstring{mem\+Write}{memWrite}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+I\+P\+S\+::\+Control\+Unit\+::mem\+Write}\hypertarget{classMIPS_1_1ControlUnit_aba0c87c1f08276807cd241a9484980bc}{}\label{classMIPS_1_1ControlUnit_aba0c87c1f08276807cd241a9484980bc}
-Flag que indica que haverá escrita na memória. \index{M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}!regwrite@{regwrite}}
+Flag que indica que haverá escrita na memória. \index{M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}!reg\+Dst@{reg\+Dst}}
+\index{reg\+Dst@{reg\+Dst}!M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}}
+\subsubsection[{\texorpdfstring{reg\+Dst}{regDst}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+I\+P\+S\+::\+Control\+Unit\+::reg\+Dst}\hypertarget{classMIPS_1_1ControlUnit_a4efae70e7973481e3f1bb8f91ba22322}{}\label{classMIPS_1_1ControlUnit_a4efae70e7973481e3f1bb8f91ba22322}
+Flag que indica o registrador de destino. \index{M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}!regwrite@{regwrite}}
 \index{regwrite@{regwrite}!M\+I\+P\+S\+::\+Control\+Unit@{M\+I\+P\+S\+::\+Control\+Unit}}
 \subsubsection[{\texorpdfstring{regwrite}{regwrite}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+I\+P\+S\+::\+Control\+Unit\+::regwrite}\hypertarget{classMIPS_1_1ControlUnit_a18884b753a77aa99c9ff404e16c6ac7a}{}\label{classMIPS_1_1ControlUnit_a18884b753a77aa99c9ff404e16c6ac7a}
 Flag de escrita em banco de registradores. 

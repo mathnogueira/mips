@@ -1,0 +1,85 @@
+\hypertarget{classMIPS_1_1LoadInstruction}{}\section{M\+I\+PS\+:\+:Load\+Instruction Class Reference}
+\label{classMIPS_1_1LoadInstruction}\index{M\+I\+P\+S\+::\+Load\+Instruction@{M\+I\+P\+S\+::\+Load\+Instruction}}
+
+
+{\ttfamily \#include $<$load.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Load\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMIPS_1_1LoadInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1LoadInstruction_a7b21d86c1141e18a8303071dfad8ef0a}{Load\+Instruction} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionVII_a8e51202e0b22f8e74668f6de95089e60}{rs}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionVII_a8710c06b6e7816f330b0c5daea3402a4}{rt}, \hyperlink{classMIPS_1_1Memory}{Memory} $\ast$\hyperlink{classMIPS_1_1InstructionVII_a4fb34750bedbf137b43f9b55b591e0d7}{memory})
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1LoadInstruction_a847fca19fc0b6ea11ddfda930ac3c749}{execute} ()
+\item 
+void \hyperlink{classMIPS_1_1LoadInstruction_ae3c3bb9306b797e661fbd778767f577d}{update\+Control} (\hyperlink{classMIPS_1_1ControlUnit}{Control\+Unit} \&control)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Instrução de Load, carrega no registrador C o conteúdo da memória endereçada pelo registrador A.
+
+\begin{DoxyAuthor}{Author}
+Felipe Dias 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Load\+Instruction@{M\+I\+P\+S\+::\+Load\+Instruction}!Load\+Instruction@{Load\+Instruction}}
+\index{Load\+Instruction@{Load\+Instruction}!M\+I\+P\+S\+::\+Load\+Instruction@{M\+I\+P\+S\+::\+Load\+Instruction}}
+\subsubsection[{\texorpdfstring{Load\+Instruction(bit8\+\_\+t opcode, Register $\ast$rs, Register $\ast$rt, Memory $\ast$memory)}{LoadInstruction(bit8_t opcode, Register *rs, Register *rt, Memory *memory)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Load\+Instruction\+::\+Load\+Instruction (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf Register} $\ast$}]{rs, }
+\item[{{\bf Register} $\ast$}]{rt, }
+\item[{{\bf Memory} $\ast$}]{memory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1LoadInstruction_a7b21d86c1141e18a8303071dfad8ef0a}{}\label{classMIPS_1_1LoadInstruction_a7b21d86c1141e18a8303071dfad8ef0a}
+Constroi uma nova instrução. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Load\+Instruction@{M\+I\+P\+S\+::\+Load\+Instruction}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Load\+Instruction@{M\+I\+P\+S\+::\+Load\+Instruction}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Load\+Instruction\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1LoadInstruction_a847fca19fc0b6ea11ddfda930ac3c749}{}\label{classMIPS_1_1LoadInstruction_a847fca19fc0b6ea11ddfda930ac3c749}
+Executa a instrução.
+
+\begin{DoxyReturn}{Returns}
+resultado da instrução 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1InstructionVII_ab004a9cdc0efa7afacb964352abf3ee7}{M\+I\+P\+S\+::\+Instruction\+V\+II}.
+
+\index{M\+I\+P\+S\+::\+Load\+Instruction@{M\+I\+P\+S\+::\+Load\+Instruction}!update\+Control@{update\+Control}}
+\index{update\+Control@{update\+Control}!M\+I\+P\+S\+::\+Load\+Instruction@{M\+I\+P\+S\+::\+Load\+Instruction}}
+\subsubsection[{\texorpdfstring{update\+Control(\+Control\+Unit \&control)}{updateControl(ControlUnit &control)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Load\+Instruction\+::update\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Control\+Unit} \&}]{control}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMIPS_1_1LoadInstruction_ae3c3bb9306b797e661fbd778767f577d}{}\label{classMIPS_1_1LoadInstruction_ae3c3bb9306b797e661fbd778767f577d}
+Método utilizado para atualizar os sinais de controle do processador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & unidade de controle do processador. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classMIPS_1_1Instruction_a7df847adef2997446ffca9b71c2f3112}{M\+I\+P\+S\+::\+Instruction}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/format\+\_\+\+V\+I\+I/\hyperlink{load_8hpp}{load.\+hpp}\end{DoxyCompactItemize}

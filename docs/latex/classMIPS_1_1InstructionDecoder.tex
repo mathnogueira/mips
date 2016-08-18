@@ -23,6 +23,10 @@
 \item 
 \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_aa7148e0ad81662725be7203837a4e46c}{get\+Funct} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
 \item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_ab0e5dc987aa8c65f78aaba3ba242673b}{get\+Jump\+Op} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\item 
+\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_afef4b26e3420aa5a32473593868703d2}{get\+Jump\+Cond} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction)
+\item 
 \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionDecoder_a09ba48d5683432c3a303b8c42367755f}{get\+Offset} (\hyperlink{core_8hpp_aa514fd240a0e29abb2a2e4c805d7f1a4}{instruction\+\_\+t} instruction, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} size=8)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
@@ -98,6 +102,40 @@ Função que recupera o valor do funct da instrução.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 valor do funct 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+Jump\+Cond@{get\+Jump\+Cond}}
+\index{get\+Jump\+Cond@{get\+Jump\+Cond}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Jump\+Cond(instruction\+\_\+t instruction)}{getJumpCond(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Decoder\+::get\+Jump\+Cond (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_afef4b26e3420aa5a32473593868703d2}{}\label{classMIPS_1_1InstructionDecoder_afef4b26e3420aa5a32473593868703d2}
+Pega o valor de condição do jump.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução binária de 16 bits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor do cond. 
+\end{DoxyReturn}
+\index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+Jump\+Op@{get\+Jump\+Op}}
+\index{get\+Jump\+Op@{get\+Jump\+Op}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}
+\subsubsection[{\texorpdfstring{get\+Jump\+Op(instruction\+\_\+t instruction)}{getJumpOp(instruction_t instruction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit8\+\_\+t} M\+I\+P\+S\+::\+Instruction\+Decoder\+::get\+Jump\+Op (
+\begin{DoxyParamCaption}
+\item[{{\bf instruction\+\_\+t}}]{instruction}
+\end{DoxyParamCaption}
+)}\hypertarget{classMIPS_1_1InstructionDecoder_ab0e5dc987aa8c65f78aaba3ba242673b}{}\label{classMIPS_1_1InstructionDecoder_ab0e5dc987aa8c65f78aaba3ba242673b}
+Pega o valor do codigo de diferenciação dos jumps.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & instrução binária de 16 bits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor de diferenciação. 
 \end{DoxyReturn}
 \index{M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}!get\+Offset@{get\+Offset}}
 \index{get\+Offset@{get\+Offset}!M\+I\+P\+S\+::\+Instruction\+Decoder@{M\+I\+P\+S\+::\+Instruction\+Decoder}}

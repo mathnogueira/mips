@@ -3,6 +3,8 @@ var searchData=
   ['get',['get',['../classMIPS_1_1Register.html#a78679e51c4825a877fb82bd2481c237e',1,'MIPS::Register::get()'],['../classMIPS_1_1Queue.html#adeb864dfe03bceff01a57270337987ad',1,'MIPS::Queue::get()']]],
   ['getcode',['getCode',['../classMIPS_1_1InterpreterException.html#a6d2fc264fb6b9c61bf9690747d1bf5b6',1,'MIPS::InterpreterException']]],
   ['getfunct',['getFunct',['../classMIPS_1_1InstructionDecoder.html#aa7148e0ad81662725be7203837a4e46c',1,'MIPS::InstructionDecoder']]],
+  ['getjumpcond',['getJumpCond',['../classMIPS_1_1InstructionDecoder.html#afef4b26e3420aa5a32473593868703d2',1,'MIPS::InstructionDecoder']]],
+  ['getjumpop',['getJumpOp',['../classMIPS_1_1InstructionDecoder.html#ab0e5dc987aa8c65f78aaba3ba242673b',1,'MIPS::InstructionDecoder']]],
   ['getname',['getName',['../classMIPS_1_1Register.html#a09fd0ac8d18acb6907e47915f518c695',1,'MIPS::Register']]],
   ['getnext',['getNext',['../classMIPS_1_1InstructionFinder.html#a73a242cbe648c2d5e1cd0dd9342f798a',1,'MIPS::InstructionFinder']]],
   ['getoffset',['getOffset',['../classMIPS_1_1InstructionDecoder.html#a09ba48d5683432c3a303b8c42367755f',1,'MIPS::InstructionDecoder']]],

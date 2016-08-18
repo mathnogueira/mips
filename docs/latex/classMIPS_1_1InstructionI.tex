@@ -18,6 +18,8 @@ Inheritance diagram for M\+I\+PS\+:\+:InstructionI\+:\begin{figure}[H]
 virtual \hyperlink{classMIPS_1_1InstructionI_ae330e8a6a7d5820b0e559a7845867518}{$\sim$\+InstructionI} ()
 \item 
 virtual \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionI_ae60fca5801bf5415cdff06d2aa11764f}{execute} ()=0
+\item 
+void \hyperlink{classMIPS_1_1InstructionI_a6aa4adb045591333e8f693bd4782cb0b}{update\+Control} (\hyperlink{classMIPS_1_1ControlUnit}{Control\+Unit} \&control)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -95,7 +97,25 @@ Implements \hyperlink{classMIPS_1_1Instruction_a88668dfaf49dd8608f210ba13948d242
 
 
 
-Implemented in \hyperlink{classMIPS_1_1AddInstruction_aa699dc00fdcd4250944f8afaa2fa89eb}{M\+I\+P\+S\+::\+Add\+Instruction}, \hyperlink{classMIPS_1_1AddIncInstruction_aa63fcaf17a9afc2f1b5d09a6291a70d6}{M\+I\+P\+S\+::\+Add\+Inc\+Instruction}, \hyperlink{classMIPS_1_1AndnotaInstruction_afdc3b2836318f4adaa32dfa3bcdf7c45}{M\+I\+P\+S\+::\+Andnota\+Instruction}, \hyperlink{classMIPS_1_1AslInstruction_adafc2d1f549cda9bdf757dc2bac03ca9}{M\+I\+P\+S\+::\+Asl\+Instruction}, \hyperlink{classMIPS_1_1AsrInstruction_aad46283e10517abf6bf5e527ca020d53}{M\+I\+P\+S\+::\+Asr\+Instruction}, \hyperlink{classMIPS_1_1DecaInstruction_a82c3d685d910d2c52163f5faa1750aca}{M\+I\+P\+S\+::\+Deca\+Instruction}, \hyperlink{classMIPS_1_1IncaInstruction_ac78e4a0b037ab4b6b419f4f5a34413c7}{M\+I\+P\+S\+::\+Inca\+Instruction}, \hyperlink{classMIPS_1_1NandInstruction_a2e0266ebee3819e7b4d9bfb44f0e70ac}{M\+I\+P\+S\+::\+Nand\+Instruction}, \hyperlink{classMIPS_1_1NorInstruction_a68bb5cc9920bd63229f4c16c4edb5ab6}{M\+I\+P\+S\+::\+Nor\+Instruction}, \hyperlink{classMIPS_1_1OnesInstruction_aeab25fd32df5c092d4f426371f3f1ff3}{M\+I\+P\+S\+::\+Ones\+Instruction}, \hyperlink{classMIPS_1_1PassaInstruction_ae23b43bfb84d2ef69fa25e50fb5b6072}{M\+I\+P\+S\+::\+Passa\+Instruction}, \hyperlink{classMIPS_1_1PassNotAInstruction_a30b9bdb1feac1adb44e70a3a0eb85cb4}{M\+I\+P\+S\+::\+Pass\+Not\+A\+Instruction}, \hyperlink{classMIPS_1_1SubInstruction_a2b10f6bfda0e7d9651600b530cfccf62}{M\+I\+P\+S\+::\+Sub\+Instruction}, \hyperlink{classMIPS_1_1XnorInstruction_a4b5ae9a875883902c0ed1e237e753f31}{M\+I\+P\+S\+::\+Xnor\+Instruction}, \hyperlink{classMIPS_1_1XorInstruction_aaebc7dc8723627871ba2caf85f01fbea}{M\+I\+P\+S\+::\+Xor\+Instruction}, \hyperlink{classMIPS_1_1ZeroInstruction_a9596a96b4bf7a51672ab14386d111bad}{M\+I\+P\+S\+::\+Zero\+Instruction}, \hyperlink{classMIPS_1_1SubdecInstruction_a6d9e86774b950a584b60d9a48402af2a}{M\+I\+P\+S\+::\+Subdec\+Instruction}, \hyperlink{classMIPS_1_1AndInstruction_a24b2fdb68ff022275db4181e502b7a48}{M\+I\+P\+S\+::\+And\+Instruction}, \hyperlink{classMIPS_1_1OrInstruction_a89859e0bcb3e5ed7f1c53f33f627f041}{M\+I\+P\+S\+::\+Or\+Instruction}, and \hyperlink{classMIPS_1_1OrnotbInstruction_a47aac4ac3ef0ee8c6a694189f26bd80e}{M\+I\+P\+S\+::\+Ornotb\+Instruction}.
+Implemented in \hyperlink{classMIPS_1_1AddInstruction_aa699dc00fdcd4250944f8afaa2fa89eb}{M\+I\+P\+S\+::\+Add\+Instruction}, \hyperlink{classMIPS_1_1AddIncInstruction_aa63fcaf17a9afc2f1b5d09a6291a70d6}{M\+I\+P\+S\+::\+Add\+Inc\+Instruction}, \hyperlink{classMIPS_1_1AndnotaInstruction_afdc3b2836318f4adaa32dfa3bcdf7c45}{M\+I\+P\+S\+::\+Andnota\+Instruction}, \hyperlink{classMIPS_1_1AslInstruction_adafc2d1f549cda9bdf757dc2bac03ca9}{M\+I\+P\+S\+::\+Asl\+Instruction}, \hyperlink{classMIPS_1_1AsrInstruction_aad46283e10517abf6bf5e527ca020d53}{M\+I\+P\+S\+::\+Asr\+Instruction}, \hyperlink{classMIPS_1_1DecaInstruction_a82c3d685d910d2c52163f5faa1750aca}{M\+I\+P\+S\+::\+Deca\+Instruction}, \hyperlink{classMIPS_1_1IncaInstruction_ac78e4a0b037ab4b6b419f4f5a34413c7}{M\+I\+P\+S\+::\+Inca\+Instruction}, \hyperlink{classMIPS_1_1LslInstruction_af6483e18e765310b9900c7fd8322b0c8}{M\+I\+P\+S\+::\+Lsl\+Instruction}, \hyperlink{classMIPS_1_1LsrInstruction_ae4417a1e7d66faec1361f8884f69c9b2}{M\+I\+P\+S\+::\+Lsr\+Instruction}, \hyperlink{classMIPS_1_1NandInstruction_a2e0266ebee3819e7b4d9bfb44f0e70ac}{M\+I\+P\+S\+::\+Nand\+Instruction}, \hyperlink{classMIPS_1_1NorInstruction_a68bb5cc9920bd63229f4c16c4edb5ab6}{M\+I\+P\+S\+::\+Nor\+Instruction}, \hyperlink{classMIPS_1_1OnesInstruction_aeab25fd32df5c092d4f426371f3f1ff3}{M\+I\+P\+S\+::\+Ones\+Instruction}, \hyperlink{classMIPS_1_1PassaInstruction_ae23b43bfb84d2ef69fa25e50fb5b6072}{M\+I\+P\+S\+::\+Passa\+Instruction}, \hyperlink{classMIPS_1_1PassNotAInstruction_a30b9bdb1feac1adb44e70a3a0eb85cb4}{M\+I\+P\+S\+::\+Pass\+Not\+A\+Instruction}, \hyperlink{classMIPS_1_1SubInstruction_a2b10f6bfda0e7d9651600b530cfccf62}{M\+I\+P\+S\+::\+Sub\+Instruction}, \hyperlink{classMIPS_1_1XnorInstruction_a4b5ae9a875883902c0ed1e237e753f31}{M\+I\+P\+S\+::\+Xnor\+Instruction}, \hyperlink{classMIPS_1_1XorInstruction_aaebc7dc8723627871ba2caf85f01fbea}{M\+I\+P\+S\+::\+Xor\+Instruction}, \hyperlink{classMIPS_1_1ZeroInstruction_a9596a96b4bf7a51672ab14386d111bad}{M\+I\+P\+S\+::\+Zero\+Instruction}, \hyperlink{classMIPS_1_1SubdecInstruction_a6d9e86774b950a584b60d9a48402af2a}{M\+I\+P\+S\+::\+Subdec\+Instruction}, \hyperlink{classMIPS_1_1AndInstruction_a24b2fdb68ff022275db4181e502b7a48}{M\+I\+P\+S\+::\+And\+Instruction}, \hyperlink{classMIPS_1_1OrInstruction_a89859e0bcb3e5ed7f1c53f33f627f041}{M\+I\+P\+S\+::\+Or\+Instruction}, and \hyperlink{classMIPS_1_1OrnotbInstruction_a47aac4ac3ef0ee8c6a694189f26bd80e}{M\+I\+P\+S\+::\+Ornotb\+Instruction}.
+
+\index{M\+I\+P\+S\+::\+InstructionI@{M\+I\+P\+S\+::\+InstructionI}!update\+Control@{update\+Control}}
+\index{update\+Control@{update\+Control}!M\+I\+P\+S\+::\+InstructionI@{M\+I\+P\+S\+::\+InstructionI}}
+\subsubsection[{\texorpdfstring{update\+Control(\+Control\+Unit \&control)}{updateControl(ControlUnit &control)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Instruction\+I\+::update\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Control\+Unit} \&}]{control}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMIPS_1_1InstructionI_a6aa4adb045591333e8f693bd4782cb0b}{}\label{classMIPS_1_1InstructionI_a6aa4adb045591333e8f693bd4782cb0b}
+Método utilizado para atualizar os sinais de controle do processador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & unidade de controle do processador. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classMIPS_1_1Instruction_a7df847adef2997446ffca9b71c2f3112}{M\+I\+P\+S\+::\+Instruction}.
 
 
 

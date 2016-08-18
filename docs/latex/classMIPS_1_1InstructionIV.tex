@@ -16,6 +16,8 @@ Inheritance diagram for M\+I\+PS\+:\+:Instruction\+IV\+:\begin{figure}[H]
 \hyperlink{classMIPS_1_1InstructionIV_a9219778a142dd2f6114ecf39bf9d24f3}{Instruction\+IV} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, struct \hyperlink{structMIPS_1_1ALUFlags}{A\+L\+U\+Flags} \&alu\+Flags, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionIV_abcb91e65c800a41bf9c46b5770120b36}{offset})
 \item 
 virtual \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionIV_ae9eeb2c1aa5392cc3e2d9f2d816b799c}{execute} ()=0
+\item 
+void \hyperlink{classMIPS_1_1InstructionIV_af851bc54b16ff1b29537237a0b5882c3}{update\+Control} (\hyperlink{classMIPS_1_1ControlUnit}{Control\+Unit} \&control)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -77,6 +79,24 @@ Implements \hyperlink{classMIPS_1_1Instruction_a88668dfaf49dd8608f210ba13948d242
 
 
 Implemented in \hyperlink{classMIPS_1_1JtZeroInstruction_a8a56439dd5df5fcf00344304b8409e45}{M\+I\+P\+S\+::\+Jt\+Zero\+Instruction}.
+
+\index{M\+I\+P\+S\+::\+Instruction\+IV@{M\+I\+P\+S\+::\+Instruction\+IV}!update\+Control@{update\+Control}}
+\index{update\+Control@{update\+Control}!M\+I\+P\+S\+::\+Instruction\+IV@{M\+I\+P\+S\+::\+Instruction\+IV}}
+\subsubsection[{\texorpdfstring{update\+Control(\+Control\+Unit \&control)}{updateControl(ControlUnit &control)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Instruction\+I\+V\+::update\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Control\+Unit} \&}]{control}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMIPS_1_1InstructionIV_af851bc54b16ff1b29537237a0b5882c3}{}\label{classMIPS_1_1InstructionIV_af851bc54b16ff1b29537237a0b5882c3}
+Método utilizado para atualizar os sinais de controle do processador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & unidade de controle do processador. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classMIPS_1_1Instruction_a7df847adef2997446ffca9b71c2f3112}{M\+I\+P\+S\+::\+Instruction}.
 
 
 

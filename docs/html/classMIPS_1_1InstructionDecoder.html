@@ -115,6 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a493aeaf3390fb5821596ef3efc22e65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7148e0ad81662725be7203837a4e46c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#aa7148e0ad81662725be7203837a4e46c">getFunct</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
 <tr class="separator:aa7148e0ad81662725be7203837a4e46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e5dc987aa8c65f78aaba3ba242673b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#ab0e5dc987aa8c65f78aaba3ba242673b">getJumpOp</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
+<tr class="separator:ab0e5dc987aa8c65f78aaba3ba242673b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef4b26e3420aa5a32473593868703d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#afef4b26e3420aa5a32473593868703d2">getJumpCond</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction)</td></tr>
+<tr class="separator:afef4b26e3420aa5a32473593868703d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09ba48d5683432c3a303b8c42367755f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#adc265a970bc35995b5879784bbb3f1b7">bit16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1InstructionDecoder.html#a09ba48d5683432c3a303b8c42367755f">getOffset</a> (<a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a> instruction, <a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> size=8)</td></tr>
 <tr class="separator:a09ba48d5683432c3a303b8c42367755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -212,6 +216,54 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valor do funct </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afef4b26e3420aa5a32473593868703d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> MIPS::InstructionDecoder::getJumpCond </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a>&#160;</td>
+          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pega o valor de condição do jump.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instruction</td><td>instrução binária de 16 bits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>valor do cond. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab0e5dc987aa8c65f78aaba3ba242673b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8hpp.html#a6074bae122ae7b527864eec42c728c3c">bit8_t</a> MIPS::InstructionDecoder::getJumpOp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8hpp.html#aa514fd240a0e29abb2a2e4c805d7f1a4">instruction_t</a>&#160;</td>
+          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pega o valor do codigo de diferenciação dos jumps.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instruction</td><td>instrução binária de 16 bits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>valor de diferenciação. </dd></dl>
 
 </div>
 </div>

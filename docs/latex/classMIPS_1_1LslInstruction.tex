@@ -1,0 +1,66 @@
+\hypertarget{classMIPS_1_1LslInstruction}{}\section{M\+I\+PS\+:\+:Lsl\+Instruction Class Reference}
+\label{classMIPS_1_1LslInstruction}\index{M\+I\+P\+S\+::\+Lsl\+Instruction@{M\+I\+P\+S\+::\+Lsl\+Instruction}}
+
+
+{\ttfamily \#include $<$lsl.\+hpp$>$}
+
+Inheritance diagram for M\+I\+PS\+:\+:Lsl\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMIPS_1_1LslInstruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMIPS_1_1LslInstruction_ae6e4596399372f3eb4eb4b9685e107e6}{Lsl\+Instruction} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionI_a2be191d5b3dce505e2e626ec02eb4d62}{rs}, \hyperlink{classMIPS_1_1Register}{Register} $\ast$\hyperlink{classMIPS_1_1InstructionI_add1db07a5c954f35271de8c8a5737487}{rt}, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionI_aa9b6da37c374c2ec8d96448d341e5e7d}{shamt}, \hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1InstructionI_a5c6efcbbd233a7447c1fe24ea0a1e558}{funct})
+\item 
+\hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1LslInstruction_af6483e18e765310b9900c7fd8322b0c8}{execute} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe que faz a operação de L\+SL no processador.
+
+\begin{DoxyAuthor}{Author}
+Felipe Dias 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+I\+P\+S\+::\+Lsl\+Instruction@{M\+I\+P\+S\+::\+Lsl\+Instruction}!Lsl\+Instruction@{Lsl\+Instruction}}
+\index{Lsl\+Instruction@{Lsl\+Instruction}!M\+I\+P\+S\+::\+Lsl\+Instruction@{M\+I\+P\+S\+::\+Lsl\+Instruction}}
+\subsubsection[{\texorpdfstring{Lsl\+Instruction(bit8\+\_\+t opcode, Register $\ast$rs, Register $\ast$rt, bit8\+\_\+t shamt, bit8\+\_\+t funct)}{LslInstruction(bit8_t opcode, Register *rs, Register *rt, bit8_t shamt, bit8_t funct)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+I\+P\+S\+::\+Lsl\+Instruction\+::\+Lsl\+Instruction (
+\begin{DoxyParamCaption}
+\item[{{\bf bit8\+\_\+t}}]{opcode, }
+\item[{{\bf Register} $\ast$}]{rs, }
+\item[{{\bf Register} $\ast$}]{rt, }
+\item[{{\bf bit8\+\_\+t}}]{shamt, }
+\item[{{\bf bit8\+\_\+t}}]{funct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMIPS_1_1LslInstruction_ae6e4596399372f3eb4eb4b9685e107e6}{}\label{classMIPS_1_1LslInstruction_ae6e4596399372f3eb4eb4b9685e107e6}
+Constroi uma nova instrução. 
+
+\subsection{Member Function Documentation}
+\index{M\+I\+P\+S\+::\+Lsl\+Instruction@{M\+I\+P\+S\+::\+Lsl\+Instruction}!execute@{execute}}
+\index{execute@{execute}!M\+I\+P\+S\+::\+Lsl\+Instruction@{M\+I\+P\+S\+::\+Lsl\+Instruction}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit16\+\_\+t} M\+I\+P\+S\+::\+Lsl\+Instruction\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1LslInstruction_af6483e18e765310b9900c7fd8322b0c8}{}\label{classMIPS_1_1LslInstruction_af6483e18e765310b9900c7fd8322b0c8}
+Função que executa a operação de decremento.
+
+\begin{DoxyReturn}{Returns}
+resultado da operação 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classMIPS_1_1InstructionI_ae60fca5801bf5415cdff06d2aa11764f}{M\+I\+P\+S\+::\+InstructionI}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mips/instructions/format\+\_\+\+I/\hyperlink{lsl_8hpp}{lsl.\+hpp}\end{DoxyCompactItemize}

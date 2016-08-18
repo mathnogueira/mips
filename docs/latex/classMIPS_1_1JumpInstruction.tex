@@ -15,6 +15,8 @@ Inheritance diagram for M\+I\+PS\+:\+:Jump\+Instruction\+:\begin{figure}[H]
 \item 
 \hyperlink{classMIPS_1_1JumpInstruction_a5688d5a7c2ded2c3b8a32cb395cb9db9}{Jump\+Instruction} (\hyperlink{core_8hpp_a6074bae122ae7b527864eec42c728c3c}{bit8\+\_\+t} \hyperlink{classMIPS_1_1Instruction_a45cc6808b5dde8a5d41067d148b55476}{opcode}, \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1InstructionV_ac2e294fde4971aa6a149480f22ae29e9}{offset})
 \item 
+void \hyperlink{classMIPS_1_1JumpInstruction_a1599bb129ba72825caf547ffa3a46421}{update\+Control} (\hyperlink{classMIPS_1_1ControlUnit}{Control\+Unit} \&control)
+\item 
 \hyperlink{core_8hpp_adc265a970bc35995b5879784bbb3f1b7}{bit16\+\_\+t} \hyperlink{classMIPS_1_1JumpInstruction_a843961af93d20e35dd1fab6bf341e16e}{execute} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
@@ -64,6 +66,24 @@ returna 0 se o desvio não for tomado, 1 se desvio for tomado.
 
 
 Implements \hyperlink{classMIPS_1_1InstructionV_a511d8ba098bcca95f1e91ff6616470ef}{M\+I\+P\+S\+::\+InstructionV}.
+
+\index{M\+I\+P\+S\+::\+Jump\+Instruction@{M\+I\+P\+S\+::\+Jump\+Instruction}!update\+Control@{update\+Control}}
+\index{update\+Control@{update\+Control}!M\+I\+P\+S\+::\+Jump\+Instruction@{M\+I\+P\+S\+::\+Jump\+Instruction}}
+\subsubsection[{\texorpdfstring{update\+Control(\+Control\+Unit \&control)}{updateControl(ControlUnit &control)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+I\+P\+S\+::\+Jump\+Instruction\+::update\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Control\+Unit} \&}]{control}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMIPS_1_1JumpInstruction_a1599bb129ba72825caf547ffa3a46421}{}\label{classMIPS_1_1JumpInstruction_a1599bb129ba72825caf547ffa3a46421}
+Método utilizado para atualizar os sinais de controle do processador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & unidade de controle do processador. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classMIPS_1_1Instruction_a7df847adef2997446ffca9b71c2f3112}{M\+I\+P\+S\+::\+Instruction}.
 
 
 

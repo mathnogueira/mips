@@ -98,8 +98,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abac2c5ab745d4b2e0320a020cd2b77f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1Memory.html#abac2c5ab745d4b2e0320a020cd2b77f6">Memory</a> ()</td></tr>
-<tr class="separator:abac2c5ab745d4b2e0320a020cd2b77f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092aefef9b57b4a349fb11a780f1cc5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1Memory.html#a092aefef9b57b4a349fb11a780f1cc5a">Memory</a> (<a class="el" href="classMIPS_1_1ControlUnit.html">ControlUnit</a> &amp;controlUnit)</td></tr>
+<tr class="separator:a092aefef9b57b4a349fb11a780f1cc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3e886fa42efa3e629c7572bf232e05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1Memory.html#ace3e886fa42efa3e629c7572bf232e05">~Memory</a> ()</td></tr>
 <tr class="separator:ace3e886fa42efa3e629c7572bf232e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a636e0ca3d23fc5022a2a4b59a6648210"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMIPS_1_1Memory.html#a636e0ca3d23fc5022a2a4b59a6648210">setInstructionSize</a> (size_t size)</td></tr>
@@ -115,19 +115,26 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Classe responsável por iteragir com a memória do processador, para assim, criar uma interface de maior facilidade para acessar a memória.</p>
 <dl class="section author"><dt>Author</dt><dd>Matheus Nogueira </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abac2c5ab745d4b2e0320a020cd2b77f6"></a>
+<a class="anchor" id="a092aefef9b57b4a349fb11a780f1cc5a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">MIPS::Memory::Memory </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classMIPS_1_1ControlUnit.html">ControlUnit</a> &amp;&#160;</td>
+          <td class="paramname"><em>controlUnit</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Cria uma nova unidade de memória. </p>
+<p>Cria uma nova unidade de memória.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controlUnit</td><td>unidade de controle do processador. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

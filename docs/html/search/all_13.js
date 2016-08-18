@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatecontrol',['updateControl',['../classMIPS_1_1Instruction.html#a7df847adef2997446ffca9b71c2f3112',1,'MIPS::Instruction']]]
+  ['updatecontrol',['updateControl',['../classMIPS_1_1JumpInstruction.html#a1599bb129ba72825caf547ffa3a46421',1,'MIPS::JumpInstruction::updateControl()'],['../classMIPS_1_1LoadInstruction.html#ae3c3bb9306b797e661fbd778767f577d',1,'MIPS::LoadInstruction::updateControl()'],['../classMIPS_1_1StoreInstruction.html#ab91c709e160c274abd7fe1660cd8fa52',1,'MIPS::StoreInstruction::updateControl()'],['../classMIPS_1_1Instruction.html#a7df847adef2997446ffca9b71c2f3112',1,'MIPS::Instruction::updateControl()'],['../classMIPS_1_1InstructionI.html#a6aa4adb045591333e8f693bd4782cb0b',1,'MIPS::InstructionI::updateControl()'],['../classMIPS_1_1InstructionII.html#a6d59324f70d5b0eac26c771032ef6293',1,'MIPS::InstructionII::updateControl()'],['../classMIPS_1_1InstructionIII.html#ac2e82988e8b0b356f939d86c3de5ed59',1,'MIPS::InstructionIII::updateControl()'],['../classMIPS_1_1InstructionIV.html#af851bc54b16ff1b29537237a0b5882c3',1,'MIPS::InstructionIV::updateControl()']]]
 ];
