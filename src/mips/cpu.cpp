@@ -1,11 +1,12 @@
 #include <mips/cpu.hpp>
 #include <mips/memory/memory.hpp>
 #include <mips/memory/register_bank.hpp>
+#include <mips/util/logger.hpp>
 #include <cstdio>
 
 using namespace MIPS;
 
-CPU::CPU() {
+CPU::CPU(struct options &opt) : options(opt) {
 	aluFlags = {0, 0, 0, 0};
 	controlUnit = new ControlUnit;
 	memory = new Memory(*controlUnit);
@@ -83,5 +84,7 @@ void CPU::execute() {
         bank->write(result, regdst);
 		// Reseta as flags
 		controlUnit->reset();
+		// Imprime o relatório da instrução executada
+		Logger::screen(*bank, aluFlags);
     } while (true);
 }

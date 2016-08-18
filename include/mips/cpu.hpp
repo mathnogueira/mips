@@ -16,6 +16,18 @@
 namespace MIPS {
 
 /**
+ * Estrutura que armazena as opções para a execução do emulador.
+ *
+ */
+struct options {
+	bool screen;			///< Deve imprimir o estado de cada execução
+	bool pause;				///< Deve pausar a tela quando ela encher
+	bool dump;				///< Realiza o dump de memória ao final da execução
+	bit16_t dump_start;		///< Posição inicial do dump
+	bit16_t dump_size;		///< Número de palavras que serão impressas
+};
+
+/**
  * Classe que representa o processador m-RISC, esta é responsável por gerenciar
  * toda a execução das instruções no processador.
  *
@@ -26,8 +38,10 @@ class CPU {
 public:
     /**
      * Cria uma nova CPU.
+	 *
+	 * \param opt opções de execução do emulador
      */
-    CPU();
+    CPU(struct options &opt);
 
     /**
      * Destroi a CPU.
@@ -79,6 +93,11 @@ private:
 	 * Flags da ALU.
 	 */
 	struct ALUFlags aluFlags;
+
+	/**
+	 * Opções do emulador.
+	 */
+	struct options &options;
 };
 
 };
