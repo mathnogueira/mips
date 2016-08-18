@@ -11,6 +11,7 @@
 #include <mips/units/instruction_finder.hpp>
 #include <mips/units/control.hpp>
 #include <mips/decoder/instruction_decoder.hpp>
+#include <mips/flag.hpp>
 
 namespace MIPS {
 
@@ -73,6 +74,11 @@ private:
      * Unidade de controle de execução.
      */
     ControlUnit * controlUnit;
+
+	/**
+	 * Flags da ALU.
+	 */
+	struct ALUFlags aluFlags;
 };
 
 };

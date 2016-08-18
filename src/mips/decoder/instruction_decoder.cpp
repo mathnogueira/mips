@@ -1,4 +1,5 @@
 #include <mips/decoder/instruction_decoder.hpp>
+#include <mips/circuits/signal_extender.hpp>
 #include <mips/instructions/format_I/add.hpp>
 #include <mips/instructions/format_I/addinc.hpp>
 #include <mips/instructions/format_I/and.hpp>
@@ -22,6 +23,13 @@
 #include <mips/instructions/format_II/loadlit.hpp>
 #include <mips/instructions/format_III/lch.hpp>
 #include <mips/instructions/format_III/lcl.hpp>
+#include <mips/instructions/format_IV/jt_carry.hpp>
+#include <mips/instructions/format_IV/jt_neg.hpp>
+#include <mips/instructions/format_IV/jt_negzero.hpp>
+#include <mips/instructions/format_IV/jt_overflow.hpp>
+#include <mips/instructions/format_IV/jt_true.hpp>
+#include <mips/instructions/format_IV/jt_zero.hpp>
+
 #include <mips/instructions/format_V/j.hpp>
 #include <cstdlib>
 #include <cmath>
@@ -42,12 +50,12 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
     Register *rt = registerBank.getRegister(getRt(instruction));
     Register *rd = registerBank.getRegister(getRd(instruction));
     Instruction *instr = NULL;
-	PRINT_BIN(instruction);
     printf("OPCODE: %d\n", opcode);
     printf("FUNCT: %d\n", funct);
     switch (opcode) {
         case 0:
 			funct = getJumpOp(instruction);
+			offset = getOffset(instruction, 8);
 			//cond = getJumpCond(instruction);
 			printf("FUNCT: %d\n", funct);
             // Instruções de JUMP condicional ou incondicionais
@@ -71,18 +79,17 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
             } else if (funct == 1) {
                 // JT.cond, deve checar o código da condição
 				if (cond == 4)
-					// Neg
+					return new JtNegInstruction(opcode, *flags, offset);
 				if (cond == 5)
-					// Zero
+					return new JtZeroInstruction(opcode, *flags, offset);
 				if (cond == 6)
-					// Carry
+					return new JtCarryInstruction(opcode, *flags, offset);
 				if (cond == 7)
-					// Negzero
+					return new JtNegzeroInstruction(opcode, *flags, offset);
 				if (cond == 0)
-					// True
+					return new JtTrueInstruction(opcode, *flags, offset);
 				if (cond == 3)
-					// Overflow
-					;
+					return new JtOverflowInstruction(opcode, *flags, offset);
             } else if (funct == 2) {
 				DEBUG("Jump");
                 return new JumpInstruction(opcode, getOffset(instruction, 12));
@@ -198,7 +205,7 @@ Instruction* InstructionDecoder::decode(instruction_t instruction) {
             break;
         case 2:
             // Loadlit
-            offset = getOffset(instruction, 11);
+            offset = getOffset(instruction, 12);
             instr = new LoadlitInstruction(opcode, rd, offset);
             break;
         case 3:
@@ -294,5 +301,5 @@ bit8_t InstructionDecoder::getJumpCond(instruction_t instruction) {
  * \return valor do offset.
  */
 bit16_t InstructionDecoder::getOffset(instruction_t instruction, bit8_t size) {
-    return instruction & (bit16_t)(pow(2, size)-1);
+    return SignalExtender::extend(instruction & (bit16_t)(pow(2, size)-1), size-1);
 }

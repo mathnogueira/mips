@@ -112,12 +112,27 @@ public:
      */
     bit16_t getOffset(instruction_t instruction, bit8_t size = 8);
 
+	/**
+	 * Define a estrutura de flag da ALU.
+	 *
+	 * \param flags flags da ALU.
+	 */
+	void setALUFlags(struct ALUFlags *flags) {
+		this->flags = flags;
+	}
+
+
 protected:
 
 	/**
 	 * Banco de registradores do decodificador.
 	 */
 	RegisterBank &registerBank;
+
+	/**
+	 * Flags da ALU.
+	 */
+	struct ALUFlags *flags;
 
 };
 

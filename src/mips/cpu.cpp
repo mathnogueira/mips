@@ -6,11 +6,13 @@
 using namespace MIPS;
 
 CPU::CPU() {
+	aluFlags = {0, 0, 0, 0};
 	controlUnit = new ControlUnit;
 	memory = new Memory(*controlUnit);
 	bank = new RegisterBank(*controlUnit);
     instructionFinder = new InstructionFinder(*memory, *bank);
     instructionDecoder = new InstructionDecoder(*bank);
+	instructionDecoder->setALUFlags(&aluFlags);
 }
 
 CPU::~CPU() {
@@ -44,7 +46,6 @@ void CPU::execute() {
     do {
         // Busca a instrução e incrementa o PC
         instruction_t instruction = instructionFinder->getNext();
-		PRINT_BIN(instruction);
         // Se for instrução de HALT, para a execução
         if (instruction == 0x2fff)
             return;
@@ -59,6 +60,14 @@ void CPU::execute() {
 		if (controlUnit->jump && result == 1) {
 			// Atualiza o PC
 			bank->getPC()->put(instructionDecoder->getOffset(instruction, 12));
+		}
+		// Verifica se é um branch
+		if (controlUnit->branch && result == 1) {
+			// Atualiza o PC
+			Register *pc = bank->getPC();
+			FORMAT_DEBUG("PC: %d\n", pc->get());
+			FORMAT_DEBUG("Offset: %d\n", instructionDecoder->getOffset(instruction, 8));
+			pc->put(pc->get() + instructionDecoder->getOffset(instruction, 8));
 		}
         // Pega o índice do registrador de destino
         bit8_t regdst;

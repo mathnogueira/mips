@@ -14,3 +14,9 @@ TEST(SignalExtender, negativeNumber) {
 	bit16_t extended = SignalExtender::extend(n);
 	ASSERT_EQ(extended, -120);
 }
+
+TEST(SignalExtender, negative8Bits) {
+	bit16_t n = 0x00ff;
+	bit16_t extended = SignalExtender::extend(n, 7);
+	ASSERT_EQ(extended, -1);
+}
