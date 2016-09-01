@@ -3,8 +3,8 @@
 using namespace MIPS;
 
 bit16_t JalInstruction::execute() {
-    this->rs->put(this->pc->get());
-    this->pc->put(this->rt->get());
+    this->rt->put(this->pc->get());
+    this->pc->put(this->rs->get());
 
     return 1;
 }
