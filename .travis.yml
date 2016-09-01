@@ -13,6 +13,7 @@ os:
 script:
   - mkdir build && cd build
   - cmake -Dtest=ON .. && make -j8
+  - ls
   - ./urisc_test
   # - ./mips ../tests/programs/divide.asm
   # - ./mips ../tests/programs/jump.asm
