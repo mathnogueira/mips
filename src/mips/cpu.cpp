@@ -58,44 +58,44 @@ void CPU::execute() {
         // Executa a instrução
         // Atualiza as flags de controle
         instructionObject->updateControl(*controlUnit);
-		instructionObject->setALUFlags(aluFlags);
+	instructionObject->setALUFlags(aluFlags);
         result = instructionObject->execute();
-		// Verifica se a instrução era um jump, e se haverá o desvio
-		if (controlUnit->jump && result == 1) {
-			bit8_t funct = (instruction >> 12) & 3;
-			FORMAT_DEBUG("FUNCT %d\n", funct);
-			if (funct == 2) {
-				// JUMP
-				// Atualiza o PC
-				bank->getPC()->put(instructionDecoder->getOffset(instruction, 12));
-			}
-			controlUnit->regwrite = false;
-		}
-		// Verifica se é um branch
-		if (controlUnit->branch && result == 1) {
+	// Verifica se a instrução era um jump, e se haverá o desvio
+	if (controlUnit->jump && result == 1) {
+		bit8_t funct = (instruction >> 12) & 3;
+		FORMAT_DEBUG("FUNCT %d\n", funct);
+		if (funct == 2) {
+			// JUMP
 			// Atualiza o PC
-			Register *pc = bank->getPC();
-			FORMAT_DEBUG("PC: %d\n", pc->get());
-			FORMAT_DEBUG("Offset: %d\n", instructionDecoder->getOffset(instruction, 8));
-			pc->put(pc->get() + instructionDecoder->getOffset(instruction, 8));
-			controlUnit->regwrite = false;
+			bank->getPC()->put(instructionDecoder->getOffset(instruction, 12));
 		}
+		controlUnit->regwrite = false;
+	}
+	// Verifica se é um branch
+	if (controlUnit->branch && result == 1) {
+		// Atualiza o PC
+		Register *pc = bank->getPC();
+		FORMAT_DEBUG("PC: %d\n", pc->get());
+		FORMAT_DEBUG("Offset: %d\n", instructionDecoder->getOffset(instruction, 8));
+		pc->put(pc->get() + instructionDecoder->getOffset(instruction, 8));
+		controlUnit->regwrite = false;
+	}
         // Pega o índice do registrador de destino
         bit8_t regdst;
-		if (controlUnit->regDst)
-			regdst = instructionDecoder->getRd(instruction);
-		else
-			regdst = instructionDecoder->getRt(instruction);
+	if (controlUnit->regDst)
+		regdst = instructionDecoder->getRd(instruction);
+	else
+		regdst = instructionDecoder->getRt(instruction);
         // Coloca o valor no banco de registradores
         // O valor só será escrito se a flag do controle for definida como true
         bank->write(result, regdst);
-		// Reseta as flags
-		controlUnit->reset();
-		// Imprime o relatório da instrução executada
-		if (options.screen)
-			Logger::screen(*bank, aluFlags, instruction);
-		if (options.pause)
-			getchar();
+	// Reseta as flags
+	controlUnit->reset();
+	// Imprime o relatório da instrução executada
+	if (options.screen)
+		Logger::screen(*bank, aluFlags, instruction);
+	if (options.pause)
+		getchar();
     } while (true);
 	// Imprime o dump de memória
 	if (options.dump)
