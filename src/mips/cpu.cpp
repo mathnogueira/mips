@@ -11,8 +11,8 @@ CPU::CPU(struct options &opt) : options(opt) {
 	controlUnit = new ControlUnit;
 	memory = new Memory(*controlUnit);
 	bank = new RegisterBank(*controlUnit);
-    instructionFinder = new InstructionFinder(*memory, *bank);
-    instructionDecoder = new InstructionDecoder(*bank, *memory);
+	instructionFinder = new InstructionFinder(*memory, *bank);
+	instructionDecoder = new InstructionDecoder(*bank, *memory);
 	instructionDecoder->setALUFlags(&aluFlags);
 }
 
@@ -33,15 +33,15 @@ void CPU::loadProgram(const char *program) {
     fread(&size, sizeof(size_t), 1, fp);
     // Inicializa a memória de instruções
     memory->setInstructionSize(size);
-	// Carrega memória de dados
-	memory->setDataSize(64 * 1024);
-	controlUnit->memWrite = true;
+    // Carrega memória de dados
+    memory->setDataSize(64 * 1024);
+    controlUnit->memWrite = true;
     // Insere todas as instruções na memória de instruções
     for (size_t i = 0; i < size; ++i) {
         fread(&instruction, sizeof(bit16_t), 1, fp);
         memory->write(instruction, i, 0);
     }
-	controlUnit->memWrite = false;
+    controlUnit->memWrite = false;
     fclose(fp);
 }
 
